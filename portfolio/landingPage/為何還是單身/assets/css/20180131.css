@@ -1,0 +1,655 @@
+/********* 20180131 我很棒為何還是單身 *********/
+.nav-right-arrow a:after{
+	display: block;
+	content: "\f107";
+	color: #fa808b;
+	position: absolute;
+	top: 50%;
+	right: 5px;
+	margin: -5px 0 0;
+	font-family: FontAwesome;
+	font-size: 12px;
+	line-height: 1em;
+	-webkit-transition: -webkit-transform .2s ease-in;
+	-moz-transition: -moz-transform .2s ease-in;
+	-ms-transition: -ms-transform .2s ease-in;
+	-o-transition: -o-transform .2s ease-in;
+	transition: transform .2s ease-in;
+}
+.why-main{
+	position: relative;
+	padding: 0;
+	background: url(../images/20180131/main-banner.jpg) no-repeat center #e8e8e6;
+	height: 620px;
+	background-size: cover;
+	border:0; 
+}
+.main-title{
+	position: absolute;
+	margin: auto;
+	top: -60px;
+	left: 0;
+	bottom: 0;
+	right: -600px;
+	animation-name: pulse;
+	animation-delay: 0.4s;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+
+}
+.main-subtitle{
+	position: absolute;
+	margin: auto;
+	top: -10px;
+	left: -750px;
+	bottom: 0;
+	right: 0;
+	animation-name: pulse;
+	animation-delay: 0.2s;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+}
+.m-main-img{
+	display: none;
+}
+.point-btn{
+	position: absolute;
+	bottom: -500px;
+	top:0;
+	left: 0;	
+	right: -450px;
+	margin:  auto;
+	cursor: pointer;
+	transition: .3s all;
+}
+.point-btn:hover{
+	filter: brightness(110%);
+	transition: .3s all;
+}
+.pareto{
+	padding: 50px 0px 0px 0px;
+	border: 0;
+	background: #fff;
+	position: relative;
+}
+.all-title{
+	position: relative;
+	color: #333;
+	font-size: 36px;
+	line-height: 1.3;
+	letter-spacing: 1px;
+	text-align: center;
+	font-family: 微軟正黑體, Helvetica, Arial, "PingFang TC", 蘋果儷中黑, "Apple LiGothic Medium", sans-serif;
+	font-weight: normal;
+	margin-bottom: 20px;
+}
+.all-title:after{
+	display: block;
+	content: '';
+	width: 100%;
+	height: 3px;
+	background: url(../images/20180131/title-line.gif) no-repeat center;
+	margin-top: 20px;
+}
+.all-subtitle{
+	color: #666;
+	font-size: 16px;
+	line-height: 1.3;
+	letter-spacing: 1px;
+	text-align: center;
+	font-family: 微軟正黑體, Helvetica, Arial, "PingFang TC", 蘋果儷中黑, "Apple LiGothic Medium", sans-serif;
+	font-weight: normal;
+	margin-bottom: 40px;
+}
+.pareto-img{
+	margin-bottom: 60px;
+}
+.pareto-girl{
+	vertical-align: bottom; 
+}
+.net-social{
+	position: relative;
+	padding: 0;
+	border: 0;
+	background: #f8f8f8;
+}
+.net-social:after{
+	display: table;
+	content: '';
+	clear: both;
+}
+.net-social .container{
+	padding: 0;
+}
+.net-social-warning{
+	position: relative;
+	text-align: left;
+}
+.net-social-warning .warning-a{
+	display: block;
+	margin-left: 80px;
+}
+.net-social-warning .warning-b{
+	display: block;
+	position: absolute;
+	bottom: 0px;
+	right: 100px;
+}
+.net-social-warning .warning-c{
+	display: none;
+}
+.spring-promo-a{
+	padding: 0px 0px 40px 0px;
+	border: 0;
+	background: #f8f8f8;
+}
+.all-promo-txt{
+	position: relative;
+	background: #fec4c4;
+	height: 52px;
+	width: 500px;
+	line-height: 52px;
+	color: #333;
+	font-size: 16px;
+	padding: 0 10px;
+	text-align: center;
+	margin: 0 auto;
+	font-family: 微軟正黑體, Helvetica, Arial, "PingFang TC", 蘋果儷中黑, "Apple LiGothic Medium", sans-serif;
+	margin-bottom: 50px;
+}
+.all-promo-txt:after{
+	display: block;
+	content: '';
+	width: 27px;
+	height: 16px;
+	text-align: center;
+	margin: 0 auto;
+	background: url(../images/20180131/down-arrow.png) no-repeat center;
+}
+.spring-circle{
+	text-align: center;
+}
+.spring-circle img{
+	max-width: 100%;
+}
+.troubled{
+	padding: 50px 0px;
+	border: 0;
+	background: #f8dddd;
+}
+.troubled-cell{
+	text-align: center;
+	padding: 0px 5px 0px 5px;
+}
+.troubled-cell img{
+	max-width: 100%;
+}
+.troubled-box{
+	margin-bottom: 50px;
+}
+.all-small-title{
+	color: #333;
+	font-size: 25px;
+	text-align: center;
+	letter-spacing: 1px;
+	font-weight: normal;
+	font-family: 微軟正黑體, Helvetica, Arial, "PingFang TC", 蘋果儷中黑, "Apple LiGothic Medium", sans-serif;
+	margin-bottom: 30px;
+}
+.spring-box{
+
+}
+.spring-box .pc{
+	display: block;
+	max-width: 100%;
+}
+.spring-box .mobile{
+	display: none;
+}
+.success{
+	padding: 40px 0px;
+	border: 0;
+}
+.member-box{
+
+}
+.member-pic{
+	text-align: center;
+}
+.member-pic img{
+	max-width: 100%;
+}
+.member-box-all{
+	margin-top: 30px;
+}
+.all-memeber{
+	position: relative;
+}
+.all-memeber img{
+	max-width: 100%;
+}
+.all-memeber .best{
+	position: absolute;
+	text-align: center;
+	color: #333;
+	font-weight: bold;
+	font-family: 微軟正黑體, Helvetica, Arial, "PingFang TC", 蘋果儷中黑, "Apple LiGothic Medium", sans-serif;
+	font-size: 14px;
+	padding: 0px 2px;
+	width: 250px;
+	height: 40px;
+	line-height: 40px;
+	background: #fff;
+	border-radius: 30px;
+	letter-spacing: 5px;
+	margin: auto;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+.all-memeber .best span{
+	color: #ef9999;
+}
+.all-memeber .pc{
+	display: block;
+}
+.all-memeber .mobile{
+	display: none;
+}
+.notonly{
+	padding: 40px 0px 100px 0px;
+	border: 0;
+	background: #f8f8f8;
+}
+.features-box{
+	margin-bottom: 50px;
+}
+.features-one{
+	padding: 0px 2px;
+	text-align: center;
+}
+.features-one img{
+	max-width: 100%;
+}
+.witness-box {
+	margin-top:25px;
+}
+.witness-one{
+	position: relative;
+}
+.witness-one .pic{
+	position: absolute;
+	left: 15px;
+	top: 5px;
+}
+.witness-one .txt{
+	margin-left: 165px; 
+}
+.txt h4{
+	color: #f4a5a5;
+	font-weight: normal;
+	font-family: 微軟正黑體, Helvetica, Arial, "PingFang TC", 蘋果儷中黑, "Apple LiGothic Medium", sans-serif;
+	font-size: 24px;
+	margin-bottom: 12px;
+}
+.txt p{
+	color: #333;
+	font-weight: normal;
+	font-family: 微軟正黑體, Helvetica, Arial, "PingFang TC", 蘋果儷中黑, "Apple LiGothic Medium", sans-serif;
+	font-size: 14px;
+	margin-bottom: 5px; 
+}
+.txt a{
+	color: #9ed8f6;
+	font-weight: normal;
+	font-family: 微軟正黑體, Helvetica, Arial, "PingFang TC", 蘋果儷中黑, "Apple LiGothic Medium", sans-serif;
+	font-size: 14px;
+	transition: all .3s;
+}
+.txt a:after{
+	display: inline-block;
+	content: ' > ';
+	color: #9ed8f6;
+	font-family: 微軟正黑體, Helvetica, Arial, "PingFang TC", 蘋果儷中黑, "Apple LiGothic Medium", sans-serif;
+	font-size: 12px;
+	margin-left: 5px;
+}
+.txt a:hover, .txt a:active, .txt a:focus{
+	color: #6faecf;
+	text-decoration: underline;
+}
+.spring-register{
+	padding: 0px 0px 0px 0px;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+	background: #fff;
+}
+.spring-register .all-promo-txt{
+	margin-top: -52px;
+}
+.timer{
+	position: relative;
+	text-align: center;
+	font-family: 微軟正黑體, Helvetica, Arial, "PingFang TC", 蘋果儷中黑, "Apple LiGothic Medium", sans-serif;
+	margin-bottom: 50px;
+}
+.timer:before{
+	position: absolute;
+	display: table;
+	content: '';
+	width: 1px;
+	height: 40px;
+	background: rgba(0,0,0,0.2);
+	left: 0px;
+	top: 0;
+}
+.timer:after{
+	position: absolute;
+	display: table;
+	content: '';
+	width: 1px;
+	height: 40px;
+	background: rgba(0,0,0,0.2);
+	right: 0px;
+	top: 0;
+}
+.timer h4{
+	width: 52%;
+	float: left;
+	display: block;
+	color: #333;
+	font-size: 14px;
+	line-height: 40px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	font-family: 微軟正黑體, Helvetica, Arial, "PingFang TC", 蘋果儷中黑, "Apple LiGothic Medium", sans-serif;
+	margin-right: 5px;
+	margin-bottom: 0px;
+}
+.timer-box{
+	width: 45%;
+	float: right;
+	color: #333;
+	font-size: 14px;
+	font-weight: normal;
+	font-family: 微軟正黑體, Helvetica, Arial, "PingFang TC", 蘋果儷中黑, "Apple LiGothic Medium", sans-serif;
+	display: block;
+	background: #ecf7fd;
+	padding: 3px 2px;
+	border-radius: 3px;
+}
+.timer-box span{
+	color: #94d3f3;
+	font-size: 22px;
+	font-family: 微軟正黑體, Helvetica, Arial, "PingFang TC", 蘋果儷中黑, "Apple LiGothic Medium", sans-serif;
+}
+.register-box{
+	position: relative;
+	width: 100%;
+}
+.register-box .girl{
+	position: absolute;
+	left: 10px;
+	bottom: 0px;
+}
+.input-form{
+	display: block;
+	width: 660px;
+	height: 450px;
+	margin: 30px 0px 0px 400px;
+}
+.confirm{
+	text-align: center;
+	color: #666;
+}
+.confirm a{
+	color: #666;
+}
+.confirm a:hover{
+	text-decoration: underline;
+}
+.btn-forman{
+	font-size: 18px;
+	font-weight: bold;
+	font-family: 微軟正黑體, Helvetica, Arial, "PingFang TC", 蘋果儷中黑, "Apple LiGothic Medium", sans-serif;
+	background: #2db0f4;
+	width: 100%;
+	height: 50px;
+	color: #fff;
+	transition: all .3s;
+}
+.btn-forwoman{
+	font-size: 18px;
+	font-weight: bold;
+	font-family: 微軟正黑體, Helvetica, Arial, "PingFang TC", 蘋果儷中黑, "Apple LiGothic Medium", sans-serif;
+	background: #fe3a3a;
+	width: 100%;
+	height: 50px;
+	color: #fff;
+	transition: all .3s;
+}
+.btn-forman:hover, .btn-forman:active, .btn-forman:focus{
+	color: #fff;
+	filter: brightness(110%);
+	-webkit-filter: brightness(110%);
+}
+.btn-forwoman:hover, .btn-forwoman:active, .btn-forwoman:focus{
+	color: #fff;
+	filter: brightness(110%);
+	-webkit-filter: brightness(110%);
+}
+.input-form > .form-group {
+	margin-bottom: 25px;
+}
+.input-form > .form-group .form-control{
+	border: 1px solid #f5b2b2;
+	background: #ffeded;
+}
+.mobile-register-box > .form-group .form-control{
+	border: 1px solid #f5b2b2;
+	background: #fff;
+}
+.mobile-register{
+	display: none;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+	padding: 15px 0px;
+	background: #fceeee;
+}
+.mobile-register-box{
+	width: 100%;
+}
+.mobile-register-box .confirm{
+	font-size: 10px;
+	margin-bottom: 5px;
+}
+.float-rgister-btn{
+	position: fixed;
+	right: 0px;
+	top:45%;
+	z-index: 99;
+	animation-name: bounceInRight;
+	animation-delay: 0.2s;
+	animation-duration: 1s;
+	animation-iteration-count: 1;
+}
+.float-rgister-btn a:hover{
+
+}
+.float-rgister-btn a:hover img{
+	animation-name: swing;
+	animation-delay: 0s;
+	animation-duration: 0.7s;
+	animation-iteration-count: 1;
+}
+/*** 手機顯示 ***/
+@media only screen and (max-width: 768px) {
+	.why-main{
+		background: none;
+		height: auto;
+	}
+	.m-main-img{
+		display: block;
+		width: 100%;
+	}
+	.point-btn{		
+		bottom: -250px;
+		top:0;
+		left: 0;	
+		right: -180px;
+		max-width: 40%;
+		height: auto;	
+	}
+	.pareto-img{
+		width: 85%;
+		margin: auto;
+	}
+	.pareto-girl{
+		display: none;
+	}
+	.pareto{
+		padding: 20px 0px 20px 0px;
+	}
+	.all-title{
+		font-size: 24px;
+	}
+	.all-subtitle{
+		font-size: 15px;
+	}
+	.all-title:after{
+		margin-top: 10px;
+	}
+	.net-social-warning .warning-a, .net-social-warning .warning-b{
+		display: none;
+	}
+	.net-social-warning .warning-c{
+		display: block;
+		width: 100%;
+	}
+	.main-title, .main-subtitle{
+		display: none;
+	}
+	.all-promo-txt{
+		width: 90%;
+		font-size: 14px;
+		font-weight: bold;
+		line-height: 40px;
+		height: 40px;
+	}
+	.spring-promo-a{
+		padding: 0px 0px 10px 0px;
+	}
+	.spring-circle{
+		margin-bottom: 20px; 
+	}
+	.spring-circle img{
+		max-width: 70%;
+	}
+	.troubled-box{
+		margin-bottom: 15px;
+	}
+	.troubled-cell{
+		margin-bottom: 20px; 
+	}
+	.spring-box .pc{
+		display: none;
+	}
+	.spring-box .mobile{
+		display: block;
+		max-width: 100%;
+	}
+	.member-pic{
+		margin-bottom: 15px;
+	}
+	.all-memeber .pc{
+		display: none;
+	}
+	.all-memeber .mobile{
+		display: block;
+	}
+	.features-one{
+		margin-bottom: 15px;
+	}
+	.witness-one{
+		margin-bottom: 30px;
+	}
+	.spring-register .all-promo-txt{
+		margin-top: -40px;
+	}
+	.notonly{
+		padding: 40px 0px 50px 0px;
+	}
+	.timer h4{
+		line-height: 1.2;
+		margin: 10px 0px 10px 0px;
+	}
+	.timer h4, .timer-box{
+		float: none;
+		width: 100%;
+		text-align: center;	
+	}
+	.timer:after, .timer:before{
+		display: none;
+	}
+	.timer{
+		border: 1px solid rgba(0,0,0,0.1);
+		border-radius: 5px;
+		padding: 5px 5px;
+		margin-bottom: 30px;
+	}
+	.spring-register .all-promo-txt{
+		margin-bottom: 25px
+	}
+	.register-box {
+		width: 100%;
+	}
+	.register-box .girl{
+		display: none;
+	}
+	.input-form{
+		margin: auto;
+		width: 100%;
+		height: auto;
+	}
+	.input-form > .form-group {
+		margin-bottom: 12px;
+	}
+	.mobile-register{
+		display: block;
+	}
+	.float-rgister-btn{
+		display: none;
+	}
+}
+/*** 平板顯示 ***/
+@media (min-width: 768px) and (max-width: 991px) {
+	.point-btn{		
+		bottom: -470px;
+		top:0;
+		left: 0;	
+		right: -290px;
+		max-width: 100%;
+		height: auto;
+	}
+	.pareto-girl{
+		display: none;
+	}
+	.net-social{
+		margin-top: 50px;
+	}
+	.net-social-warning .warning-a{
+		display: block;
+		max-width: 50%;
+		margin-left: 0;
+	}
+	.net-social-warning .warning-b{
+		display: block;
+		right: 10px;
+		max-width: 40%;
+	}
+	.net-social-warning .warning-c{
+		display: none;
+	}
+	.float-rgister-btn{
+		display: none;
+	}
+}

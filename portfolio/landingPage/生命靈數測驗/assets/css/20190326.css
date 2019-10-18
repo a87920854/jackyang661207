@@ -1,0 +1,537 @@
+/********* 20190326 生命靈數測驗 *********/
+.birthdaypeach{
+	background-color: #f3dc58;
+	position: relative;
+	padding: 0;
+}
+.birthdaypeach #header a.logo>img{
+	height: auto;
+}
+.birthdaypeach #header #topNav a.logo{
+	padding-top: 50px;
+	height: auto;
+	line-height: 1.4; 
+}
+.birthdaypeach #wrapper{
+	position: relative;
+}
+.birthdaypeach #wrapper .footer{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	padding: 20px 0;
+	z-index: 100;
+}
+.birthdaypeach #wrapper .footer p{
+	color: #1f0f00;
+	font-size: 11px;
+	margin: 0;
+}
+.birthdaypeach-kv{
+	padding: 130px 0 40px 0;
+}
+.birthdaypeach-kv .container{
+	padding-right: 118px;
+	padding-left: 118px;
+}
+.birthdaypeach-kv .register-box{
+	margin-top: -20px;
+	text-align: center;
+	width: 500px;
+	height: 510px;
+	padding: 45px 52px 40px 42px;
+	float: left;
+	background: url(../images/ball.svg) no-repeat top center;
+	background-size: 100%;
+}
+.birthdaypeach-kv .register-box .click-row{
+	margin-top: 15px;
+}
+.birthdaypeach-kv .register-box .btn-forman{
+	height: 50px;
+	width: 100%;
+	color: #fff;
+	font-size: 20px;
+	border-radius: 3px; 
+	background: url(../images/b-btn-bg.jpg) no-repeat bottom;
+}
+.birthdaypeach-kv .register-box .btn-forwoman{
+	height: 50px;
+	width: 100%;
+	color: #fff;
+	font-size: 20px;
+	border-radius: 3px; 
+	background: url(../images/p-btn-bg.jpg) no-repeat bottom;
+}
+.btn-forman:hover,.btn-forman:active,.btn-forman:focus, .btn-forwoman:hover,.btn-forwoman:active,.btn-forwoman:focus{
+	filter: brightness(120%);
+}
+.birthdaypeach-kv .register-box .ball-title{
+	margin-bottom: 20px;
+}
+.birthdaypeach-kv .register-box .form-group{
+	margin-bottom: 6px;
+}
+.birthdaypeach-kv .register-box .confirm{
+	color: #1f0f00;
+	font-size: 11px;
+	margin: 15px 0 0 0;
+}
+.birthdaypeach-kv .register-box .confirm a, .birthdaypeach-kv .register-box .confirm a:hover, .birthdaypeach-kv .register-box .confirm a:active, .birthdaypeach-kv .register-box .confirm a:focus{
+	color: #1f0f00;
+}
+.birthdaypeach-kv .birthdaypeach-title{
+	position: relative;
+	float: right;
+	margin-bottom: 40px;
+}
+.birthdaypeach-title .m-title{
+	background: #fdfdfd;
+	padding: 20px 15px;
+	margin-left: 15px; 
+}
+.birthdaypeach-title .s-title{
+	background: #fdfdfd;
+	padding: 20px 15px;
+	margin-left: 15px; 
+}
+.birthdaypeach-kv .birthdaypeach-title img{
+	vertical-align: top;
+	float: right;
+}
+.flower-bottom{
+	position: absolute;
+	bottom: 0;
+	background-image: url(../images/flower.png) ;
+	background-repeat: repeat-x;
+	width: 100%;
+	height: 145px;
+}
+.flower-top{
+	position: absolute;
+	top: 0;
+	background-image: url(../images/flower.png);
+	background-repeat: repeat-x;
+	width: 100%;
+	height: 90px;
+	-webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+.flower-left{
+	position: absolute;
+	left: 0;
+	background-image: url(../images/flower-side.png);
+	background-repeat: repeat-y;
+	width: 180px;
+	height: 100%;
+}
+.flower-right{
+	position: absolute;
+	right: 0;
+	background-image: url(../images/flower-side.png);
+	background-repeat: repeat-y;
+	width: 180px;
+	height: 100%;
+	-webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+.couple-new{
+	position: absolute;
+	right: 68px;
+	top: 400px;
+	z-index: 99;
+}
+.triple{
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	margin-left: -447px; 
+	background: url(../images/triple.png) top center no-repeat;
+	width: 394px;
+	height: 310px;
+	transition: all .3s;
+}
+.birthdaypeach .title-formobile{
+	display: none;
+}
+.birthdaypeach .register-box .code{
+	text-align: left;
+	padding-top: 5px;
+}
+.birthdaypeach .register-box .code img{
+	vertical-align: bottom;
+}
+.birthdaypeach-result .result-box{
+	background: url(../images/bb-bg.jpg) center center no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	padding: 50px 30px;
+	border-radius: 90px; 
+	color: #fff;
+}
+.birthdaypeach-result .result-box h1.title{
+	font-size: 60px;
+	line-height: 1;
+	margin-bottom: 20px;
+	color: #fff;
+	font-family:'微軟正黑體',Arial,Helvetica,sans-serif;
+	text-align: center;
+}
+.birthdaypeach-result .result-box h3.s-title{
+	color: #fff;
+	font-size: 30px;
+	line-height: 1;
+	margin-bottom: 40px;
+	font-family:'微軟正黑體',Arial,Helvetica,sans-serif;
+	text-align: center;
+}
+.birthdaypeach-result .result-box .text{
+	color: #fff;
+	font-size: 16px;
+	font-family:'微軟正黑體',Arial,Helvetica,sans-serif;
+	margin-bottom: 0;
+}
+.birthdaypeach-result .result-box .text p{
+	margin-bottom: 20px;
+}
+.birthdaypeach-result .result-box .text p:last-of-type{
+	margin-bottom: 0px;
+}
+.birthdaypeach-result p.note{
+	color: #1f0f00;
+	font-size: 10px;
+	font-family:'微軟正黑體',Arial,Helvetica,sans-serif;
+	margin: 10px 0;
+	text-align: center;
+}
+.birthdaypeach-result .link-box{
+	padding: 30px 45px;
+	width: 100%;
+	text-align: center;
+}
+.birthdaypeach-result .link-box p{
+	color: #1f0f00;
+	font-size: 20px;
+	font-weight: bold;
+	font-family:'微軟正黑體',Arial,Helvetica,sans-serif;
+	text-align: center;
+	width: 100%;
+}
+.birthdaypeach-result .link-box .btn-link{
+	position: relative;
+	color: #1f0f00;
+	font-size: 20px;
+	font-weight: bold;
+	font-family:'微軟正黑體',Arial,Helvetica,sans-serif;
+	cursor: pointer;
+	border: 3px solid #1f0f00; 
+	background-color: #fff; 
+	width: 100%;
+}
+.birthdaypeach-result .link-box .btn-link:after{
+	position: absolute;
+	right: 30px;
+	top: 25px;
+	content: '';
+	display: block;
+	width: 30px;
+	height: 38px;
+	background-image: url(../images/finger.png);
+	animation-name: fadeInUp;
+	animation-duration: 1s;
+	animation-iteration-count: 1; 
+	-webkit-animation-name: fadeInUp;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-iteration-count: 1; 
+	transition: all .3s;
+}
+.birthdaypeach-result .link-box .btn-link:hover,.birthdaypeach-result .link-box .btn-link:active, .birthdaypeach-result .link-box .btn-link:focus{
+	text-decoration: none;
+	background-color: #9667dd;
+	color: #fff;
+}
+.birthdaypeach-result .link-box .btn-link:hover:after{
+	display: none;
+	transition: all .3s;
+}
+.triple-page2{
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	margin-left: -670px;
+	background: url(../images/triple.png) top center no-repeat;
+	background-size: 80%;
+	background-repeat: no-repeat;
+	width: 394px;
+	height: 250px;
+	transition: all .3s;
+}
+.couple-page2{
+	position: absolute;
+	bottom: 0;
+	right: 50%;
+	margin-right: -700px;
+	background: url(../images/couple.png) top center no-repeat;
+	background-size: 80%;
+	background-repeat: no-repeat;
+	width: 423px;
+	height: 350px;
+	transition: all .3s;
+}
+@media only screen and (max-height: 880px) {
+	.triple{
+		height: 230px
+	}
+}
+@media only screen and (max-height: 850px) {
+	.triple{
+		display: none;
+	}
+}
+/*** 手機顯示 ***/
+@media only screen and (max-width: 669px) {
+	.birthdaypeach .title-formobile{
+		display: block;
+		max-width: 100%;
+	}
+	.birthdaypeach-kv .register-box .ball-title{
+		max-width: 70%;
+		margin-bottom: 15px; 
+	}
+	.birthdaypeach-kv{
+		padding: 80px 0 40px 0;
+	}
+	.birthdaypeach #header{
+		padding-top: 10px;
+	}
+	.birthdaypeach #header #topNav a.logo{
+		padding-top: 0;
+	}
+	.birthdaypeach-kv .birthdaypeach-title{
+		width: auto;
+		float: left;
+		margin-bottom: 0;
+	}
+	.birthdaypeach-kv .container{
+		padding-right: 15px;
+		padding-left: 15px;
+	}
+	.flower-left{
+		display: none;
+	}
+	.flower-right{
+		display: none;
+	}
+	.flower-top{
+		height: 40px;
+		background-size: 60%;
+	}
+	.flower-bottom{
+		height: 75px;
+		background-size: 80%;
+	}
+	.birthdaypeach-title .m-title{
+		display: none;
+	}
+	.birthdaypeach-title .s-title{
+		display: none;
+	}
+	.birthdaypeach-title .txt{
+		display: none;
+	}
+	.birthdaypeach-kv .register-box{
+		padding: 20px;
+		border: 2px solid #fff;
+		border-radius: 20px; 
+		width: 100%;
+		height: auto;
+		background: none;
+		background-color: rgba(255,255,255,0.1); 
+		margin: 0 0 50px 0;
+	}
+	.triple, .couple-new{
+		display: none;
+	}
+	.birthdaypeach-result{
+		padding: 0;
+	}
+	.birthdaypeach-result .result-box{
+		padding: 40px 20px;
+		border-radius: 20px; 
+		color: #fff;
+	}
+	.birthdaypeach-result .link-box{
+		padding: 20px 15px 60px 15px;
+	}
+	.birthdaypeach-result .link-box .btn-link{
+		font-size: 14px;
+		font-weight: bold;
+	}
+	.triple-page2{
+		display: none;
+	}
+	.couple-page2{
+		display: none;
+	}
+}
+
+/****小平板****/
+@media only screen and (min-width: 670px) and (max-width: 990px) {
+	.birthdaypeach #header{
+		padding-top: 50px;
+	}
+	.birthdaypeach #header #topNav a.logo{
+		padding-top: 0;
+	}
+	.birthdaypeach-title .s-title{ 
+		padding: 12px 8px;
+	}
+	.birthdaypeach-title .m-title{
+		padding: 10px 6px;
+	}
+	.birthdaypeach-kv .birthdaypeach-title{
+		width: 49%;
+	}
+	.birthdaypeach-kv .container{
+		padding-right: 25px;
+		padding-left: 25px;
+	}
+	.flower-left{
+		display: none;
+	}
+	.flower-right{
+		display: none;
+	}
+	.birthdaypeach-title .m-title{
+		max-width: 25%;
+	}
+	.birthdaypeach-title .s-title{
+		max-width: 25%;
+	}
+	.birthdaypeach-title .txt{
+		max-width: 30%;
+	}
+	.birthdaypeach-kv .register-box{
+		padding: 20px;
+		border: 2px solid #fff;
+		border-radius: 40px; 
+		width: 49%;
+		height: auto;
+		background: none;
+		background-color: rgba(255,255,255,0.1); 
+		margin-top: 0;
+	}
+	.couple-new{
+		right: -10px;
+		top: 450px;
+	}
+	.triple{
+		margin-left: -440px;
+	}
+	.triple-page2{
+		display: none;
+	}
+	.couple-page2{
+		display: none;
+	}
+}
+/****大平版****/
+@media only screen and (min-width: 991px) and (max-width: 1024px) {
+	.birthdaypeach-kv{
+		padding: 200px 0 50px 0;
+	}
+	.birthdaypeach #header{
+		padding-top: 80px;
+	}
+	.birthdaypeach #header #topNav a.logo{
+		padding-top: 0;
+	}
+	.birthdaypeach-kv .birthdaypeach-title{
+		width: 49%;
+	}
+	.birthdaypeach-kv .birthdaypeach-title img{
+		max-width: 100%;
+	}
+	.birthdaypeach-kv .container{
+		padding-right: 25px;
+		padding-left: 25px;
+	}
+	.flower-left{
+		display: none;
+	}
+	.flower-right{
+		display: none;
+	}
+	.birthdaypeach-title .m-title{
+		max-width: 100%;
+	}
+	.birthdaypeach-title .s-title{
+		max-width: 100%;
+	}
+	.birthdaypeach-title .txt{
+		max-width: 100%;
+	}
+	.birthdaypeach-kv .register-box{
+		padding: 30px 20px;
+		border: 2px solid #fff;
+		border-radius: 40px; 
+		width: 49%;
+		height: auto;
+		background: none;
+		background-color: rgba(255,255,255,0.1); 
+		margin-top: 0;
+	}
+	.couple-new{
+		right: 50px;
+		top: 620px;
+	}
+	.triple{
+		height: 400px;
+		margin-left: -480px;
+	}
+	.triple-page2{
+		display: none;
+	}
+	.couple-page2{
+		display: none;
+	}
+}
+/****大平版與電腦之間****/
+@media only screen and (min-width: 1025px) and (max-width: 1670px) {
+	.birthdaypeach-kv .birthdaypeach-title{
+		width: 49%;
+	}
+	.birthdaypeach-kv .birthdaypeach-title img{
+		max-width: 100%;
+	}
+	.birthdaypeach-kv .register-box{
+		position: relative;
+		padding: 30px 20px;
+		border: 2px solid #fff;
+		border-radius: 40px; 
+		width: 49%;
+		height: auto;
+		background: none;
+		background-color: rgba(255,255,255,0.1); 
+		margin-top: 0;
+	}
+	.birthdaypeach-kv .container{
+		padding-right: 90px;
+		padding-left: 90px;
+	}
+	.flower-left{
+		left: -80px;
+	}
+	.flower-right{
+		right: -80px;
+	}
+}

@@ -1,0 +1,675 @@
+/*** 20190108你的出生決定你的桃花 ***/
+.birthday_body{
+	height: 100vh;
+	overflow: hidden;
+	background-size: cover;
+	background: url(../images/bg.jpg) center center #e1a0aa;	
+}
+.birthday_wrapper{
+	font-family: '微軟正黑體', Arial, sans-serif;
+	overflow: hidden; /**防止滑鼠往下滾BUG**/
+	position: relative;		
+	width: 100vw;
+	height: 100vh;
+}
+.birthday_register, .birthday_result_box{
+	position: relative;
+	background: #fff;
+	display: block;
+	float: left;
+	width: 384px;
+	height: 100vh; 
+	padding: 0px;
+	margin: 0px 22px 0px 22px;
+	z-index: 5;
+}
+.birthday_register:before, .birthday_result_box:before{
+	display: block;
+	position: absolute;
+	left: -19px;
+	top:0;
+	background: url(../images/flowerborder-l.png) repeat-y;
+	content: '';
+	width: 20px;
+	height: 100vh;
+	z-index: 4;
+}
+.birthday_register:after, .birthday_result_box:after{
+	display: block;
+	position: absolute;
+	right: -19px;
+	top:0;
+	background: url(../images/flowerborder-r.png) repeat-y;
+	content: '';
+	width: 20px;
+	height: 100vh;
+	z-index: 4;
+}
+.birthday_register header{
+	text-align: left;
+	padding: 30px 30px 30px 30px;
+	height: 10vh;
+}
+.birthday_register footer{
+	text-align: center;
+	padding: 20px 0px 0px 0px;
+	width: 100%;
+	height: 70px;	
+}
+.birthday_register footer p{
+	font-size: 11px;
+	line-height: 1.4;
+	color: rgba(0,0,0,0.5);
+	margin: 0;
+	font-family: '微軟正黑體', Arial, sans-serif;
+}
+.birthday_register .f-badge{
+	position: absolute;
+	top: 100px;
+	left: 325px;
+	z-index: 5;
+}
+.birthday_register .f-title01{
+	position: absolute;
+	top: 120px;
+	left: 480px;
+	z-index: 5;
+}
+.birthday_register .f-title01:after{
+	position: absolute;
+	right: -140px;
+	top: -160px;
+	width: 400px;
+	height: 400px;
+	display: block;
+	content: '';
+	background: url(../images/light.png) no-repeat;
+	z-index: -1;
+	-webkit-animation: light-rotate 18s infinite linear;
+	-moz-animation: light-rotate 18s infinite linear;
+	-o-animation: light-rotate 18s infinite linear;
+	animation: light-rotate 18s infinite linear;
+}
+.birthday_register .f-title02{
+	position: absolute;
+	top: 220px;
+	left: 630px;
+	z-index: 5;
+}
+.birthday_register .f-title02:after{
+	position: absolute;
+	right: -140px;
+	top: -160px;
+	width: 400px;
+	height: 400px;
+	display: block;
+	content: '';
+	background: url(../images/light.png) no-repeat;
+	z-index: -1;
+	-webkit-animation: light-rotate 18s infinite linear;
+	-moz-animation: light-rotate 18s infinite linear;
+	-o-animation: light-rotate 18s infinite linear;
+	animation: light-rotate 18s infinite linear;
+}
+.birthday_register .f-couple{
+	position: absolute;
+	left: 410px;
+	bottom: -200px;
+	z-index: 4;
+}
+.register_body{
+	padding: 130px 30px 0px 30px;
+	height: calc(90vh - 70px);
+	font-family: '微軟正黑體', Arial, sans-serif;
+}
+.register_body form{
+	margin: 0;
+}
+.register_body .r-title{
+	max-width: 100%;
+	margin-bottom: 30px;
+}
+.register_body .att-text{
+	font-size: 11px;
+	text-align: center;
+	margin:20px 0 0 0;
+}
+.register_body .form-control{
+	height: 50px;
+	background-color: #f9f9f9;
+}
+.register_body .att-link{
+	font-size: 11px;
+	text-align: center;
+	margin-bottom: 0;
+}
+.register_body .att-link a{
+	color: inherit;
+}
+.register_body .btn-boy{
+	color: rgba(255,255,255,0.8);
+	font-size: 18px;
+	width: 100%;
+	background-image: linear-gradient(0deg, rgba(48,39,41,1), rgba(69,56,58,1)) !important;
+	height: auto;
+	line-height: 1.3;
+	padding: 10px 5px;
+	transition: all .2s;
+	font-family: '微軟正黑體', Arial, sans-serif;
+}
+.register_body .btn-girl{
+	color: rgba(255,255,255,0.8);
+	font-size: 18px;
+	width: 100%;
+	background-image: linear-gradient(0deg, rgba(207,105,142,1), rgba(236,129,169,1)) !important;
+	height: auto;
+	line-height: 1.3;
+	padding: 10px 5px;
+	transition: all .2s;
+	font-family: '微軟正黑體', Arial, sans-serif;
+}
+.register_body .btn-boy:hover, .register_body .btn-boy:focus, .register_body .btn-boy:active, 
+.register_body .btn-girl:hover, .register_body .btn-girl:focus, .register_body .btn-girl:active,
+.result_body .link-btn:hover, .result_body .link-btn:focus, .result_body .link-btn:active{
+	filter: brightness(120%);
+	color: rgba(255,255,255,1);
+	transition: all .2s;
+}
+.register_body .btn-boy span, .register_body .btn-girl span{
+	font-size: 12px;
+	display: block;
+}
+.register_body .r-submit{
+	margin-top: 25px; 
+}
+.register_body .bot-flower{
+	margin-top: 30px; 
+	margin-bottom: 0px; 
+	text-align: center;
+}
+.bot-flower img{
+	max-width: 100%;
+}
+.flowers{
+	position: relative;
+	display: block;
+	width: 700px;
+	height: 100vh;
+	float: left;
+	margin:0px; 
+	z-index: 1;
+}
+.flowers .f-top{
+	position: absolute;
+	left: -50px;
+	top: -70px;
+}
+.flowers .f-bot01{
+	position: absolute;
+	left: -50px;
+	bottom: -60px;
+}
+.flowers .f-bot02{
+	position: absolute;
+	right: -180px;
+	bottom: -60px;
+}
+.birthday_register header .logo img{
+	max-width:100%; 
+}
+.birthday_register .m-kv{
+	display: none;
+	text-align: center;
+	width: 100%;
+	padding: 0 5px;
+}
+.birthday_register .m-kv img{
+	max-width: 100%;
+}
+.birthday_result_body{
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	background-color: #e4b4c2;
+}
+.birthday_result_box{
+	width: 680px;
+	margin: 0 auto;
+	float: none;
+}
+.birthday_result_box header{
+	text-align: left;
+	padding: 30px 30px 30px 30px;
+	height: 10vh;
+}
+.birthday_result_box .result_body{
+	padding: 30px 40px 0px 40px;
+	height: calc(90vh - 70px);
+}
+.result_body .showus hr {
+	background-image: none;
+	background-color: rgba(255,255,255,0.1); 
+	margin: 12px 0px 12px 0px;
+}
+.result_body .showus{
+	display: block;
+	width: 100%;
+	height: auto;
+	background-image: url(../images/frame-lefttop.png), url(../images/frame-righttop.png), url(../images/frame-leftbot.png), url(../images/frame-rightbot.png);
+	background-color: #7a7374;
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+    background-position: left top, right top, left bottom, right bottom; 
+    padding: 40px 50px 40px 50px;
+    color: #fff;
+    border-radius: 5px;
+    margin-bottom: 30px; 
+}
+.result_body .showus h3{
+	color: #f0dc99;
+	text-align: center;
+	font-family: '微軟正黑體', Arial, sans-serif;
+	font-size: 30px;
+	line-height: 1.2;
+	margin-bottom: 20px; 	
+}
+.result_body .showus .analysis{
+	font-size: 18px;
+	font-weight: bold;
+	color: #fff;
+}
+.result_body .showus .analysis span{
+	color: #f0dc99;
+}
+.result_body .showus p {
+	margin-bottom: 0; 
+}
+.result_body .showus p.description{
+	color: #fff;
+	text-align: left;
+	font-family: '微軟正黑體', Arial, sans-serif;
+	font-size: 14px;
+	margin-bottom: 10px; 
+}
+.result_body .showus p.description span{
+	font-weight: bold;
+}
+.result_body .showus p.suggest{
+	color: rgba(255,255,255,0.6);
+}
+.result_body .meetus{
+	text-align: center;
+}
+.result_body .link-btn{
+	color: rgba(255,255,255,1);
+	font-size: 18px;
+	background-image: linear-gradient(0deg, rgba(207,105,142,1), rgba(236,129,169,1)) !important;
+	height: auto;
+	width: 350px;
+	line-height: 1.3;
+	padding: 10px 10px;
+	transition: all .2s;
+	font-family: '微軟正黑體', Arial, sans-serif;
+	margin: 15px auto 15px auto;
+	display: block;
+}
+.result_body .meetus p{
+	color: rgb(102,102,102);
+	font-weight: bold;
+	font-family: '微軟正黑體', Arial, sans-serif;
+	font-size: 16px;
+	margin:0;
+	line-height: 1.7; 
+}
+.result_body .meetus p.contact{
+	color: rgb(102,102,102);
+	font-weight: normal;
+	font-family: '微軟正黑體', Arial, sans-serif;
+	font-size: 14px;
+	margin:0;
+	line-height: 1.8; 
+}
+.birthday_result_box footer{
+	position: relative;
+	text-align: center;
+	padding: 20px 0px 0px 0px;
+	width: 100%;
+	height: 70px;	
+}
+.birthday_result_box footer p{
+	font-size: 11px;
+	line-height: 1.4;
+	color: rgba(0,0,0,0.5);
+	margin: 0;
+	font-family: '微軟正黑體', Arial, sans-serif;
+}
+.birthday_result_box footer .f-couple{
+	position: absolute;
+	bottom: 0;
+	z-index: -1;
+}
+.birthday_result_box .f-couple img{
+	max-width: 35%;
+}
+/**
+@-webkit-keyframes light-rotate {
+	from {
+		-webkit-transform: rotate(0deg);
+	}
+	to {
+		-webkit-transform: rotate(360deg);
+	}
+}
+@-moz-keyframes light-rotate {
+	from {
+		-moz-transform: rotate(0deg);
+	}
+	to {
+		-moz-transform: rotate(360deg);
+	}
+}
+@-o-keyframes light-rotate {
+	from {
+		-o-transform: rotate(0deg);
+	}
+	to {
+		-o-transform: rotate(360deg);
+	}
+}
+@keyframes light-rotate {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+@keyframes animatedBackground {
+  0% { background-position: 0 0; }
+  25% { background-position: -30px 0; }
+  50% { background-position: -60px 0; }
+  75% { background-position: -30px 0; }
+  100% { background-position: 0 0; }
+}
+**/
+
+/****螢幕寬度於1025~1280時****/
+@media only screen and (min-width: 1025px) and (max-width: 1280px) {
+	.birthday_register .f-badge{
+		top: 50px;
+		left: 360px;
+	}
+	.register_body{
+		padding: 50px 30px 0px 30px;
+	}
+	.register_body .r-title{
+		margin-bottom: 20px;
+	}
+	.register_body .form-control{
+		height: 40px;
+	}
+	.birthday_register .f-title01 img{
+		width: 270px;
+		height: auto;
+	}
+	.birthday_register .f-title02 img{
+		width: 393px;
+		height: auto;
+	}
+	.birthday_register .f-title01{
+		top: 70px;
+		left: 500px;
+	}
+	.birthday_register .f-title02{
+		top: 160px;
+		left: 630px;
+	}
+	.flowers .f-bot01{
+		left: -90px;
+		bottom: -90px;		
+	}
+	.flowers .f-bot02{
+		right: -90px;
+		bottom: -90px;
+	}
+	.flowers .f-top{
+		top: -90px;
+	}
+	.birthday_register .f-couple img{
+		width: 550px;
+		height: auto;
+	}
+	.flowers .f-bot01 img, .flowers .f-bot02 img, .flowers .f-top img{
+		max-width: 90%;
+	}
+	.birthday_register footer, .birthday_result_box footer{
+		display: none;
+	}
+}
+
+/****螢幕寬度於1281~1600時****/
+@media only screen and (min-width: 1281px) and (max-width: 1600px) {
+	.birthday_register .f-badge{
+		top: 50px;
+		left: 360px;
+	}
+	.register_body{
+		padding: 50px 30px 0px 30px;
+	}
+	.birthday_register .f-title01{
+		top: 90px;
+		left: 500px;
+	}
+	.birthday_register .f-title02{
+		top: 190px;
+		left: 630px;
+	}
+	.register_body .r-title{
+		margin-bottom: 20px;
+	}
+	.birthday_register footer, .birthday_result_box footer{
+		display: none;
+	}
+	.birthday_register .f-couple{
+		bottom: -250px;
+		left: 480px;
+	}
+	.birthday_register .f-couple img{
+		width: 670px;
+		height: auto;
+	}
+}
+
+/****小平板****/
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+	.birthday_register{
+		width: 250px;
+	}
+	.register_body{
+		padding: 140px 20px 0px 20px;
+	}
+	.birthday_register .f-badge{
+		top: 100px;
+		left: 180px;
+	}
+	.birthday_register .f-title01{
+		top: 200px;
+		left: 310px;
+	}
+	.birthday_register .f-title01 img, .birthday_register .f-title02 img{
+		width: auto;
+		height: 79px;
+	}
+	.birthday_register .f-title02{
+		top: 300px;
+		left: 310px;
+	}
+	.birthday_register .f-couple{
+		left: 260px;
+		bottom: 0px;
+	}
+	.birthday_register .f-couple img{
+		width: 530px;
+		height: auto;
+	}
+	.flowers{
+		width: 400px;
+	}
+	.birthday_register footer{
+		padding: 15px;
+	}
+	.birthday_register .f-title01{
+		z-index: 6;
+	}
+	.birthday_register .f-title01:after{
+		display: none;
+	}
+	.birthday_register .f-title02:before{
+		position: absolute;
+		right: -30px;
+		top: -270px;
+		width: 400px;
+		height: 400px;
+		display: block;
+		content: '';
+		background: url(../images/light.png) no-repeat;
+		z-index: -2;
+		-webkit-animation: light-rotate 18s infinite linear;
+		-moz-animation: light-rotate 18s infinite linear;
+		-o-animation: light-rotate 18s infinite linear;
+		animation: light-rotate 18s infinite linear;
+	}
+}
+/****大平版****/
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+	.birthday_body {
+		background-size: cover;
+	}
+	.birthday_register{
+		width: 300px;
+	}
+	.birthday_register .f-badge{
+		top: 190px;
+		left: 240px;
+	}
+	.birthday_register .f-title01{
+		top: 200px;
+		left: 390px;
+		z-index: 6;
+	}
+	.birthday_register .f-title02{
+		top: 300px;
+		left: 400px;
+	}
+	.birthday_register .f-title01:after{
+		display: none;
+	}
+	.birthday_register .f-title02:before{
+		position: absolute;
+		right: 40px;
+		top: -260px;
+		width: 400px;
+		height: 400px;
+		display: block;
+		content: '';
+		background: url(../images/light.png) no-repeat;
+		z-index: -2;
+		-webkit-animation: light-rotate 12s infinite linear;
+		-moz-animation: light-rotate 12s infinite linear;
+		-o-animation: light-rotate 12s infinite linear;
+		animation: light-rotate 12s infinite linear;
+	}
+	.register_body{
+		padding: 200px 30px 0px 30px;
+	}
+	.birthday_register .f-couple{
+		left: 310px;
+		bottom: 0px;
+	}
+	.flowers{
+		width: 400px;
+	}
+	.birthday_result_box .f-couple img{
+		max-width: 60%;
+	}
+}
+/****手機****/
+@media only screen and (max-width: 630px) {
+	.birthday_body{
+		background-attachment:fixed;
+		height: auto;
+		overflow: auto;
+		-webkit-animation: none;
+		-moz-animation: none;
+		-o-animation: none;
+		animation: none;
+	}
+	.birthday_wrapper{
+		height: auto;
+	}
+	.birthday_register{
+		width: 100%;
+		height: auto;
+		margin: 0 auto;
+	}
+	.birthday_register header{
+		height: auto;
+		padding: 15px;
+	}
+	.birthday_register header .logo img, .birthday_result_box header .logo img{
+		max-width: 40%;
+	}
+	.register_body, .birthday_result_box .result_body{			
+		height: auto;
+		padding: 10px 15px 0px 15px;
+	}
+	.birthday_register:before, .birthday_result_box:before{
+		display: none;
+	}
+	.birthday_register:after, .birthday_result_box:after{
+		display: none;
+	}
+	.flowers{
+		display: none;
+	}
+	.birthday_register footer, .birthday_result_box footer{
+		display: block;
+	}
+	.birthday_result_box footer .f-couple{
+		display: none;
+	}
+	.birthday_register .f-badge, .birthday_register .f-title01, .birthday_register .f-title02, .birthday_register .f-couple{
+		display: none;
+	}
+	.birthday_register .m-kv{
+		display: block;
+	}
+	.register_body .r-title{
+		margin: 0px auto 10px auto; /**手機版文字居中**/
+		display: block;
+	}
+	.birthday_result_box{
+		width: 100%;
+		height: auto;
+		margin: 0 auto;
+	}
+	.birthday_result_body{
+		height: auto;
+		overflow: auto;
+	}
+	.result_body .meetus{
+		margin-bottom: 50px; 
+	}
+	.result_body .link-btn{
+		width: 90%;
+		font-size: 14px;
+	}
+	.result_body .showus{
+		padding: 30px 24px 50px 24px;
+	}
+	.result_body .meetus p{
+		font-size: 14px;
+	}
+	.result_body .showus h3 span{
+		display: block;
+	}
+}

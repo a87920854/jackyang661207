@@ -1,0 +1,25 @@
+.calendar-overlay {
+    display:none;
+    position: absolute;
+    top:0;
+    left:0;
+    height: 100%;
+    line-height: 100%;    
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+.calendar-overlay span {	
+	  position: relative;
+	  color:#fff;
+    text-align:center;
+    top:50%;
+    left:45%;
+}
+.calendar-overlay .blink {
+    animation:calendar-overlay-blink 1000ms infinite alternate;
+}
+
+@keyframes calendar-overlay-blink {
+    from { opacity:1; }
+    to { opacity:0; }
+};

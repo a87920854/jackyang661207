@@ -1,0 +1,303 @@
+/********* 20180504 12星座單身的原因？ *********/
+.star-bg{
+	background: url(../images/20180504/bg.jpg)center top no-repeat #c4cfd9;
+	background-size: auto; 
+}
+.star-register{
+	padding: 120px 0px 0px 0px;
+}
+.b-title{
+
+}
+.s-title{
+	margin-top:10px; 
+}
+.kv-section{
+	position: relative;
+	float: right;
+	text-align: center;
+	width: 778px;
+	height: auto;
+	margin-right: -55px;
+}
+.girl-box{
+	position: absolute;
+	left: -640px;
+	bottom: -20px;
+	display: block;
+	max-width: 100%;
+}
+.register-box{
+	position: relative;
+	width: 560px;
+	padding: 30px 60px 40px 30px;
+	background: url(../images/20180504/form.png)left top no-repeat;
+	margin:50px auto 0px 130px;
+}
+.register-box .form-group{
+	margin-bottom: 12px;
+}
+.register-box .form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #678f97;
+    opacity: 1; /* Firefox */
+}
+.register-box .form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #678f97;
+}
+.register-box .form-control::-ms-input-placeholder { /* Microsoft Edge */
+    color: #678f97;
+}
+.register-box .form-control{
+	border: 0;
+	border-radius: 0;
+	box-shadow: 1px 1px 2px rgba(0,0,0,0.2); 
+	background: linear-gradient(60deg, rgba(250, 251, 252, 1)60%, rgba(234, 234, 237, 1)90%); 
+	background: -moz-linear-gradient(60deg, rgba(250, 251, 252, 1)60%, rgba(234, 234, 237, 1)90%); 
+	background: -webkit-linear-gradient(60deg, rgba(250, 251, 252, 1)60%, rgba(234, 234, 237, 1)90%); 
+	background: -o-linear-gradient(60deg, rgba(250, 251, 252, 1)60%, rgba(234, 234, 237, 1)90%); 
+	height: 40px;
+	color: #678f97;
+}
+.register-box h3.title{
+	font-size: 19px;
+	font-family: "微軟正黑體", Arial,Helvetica,sans-serif;
+	font-weight: bold;
+	letter-spacing: 4px;
+	padding-bottom: 3px;
+	margin-bottom: 25px;
+	text-align: center;
+	border-bottom: 1px solid #ec728a;
+	color: #5c6876; 
+}
+.register-box .code{
+	text-align: left;
+}
+.register-box .confirm{
+	font-size: 13px;
+	font-family: "微軟正黑體", Arial,Helvetica,sans-serif;
+	text-align: center;
+	color: #5c6876; 
+}
+.register-box .confirm a{
+	color: #5c6876; 
+}
+.register-box .confirm a:hover,.register-box .confirm a:active, .register-box .confirm a:focus{
+	text-decoration: underline;
+}
+.kv-section .copyright{
+	margin-bottom: 20px;
+	color: #fff;
+}
+.copyright:after, .kv-section:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.btn-forwoman {
+	width: 100%;
+	height: 45px;
+	font-size: 18px;
+	font-family: "微軟正黑體", Arial,Helvetica,sans-serif;
+	font-weight: bold;
+	border: 0;
+	border-radius: 0;
+	background: #ec728a;
+	color: #fff;
+	box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+.btn-forman {
+	width: 100%;
+	height: 45px;
+	font-size: 18px;
+	font-family: "微軟正黑體", Arial,Helvetica,sans-serif;
+	font-weight: bold;
+	border: 0;
+	border-radius: 0;
+	background: #9ca9d0;
+	color: #fff;
+	box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+	transition: all .2s;
+}
+.btn-forwoman:hover, .btn-forwoman:active, .btn-forwoman:focus, .btn-forman:hover, .btn-forman:active, .btn-forman:focus{
+	filter: brightness(110%);
+	color: #fff;
+	transition: all .2s;
+}
+.star-check{
+	text-align: left;
+}
+.star-check .checkbox{
+	color: #5c6876;
+}
+.star-check input:checked + i, .star-check .checkbox input + i:after{
+	border-color:#5c6876;
+	color: #5c6876;
+}
+.star-resualt{
+	padding: 90px 0px 0px 0px;
+}
+.star-resualt .b-title{
+	display: block;
+	text-align: center;
+	max-width: 25%;
+	margin:0 auto 30px auto; 
+}
+.resualt-box{
+	display: block;
+	width: 615px;
+	padding: 22px 50px;
+	background: #eef1f5;
+	color: #5c6876;
+	font-size: 15px;
+	font-family: "微軟正黑體", Arial,Helvetica,sans-serif;
+	border-radius: 3px;
+	margin:0 auto 30px auto; 
+}
+.resualt-title{
+	display: block;
+	max-width: 100%;
+	text-align: center;
+	margin:0 auto 20px auto; 
+}
+.w-box{
+	padding: 20px;
+	border: 1px solid rgba(0,0,0,0.1);
+	border-radius: 3px;
+	background: #fff;
+	color: #5c6876;
+	line-height: 1.7;
+}
+.zodiac{
+	width: 98px;
+	margin:0 auto 30px auto; 
+	text-align: center;
+}
+.zodiac img{
+	max-width: 100%;
+}
+.zodiac h4{
+	font-size: 24px;
+	font-family: "微軟正黑體", Arial,Helvetica,sans-serif;
+	font-weight: bold;
+	line-height: 1;
+	letter-spacing: 3px;
+	color: #5c6876;
+	padding-bottom: 5px;
+	margin-bottom: 0px;
+	border-bottom: 1px solid #ee738b;  
+}
+.w-box p{
+	font-family: "微軟正黑體", Arial,Helvetica,sans-serif;
+	color: #5c6876;
+	font-size: 15px;
+	margin: 0; 
+}
+.w-box p.txt{
+	margin:30px 0 0 0; 
+}
+.w-box p.txt .tt{
+	color: #ee738b;
+}
+.resualt-box .note{
+	text-align: center;
+	font-size: 13px;
+	color: #5c6876;
+	margin: 10px 0; 
+}
+.b-box{
+	width: 385px;
+	text-align: center;
+	padding: 15px 15px 15px 15px;
+	margin: 20px auto 10px auto; 
+	background: #dae1ec;
+	border: 1px solid rgba(0,0,0,0.1);
+	border-radius: 3px;
+}
+.b-box .promo{
+	font-size: 15px;
+	line-height: 1.7;
+	color: #5c6876;
+	font-family: "微軟正黑體", Arial,Helvetica,sans-serif;
+	margin: 0 0 15px 0;
+}
+.b-box .gogo{
+	display: block;
+	padding: 0 2px;
+	background: #ee738b;
+	width: 100%;
+	height: 40px;
+	line-height: 38px;
+	color: #fff;
+	font-size: 15px;
+	font-family: "微軟正黑體", Arial,Helvetica,sans-serif;
+	border-radius: 3px;
+	border-bottom: 2px solid rgba(0,0,0,0.2);  
+}
+.b-box .gogo:hover, .b-box .gogo:active, .b-box .gogo:focus{
+	filter: brightness(120%);
+	transition: all .3s;
+	color: #fff;
+}
+.b-box .gogo span{
+	font-size: 17px;
+	font-weight: bold;
+}
+.star-resualt .copyright{
+	text-align: center;
+	color: #fff;
+	margin: 10px 0; 
+}
+/*** 手機顯示 ***/
+@media only screen and (max-width: 768px) {
+	.star-register{
+		padding: 70px 0px 0px 0px;
+	}
+	.b-title, .s-title{
+		max-width: 100%;
+	}
+	.kv-section{
+		width: 100%;
+		margin: 0; 
+	}
+	.kv-section .girl-box{
+		display: none;
+	}
+	.register-box{
+		width: 100%;
+		padding: 20px 15px 10px 15px;
+		margin: 30px 0 0 0; 
+		background: #cfd8e7;
+		box-shadow: 2px 2px 2px rgba(0,0,0,0.1);
+	}
+	.register-box .confirm{
+		margin-bottom: 10px;
+	}
+	.kv-section .copyright{
+		margin-top: 15px; 
+	}
+	.register-box h3.title{
+		font-size: 16px;
+	}
+	.star-resualt{
+		padding: 70px 0px 0px 0px;
+	}
+	.star-resualt .b-title{
+		max-width: 50%;
+		margin: 0 auto 10px auto; 
+	}
+	.resualt-box{
+		width: 100%;
+		padding: 15px 10px;
+	}
+	.b-box{
+		width: 100%;
+		padding: 10px;
+	}
+	.b-box .gogo{
+		font-size: 14px;
+	}
+}
+/*** 平板顯示 ***/
+@media (min-width: 768px) and (max-width: 991px) {
+
+}

@@ -1,0 +1,551 @@
+/********* 20180813開啟真愛旅程 *********/
+#journey_wrapper{
+	background: url(../images/20180813/bg.jpg)no-repeat center #f4e7ea;
+	background-size: cover;
+	background-attachment: fixed;
+}
+.journey_vision{
+	background: url(../images/20180813/road.png)no-repeat top center;
+	position: relative;
+	padding: 40px 0px 30px 0px;
+	z-index: 2; 
+}
+.journey_vision .m_title{
+	display: block;
+	max-width: 100%;
+	margin: 60px 0px 0px 100px; 
+}
+.journey_vision .m_subtitle{
+	display: block;
+	max-width: 100%;
+	margin: 18px 0px 0px 107px; 
+}
+.journey_vision .register_box{
+	background: rgba(255,255,255,0.9);
+	box-shadow: 4px 4px 0px rgba(0,0,0,0.9);
+	padding: 15px 15px;
+	border: 2px solid #000;
+	margin: 55px 0px 0px 110px;
+	width: 380px;
+	height: auto; 
+}
+.register_box .r_title{
+	margin: 0 auto 20px auto;
+	display: block;
+	max-width: 100%;
+}
+.register_box .form-control, .register-insidebox .form-control{
+	border: 1px solid #e2e2e2;
+	background: #f4f4f4;
+}
+.register_box .confirm, .register-insidebox .confirm{
+	text-align: center;
+	margin: 0;
+	color: rgba(0,0,0,0.7); 
+}
+.register_box .confirm a, .register-insidebox .confirm a{
+	color: rgba(0,0,0,0.7); 
+}
+.register_box .confirm a:hover, .register_box .confirm a:focus, .register_box .confirm a:active,
+.register-insidebox .confirm a:hover, .register-insidebox .confirm a:focus, .register-insidebox .confirm a:active{
+	text-decoration: underline;
+}
+.register_box form{
+	margin: 0;
+}
+.register_box .form-group .code img{
+	width: 100%;
+}
+.register_box .btn-forman, .register-insidebox .btn-forman{
+	background: #c9cab8;
+	width: 100%;
+	color: #fff;
+	transition: .3s all;
+}
+.register_box .btn-forwoman, .register-insidebox .btn-forwoman{
+	background: #e8bec8;
+	width: 100%;
+	color: #fff;
+	transition: .3s all;
+}
+.register_box .btn-forwoman:hover,.register_box .btn-forwoman:focus, .register_box .btn-forwoman:active,.register_box .btn-forman:hover,.register_box .btn-forman:focus, .register_box .btn-forman:active,
+.register-insidebox .btn-forwoman:hover,.register-insidebox .btn-forwoman:focus, .register-insidebox .btn-forwoman:active,.register-insidebox .btn-forman:hover,.register-insidebox .btn-forman:focus, .register-insidebox .btn-forman:active{
+	filter: brightness(110%);
+	color: #fff;
+	transition: .3s all;
+}
+.railway{
+	width: 100%;
+	height: auto;
+	position: relative;
+}
+.railway_y{
+	background: url(../images/20180813/railway_y.gif)repeat-y top center;
+	width: 14px;
+	height: 100px;
+	border-left: 3px solid #000; 
+	border-right: 3px solid #000; 
+}
+.railway_x{
+	background: url(../images/20180813/railway_x.gif)repeat-x left center;
+	height: 14px;
+	width: 100px;
+	border: 3px solid #000; 
+}
+.last-road{
+	position: relative;	
+}
+.last-road:after{
+	position: absolute;
+	left: -3px;
+	bottom: -113px;
+	display: block;
+	border-left: 3px solid #000; 
+	border-right: 3px solid #000;
+	content: '';
+	width: 14px;
+	height: 113px;
+	background: url(../images/20180813/railway_y.gif)repeat-y top center;
+}
+.height_100{
+	height: 100px;
+}
+.height_400{
+	height: 570px;
+}
+.height_500{
+	height: 690px;
+}
+.width_100{
+	width: 225px;
+}
+.width_200{
+	width: 390px;
+}
+.margin_left_330{
+	margin-left: 410px; 
+}
+.margin_left_500{
+	margin-left: 575px; 
+}
+.margin_left_700{
+	margin-left: 786px; 
+}
+.railway_girl01{
+	position: absolute;
+	left: 60px;
+	top: 60px;
+	max-width: 100%;
+}
+.railway_girl02{
+	position: absolute;
+	right: 65px;
+	bottom: -90px;
+	max-width: 100%;
+}
+.article_s1{
+	position: absolute;
+	left: 470px;
+	top: 70px;
+}
+.article_s1 .title_img{
+	position: relative;
+	display: block;
+	width: 100%;
+	margin-bottom: 50px; 
+}
+.article_s1 .title_img img{
+	max-width: 100%;
+}
+.article_s1 .title_img:before{
+	display: block;
+	position: absolute;
+	content: '';
+	left: -76px;
+	top:0;
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	background:#fff; 
+	border: 3px solid #000;
+	z-index: 1;
+}
+.article_s1 .title_img:after{
+	display: block;
+	position: absolute;
+	content: '';
+	left: -70px;
+	top:6px;
+	width: 33px;
+	height: 33px;
+	border-radius: 50%;
+	background:#c9cab8; 
+	border: 2px solid #000;
+	z-index: 2;
+}
+.article_s1 h4{
+	font-family: '微軟正黑體'; 
+	color: #000;
+	font-weight: bold;
+	margin-bottom: 15px;
+	padding-bottom: 2px;
+	border-bottom:1px solid rgba(0,0,0,0.1); 
+}
+.article_s1 h4:before{
+	display: block;
+	position: absolute;
+	content: '';
+	left: -51px;
+	top:0;
+	width: 26px;
+	height: 26px;
+	border-radius: 50%;
+	background:#fff; 
+	border: 3px solid #000;
+	z-index: 1;
+}
+.article_s1 .small-img{
+	max-width: 100%;
+	border:1px solid rgba(0,0,0,0.1); 
+}
+.article_s2{
+	position: absolute;
+	left: 67px;
+	top: 760px;
+	width: 670px;
+}
+.article_s2 .title_img{
+	width: 100%;
+	text-align: right;
+	margin-bottom: 30px;
+}
+.article_s2 .title_img img{
+	max-width: 100%;
+}
+.article_s2 .title_img:before{
+	display: block;
+	position: absolute;
+	content: '';
+	right: -76px;
+	top:0;
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	background:#fff; 
+	border: 3px solid #000;
+	z-index: 1;
+}
+.article_s2 .title_img:after{
+	display: block;
+	position: absolute;
+	content: '';
+	right: -70px;
+	top:6px;
+	width: 33px;
+	height: 33px;
+	border-radius: 50%;
+	background:#c9cab8; 
+	border: 2px solid #000;
+	z-index: 2;
+}
+.article_s2 .member_wall{
+	width: 100%;
+	background:rgba(0,0,0,0.1); 
+	padding: 12px 10px;
+}
+.article_s2 .member_box{
+	background: #fff;
+	border: 1px solid rgba(0,0,0,0.2);
+	padding: 10px;
+	width:  125px;
+}
+.article_s2 .member_box .photo img{
+	width: 100%;
+}
+.article_s2 .member_box .photo{
+	display: block;
+	height: 100px;
+	width: 100%;
+	margin-bottom: 5px;
+	overflow: hidden;
+}
+.article_s2 .member_box .detail .name{
+	color: #000;
+	font-size: 14px;
+}
+.article_s2 .member_box .detail p{
+	color: rgba(0,0,0,0.5);
+	font-size: 10px;
+	margin: 0;
+}
+.journey_register{
+	width: 100%;
+	background: url(../images/20180813/r-bg.jpg)no-repeat top center;
+	background-size: cover;
+	position: relative;
+	padding: 80px 0px 80px 0px;
+}
+.journey_register .register-outsidebox{
+	border:3px solid #000;
+	background: rgba(0,0,0,0.1); 
+	width: 90%;
+	margin: 0 auto; 
+	padding: 5px;
+}
+.journey_register .register-insidebox{
+	border:1px solid rgba(0,0,0,0.5); 
+	background: rgba(255,255,255,0.9); 
+	width: 100%;
+	margin: 0 auto; 
+	padding: 60px 80px;
+}
+.journey_register .register-insidebox .title{
+	position: relative;
+	display: block;
+	margin: 0 auto 40px auto;
+}
+.journey_register .register-insidebox:before{
+	position: absolute;
+	display: block;
+	content: '';
+	left: 260px;
+	top: 52px;
+	width: 102px;
+	height: 60px;
+	background: url(../images/20180813/flower.png)no-repeat top center; 
+}
+.journey_register .register-insidebox form{
+	margin-bottom: 0;
+}
+#footer>.container{
+	padding: 70px 0;
+	font-size: 12px;
+}
+.article_s2 .title_img .mobile{
+	display: none;
+}
+/****小平板****/
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+	#journey_wrapper{
+		background-image: none;
+		background-color:#efe9eb; 
+	}
+	.journey_vision{
+		background: url(../images/20180813/m-bg.jpg)no-repeat top center;
+		background-size: 100% ;
+	}
+	.journey_vision .m_title{
+		margin: 80px 0px 0px 0px;
+		max-width: 57%;
+	}
+	.journey_vision .m_subtitle{
+		margin: 15px 0px 0px 10px;
+		max-width: 100%;
+	}
+	.journey_vision .register_box{
+		margin: 80px 0px 0px 0px;
+		width: 380px;
+	}
+	.height_500{
+		height: 775px;
+	}
+	.margin_left_330{
+		margin-left: 180px; 
+	}
+	.article_s1{
+		top: 55px;
+		left: 240px;
+	}
+	.railway_girl01{
+		left:-125px;
+		top: 70px;
+		max-width: 40%;
+	}
+	.railway_girl02{
+		right:-70px;
+	}
+	.article_s2{
+		top: 840px;
+		left: 7px;
+		width: 500px;
+	}
+	.margin_left_700{
+		margin-left: 556px; 
+	}
+	.margin_left_500{
+		margin-left: 346px; 
+	}
+	.journey_register .register-insidebox:before{
+		display: none;
+	}
+}
+/****大平版****/
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+	.railway {
+		margin-left: -40px; 
+	}
+	.journey_vision .register_box{
+		margin: 80px 0px 0px 40px;
+	}
+	.railway_girl01{
+		left:50px;
+	}
+	.railway_girl02{
+		right:-70px;
+	}
+	.journey_vision .m_title{
+		margin: 80px 0px 0px 30px;
+	}
+	.journey_vision .m_subtitle{
+		margin: 15px 0px 0px 40px;
+		max-width: 100%;
+	}
+	.height_500{
+		height: 820px;
+	}
+	.article_s2{
+		top: 885px;
+	}
+	.journey_register .register-insidebox:before{
+		display: none;
+	}
+}
+/****手機****/
+@media only screen and (max-width: 630px) {
+	#journey_wrapper{
+		background-image: none;
+		background-color:#efe9eb; 
+	}
+	.railway{
+		overflow: hidden;
+	}
+	.railway:before{
+		position: absolute;
+		left: 10px;
+		top: 0;
+		display: block;
+		content: '';
+		background: url(../images/20180813/railway_y.gif)repeat-y top center;
+		width: 14px;
+		height: 1900px;
+		border-left: 3px solid #000; 
+		border-right: 3px solid #000; 
+	}
+	.journey_vision{
+		background: url(../images/20180813/m-bg.jpg)no-repeat top center;
+		background-size: 100% ;
+	}
+	.journey_vision .m_title{
+		margin: 25px 0px 0px 0px;
+		max-width: 63%;
+	}
+	.journey_vision .m_subtitle{
+		margin: 15px 0px 0px 7px;
+		max-width: 60%;
+	}
+	.journey_vision .register_box{
+		margin: 35px 0px 0px 0px;
+		width: 100%;
+	}
+	.margin_left_330{
+		margin-left: 10px; 
+	}
+	.article_s1 .row{
+		margin-bottom: 30px;
+	}
+	.article_s1 .row p{
+		margin-bottom: 20px;
+	}
+	.article_s1 .title_img:before{
+		left: -50px;
+		width: 35px;
+		height: 35px;
+	}
+	.article_s1 .title_img:after{
+		top: 5px;
+		left: -45px;
+		width: 25px;
+		height: 25px;
+	}
+	.article_s2 .title_img:before{
+		left: 0px;
+		width: 35px;
+		height: 35px;
+	}
+	.article_s2 .title_img:after{
+		top: 5px;
+		left: 5px;
+		width: 25px;
+		height: 25px;
+	}
+	.article_s2 .title_img .pc{
+		display: none;
+	}
+	.article_s2 .title_img .mobile{
+		display: block;
+	}
+	.article_s1 h4:before{
+		left: -31px;
+	}
+	.railway_girl01{
+		display: none;
+	}
+	.railway_girl02{
+		display: none;
+	}
+	.article_s1{
+		position: relative;
+		top: 0;
+		left: 0;
+		width: 100%;
+		padding-left: 50px; 
+		margin: 40px 0px 50px 0px;
+	}
+	.article_s2{
+		position: relative;
+		top: 0;
+		left: 0;
+		width: 100%;
+		padding-left: 50px; 
+		margin: 0px 0px 40px 0px;
+	}
+	.article_s1 .title_img img, .article_s2 .title_img img{
+		max-width: 80%;
+	}
+	.article_s2 .title_img{
+		text-align: left;
+	}
+	.article_s2 .member_box .photo{
+		height: 90px;
+	}
+	.journey_vision{
+		padding-bottom: 0; 
+	}
+	.height_500, .width_200, .height_400, .last-road{
+		display: none;
+	}
+	.margin_left_700{
+		margin-left: 556px; 
+	}
+	.margin_left_500{
+		margin-left: 346px; 
+	}
+	.article_s2 .member_box{
+		width: 100%;
+	}
+	.journey_register{
+		padding: 0px 0px 20px 0px;
+	}
+	.journey_register .register-outsidebox{
+		width: 100%;
+	}
+	.journey_register .register-insidebox{
+		padding: 30px 15px;
+	}
+	.journey_register .register-insidebox .title{
+		max-width: 100%;
+	}
+	.journey_register .register-insidebox:before{
+		display: none;
+	}
+}

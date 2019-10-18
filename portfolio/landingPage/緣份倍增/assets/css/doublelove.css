@@ -1,0 +1,410 @@
+.double-main{
+	border: 0;
+	padding: 0;
+	height: 810px;
+	background: url(../images/doublelove/double-bg.jpg) no-repeat center;
+}
+.double-main:after{
+	position: absolute;
+	display: block;
+	content: '';
+	bottom: 0;
+	width: 100%;
+	height: 268px;
+	background: url(../images/doublelove/mask.png) no-repeat center;
+	z-index: 99;
+}
+.double-img{
+	position: absolute;
+	left: 30%;
+	top: 10%;
+	text-align: center;
+	z-index: 101;
+}
+.double-img a{
+	display: block;
+	margin-top: 15%;
+	transition: .3s; 
+}
+.double-img a img{
+	transition: .3s; 
+}
+.double-circle{
+	position: absolute;
+	right: 25%;
+	bottom: 0;
+	z-index: 100;
+}
+.double-img a img:hover{
+	-webkit-filter :brightness(120%);
+	filter: brightness(120%);
+	transition: .3s; 
+}
+.frame-border-left{
+	position: absolute;
+	background: url(../images/doublelove/frame-left.gif) repeat-y left;
+	width: 98px;
+	height: 100%;
+	left: 0;
+	top: 0;
+}
+.frame-border-left:before{
+	content:url(../images/doublelove/frame-top01.gif);
+	display: block;
+	width: 98px;
+	height: 39px;
+}
+.frame-border-left:after{
+	position: absolute;
+	content:url(../images/doublelove/frame-bot01.gif);
+	display: block;
+	bottom: 0px;
+	width: 98px;
+	height: 39px;
+}
+.frame-border-right{
+	position: absolute;
+	background: url(../images/doublelove/frame-right.gif) repeat-y right;
+	width: 98px;
+	height: 100%;
+	right: 0;
+	top: 0;
+}
+.frame-border-right:before{
+	content:url(../images/doublelove/frame-top02.gif);
+	display: block;
+	width: 98px;
+	height: 39px;
+}
+.frame-border-right:after{
+	position: absolute;
+	content:url(../images/doublelove/frame-bot02.gif);
+	display: block;
+	bottom: 0px;
+	width: 98px;
+	height: 39px;
+}
+.double-time{
+	border: 0;
+}
+.time-content{
+	text-align: center;
+}
+.time-content .title01{
+	display: block;
+	margin-bottom: 30px;
+}
+.time-content p{
+	color: #191919;
+	font-size: 18px;
+	margin-bottom: 60px;
+	line-height: 2;
+	width: 35%;
+	margin-right: auto;
+	margin-left: auto;
+}
+.book-icon{
+	position: relative;
+	display: block;
+	margin:0 auto 30px auto;
+	top: -20px; 
+}
+.white-frame{
+	border: 0;
+}
+.white-content{
+	text-align: center;
+	background: #fef5f5;
+}
+.w-frame-top{
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 100%;
+	height: 6px;
+	background: url(../images/doublelove/w-frame-top.gif) repeat-x top;
+}
+.w-frame-bot{
+	position: absolute;
+	display: block;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 6px;
+	background: url(../images/doublelove/w-frame-bot.gif) repeat-x bottom;
+}
+.w-frame-left{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 45px;
+	height: 100%;
+	background: url(../images/doublelove/w-frame-left.gif) repeat-y left;
+}
+.w-frame-left:before{
+	content:url(../images/doublelove/w-frame-top01.gif);
+	width: 45px;
+	height: 45px;
+	display: block;
+	z-index: 99;
+}
+.w-frame-left:after{
+	position: absolute;
+	content:url(../images/doublelove/w-frame-bot01.gif);
+	width: 45px;
+	height: 45px;
+	display: block;
+	left: 0;
+	bottom: 0;
+	z-index: 99;
+}
+.w-frame-right{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 45px;
+	height: 100%;
+	background: url(../images/doublelove/w-frame-right.gif) repeat-y right;
+}
+.w-frame-right:before{
+	content:url(../images/doublelove/w-frame-top02.gif);
+	width: 45px;
+	height: 45px;
+	display: block;
+}
+.w-frame-right:after{
+	position: absolute;
+	content:url(../images/doublelove/w-frame-bot02.gif);
+	width: 45px;
+	height: 45px;
+	display: block;
+	right: 0;
+	bottom: 0;
+}
+.white-content .title01, .white-content .title02{
+	display: block;
+	margin: 60px auto 30px auto;
+}
+.white-content .hr{
+	display: block;
+	width: 80%;
+	height: 5px;
+	margin: 0px auto 30px auto;
+	overflow: hidden;
+	background: url(../images/doublelove/f-hr.gif) repeat-x center;
+}
+.way-padding{
+	padding: 0px 50px 0px 50px;
+}
+.way-date{
+	width: 100%;
+	position: relative;
+	padding: 0px 40px 0px 90px;
+}
+.way-pic{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+.way-txt{
+	text-align: left;
+}
+.way-txt p{
+	margin: 0px 0px 20px 0px; 
+	padding-top: 20px;
+	color: #191919;
+}
+.way-txt img{
+	max-width: 100%;
+	margin-bottom: 40px;
+}
+.double-location{
+	border: 0;
+}
+.location-content{
+	text-align: center;
+}
+.location-content .title01{
+	position: relative;
+	display: block;
+	width: 229px;
+	height: 68px;
+	margin: 50px auto 80px auto;
+}
+.location-content .title01:before{
+	position: absolute;	
+	display: block;
+	content:url(../images/doublelove/flower.jpg);
+	left: -140px;
+	top: -70px;
+}
+.double-location-txt{
+	list-style: none;
+	padding: 0;
+	margin: 0 0 60px 0;
+	color: #191919;
+	text-align: left;
+	line-height: 1.9;
+}
+.double-location-time{
+	color: #191919;
+	font-size: 12px;
+	margin: 0;
+}
+.txt-darkyellow{
+	color: #b19e57;
+}
+.btn-coolred{
+	background: #c2267d;
+	color: #fff;
+	width: 300px;
+}
+.double-agree{
+	color: #191919;
+	margin: 15px 0px 0px 0px;
+}
+.double-agree a{
+	color: #191919;
+}
+.double-step{
+	padding: 40px 0px 80px 0px;
+}
+.step-content{
+	text-align: center;
+}
+.step-content .title01{
+	position: relative;
+	display: block;
+	width: 229px;
+	height: 68px;
+	margin: 90px auto 120px auto;
+}
+.step-content .title01:before{
+	position: absolute;	
+	display: block;
+	content:url(../images/doublelove/balloon.gif);
+	left: -140px;
+	top: -120px;
+}
+.step-img-y img, .step-img-n img{
+	max-width: 100%;
+}
+.step-img-y, .step-img-n{
+	position: relative;
+	display: block;
+	width: 257px;
+	height: 225px;
+	margin: 0 auto;
+}
+.step-img-y:after{
+	position: absolute;
+	display: block;
+	content:url(../images/doublelove/arrow.gif);
+	top: -22px;
+	right: -50px;
+	z-index: 99;
+}
+.double-note-title{
+	width: 100%;
+	border-bottom: 1px solid #191919;
+	padding: 80px 8px 15px 8px;
+	margin-bottom: 30px; 
+}
+.double-note-txt{
+	color: #191919;
+	text-align: left;
+}
+@media only screen and (max-width: 768px)  {
+	.double-main{
+		height: auto;
+		background: none;
+	}
+	.double-main:after{
+		display: none;
+	}
+	.double-img{
+		top: 60%;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		margin: auto;
+	}
+	.double-img .img-title{
+		display: none;
+	}
+	.double-img a img{
+		width: 50%;
+	}
+	.double-circle{
+		display: none;
+	}
+	.book-icon img{
+		width: 20%;
+	}
+	.time-content .title01 img, .time-content .title02 img{
+		width: 50%;
+	}
+	.time-content .title01, .time-content .title02{
+		margin-bottom: 20px;
+	}
+	.time-content p{
+		font-size: 14px;
+		width: 85%;
+		margin-bottom: 40px;
+	}
+	.time-content, .white-content{
+		width: 90%;
+	}
+	.way-padding{
+		padding: 0px 15px 0px 15px;
+	}
+	.way-date{
+		padding: 0px 0px 0px 90px;
+	}
+	.white-content .title01 img{
+		width: 40%;
+	}
+	.location-content .title01{
+		margin: 0px auto 20px auto;
+	}
+	.location-content .title01 img{
+		width: 70%;
+	}
+	.white-content .title02 img{
+		width: 100%;
+	}
+	.location-content .title01:before{
+		display: none;
+	}
+	.location-content{
+		width: 90%;
+	}
+	.txt-darkyellow{
+		display: block;
+		width: 100%;
+		margin-top: 10px;
+	}
+	.double-location-txt{
+		margin: 0;
+		text-align: center;
+	}
+	.double-location-time{
+		margin-top: 20px;
+	}
+	.btn-coolred{
+		width: 80%;
+	}
+	.step-content .title01{
+		margin: 0px auto 20px auto;
+	}
+	.step-content .title01:before{
+		display: none;
+	}
+	.step-content .title01 img{
+		width: 50%;
+	}
+	.step-img-y:after{
+		display: none;
+	}
+}

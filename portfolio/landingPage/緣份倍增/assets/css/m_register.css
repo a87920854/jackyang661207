@@ -1,0 +1,157 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* 自設reset css開始 */
+body{ font-family: Microsoft JhengHei,微軟正黑體,Arial; -webkit-text-size-adjust: none;}
+
+
+.hide{ display:none; visibility:hidden;}
+a{ cursor:pointer; text-decoration:none;}
+a:hover{}
+
+/* css開始 */
+.register_warpper{ width:100%; height:100%; overflow:hidden; position:relative;}
+.register_warpper_block{ width:100%; height:auto; margin:0 auto; overflow:hidden;}
+.register_warpper_bg{ background:url(../images/m_register/register_warpper_bg.jpg) left top repeat;}
+
+.register_topic{ width:100%; height:170px; margin:o auto;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b2a8d1+0,e95579+100 */
+background: #b2a8d1; /* Old browsers */
+background: -moz-linear-gradient(-45deg,  #b2a8d1 0%, #db6aa4 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg,  #b2a8d1 0%,#db6aa4 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg,  #b2a8d1 0%,#db6aa4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b2a8d1', endColorstr='#db6aa4',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+h1{ font-size:2.5em; color:#fff; text-align:center; letter-spacing:7px; font-weight:bold; padding-top:85px;}
+h2{ font-size:1em; color:#fff; text-align:center; letter-spacing:8px; font-weight:lighter; text-indent:7px; padding-top:10px;}
+
+
+.register_full{ width:100%; height:auto; overflow:hidden;}
+
+.register_full_block_form{ width:260px; height:auto; margin:0 auto; margin-top:40px; background-color:#EFEEEE; border:1px solid #ccc; -webkit-border-radius:10px; -moz-border-radius:10px; border-radius:10px; -webkit-box-shadow: 0px 0px 10px #595757; -moz-box-shadow: 0px 0px 10px #595757; box-shadow: 0px 0px 10px #595757; padding:20px;}
+
+.register_full_block_form_p{ font-size:1.35em; font-style:italic; text-align:center; color:#c22c7d; margin-bottom:15px;}
+.register_full_block_form_form{ width:100%; height:auto; overflow:hidden;}
+.register_full_block_form_form_control{ clear:both; width:256px; height:36px; font-size:0.9em; color:#595757; text-indent:5px; margin-bottom:10px;}
+.register_full_block_form_form_controlli{ clear:both; width:256px; height:36px; font-size:0.9em; color:#595757; text-indent:2px; margin-bottom:10px;}
+.register_full_block_form_form_control1{ clear:both; width:250px; height:150px; font-size:1em; color:#595757; line-height:1.6; margin-bottom:10px; overflow:hidden;}
+
+.register_full_block_txt{ width:300px; height:auto; margin:0 auto; overflow:hidden; margin-top:20px; margin-bottom:10px;}
+.register_full_block_txt_p{ font-size:0.7em; color:#595757; line-height:1.5; text-align:center;}
+.register_full_block_txt_a{ font-size:0.7em; color:#595757; text-decoration:underline; line-height:1.5; text-align:center;}
+
+.register_full_block_bt{ width:300px; height:auto; margin:0 auto; overflow:hidden; padding-bottom:40px;}
+.register_full_block_bt_man{ display:block; width:136px; height:45px; background-image:url(../images/m_register/register_full_block_bt_man.png); float:left;}
+.register_full_block_bt_woman{ display:block; width:136px; height:45px; background-image:url(../images/m_register/register_full_block_bt_woman.png); float:right;}
+
+.register_warpper_block_p{ width:100%; height:auto; font-size:0.6em; color:#595757; text-align:center; line-height:1.5;}
+
+/* register 2 */
+.register_topic2{ width:100%; height:94px; margin:o auto;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b2a8d1+0,e95579+100 */
+background: #b2a8d1; /* Old browsers */
+background: -moz-linear-gradient(-45deg,  #b2a8d1 0%, #db6aa4 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg,  #b2a8d1 0%,#db6aa4 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg,  #b2a8d1 0%,#db6aa4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b2a8d1', endColorstr='#db6aa4',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+.register_topic2_p{ font-size:1.6em; color:#FFF; text-align:center; font-weight:bold; padding-top:26px; padding-bottom:10px;}
+.register_topic2_p1{ font-size:0.9em; color:#FFF; text-align:center; padding-top:5px; padding-bottom:14px;}
+.register_topic2_step{ width:300px; height:auto; margin:0 auto;}
+.register_topic2_step img{ width:100%; height:auto;}
+
+.register_full_p{ width:300px; height:auto; margin:0 auto; font-size:1.2em; line-height:1.5; font-style:italic; text-align:center; color:#c22c7d; margin-top:40px; margin-bottom:10px; letter-spacing:-0.05em;}
+.register_full_block_form2{ width:260px; height:auto; margin:0 auto; background-color:#EFEEEE; padding:20px; border-bottom:#C9C9CA solid 1px;}
+.register_full_block_form_p2{ font-size:1em; color:#c22c7d; letter-spacing:-0.02em; margin-bottom:15px;}
+.register_full_block_form_form_control2{ width:80px; height:36px; font-size:0.9em; color:#595757; text-indent:5px; margin-bottom:10px; float:left;}
+
+.register_full_block_bt_done{ width:148px; height:auto; font-size:1.2em; text-align:center; color:#fff; line-height:2em; font-weight:bold; margin-top:20px; margin-bottom:10px; border:1px solid #ccc; -webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b2a8d1+0,e95579+100 */
+background: #b2a8d1; /* Old browsers */
+background: -moz-linear-gradient(-45deg,  #b2a8d1 0%, #db6aa4 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg,  #b2a8d1 0%,#db6aa4 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg,  #b2a8d1 0%,#db6aa4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b2a8d1', endColorstr='#db6aa4',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+.register_full_block{ width:260px; height:auto; margin:0 auto; padding:20px;}
+.register_full_block_form_p3{ font-size:0.95em; color:#595757; text-align:center; letter-spacing:-0.02em; margin-bottom:10px;}
+.register_full_block_form_pic{ width:260px; height:260px; margin-top:20px; background-color:#CCC; overflow:hidden; border:1px solid #ccc; -webkit-border-radius:0px; -moz-border-radius:0px; border-radius:0px;}
+.register_full_block_form_pic img{ width:100%; height:auto;}
+.register_full_block_bt_cancel{ display:block; width:300px; height:auto; font-size:0.8em; text-align:center; color:#C9C9CA; text-decoration:underline; line-height:1em; margin:0 auto;}
+
+.register_full_block_form_pic2{ width:300px; height:114px; margin:0 auto; margin-top:50px; margin-bottom:20px;}
+.register_full_block_form_p4{ font-size:1.1em; color:#C8243B; text-align:center; letter-spacing:-0.02em; margin-bottom:10px; font-style:italic;}
+.register_full_block_form_p5{ font-size:1.1em; color:#c22c7d; text-align:center; letter-spacing:-0.02em; margin-top:25px; margin-bottom:50px;}
+
+.register_full_block_form_p6{ font-size:0.95em; color:#c22c7d; letter-spacing:-0.02em; margin-top:12px; margin-bottom:12px;}
+
+
+
+/**/
+/*TAG初始狀態*/
+.tag2{ display:block; width:40px; height:25px; text-align:center; font-size:13px; line-height:25px; color:#FFFFFF; background-image:url(../images/register/tag_bg.jpg); background-position:left top; background-repeat:repeat-x; padding-left:5px; padding-right:5px; margin-right:10px; margin-bottom:10px; -webkit-border-radius: 20px; -moz-border-radius: 20px; border-radius: 20px; float:left;}
+.tag3{ display:block; width:50px; height:25px; text-align:center; font-size:13px; line-height:25px; color:#FFFFFF; background-image:url(../images/register/tag_bg.jpg); background-position:left top; background-repeat:repeat-x; padding-left:5px; padding-right:5px; margin-right:10px; margin-bottom:10px; -webkit-border-radius: 20px; -moz-border-radius: 20px; border-radius: 20px; float:left;}
+.tag4{ display:block; width:65px; height:25px; text-align:center; font-size:13px; line-height:25px; color:#FFFFFF; background-image:url(../images/register/tag_bg.jpg); background-position:left top; background-repeat:repeat-x; padding-left:5px; padding-right:5px; margin-right:10px; margin-bottom:10px; -webkit-border-radius: 20px; -moz-border-radius: 20px; border-radius: 20px; float:left;}
+.tag5{ display:block; width:78px; height:25px; text-align:center; font-size:13px; line-height:25px; color:#FFFFFF; background-image:url(../images/register/tag_bg.jpg); background-position:left top; background-repeat:repeat-x; padding-left:5px; padding-right:5px; margin-right:10px; margin-bottom:10px; -webkit-border-radius: 20px; -moz-border-radius: 20px; border-radius: 20px; float:left;}
+.tag6{ display:block; width:95px; height:25px; text-align:center; font-size:13px; line-height:25px; color:#FFFFFF; background-image:url(../images/register/tag_bg.jpg); background-position:left top; background-repeat:repeat-x; padding-left:5px; padding-right:5px; margin-right:10px; margin-bottom:10px; -webkit-border-radius: 20px; -moz-border-radius: 20px; border-radius: 20px; float:left;}
+.tag8{ display:block; width:120px; height:25px; text-align:center; font-size:13px; line-height:25px; color:#FFFFFF; background-image:url(../images/register/tag_bg.jpg); background-position:left top; background-repeat:repeat-x; padding-left:5px; padding-right:5px; margin-right:10px; margin-bottom:10px; -webkit-border-radius: 20px; -moz-border-radius: 20px; border-radius: 20px; float:left;}
+/*TAG HOVER時狀態*/
+.tag2:hover,.tag3:hover,.tag4:hover,.tag5:hover,.tag6:hover{ background-position:left bottom; color:#FF0;}
+/*TAG選取時狀態*/
+.tagtag { background-position:left bottom !important; color:#FF0;}
+
+.register_full_block_choiceblock{ width:100%; height:auto; overflow:hidden; margin-bottom:10px;}
+.register_topic3_step{ width:178px; height:auto; margin:0 auto;}
+
+.form_p2{ font-size:1em; line-height:40px; color:#c22c7d;}
+.tag_yes{ display:block; width:62px; height:40px; background:url(../images/register/icon_yes.png) left top no-repeat;  vertical-align:middle; float:right; margin-right:60px;}
+.tag_no{ display:block; width:62px; height:40px; background:url(../images/register/icon_no.png) left top no-repeat;  vertical-align:middle; float:right; margin-right:20px;}
+.marginbottom10{ margin-top:10px; margin-bottom:10px;}
+
+.tag_yes:hover,.tag_no:hover{ background-position:left bottom;}
