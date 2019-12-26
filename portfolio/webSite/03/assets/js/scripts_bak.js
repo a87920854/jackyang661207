@@ -3652,64 +3652,120 @@ jQuery.easing.jswing=jQuery.easing.swing;jQuery.extend(jQuery.easing,{def:"easeO
 
 // 表單男女價格顯示 & 計算價格
 (function ($) {
-	$(function() {
-		$("#gender, .classmoney").on("change", function() {
-			reset_price();
-		});
-		
-		// load page default price
-		reset_price();
-	});
-	function reset_price() {
-		var $pricedata = [{consult:"$699", class:"$699", dating:"$1000"}, //男
-		    {consult:"$699", class:"$699", dating:"$399"},//女
-		    {consult:"$699", class:"$699", dating:"$399~$1000"}//default		    
-		    ]; 
-		var $gender = $("#gender"), $consult = $("#consult"), $class = $("#class"), $dating = $("#dating"), $money = $("#money"), $redTitle = $(".red-title");
+	var url = location.href;
+	var href = url.substr(url.lastIndexOf("/")+1).replace(".html" || ".asp","");
+	var price = [
+		{ gender:"male", consult:"$699", class:"$699", dating:"$1000"}, 
+		{ gender:"female", consult:"$699", class:"$699", dating:"$399"}, 
+		{ gender:"default", consult:"$699", class:"$699", dating:"$399~1000"}, 
+	];
+	var $consult = $(".red-box:eq(0)");
+	var $class = $(".red-box:eq(1)");
+	var $dating = $(".red-box:eq(2)");
+	var $word = $(".red-title");		
+	var $money = $("input[name='money']");	
+	var num = [];
+	$consult.text(price[2].consult);
+	$class.text(price[2].class);
+	$dating.text(price[2].dating);
+	$word.hide();
 
-		//get price	
-		$price = $pricedata[$gender.val()];
-		if (typeof $price === 'undefined') $price = $pricedata[2]; // use default
-		
-		//show promo
-		$gender.val() === "1" ? $redTitle.show() : $redTitle.hide();
-
-		// show all price
-		$consult.parent().find("div.red-box").html($price.consult);
-		$class.parent().find("div.red-box").html($price.class);
-		$dating.parent().find("div.red-box").html($price.dating);
-		
-		// get checked
-		var $moneyarr = [];
-		$(".classmoney").each(function(index, value) {
-			var $this = $(this), $thisid = $this.attr("id");      
-			if($this.prop("checked")) {      	
-				$moneyarr.push($thisid+"-"+$price[$thisid]);
-			}      
-		});
-    // if money array not empty then remove $ and money input set value
-    if($moneyarr.length > 0) $money.val($moneyarr.join(",").replace(new RegExp("\\$", "gm"), ""));
-		
-}
-})(jQuery);
-
-// 約會頁面RWD時切換txt跟photo位置
-(function ($) {
-	function ShiftDivHandler(){
-		var w = $(window).width();
-		if(w <= 630){
-			var first = $(".date-sec4 .item:nth-of-type(odd)").find(".txt").first();
-			var last = $(".date-sec4 .item:nth-of-type(odd)").find(".txt").last();
-			$(".date-sec4 .item:nth-of-type(odd)").find(".txt").remove();
-			$(".date-sec4 .item:nth-of-type(3)").append(first);
-			$(".date-sec4 .item:nth-of-type(5)").append(last);
+	var calcM = function(){ 
+		if( $(this).prop("checked") ){
+			num.push($(this).siblings(".red-box").text());
 		}else{
-			var first = $(".date-sec4 .item:nth-of-type(odd)").find(".txt").first();
-			var last = $(".date-sec4 .item:nth-of-type(odd)").find(".txt").last();
-			$(".date-sec4 .item:nth-of-type(odd)").find(".txt").remove();
-			$(".date-sec4 .item:nth-of-type(3)").find(".photo").before(first);
-			$(".date-sec4 .item:nth-of-type(5)").find(".photo").before(last);
+			var index = num.indexOf($(this).siblings(".red-box").text());
+			num.splice(index,1);
 		}
+		$money.attr("value", num);
+	};
+
+	var resetGender = function(){
+		if($("#register").length > 0){		
+			switch(href){
+				case "consult":
+					$(".classmoney[name='consult']").prop("checked",true);
+					$(".class1-metoo").text("體驗諮詢");
+					num.push($(".classmoney[name='consult']").siblings(".red-box").text());
+					$money.attr("value", num);
+					$(".classmoney[name='consult']").click(function(e){
+						e.preventDefault();	
+					});
+					$(".classmoney[name='consult']").off("click", calcM);
+					break;
+				case "class":
+					$(".classmoney[name='class']").prop("checked",true);
+					$(".class2-metoo").text("體驗課程");
+					num.push($(".classmoney[name='consult']").siblings(".red-box").text());
+					$money.attr("value", num);
+					$(".classmoney[name='class']").click(function(e){
+						e.preventDefault();
+					});
+					$(".classmoney[name='class']").off("click", calcM);
+					break;
+				case "date":			
+					$(".classmoney[name='date']").prop("checked",true);
+					$(".class3-metoo").text("體驗排約");
+					num.push($(".classmoney[name='consult']").siblings(".red-box").text());
+					$money.attr("value", num);
+					$(".classmoney[name='date']").click(function(e){
+						e.preventDefault();
+					});
+					$(".classmoney[name='date']").off("click", calcM);
+					break;
+				default:
+					// return;
+			}
+		};
+	};
+	if($("#genderSelect").length > 0){		
+		$("#genderSelect").on("change", function(){
+			var $gender = $("#genderSelect").val();	
+			switch($gender){
+				case "0":
+					$consult.text(price[$gender].consult);
+					$class.text(price[$gender].class);
+					$dating.text(price[$gender].dating);
+					$word.hide();
+					if( num.length == 0 ){ 
+						resetGender();	
+					}else{
+						num = [];
+						$money.attr("value", num);	
+						$('.classmoney').prop( "checked", false );						
+						resetGender();						
+					}
+					break;
+				case "1":
+					$consult.text(price[$gender].consult);
+					$class.text(price[$gender].class);
+					$dating.text(price[$gender].dating);
+					$word.show();
+					if( num.length == 0 ){ 
+						num.push($(".classmoney:checked").siblings(".red-box").text());
+						$money.attr("value", num);
+					}else{
+						num = [];
+						$money.attr("value", num);
+						$('.classmoney').prop( "checked", false );
+						resetGender();
+					}
+					break;
+				default:
+					$consult.text(price[$gender].consult);
+					$class.text(price[$gender].class);
+					$dating.text(price[$gender].dating);
+					if( num.length === 0 ){ 
+						num.push(0) 
+					}else{
+						delete num;
+					}
+					$word.hide();
+			}
+		});
 	}
-	$(window).on("resize", ShiftDivHandler).resize();
+	// 計算價格	
+	$('.classmoney').on("click", calcM);
+	resetGender();
 })(jQuery);
+
