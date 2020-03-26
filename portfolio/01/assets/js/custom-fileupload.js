@@ -1,9 +1,10 @@
-// 手機版縮照片寬度
 (function(){
+
+    // 手機版縮照片寬度function
     function myPhotoSlide(){
         var $width = $(window).width();
         var $slider = $('.myphoto-upload');
-        var $container = $('.myphoto-upload-box');
+        var $container = $('.myphoto-upload-box');        
         if($width <= 1000){
             // 視窗小於1000px，照片寬度自動調整
             var $w = $slider.width() / 3 + 20;
@@ -22,32 +23,32 @@
             });
         }    
     };
+
     // 視窗縮放監聽
     $(window).bind('resize', function(){
         resizeTimer = setTimeout(function(){
             myPhotoSlide();
-        }, 300);
+        }, 300);    
     }).resize();
-    
-})();
 
-//修改照片按鈕綁定fileupload
-$('.myphoto-hover-dark .btn-del').each(function() {
-    $(this).bind("click", function(){
-        $(this).closest(".myphoto-upload-photo").find(".fileupload").click();
+    //修改照片按鈕綁定fileupload
+    $('.myphoto-hover-dark .btn-del').each(function() {
+        $(this).bind("click", function(){
+            $(this).closest(".myphoto-upload-photo").find(".fileupload").click();
+        });
     });
-});
 
-// 設為封面
-$('.myphoto-upload-photo .btn-cover').each(function() {
-    $(this).bind('click', function(){
-        var $obj = $(this).closest(".myphoto-upload-photo");
-        $('.myphoto-upload-box').prepend($obj);
-    })
-});
+    // 設為封面
+    $('.myphoto-upload-photo .btn-cover').each(function() {
+        $(this).bind('click', function(){
+            var $width = $(window).width();
+            var $obj = $(this).closest(".myphoto-upload-photo");
+            $('.myphoto-upload-box').prepend($obj);
+            if($width <= 1000) $('.myphoto-upload').animate({scrollLeft: 0}, 500);
+        })
+    });
 
-// 照片檔案上傳
-(function(){	
+    // 照片檔案上傳
     $(".fileupload").each(function() {
         var $this = $(this), $thisid = $this.attr("id"), $progress = $this.closest("div").find(".progress");
         var $imgs = $(this).closest("div").find("#cimg").val();
@@ -70,8 +71,7 @@ $('.myphoto-upload-photo .btn-cover').each(function() {
                     default:        		
                     location.href="myphoto_crop.asp?a="+data.jqXHR.responseText;
                     break;
-                }
-            
+                }            
             },
             progressall: function (e, data) {        	
                 var progress = parseInt(data.loaded / data.total * 100, 10);            

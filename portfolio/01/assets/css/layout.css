@@ -16479,9 +16479,32 @@ section:not(.topslider) .owl-theme .owl-controls .owl-buttons div{
 	content: "\f138";
 	font: normal normal normal 14px/1 FontAwesome;
 }
+.myphoto-notice{
+	margin-bottom: 30px;
+}
+.myphoto-notice p{
+	margin-bottom: 10px;
+}
+.myphoto-notice .btn-note{
+	background-color: #fdeef3;
+	color: #ea5b85;
+	border-radius: 5px;
+}
+.myphoto-notice .btn-note:nth-of-type(2){
+	color:#2e58a6;
+	background-color:rgba(46,88,166,0.1);
+}
+.myphoto-notice .btn-note + .btn-note{
+	margin-left: 5px;
+}
 .myphoto-notice h4{
 	margin-bottom:0;
 }
+.myphoto-tips #tips01, .myphoto-tips #tips02{
+	position: relative;
+	top: -100px;
+}
+
 @media only screen and (max-width: 1200px) {
 	.myphoto-tips-title{
 		margin-bottom: 10px;
@@ -16573,5 +16596,14 @@ section:not(.topslider) .owl-theme .owl-controls .owl-buttons div{
 	}
 	.myphoto-hover-dark .buttons{
 		height: 80%;
+	}
+	.myphoto-tips #tips01, .myphoto-tips #tips02{
+		top: 0px;
+	}
+	.myphoto-notice .btn-note{
+		margin-bottom: 5px;
+	}
+	.myphoto-notice .btn-note + .btn-note{
+		margin-left: 0px;
 	}
 }
