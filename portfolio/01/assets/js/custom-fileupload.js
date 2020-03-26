@@ -1,12 +1,9 @@
-// 手機版slide + 縮照片寬度
+// 手機版縮照片寬度
 (function(){
     function myPhotoSlide(){
         var $width = $(window).width();
         var $slider = $('.myphoto-upload');
         var $container = $('.myphoto-upload-box');
-        var isDown = false;
-        var startX;
-        var scrollLeft;  
         if($width <= 1000){
             // 視窗小於1000px，照片寬度自動調整
             var $w = $slider.width() / 3 + 20;
@@ -17,29 +14,7 @@
                     "height":$h
                 });
             });
-            $container.width( $w * $('.myphoto-upload-photo').length );
-    
-            // 手機照片可slider功能
-            // $slider.on("mousedown", function(e){
-            //     isDown = true;
-            //     startX = e.pageX - $slider.position().left;            
-            //     scrollLeft = $slider.scrollLeft();
-            //     console.log(startX,scrollLeft);
-            // });
-            // $slider.on('mouseleave', function(e){
-            //     isDown = false;
-            // });    
-            // $slider.on('mouseup', function(e){
-            //     isDown = false;
-            // });
-            // $slider.on('mousemove', function(e){
-            //     if (!isDown) return;  // stop the fn from running
-            //     e.preventDefault();
-            //     var x = e.pageX - $slider.position().left;
-            //     var walk = (x - startX) * 3;
-            //     $slider.scrollLeft( scrollLeft - walk );
-            // });
-    
+            $container.width( $w * $('.myphoto-upload-photo').length );       
         }else{
             $('.myphoto-upload-photo').each(function() {
                 $(this).attr("style","");
@@ -55,12 +30,22 @@
     }).resize();
     
 })();
+
 //修改照片按鈕綁定fileupload
 $('.myphoto-hover-dark .btn-del').each(function() {
     $(this).bind("click", function(){
         $(this).closest(".myphoto-upload-photo").find(".fileupload").click();
     });
 });
+
+// 設為封面
+$('.myphoto-upload-photo .btn-cover').each(function() {
+    $(this).bind('click', function(){
+        var $obj = $(this).closest(".myphoto-upload-photo");
+        $('.myphoto-upload-box').prepend($obj);
+    })
+});
+
 // 照片檔案上傳
 (function(){	
     $(".fileupload").each(function() {
@@ -111,9 +96,6 @@ $('.myphoto-hover-dark .btn-del').each(function() {
                 }
             }
         }).prop('disabled', !$.support.fileInput).parent().addClass($.support.fileInput ? undefined : 'disabled');
-
-    });
-
-    
+    });   
     
 })();

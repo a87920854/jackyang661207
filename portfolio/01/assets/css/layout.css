@@ -16133,6 +16133,7 @@ section:not(.topslider) .owl-theme .owl-controls .owl-buttons div{
 }
 .modal-photo-update .modal-body{
 	text-align: center;
+	padding: 25px;
 }
 .modal-photo-update .modal-body h5{
 	font-size: 18px;
@@ -16162,18 +16163,19 @@ section:not(.topslider) .owl-theme .owl-controls .owl-buttons div{
 .myphoto-upload-photo{
 	position: relative;
 	display: inline-block;
-	max-width: 20%;
+	width: 20%;
 	height: 220px;
 	border: 8px solid #fff;
 	overflow: hidden;
 	cursor: pointer;
 	background-color: #e1e1e1;
 }
-.myphoto-upload-photo:hover .myphoto-hover-dark, .myphoto-upload-photo:focus .myphoto-hover-dark, .myphoto-upload-photo:active .myphoto-hover-dark{
-	background-color: rgba(0,0,0,0.3);
+.myphoto-upload-photo .myphoto-hover-dark{
+	display: none;
 }
-.myphoto-upload-photo:hover .myphoto-hover-dark .btn{
-	opacity:1;
+.myphoto-upload-hasimg:hover .myphoto-hover-dark, .myphoto-upload-hasimg:focus .myphoto-hover-dark, .myphoto-upload-hasimg:active .myphoto-hover-dark{
+	background-color: rgba(0,0,0,0.3);
+	display: block;
 }
 .myphoto-hover-dark{
 	position: absolute;
@@ -16203,19 +16205,33 @@ section:not(.topslider) .owl-theme .owl-controls .owl-buttons div{
 	transition: all .1s;
 	margin-bottom: 10px;
 }
+.myphoto-upload-hasimg:hover .myphoto-hover-dark .btn{
+	opacity:1;
+}
+.myphoto-upload-photo .lightbox{
+	font-size:24px;
+	color: #fff;
+	opacity:0;
+	text-align: center;
+	display: block;
+	width: 100%;
+	z-index: 999;
+	line-height: 1;
+}
+.myphoto-upload-photo:hover .lightbox, .myphoto-upload-photo:active .lightbox, .myphoto-upload-photo:focus .lightbox{
+	opacity:1;
+	color: #fff;
+}
 .myphoto-hover-dark .buttons .btn:hover{
 	background-color: #ea5b85;
 	color: #fff;
-}
-.myphoto-upload-noimg .myphoto-hover-dark{
-	display: none;
 }
 .myphoto-upload-photo img{
 	max-width: 100%;
 }
 .myphoto-upload-photo:first-child{
 	float: left;
-	max-width: 40%;
+	width: 40%;
 	height: 440px;
 	cursor: initial;
 }
@@ -16235,8 +16251,14 @@ section:not(.topslider) .owl-theme .owl-controls .owl-buttons div{
 .myphoto-upload-photo:first-child .txt{
 	display: block;
 }
-.myphoto-upload-photo:first-child .myphoto-hover-dark{
+.myphoto-upload-photo:first-child .lightbox{
+	font-size: 36px;
+}
+.myphoto-upload-photo:first-child .myphoto-hover-dark .btn-cover, .myphoto-upload-photo:first-child .myphoto-hover-dark .btn-del{
 	display: none;
+}
+.myphoto-upload-photo:first-child:hover .myphoto-hover-dark{
+	background-color: rgba(0, 0, 0, 0.3);
 }
 .myphoto-upload-photo .fileupload{
 	-webkit-appearance: none;
@@ -16274,6 +16296,10 @@ section:not(.topslider) .owl-theme .owl-controls .owl-buttons div{
 }
 .myphoto-upload-rule .myphoto-hover-dark .buttons .btn-cover{
 	display:none;
+}
+.myphoto-upload-rule .myphoto-hover-dark .buttons .lightbox{
+	opacity:1;
+	color: #fff;
 }
 .myphoto-upload-rule .myphoto-hover-dark .rule{
 	color: #fff;
@@ -16453,7 +16479,7 @@ section:not(.topslider) .owl-theme .owl-controls .owl-buttons div{
 	content: "\f138";
 	font: normal normal normal 14px/1 FontAwesome;
 }
-.body-notice{
+.myphoto-notice h4{
 	margin-bottom:0;
 }
 @media only screen and (max-width: 1200px) {
@@ -16538,5 +16564,14 @@ section:not(.topslider) .owl-theme .owl-controls .owl-buttons div{
 	}
 	.attention h5{
 		font-size: 17px;
+	}
+	.myphoto-upload-photo .lightbox{
+		display: inline;
+	}
+	.myphoto-upload-photo:first-child .myphoto-hover-dark .buttons{
+		height: 50px;
+	}
+	.myphoto-hover-dark .buttons{
+		height: 80%;
 	}
 }
