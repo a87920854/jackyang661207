@@ -16262,7 +16262,7 @@ section:not(.topslider) .owl-theme .owl-controls .owl-buttons div{
 }
 .myphoto-upload-photo .fileupload{
 	-webkit-appearance: none;
-	display: none;
+	display: block;
 	opacity: 0;
 	border: 0;
 	position: absolute;
@@ -16280,8 +16280,8 @@ section:not(.topslider) .owl-theme .owl-controls .owl-buttons div{
 	width: 100%;
 	margin:0;
 }
-.myphoto-upload-noimg .fileupload{
-	display: block;
+.myphoto-upload-hasimg .fileupload{
+	display: none;
 }
 .myphoto-upload-txt{
 	width: 100%;
