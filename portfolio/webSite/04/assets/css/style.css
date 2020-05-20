@@ -2515,6 +2515,10 @@ h1.spring-title > span{
 .pair-kv .people{
     display: none;
 }
+.pair-kv.typeAll{
+    background-image: url(../images/pair_bg_all.jpg);
+    background-position: center top;
+}
 .pair-kv.type1{
     background-image: url(../images/pair_bg_01.jpg);
     background-position: center top;
@@ -2550,6 +2554,9 @@ h1.spring-title > span{
     margin: 15px auto 20px auto;
     font-weight: normal;
 }
+.pair-kv.typeAll h1{
+    color: #ff56a7;
+}
 .pair-kv.type2 h1{
     color: #ff56a7;
 }
@@ -2581,6 +2588,9 @@ h1.spring-title > span{
 .pair-kv-text p span{
     color: #0071bc;
 }
+.pair-kv.typeAll .pair-kv-text p span{
+    color: #ff56a7;
+}
 .pair-kv.type2 .pair-kv-text p span{
     color: #ff56a7;
 }
@@ -2601,6 +2611,9 @@ h1.spring-title > span{
     font-size: 27px;
     line-height: 1.5;
     margin: 15px 0;
+}
+.pair-kv.typeAll .pair-kv-text .spring{
+    color: #0071bc;
 }
 .pair-kv.type2 .pair-kv-text .spring{
     color: #00a99d;
@@ -2691,6 +2704,9 @@ h1.spring-title > span{
 .pair-feature .owl-carousel .owl-item:nth-of-type(even) > .events-type-item::after{
     border-bottom: 13px solid #0071bc;
     border-right: 13px solid #0071bc;
+}
+.pair-feature-cta{
+    margin-top: 30px;
 }
 .joininfo{
     padding: 60px 0px;
@@ -3472,13 +3488,22 @@ h1.spring-title > span{
 }
 /* text */
 .text-red{
-    color: #ff0000;
+    color: #ff0000 !important;
 }
 .text-pink{
-    color: #ff56a7;
+    color: #ff56a7 !important;
 }
 .text-blue{
-    color: #0071bc;
+    color: #0071bc !important;
+}
+/* background-color */
+.background-pink-60{
+    background-color: rgba(255,217,239,0.6) !important;
+    background-image: none !important;
+}
+.background-pink-30{
+    background-color: rgba(255,217,239,0.3) !important;
+    background-image: none !important;
 }
 /* buttons */
 .btn-social{
@@ -3853,6 +3878,9 @@ h1.spring-title > span{
         padding: 0;
         width: 100%;
     }
+    .pair-kv.typeAll{
+        background-image: url(../images/pair_bg_m_all.jpg);
+    }
     .pair-kv.type1{
         background-image: url(../images/pair_bg_m_01.jpg);
     }
@@ -3871,7 +3899,7 @@ h1.spring-title > span{
     .pair-kv.type6{
         background-image: url(../images/pair_bg_m_06.jpg);
     }
-    .pair-kv.type1 .people, .pair-kv.type2 .people, .pair-kv.type3 .people, .pair-kv.type4 .people, .pair-kv.type5 .people, .pair-kv.type6 .people{
+    .pair-kv.typeAll .people, .pair-kv.type1 .people, .pair-kv.type2 .people, .pair-kv.type3 .people, .pair-kv.type4 .people, .pair-kv.type5 .people, .pair-kv.type6 .people{
         display: block;
         margin-bottom: 0px;
         margin-top: 15px;
@@ -3924,7 +3952,7 @@ h1.spring-title > span{
     .pair-cta p{
         margin: 0;
     }
-    .pair-kv-text .pair-cta .spring, .pair-kv.type2 .pair-kv-text .spring, .pair-kv.type3 .pair-kv-text .spring, .pair-kv.type4 .pair-kv-text .spring, .pair-kv.type5 .pair-kv-text .spring, .pair-kv.type6 .pair-kv-text .spring{
+    .pair-kv.typeAll .pair-kv-text .spring, .pair-kv-text .pair-cta .spring, .pair-kv.type2 .pair-kv-text .spring, .pair-kv.type3 .pair-kv-text .spring, .pair-kv.type4 .pair-kv-text .spring, .pair-kv.type5 .pair-kv-text .spring, .pair-kv.type6 .pair-kv-text .spring{
         font-size: 23px;
         color: #fff;
         margin: 0 0 10px 0;
