@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Language" content="zh-tw">
+    <meta name="description" content="春天會館單身交友、未婚聯誼、相親配對、一對一速配約會，男女專屬互動婚戀交友平台，想結婚的你就讓春天會館的月老紅娘婚姻顧問幫助你脫單">
+    <meta name="keywords" content="愛情交友,婚友,交友 網站,熟女,春天會館,聯誼,相親,月老,愛情,交友,婚友社,台北聯誼,桃園聯誼,新竹聯誼,台中聯誼,台南聯誼,高雄聯誼,春天會館台北會館">
+    <link rel="icon" type="image/ico" href="https://www.springclub.com.tw/favicon.ico">
+    <title>春天會館單身交友聯誼婚戀平台</title>
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- plugin css -->
+    <link href="assets/css/plugin.min.css" rel="stylesheet">
+    <!-- layout -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <!-- sweetalert -->
+    <link href="assets/plugins/sweetalert2/sweetalert2.css?v=1.1" rel="stylesheet">
+</head>
+<body>
+    <div id="wrapper">
+        <header id="header" class="springclub-header sticky">
+            <nav class="navbar">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="index.html"><img src="assets/images/springclub-logo.png" title="春天會館" alt="春天會館"></a>
+                    </div>
+                    <div id="navbar" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">交友配對 <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                  <li><a href="love_all.html">All</a></li>
+                                  <li><a href="love_teacher.html">醫師、教師、律師</a></li>
+                                  <li><a href="love_professor.html">碩博士、科技新貴</a></li>
+                                  <li><a href="love_million.html">百萬年薪俱樂部</a></li>
+                                  <li><a href="love_boss.html">BOSS、高階主管</a></li>
+                                  <li><a href="love_gov.html">軍警、公務人員</a></li>
+                                  <li><a href="love_financial.html">金融服務</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="events.html">聯誼約會</a></li>
+                            <li><a href="events_photolist.html">聯誼花絮</a></li>
+                            <li><a href="witness_main.html">愛情見證</a></li>
+                            <li><a href="lovesalon.html">戀愛講堂</a></li>
+                            <li><a href="media.html">媒體報導</a></li>                   
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="form"><a href="event_repay.html">填寫繳款資料</a></li>
+                            <li class="upload"><a href="register_upload.html">我要補上傳證件</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="login"><a href="mlogin.html">登入</a></li>
+                            <li class="register"><a href="register_step1.html">完整註冊</a></li>
+                        </ul>
+                        <!-- side-panel  -->
+                        <ul class="side-panel">
+                            <li><a title="facebook" alt="facebook" href="https://www.facebook.com/springclubLOVE" target="_blank" class="fb"><i class="fa fa-facebook"></i></a></li>            
+                            <li><a title="line" alt="line" href="http://line.me/ti/p/XxzQFbjkps" target="_blank" class="line"><img src="assets/images/line-icon.svg" alt="春天會館-line" class="line-icon"></a></li>
+                            <li><a title="place" alt="place" href="place.html" class="phone-icon"><i class="fa fa-phone"></i></a></li>
+                            <li><a title="活動表下載" alt="活動表下載" href="#" data-toggle="modal" data-target="#eventFormDownLoad" class="download-form">活動表<br>下載</a></li>
+                        </ul>   
+                    </div>                
+                </div>     
+                 
+            </nav>        
+        </header>
+
+        <!-- 個人資料同意書 -->
+        <section class="joininfo">
+            <div class="container">
+                <h1>個人資料與服務聲明</h1>
+                <div class="joininfo-box">
+                    <h2>個人資料提供同意書</h2>
+                    <ol>                        
+                        <li>本公司(春天會館)取得您的個人資料，目的在於個人資料保護法及相關法令之規定下，依本公司隱私權保護政策，蒐集、處理及利用您的個人資料。</li>
+                        <li>您可依您的需要提供以下個人資料：姓名、出生年月日、國民身分證統一編號、連絡方式、相片(包括但不限於電話號碼、E-MAIL或居住地址)或其他得以直接或間接識別您個人之資料。</li>
+                        <li>您同意本公司以您所提供的個人資料確認您的身份、與您進行連絡、提供您本公司及關係企業或合作夥伴之相關服務及資訊，以及其他隱私權保護政策規範之使用方式。</li>
+                        <li>您同意春天會館利用您的個人資料與及相片之期間為，自即日起至您與本公司間所有契約均終止後，利用地區為全球。</li>
+                        <li>您可依個人資料保護法，就您的個人資料向本公司(1)請求查詢或閱覽、(2)製給複製本、(3)請求補充或更正、(4)請求停止蒐集、處理及利用或(5)請求刪除。但因本公司執行職務或業務所必需者，本公司得拒絕之。</li>
+                        <li>您可自由選擇是否提供本公司您的個人資料，但若您所提供之個人資料，經檢舉或本公司發現不足以確認您的身分真實性或其他個人資料冒用、盜用、資料不實等情形，本公司有權暫時停止提供對您的服務，若有不便之處敬請見諒。</li>
+                        <li>您瞭解此一同意符合個人資料保護法及相關法規之要求，具有書面同意本公司蒐集、處理及利用您的個人資料之效果。</li>
+                    </ol>
+                    <h3>約會專家服務條款(會員權益與需知)</h3>
+                    <h4>一、會員資格：</h4>
+                    <p>需年滿18歲且現無配偶之男、女性單身朋友（含曾離異、鰥寡者），無刑事前科、有正當職業或有正當收入來源。或為美滿人生企業有限公司-春天會館、DateMeNow所屬璀璨會員、璀璨VIP會員，即日起享有約會專家會員相關之權益。若您違反規定註冊並使用本公司服務，一經查知，得隨時終止您的使用權且不予退費。</p>
+
+                    <h4>二、帳戶安全：</h4>
+                    <p>會員朋友請妥善保管您的個人帳號、密碼或任何個人資料，勿將個人資料，提供給任何人。若與他人共享電腦或使用公共電腦，切記要關閉瀏覽器視窗，以防止他人讀取您個人資料。您有義務保密您在本網站使用的會員帳號與密碼，若當您發現會員帳號或密碼被非法盜用，或本站網管安全漏洞時，請立刻通知我們。</p>
+
+                    <h4>三、會員法律責任：</h4>
+                    <p>約會專家(春天會館、好好玩旅行社、DateMeNow)為經政府立案之誠信廠商，任何未經本公司事前授權的商業行為都是被禁止的。您必須遵守中華民國政府規定的相關法令規範，並且對於經由使用者名稱和密碼所進行的任何行為、以及所發表的所有資料負責。您必須同意以下的約定：</p>
+                    <ol type="A">
+                        <li>不得為任何違反中華民國技術資料輸出等相關法令之行為。</li>
+                        <li>不得為刊載、傳輸、發送或儲存任何誹謗、詐欺、傷害、猥褻、色情、賭博或其他一切違反法令之郵件、檔案或資料。</li>
+                        <li>不得為刊載、傳輸、發送或儲存任何侵害他人智慧財產權或其他權益的資料。</li>
+                        <li>不得在未經同意收集他人電子郵件位址以及其他個人資料。</li>
+                        <li>不得在未經本公司同意擅自摘錄、轉載、複製或使用本網站內任何會員服務資料庫之內容。</li>
+                        <li>不得為刊載、傳輸、發送、儲存病毒、或其他任何足以破壞或干擾電腦系統或資料的程式或訊息。</li>
+                        <li>不得為破壞或干擾會員服務的系統運作或違反一般網路禮節之行為。</li>
+                        <li>不得為任何妨礙或干擾其他使用者使用會員服務之行為。</li>
+                        <li>不得對他人、本公司或其他公司的言論或其他方式惡意攻擊。</li>
+                        <li>不得為其他不符合會員服務所提供的使用目的之行為。</li>
+                        <li>凡本網站會員都必須對本人言行及與其他會員之間的互動負完全法律上之責任。</li>
+                    </ol>
+                    <h4>四、約會專家聲明</h4>
+                    <p>約會專家並非政府或司法機關，所以我們僅能對於申請加入會員者做基本有限之審查，且審查是以會員本人所提供之資料為主。故縱使約會專家已盡力審核該會員之身分資料與進行面談，但我們仍然無法保證該會員的身分、背景、品德、言行、財務狀況與其所陳述資料是絕對正確與合法。
+                    <dl>
+                        <dt>約會專家無法保證：</dt>
+                        <dd>(1)任何會員的道德、品行、財務狀況。</dd>
+                        <dd>(2)您與任何會員的配對合適性。</dd>
+                    </dl>
+                    <dl>
+                        <dt>所有加入約會專家的會員已確認：</dt>
+                        <dd>(1)您已閱讀並了解我們對於會員的身分認證及面談程序。</dd>
+                        <dd>(2)您理解網路具有一定程度上風險。透過網路您所結交的會員有可能是使用虛假身分或有犯罪企圖人士。</dd>
+                        <dd>(3)當您同意與其他會員接觸時，您會以適當措施保護您個人安全與個人資料的隱私。不論在任何情況下，都別將您的銀行帳號或信用卡號碼等個人機密資料透露給其他會員。</dd>
+                    </dl>
+                    <h4>五、智慧財產權：</h4>
+                    <p>本網站上所有內容，包含文字、圖形、影音、程式、畫面安排及資料編輯等，其著作權、專利權、商標及其他智慧財產權，均屬於本公司或授權本公司使用之正當權利人。在未經本公司或正當權利人合法授權前，您不得擅自以任何形式複製、改作、編輯、散布、公開傳播或其他非法使用，否則本公司將依法追訴並請求賠償。本網站服務內之各類文字、圖檔、圖片及其他著作或資料，其著作權或其他相關智慧財產權均仍屬於提供該文字、圖檔、圖片及其他著作或資料之各別廠商或其他合法權利人所有，並由各別廠商或其他合法權利人依當時所定之授權條件及範圍授權會員使用，但這僅限於您個人使用，未經事前授權您不可以將這些文字、圖檔、圖片或其他著作或資料使用於不符本站之規定之行為。如果本網站任何文字、圖檔、圖片或其他著作或資料發生權利歸屬或其他合法性爭議，本公司有權隨時不經通知，直接停止提供、或直接刪除、或通知會員停止使用。</p>
+
+                    <h4>六、隱私權保護：</h4>
+                    <p>對於您使用本網站服務所留下的個人資料，本公司基於對隱私權的尊重，將儘可能予以保護。相關細節請參閱「隱私權政策」。</p>
+
+                    <h4>七、責任限制：</h4>
+                    <p>對於本公司所提供之各項服務，均僅依各該服務當時之功能及現況提供使用，會員或報名者如有特定之要求或需求，而超出本公司所能掌控之範圍外，本公司不負任何形式或內容之擔保或保證責任。本公司絕對尊重客戶隱私權，惟於網路上不保證任何郵件、檔案或資料於傳送過程均係可靠且正確無誤，亦不保證所儲存或所傳送之郵件、檔案或資料之安全性、可靠性、完整性、正確性及不會斷線和出錯等，會員或報名者應對傳送過程中或儲存時之郵件、檔案或資料遺失或電腦系統損壞自負完全責任，與本公司無涉。因本網站所提供的服務本身之使用，所造成之任何直接或間接之損害，本公司均不負任何責任，即使係本公司曾明白建議之注意事項亦同。</p>
+
+                    <h4>八、服務暫停或中斷：</h4>
+                    <p>在下列情形，本公司將暫停或中斷本網站服務之全部或一部，且對使用者任何直接或間接之損害，均不負任何責任。</p>
+                    <ol>
+                        <li>對本服務相關軟硬體設備進行搬遷、更換、升級、保養或維修時。</li>
+                        <li>使用者有任何違反政府法令或本使用條款情形。</li>
+                        <li>天災或其他不可抗力所致之服務停止或中斷。</li>
+                        <li>其他不可歸責於本公司之事由所致之服務停止或中斷。</li>
+                        <li>網站服務系統或功能例行性之維護、改置或變動所發生之服務暫停或中斷，本公司將於該暫停或中斷前以電子郵件、公告或其他適當之方式告知會員。</li>
+                    </ol>
+                    <h4>九、終止服務：</h4>
+                    <p>基於公司的運作，會員服務有可能停止提供服務之一部份或全部，使用者不可以因此而要求任何賠償或補償。如果您違反了本使用條款，本公司保留隨時暫時停止提供服務、或終止提供服務之權利，您不可以因此而要求任何賠償或補償。如果您在會員服務或報名資料上所刊載的檔案或資料，有任何違反法令、違反本使用條款、或有侵害第三人權益之虞者，本公司保留隨時得不經通知直接加以移動或刪除之權利。若本公司因此受到任何損害，您應對本公司負損害賠償之責。
+
+                    <h4>十、修改本服務條款的權利：</h4>
+                    <p>本公司保留隨時修改本網站服務條款的權利，修改後的服務條款將公佈在本網站上，不另外個別通知使用者。</p>
+
+                    <h3>單身身份確認聲明</h3>
+                    <p>(一) 加入美滿人生企業有限公司-約會專家(春天會館、好好玩旅行社、DateMeNow)相關企業服務即表示同意單身身份確認聲明且為單身身份，過去如有婚姻記錄當據實以告，絕無隱瞞並承諾未來如有婚約關係時，立即通知貴單位，並無條件退出一切聯誼活動。如有任何欺瞞或隱匿婚姻狀態之行為，因而損害美滿人生企業有限公司-約會專家(春天會館、好好玩旅行社、DateMeNow)相關企業或其他第三人權益者，本人願自負一切法律賠償責任，並聲明與貴單位無任何關聯。</p>
+                    <p>(二) 另聲明參加美滿人生企業有限公司-約會專家(春天會館、好好玩旅行社、DateMeNow)相關企業聯誼活動期間，確實基於個人單純交友之動機，並願共同維護貴單位會員活動之正當性，絕無假借名義進行借貸、直銷、傳銷或任何不正當業務行為，以尊重並維護會友權益，避免不必要的困擾。</p>
+                    <p>(三) 如經其他會友檢舉有上述業務行為，並經察屬實者，貴會有權立即停止本人會員權益，且本人同意貴會無須退還所收取之任何費用，如有涉及法律責任者，亦由本人負完全之責任，絕無異議。</p>
+                    <p>(四) 會籍存續期間，如發現罹患法定傳染病(如登革熱、SARS、AIDS等)或精神性疾病者，本人願意主動申明並暫停參與任何活動，以維全體會友之權益。</p>                  
+                    <p>依照「個人資料保護法」，本人同意在會籍存續期間，並在會員權益範圍內，授權美滿人生企業有限公司-約會專家(春天會館、好好玩旅行社、DateMeNow)相關企業使用本人之個人資料。美滿人生企業有限公司-約會專家(春天會館、好好玩旅行社、DateMeNow)相關企業必須善盡保護守密之則，未經本人同意，不得任意直接、間接更改、刪除、洩漏、利用、販賣、國際傳輸等予第三者。</p>
+                </div>
+                <div class="joininfo-back col-md-4 col-md-offset-4">
+                    <a href="index.html" class="btn btn-black">回首頁<i class="fa fa-caret-right"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- index-socila-media -->
+        <section class="index-socila-media">
+            <div class="container">
+                <div class="owl-carousel buttons-autohide controlls-over owl-padding-10 owl-theme owl-carousel-init" data-plugin-options='{"singleItem": false, "items": "8", "autoPlay": true, "navigation": false, "pagination": false, "itemsMobile":[479,5], "itemsTablet":[768,8]}'>
+                    <div><a title="facebook" alt="facebook" href="https://www.facebook.com/springclubLOVE" target="_blank" class="btn btn-social"><i class="fa fa-facebook"></i></a></div>
+                    <div><a title="line" alt="line" href="http://line.me/ti/p/XxzQFbjkps" target="_blank" class="btn btn-social"><img src="assets/images/line-icon.svg" alt="春天會館-line" class="line-icon"></a></div>
+                    <div><a href="https://lovespringclub.blogspot.tw/" target="_blank" class="btn btn-social"><img src="assets/images/blogger-icon.svg" alt="春天會館-blogger" class="blogger-icon"></a></div>
+                    <div><a href="https://www.youtube.com/channel/UCJHeF9TNOZUSNBYyFhLviIQ" target="_blank" class="btn btn-social"><i class="fa fa-youtube-play"></i></a></div>
+                    <div><a href="#" class="btn btn-social"><i class="fa fa-envelope"></i></a></div>
+                    <div><a href="place.asp" title="place" alt="place" class="btn btn-social"><i class="fa fa-phone"></i></a></div>
+                    <div><a href="#" class="btn btn-social"><i class="fa fa-apple"></i></a></div>
+                    <div><a href="#" class="btn btn-social"><i class="fa fa-android"></i></a></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="index-middle-nav">
+            <div class="container">
+                <div class="index-nav-btns">
+                    <div class="owl-carousel" data-plugin-options='{"singleItem": false, "items": "6", "stopOnHover":false, "autoPlay":4000, "autoHeight": false, "navigation": false, "pagination": true, "itemsMobile":[479,3], "itemsTablet":[768,4]}'>
+                        <div><a class="btn-nav" href="aboutus_1.html">認識春天</a></div>
+                        <div><a class="btn-nav" href="spring_events.html">春天大事紀</a></div>
+                        <div><a class="btn-nav" href="aboutus_2.html">春天top7</a></div>
+                        <div><a class="btn-nav" href="charity.html">愛心公益</a></div>
+                        <div><a class="btn-nav" href="enterprise.html">企業內訓</a></div>  
+                        <div><a class="btn-nav" href="place.html">服務據點</a></div> 
+                    </div>                  
+                </div>
+            </div>
+        </section>
+
+        <!-- footer -->
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <p>春天會館<a href="#" data-toggle="modal" data-target="#seviceCenter" title="客服中心" alt="客服中心" class="service-center">客服中心</a></p>
+                        <ul class="footer-time">
+                            <li>開放時間</li>
+                            <li>週一至週六 13:30 ~ 21:00<br>週日 10:00 ~ 17:30</li>
+                        </ul>
+                        <ul class="footer-location">
+                            <li>台北會館 (02)2381-1348 台北市重慶南路一段49號8F</li>
+                            <li>桃園會館 (03)347-5825 桃園市復興路205號18F-3</li>
+                            <li>新竹會館 (03)535-6676 新竹市北區北大路307號14F-1</li>
+                            <li>台中會館 (04)2326-5300 台中市台灣大道2段307號11F-1</li>
+                            <li>台南會館 (06)250-6900 台南市成功路515號8F</li>
+                            <li>高雄會館 (07)216-1988 高雄市中山二路507號5F</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <p class="copyrights">單身聯誼,婚友聯誼社 copyright @春天會館 隱私權政策<br>本網站版權為春天會館所有、文字與圖片均不得以任何形式轉載</p>
+                        <ul class="footer-location">
+                            <li><a href="https://www.facebook.com/%E6%98%A5%E5%A4%A9%E6%9C%83%E9%A4%A8-%E5%8F%B0%E5%8C%97%E5%88%86%E9%A4%A8-%E6%97%85%E9%81%8A%E8%81%AF%E8%AA%BC%E4%BA%A4%E5%8F%8B%E6%84%9B%E6%83%85%E5%96%AE%E8%BA%AB%E4%BF%B1%E6%A8%82%E9%83%A8-455443021252889" target="_blank" title="台北分館" alt="台北分館">春天會館 台北分館-旅遊、聯誼、交友、愛情（單身俱樂部）</a></li>
+                            <li><a href="https://www.facebook.com/tyspringclub" target="_blank" title="桃園分館" alt="桃園分館">春天會館 桃園分館 旅行,愛情,交友,聯誼（單身俱樂部)</a></li>
+                            <li><a href="https://www.facebook.com/hsinchuspring" target="_blank" title="新竹分館" alt="新竹分館">春天會館 新竹分館 旅行,愛情,交友,聯誼（單身俱樂部）</a></li>
+                            <li><a href="https://www.facebook.com/%E6%98%A5%E5%A4%A9%E6%9C%83%E9%A4%A8-%E5%8F%B0%E4%B8%AD%E5%88%86%E9%A4%A8-%E6%97%85%E8%A1%8C%E6%84%9B%E6%83%85%E4%BA%A4%E5%8F%8B%E8%81%AF%E8%AA%BC%E5%96%AE%E8%BA%AB%E4%BF%B1%E6%A8%82%E9%83%A8-373503842783591" target="_blank" title="台中分館" alt="台中分館">春天會館 台中分館 旅行,愛情,交友,聯誼（單身俱樂部)</a></li>
+                            <li><a href="https://www.facebook.com/TNspringclub" target="_blank" title="台南分館" alt="台南分館">春天會館 台南分館 旅行,愛情,交友,聯誼（單身俱樂部)</a></li>
+                            <li><a href="https://www.facebook.com/%E6%98%A5%E5%A4%A9%E6%9C%83%E9%A4%A8-%E9%AB%98%E9%9B%84%E5%88%86%E9%A4%A8-%E4%BA%A4%E5%8F%8B%E7%B4%84%E6%9C%83%E5%87%BA%E5%8E%BB%E7%8E%A9-123325249062782/" target="_blank" title="高雄分館" alt="高雄分館">春天會館 高雄分館-浪漫旅遊,享受愛情,聯誼,交友</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <!--FB開始-->
+                        <div class="fb">
+                            <div class="fb_box">
+                                <div class="fb-like-box" data-href="http://www.facebook.com/springclubLOVE" data-width="400" data-height="250" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div>
+                            </div>
+                        </div>
+                        <!--FB結束-->
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        
+    </div>
+
+    <!-- SCROLL TO TOP -->
+    <a href="#" id="toTop"></a>
+
+    <!-- Modal 客服中心 -->
+    <div id="seviceCenter" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+    
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">春天會館客服中心</h4>
+            </div>
+            <div class="modal-body">
+                <p>您好！請留下您的資料與要詢問的問題～<br>
+                    我們將於上班時間周一~周五 9:00 ~ 18:00 與您回覆&聯繫<br>
+                    感謝您的詢問，祝您有美好的一天！</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">關閉視窗</button>
+                <button type="button" class="btn btn-primary">確認送出</button>
+            </div>
+        </div>
+    
+        </div>
+    </div>
+
+    <!-- Modal 活動表下載 -->
+    <div id="eventFormDownLoad" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+    
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">春天會館全省活動表下載</h4>
+            </div>
+            <div class="modal-body">
+                <p>1~3月活動表</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">關閉視窗</button>
+                <button type="button" class="btn btn-primary">確認送出</button>
+            </div>
+        </div>
+    
+        </div>
+    </div>
+    
+    <!-- scripts -->
+    <script src="assets/plugins/jquery/jquery-2.2.4.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+    <script src="assets/plugins/sweetalert2/sweetalert2.min.js?v=1.1"></script>
+
+    <!-- facebook script -->
+    <!-- <div id="fb-root"></div>
+    <script type="text/javascript">
+        (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/zh_TW/all.js#xfbml=1&appId=127733590592196";
+        fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script> -->
+</body>
+</html>

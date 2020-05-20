@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Language" content="zh-tw">
+    <meta name="description" content="春天會館單身交友、未婚聯誼、相親配對、一對一速配約會，男女專屬互動婚戀交友平台，想結婚的你就讓春天會館的月老紅娘婚姻顧問幫助你脫單">
+    <meta name="keywords" content="愛情交友,婚友,交友 網站,熟女,春天會館,聯誼,相親,月老,愛情,交友,婚友社,台北聯誼,桃園聯誼,新竹聯誼,台中聯誼,台南聯誼,高雄聯誼,春天會館台北會館">
+    <link rel="icon" type="image/ico" href="https://www.springclub.com.tw/favicon.ico">
+    <title>春天會館單身交友聯誼婚戀平台</title>
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- plugin css -->
+    <link href="assets/css/plugin.min.css" rel="stylesheet">
+    <!-- layout -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <!-- sweetalert -->
+    <link href="assets/plugins/sweetalert2/sweetalert2.css?v=1.1" rel="stylesheet">
+</head>
+<body>
+    <div id="wrapper">
+        <header id="header" class="springclub-header springclub-header-2 transparent">
+            <nav class="navbar">
+                <div class="container-fluid">
+                    <div class="navbar-header">                        
+                        <a class="navbar-brand" href="index.html"><img src="assets/images/springclub-logo.png" title="春天會館" alt="春天會館"></a>
+                    </div>                 
+                </div>         
+            </nav>        
+        </header>
+
+        <!-- 註冊step1 -->
+        <section class="register-form">
+            <div class="container">
+
+                <div class="register-block">
+                    <ul class="register-steps">
+                        <li class="step active">Step<span>1</span><i class="fa fa-caret-right"></i></li>
+                        <li class="step">Step<span>2</span><i class="fa fa-caret-right"></i></li>
+                        <li class="step">Step<span>3</span><i class="fa fa-caret-right"></i></li>
+                        <li class="step">Step<span>4</span><i class="fa fa-caret-right"></i></li>
+                        <li class="step">Step<span>5</span><i class="fa fa-caret-right"></i></li>
+                        <li class="step">Step<span>6</span><i class="fa fa-caret-right"></i></li>
+                        <li class="step">Step<span>7</span><i class="fa fa-caret-right"></i></li>
+                        <li class="step">Step<span>8</span><i class="fa fa-caret-right"></i></li>
+                        <li class="step">Step<span>9</span><i class="fa fa-caret-right"></i></li>
+                        <li class="step">Done</li>
+                    </ul>
+                    <div class="register-box">
+                        <div class="register-box-head">
+                            <h3>選擇跟誰約會？</h3>
+                            <p>馬上註冊！</p>
+                        </div>
+                        <div class="register-box-content">
+
+                            <form action="">
+                                <div class="form-group">
+                                    <label class="" for="name">真實姓名</label>
+                                    <input type="text" id="name" class="form-control">
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="" for="phone">手機號碼</label>
+                                    <input type="text" id="phone" class="form-control">
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="" for="mail">Email (帳號)</label>
+                                    <input type="text" id="mail" class="form-control">
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="" for="area">居住地區</label>
+                                    <select id="area" class="form-control">
+                                        <option value="">台北市</option>
+                                        <option value="">新北市</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group row">
+                                    <div class="col-xs-6">
+                                        <label class="" for="code">驗證碼</label>
+                                        <input type="text" id="code" class="form-control">
+                                    </div>
+                                    <div class="col-xs-6 code">                                    
+                                        <a href="#p" onclick="reload_psn_class('psn_img')"><img class="psn_img" src="assets/images/captcha.bmp"></a>
+                                    </div>
+                                </div>                                
+
+                                <div class="form-group register-submit row">
+                                    <div class="col-md-6">
+                                        <button type="button" class="btn btn-male btn-block" onclick="javascript:location.href='register_step2.html'">我是男生<i class="fa fa-caret-right"></i></button>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <button type="button" class="btn btn-female btn-block" onclick="javascript:location.href='register_step2.html'">我是女生<i class="fa fa-caret-right"></i></button>
+                                    </div>                                    
+                                </div>
+                                <p class="confirm">點擊表示同意<a href="#" data-toggle="modal" data-target="#readmodal">個資聲明</a>與<a href="#" data-toggle="modal" data-target="#readmodal">隠私政策</a></p>
+                            </form>
+
+                        </div>
+                    </div>
+                    <img src="assets/images/steps1.png" class="register-steps-imgs" alt="春天會館_註冊">
+                </div>
+
+            </div>
+        </section>
+        <!-- /註冊step1 -->
+
+        <!-- footer -->
+        <footer class="footer">
+            <div class="footer-container">
+                <p class="text-center">單身聯誼,婚友聯誼社 copyright @春天會館 隱私權政策<br>本網站版權為春天會館所有、文字與圖片均不得以任何形式轉載</p>
+            </div>
+        </footer>
+
+        
+    </div>
+
+    <!-- SCROLL TO TOP -->
+    <a href="#" id="toTop"></a>
+    
+    <!-- Modal 客服中心 -->
+    <div id="seviceCenter" class="modal fade modal-spring" role="dialog">
+        <div class="modal-dialog">
+            <!-- form -->
+            <form action="">     
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">春天會館客服中心</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>您好！請留下您的資料與要詢問的問題～<br>
+                            我們將於上班時間周一~周五 9:00 ~ 18:00 與您回覆&聯繫<br>
+                            感謝您的詢問，祝您有美好的一天！</p>                                    
+                        <div class="sevice-form">
+                            <div class="form-group row">
+                                <div class="col-md-4">
+                                    <label class="sr-only" for="name">姓名 name</label>
+                                    <input type="name" class="form-control" id="name" placeholder="姓名 name">
+                                </div>
+                                <div class="col-md-4">
+                                    <label class="sr-only" for="gender">性別</label>
+                                    <select class="form-control" name="gender" id="gender">
+                                        <option value="">選擇性別</option>
+                                        <option value="">男性</option>
+                                        <option value="">女性</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-4">
+                                    <label class="sr-only" for="mobile">手機號碼 mobile</label>
+                                    <input type="number" class="form-control" id="mobile" placeholder="手機號碼 mobile">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-md-6">
+                                    <label class="sr-only" for="email">電子郵件 email</label>
+                                    <input type="email" class="form-control" id="email" placeholder="電子郵件 email">
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="sr-only" for="area">區域</label>
+                                    <select class="form-control" name="area" id="area">
+                                        <option value="">請選擇區域</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" rows="6"></textarea>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-xs-6">
+                                    <label class="sr-only" for="code">驗證碼</label>
+                                    <input type="" class="form-control" id="code" placeholder="驗證碼">
+                                </div>
+                                <div class="col-xs-6">
+                                    <a href=""><img src="assets/images/captcha.bmp" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-black">確認送出 <i class="fa fa-caret-right"></i></button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- /Modal 客服中心 -->
+
+    <!-- Modal 活動表下載 -->
+    <div id="eventFormDownLoad" class="modal fade modal-spring" role="dialog">
+        <div class="modal-dialog">    
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">春天會館全省活動表下載</h4>
+                </div>
+                <div class="modal-body">
+                    <h4 class="title">1~3月活動表</h4>
+                    <ul class="spring-event-btns">
+                        <li><a href="" target="_blank">台北會館</a></li>
+                        <li><a href="" target="_blank">桃園會館</a></li>
+                        <li><a href="" target="_blank">新竹會館</a></li>
+                        <li><a href="" target="_blank">台中會館</a></li>
+                        <li><a href="" target="_blank">台南會館</a></li>
+                        <li><a href="" target="_blank">高雄會館</a></li>
+                    </ul>
+                </div>
+            </div>    
+        </div>
+    </div>
+    <!-- /Modal 活動表下載 -->
+
+
+    <!-- scripts -->
+    <script src="assets/plugins/jquery/jquery-2.2.4.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+    <script src="assets/plugins/sweetalert2/sweetalert2.min.js?v=1.1"></script>
+
+</body>
+</html>
