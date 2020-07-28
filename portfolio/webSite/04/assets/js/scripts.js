@@ -458,18 +458,20 @@ function _indexRegisterToggle(){
   })
 };
 
-/** 06. 計算圖片長寬比**/
+/** 06. 計算圖片長寬比 20200728修改 **/
 function _imgAspectRatio(percent){  
   var $imgRatio = $(".img-ratio");
   if( $imgRatio.length > 0){
     window.addEventListener("load", function(event) {
-      $(window).resize(function(){        
+      $(window).resize(function(){  
+        setTimeout(function(){
           $imgRatio.each(function(){
-              var ratio = $(this).attr("data-ratio");    
-              var w = $(this).width();      
-              var h = w * ( ratio || percent );           
-              $(this).height(h);
-          })        
+            var ratio = $(this).attr("data-ratio");    
+            var w = $(this).width();      
+            var h = w * ( ratio || percent );           
+            $(this).height(h);
+          }) 
+        },300) 
       }).resize();    
     })
   }  
