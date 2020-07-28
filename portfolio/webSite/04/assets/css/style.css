@@ -1577,8 +1577,8 @@ h1.spring-title > span{
     margin-left: 10px;
 }
 .events-hot  .events-hot-box .events-location, .events-ongo-item .events-location, .events-all-box .events-location{
-    padding: 6px 10px;
-    border-radius: 8px;
+    padding: 4px 8px;
+    border-radius: 6px;
     font-size: 12px;    
     background-color: rgba(0,0,0,0.5);
     color: #fff;
@@ -1668,7 +1668,7 @@ h1.spring-title > span{
     text-align: left;
 }
 .events-ongo-item .events-location{
-    position: absolute;
+    position: absolute !important;
 }
 .events-photos{
     background-color:#f2f2f2;
