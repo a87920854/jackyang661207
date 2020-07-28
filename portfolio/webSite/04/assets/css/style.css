@@ -361,6 +361,9 @@ button{
 .index-occupation .owl-carousel{
     margin-bottom: 0;
 }
+.index-occupation .btn-black{
+    background-color: #000;
+}
 /* 首頁-index-member */
 .index-member{
     position: relative;
@@ -389,7 +392,7 @@ button{
 }
 .photo-item a{
     position: relative;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     display: block;
     padding: 8px;
     background-color: #fff;
@@ -397,6 +400,10 @@ button{
 }
 .photo-item .name{
     color: #000;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
 }
 .photo-item .photo{
     height: 200px;
@@ -418,6 +425,7 @@ button{
     transition: opacity .1s;
     background-color: rgba(255,86,167,0.8);
     color: #fff;
+    text-align: center;
 }
 .photo-item a:hover, .photo-item a:active, .photo-item a:focus{
     text-decoration: none;    
@@ -1098,14 +1106,14 @@ button{
     width: 100%;
     padding: 8px 5px;
     display: block;
-    background-color: #999999;
+    background-color: #808080;
     color: #fff;
     border-radius: 30px;
     transition: background-color .2s;
 }
 .location-kv-box li a:hover, .location-kv-box li a:active, .location-kv-box li a:focus{
     text-decoration: none;
-    background-color: #000;
+    background-color: #ff56a7;
 }
 .location-kv-box li a>i{
     margin-left: 5px;
@@ -1145,33 +1153,36 @@ button{
 	color: #000;
 	padding-left: 20px;
 }
-.location-place-list li.phone::before{
-	position: absolute;
+.location-place-list li.phone::before,
+.location-place-list li.mail::before,
+.location-place-list li.add::before,
+.location-place-list li.time::before,
+.location-place-list li.description::before{
+    position: absolute;
 	left: 0;
-	top: 4px;
-	content: "\f095";
-	font: normal normal normal 16px/1 FontAwesome;	
+    top: 6px;
+    font: normal normal normal 16px/1 FontAwesome;
+    width: 18px;
+    height: 18px;
+    text-align: center;
+}
+.location-place-list li.phone::before{	
+	content: "\f095";  
 }
 .location-place-list li.mail::before{
-	position: absolute;
-	left: 0;
-	top: 4px;
 	content: "\f0e0";
-	font: normal normal normal 16px/1 FontAwesome;	
 }
 .location-place-list li.add::before{
-	position: absolute;
-	left: 0;
-	top: 4px;
 	content: "\f041";
-	font: normal normal normal 16px/1 FontAwesome;	
 }
 .location-place-list li.time::before{
-	position: absolute;
-	left: 0;
-	top: 4px;
 	content: "\f017";
-	font: normal normal normal 16px/1 FontAwesome;	
+}
+.location-place-list li.description{
+    margin-top: 20px;
+}
+.location-place-list li.description::before{
+	content: "\f05a";
 }
 .location-place-list li.time span{
 	padding-left: 70px;
@@ -1214,7 +1225,7 @@ button{
 	height: auto;
 }
 .btn-location:hover, .btn-location:active, .btn-location:focus{
-    background-color: #000;
+    background-color: #ff56a7;
     color: #fff;
 }
 .btn-location > i{
@@ -1268,21 +1279,21 @@ button{
 }
 .location-place-block .location-place-box{
     border: 1px solid #000;
-    height: 260px;
+    height: auto;
 }
 .location-place-block .location-place-box .location-place-list li{
     font-size: 14px;
 }
-.location-place-block .location-place-list li.phone::before, .location-place-block .location-place-list li.add::before, .location-place-block  .location-place-list li.time::before{
-    top: 6px;
-}
 .location-photo-slider{
-    padding: 10px;
+    padding: 20px;
     background-color: #fff;
     border: 1px solid #000;
 }
+.location-photo-slider .flex-control-thumbs{
+    margin: 20px 0 0;
+}
 .location-place-block h3, .location-photo-show h3{
-    font-size: 30px;
+    font-size: 41px;
     font-weight: bold;
     color: #000;
     text-overflow: ellipsis;
@@ -1496,7 +1507,7 @@ h1.spring-title > span{
 .events-all-box{
     height: 220px;
 }
-.events-all-box.video::after, .events-hot-box.video::after{
+.events-all-box.video::after, .events-hot-box.video::after, .s-video::after{
     display: block;
     position: absolute;
     content: "\f144";
@@ -1707,7 +1718,6 @@ h1.spring-title > span{
     width: 100%;
     line-height: 40px;
     font-size: 16px;
-    background-color: #808080;
 }
 .search-bar-box .btn-black:hover, .search-bar-box .btn-black:active, .search-bar-box .btn-black:focus{
     background-color: rgba(0,0,0,0.8);
@@ -1753,7 +1763,6 @@ h1.spring-title > span{
 .events-all-more .btn-black{
     width: 100%;
     font-size: 20px;
-    background-color: #808080;
     padding: 10px 5px;
 }
 .events-all-more .btn-black > i{
@@ -1814,7 +1823,6 @@ h1.spring-title > span{
 }
 .events-detail-btn .btn-black, .events-detail-bottom-btn .btn-black{
     font-size: 17px;
-    background-color: #808080;
 }
 .events-detail-btn .btn-black > i, .events-detail-bottom-btn .btn-black > i{
     margin-left: 5px;
@@ -1914,15 +1922,11 @@ h1.spring-title > span{
     margin-top: 30px;
     padding: 0px 30px;
 }
-.events-photo-list-more .btn-black{
-    background-color: #808080;
-}
 .events-photo-list-more .btn-black > i{
     margin-left: 5px;
 }
 .table-events .btn-black{
     padding: 6px 12px;
-    background-color: #808080;
 }
 .table-events>tbody>tr:nth-of-type(odd){
     background-color: rgba(255,217,239,0.3);
@@ -1964,7 +1968,6 @@ h1.spring-title > span{
     display: initial;
     padding: 10px 28px;
     font-size: 20px;
-    background-color: #808080;
 }
 .events-top-title .btn-black>i{
     margin-left: 5px;
@@ -2016,6 +2019,7 @@ h1.spring-title > span{
     clear: both;
 }
 .media-image{
+    position: relative;
     width: 100%;
     height: 400px;
     overflow: hidden;
@@ -2259,8 +2263,8 @@ h1.spring-title > span{
     position: absolute;
 }
 .spring-history-flower.f01{
-    right: -50px;
-    top: 60px;
+    right: -90px;
+    top: 140px;
 }
 .spring-history-flower.f02{
     left: -148px;
@@ -2294,7 +2298,6 @@ h1.spring-title > span{
     margin-top: 20px;
 }
 .witness-btn .btn-black{
-    background-color: #808080;
     font-size: 20px;
     padding: 10px 5px;
 }
@@ -2319,6 +2322,15 @@ h1.spring-title > span{
 }
 .witness-photo-slider .flex-control-nav li{
     margin:0px 4px 8px 4px;
+}
+.witness-photo-slider .slides>li{
+    height: 350px;
+    overflow: hidden;
+}
+.witness-photo-slider .slides>li img{
+    max-height: 100%;
+    width: auto;
+    margin: auto;
 }
 .witness-point{
     list-style: none;
@@ -2512,6 +2524,9 @@ h1.spring-title > span{
     overflow: hidden;
     position: relative;
 }
+.pair-kv .btn-black > .fa-caret-right{
+    margin-left: 0;
+}
 .pair-kv .people{
     display: none;
 }
@@ -2544,7 +2559,7 @@ h1.spring-title > span{
     background-position: center top;
 }
 .pair-kv-text{
-    width: 50%;
+    width: 38%;
     margin-top: 70px;
     text-align: center;
 }
@@ -2634,7 +2649,6 @@ h1.spring-title > span{
     width: 300px;
     font-size: 20px;
     padding: 10px 5px;
-    background-color: #999;
     margin: 0 auto;
 }
 .pair-kv.type1 .pair-kv-text h3{
@@ -2752,7 +2766,6 @@ h1.spring-title > span{
     display: block;
     width: 100%;
     font-size: 20px;
-    background-color: #808080;
     padding: 10px 5px;
 }
 .aboutus{
@@ -2764,11 +2777,12 @@ h1.spring-title > span{
 }
 .aboutus-main-box{
     position: relative;
-    padding: 30px 40px;
+    padding: 70px 40px;
     background-color: #fff;
 }
 .aboutus-main-box h2{
     font-size: 27px;
+    line-height: 1.3;
     font-weight: bold;
     margin: 0 0 10px 0;
     color: #ff56a7;
@@ -2976,7 +2990,6 @@ h1.spring-title > span{
     display: block;
     width: 100%;
     font-size: 20px;
-    background-color: #808080;
     padding: 10px 5px;
 }
 .aboutus2 .index-events-ongo{
@@ -3178,7 +3191,7 @@ h1.spring-title > span{
     font-size: 15px;
     width: 100%;
 }
-.sevice-form{
+.sevice-form, .service-form{
     margin-top: 20px;
 }
 .spring-event-btns{
@@ -3196,7 +3209,7 @@ h1.spring-title > span{
 .spring-event-btns li a{
     display: block;
     width: 100%;
-    background-color: #000;
+    background-color: #808080;
     padding: 10px 10px;
     font-size: 14px;
     color: #fff;
@@ -3209,19 +3222,23 @@ h1.spring-title > span{
     color: #fff;
     text-decoration: none;
 }
-.repay-box{
+.repay-box,
+.search-box{
     border: 2px solid #ccc;
     background-color: #f2f2f2;
 }
-.repay-box-head{
+.repay-box-head,
+.search-box-head{
     padding: 20px 30px;
     background-color: #ff56a7;
 }
-.repay-box-head h3{
+.repay-box-head h3,
+.search-box-head h3{
     color: #fff;
     margin: 0;
 }
-.repay-box-content{
+.repay-box-content,
+.search-box-content{
     padding: 30px 30px;
 }
 .repay-box-content .info{
@@ -3320,7 +3337,7 @@ h1.spring-title > span{
     margin-bottom: 2px;
 }
 .login-box-header{
-    background-color: #808080;
+    background-color: #000;
     padding: 15px 30px;
 }
 .login-box-header.pink{
@@ -3351,6 +3368,370 @@ h1.spring-title > span{
 }
 .login-box-submit-login{
     margin-top: 185px;
+}
+.love-teacher-accordion{
+    margin-top: 50px;
+}
+.love-teacher-accordion .panel-title{
+    position: relative;
+    font-size: 25px;
+    color: #000;
+}
+.love-teacher-accordion .panel-title a > span{
+    font-size: 17px;
+}
+.love-teacher-accordion .panel-title a:hover, .love-teacher-accordion .panel-title a:active, .love-teacher-accordion .panel-title a:focus{
+    text-decoration: none;
+}
+.love-teacher-box{
+
+}
+.love-teacher-photo{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    margin: 0 auto 30px auto;
+}
+.love-teacher-photo img{
+    width: 100%;
+}
+.love-teacher-text{
+    font-size: 16px;
+    line-height: 1.6;
+    color: #4d4d4d;
+}
+.love-teacher-text h5{
+    margin: 0px 0 5px 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+.love-teacher-text ul.list{
+    list-style: none;
+    margin: 0 0 20px 0;
+    padding-left: 20px;
+}
+.love-teacher-text ul.list li{
+    position: relative;
+}
+.love-teacher-text ul.list li::before{
+    font-family: "fontawesome";
+    content: "\f0da";
+    font-size: 14px;
+    position: absolute;
+    left: -16px;
+    top: 2px;
+}
+.love-hashtag{
+    list-style: none;
+    margin: 0 0 20px 0;
+    padding: 0;
+}
+.love-hashtag li{
+    display: inline;
+}
+.love-hashtag li + li{
+    margin-left: 5px;
+}
+.love-hashtag li>a{
+    color: #000;
+}
+.panel-love{   
+    border: none;
+    box-shadow: none;
+}
+.panel-love:nth-child(even) > .panel-heading{
+    background-color: #b3b3b3;
+}
+.panel-love > .panel-heading{
+    background-color: #e6e6e6;
+}
+.panel-group .panel-love .panel-heading+.panel-collapse>.panel-body{
+    border-top: 0;
+}
+.panel-title>a{
+    display: block;
+    padding-right: 20px;
+    position: relative;
+}
+.panel-title i{
+    color: #000;
+    position: absolute;
+    right: 0px;
+    top: 10%;
+    transition: transform .2s;
+}
+.panel-title>a i.fa-caret-right{
+    transform: rotate(90deg);
+}
+.panel-title>a.collapsed i.fa-caret-right{
+    transform: rotate(0deg);
+}
+/* 客服中心 */
+.spring-service-block{
+    position: relative;
+}
+.spring-service-box{    
+    z-index: 2;
+    background-color: #f2f2f2;
+    border: 1px solid #cccccc;
+    padding: 30px;
+}
+.spring-service-balloon{
+    position: absolute;
+    z-index: -1;
+    top: -80px;
+    right: 0px;
+}
+.spring-service-title{
+    position: relative;
+    display: inline-block;
+    background-color: #000;
+    padding: 10px 30px;
+    font-size: 15px;
+    margin: 0;
+    color: #fff;
+}
+.spring-service-title::after{
+    display: block;
+    position: absolute;
+    content: '';
+    width:50px;
+    height: 100%;
+    right: -50px;
+    top: 0px;
+    background-image: linear-gradient(60deg, #000 50%, transparent 50%);
+}
+.service-form-submit{
+    margin-top: 30px;
+}
+/* profile page */
+.profile-page{
+    padding: 40px 40px 10px 40px;
+}
+.profile-photos{
+    background-color: #fff8e8;
+}
+.profile-photo-box{
+    padding: 20px;
+}
+.profile-photo-slider{
+    background-color: transparent;
+}
+.profile-photo-slider::after{
+    display: table;
+    content: '';
+    clear: both;
+}
+.profile-photo-slider .slides{
+    max-height: 250px;
+    overflow: hidden;
+}
+.profile-photo-slider .flex-control-thumbs{
+    margin: 8px 0 0;
+}
+.profile-photo-slider .flex-control-nav.flex-control-thumbs{
+    font-size: 0;
+}
+.profile-photo-slider .flex-control-nav.flex-control-thumbs li{
+    width: 20% !important;
+    height: 50px !important;
+    margin: 0;
+    overflow: hidden;
+    border: 2px solid transparent;
+}
+.profile-photo-slider .flex-control-nav.flex-control-thumbs li img{
+    width: 100% !important;
+    height: auto !important;
+}
+.profile-photo-cta{
+    margin: 0px -8px;
+}
+.profile-title{
+    font-size: 17px;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+    color: #000;
+}
+.profile-text-box{
+    background-color: #fff8e8;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+.profile-text-box:nth-last-child(1){
+    margin-bottom: 0px;
+}
+.profile-list{
+    font-size: 0px;
+    margin: 0;
+    vertical-align: top;
+}
+.profile-list dt, .profile-list dd{
+    margin-bottom: 8px;
+    font-size: 15px;
+    vertical-align: top;
+}
+.profile-list dt{
+    position: relative;
+    display: inline-block;
+    width: 100px;
+    padding-right: 5px;
+    text-align: right;
+    color: #ff56a7;
+    font-weight: normal;    
+}
+.profile-list dt::after, .profile-basic-list dt::after{
+    display: inline;
+    content: '｜';
+    color: #ff56a7;
+}
+.profile-list dd{
+    display: inline-block;
+    width: calc(100% - 100px);
+}
+.profile-member{
+    margin-top: 30px;
+}
+.profile-member::after, .index-member-block::after{
+    display: table;
+    content: '';
+    clear: both; 
+}
+.profile-member .photo-item .photo{
+    height: 150px;
+}
+.profile-first-list{
+    color: #322d78;
+    text-align: right;
+    font-size:0px;
+}
+.profile-first-list dt, .profile-first-list dd{
+    display: inline;
+    font-size:15px;
+}
+.profile-first-list dt::after{
+    display: inline;
+    content: '｜';
+    color: #322d78;
+    bottom: 1px;
+    position: relative;
+}
+.profile-first-list dt + dd{
+    margin-right: 15px;
+}
+.profile-basic{
+    margin-top: 10px;
+}
+.profile-basic .col-xs-6{
+    padding-right: 4px;
+}
+.profile-basic .col-xs-6 + .col-xs-6{
+    padding-left: 4px;
+    padding-right: 15px;
+}
+.profile-basic-list{
+    font-size:0px;
+    vertical-align: top;
+    margin: 0px;
+}
+.profile-basic-list dt, .profile-basic-list dd{
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+.profile-basic-list dt{ 
+    width: 45px;
+    padding-right: 5px;  
+    color: #ff56a7;
+}
+.profile-basic-list dd{
+    width: calc(100% - 45px);
+}
+/* spring-search */
+.spring-search{
+    padding: 40px 40px 10px 40px;
+}
+.spring-search .spring-title{
+    text-align: center;
+    margin-bottom: 35px;
+}
+.search-box-content{
+    padding: 30px;
+}
+.spring-search .profile-member{
+    margin-top: 50px;
+}
+.search-submit{
+    margin-top: 100px;
+    padding: 0 50px;
+}
+.spring-search-text{
+    font-size: 19px;
+    margin-bottom: 20px;
+}
+.spring-search-fail .spring-search-text{
+    min-height: 200px;
+}
+.spring-search-fail .spring-search-more{
+    padding-bottom: 100px;
+}
+.spring-search-member::after{
+    display: table;
+    content: '';
+    clear: both;
+}
+.spring-search-member .photo-item{
+    width: 14.285%;
+    float: left;
+}
+.spring-search-member .photo{
+    height: 150px;
+}
+.spring-search-more{
+    margin-top: 20px;
+}
+/* fast-register */
+.fast-register{
+    background-color: #0071bc;
+    padding: 20px 40px;
+}
+.fast-cta{
+    text-align: center;
+}
+.fast-cta h3{
+    color: #fff;
+    font-size: 34px;
+    font-weight: bold;
+    margin: 0 0 0px 0;
+}
+.fast-cta .btn-fast{
+    font-size: 17px;
+}
+.fast-register-block{
+    margin-top: 30px;
+}
+.fast-register-block .code{
+    text-align: left;
+}
+/* rank */
+.spring-rank{
+    font-size: 19px;
+    color: #ff56a7;
+    text-align: center;
+    padding: 5px;
+    letter-spacing: 1px;
+    display: block;
+    margin-bottom: 5px;
+}
+.spring-rank > i{
+    margin-right: 2px;
+}
+.spring-rank > i + i{
+    margin-right: 0px;
+    margin-left: 2px;
 }
 /* news letter */
 #news-letter{
@@ -3486,6 +3867,13 @@ h1.spring-title > span{
 .confirm a, .confirm a:hover, .confirm a:focus{
     color: #fff;
 }
+/* custom style */
+.margin-left-5{
+    margin-left: 5px;
+}
+.margin-right-5{
+    margin-right: 5px;
+}
 /* text */
 .text-red{
     color: #ff0000 !important;
@@ -3546,11 +3934,15 @@ h1.spring-title > span{
     background-color:#000;
 }
 .btn-black{
-    background-color: #000;
+    background-color: #808080;
     border-radius: 40px;
     padding: 15px 5px;
     display: block;
     color: #fff;
+    font-size: 15px;
+}
+.btn-black > .fa-caret-right{
+    margin-left:5px;
 }
 .btn-male{
     background-color: #0071bc;
@@ -3571,7 +3963,7 @@ h1.spring-title > span{
     background-color: #000;
 }
 .btn-cta{
-    background-color: #000;
+    background-color: #808080;
     color: #fff;
     text-align: center;
     border-radius: 40px;
@@ -3586,10 +3978,37 @@ h1.spring-title > span{
     text-decoration: none;
     color: #fff;
 }
+.btn-like{
+    background-image: linear-gradient(to right,#ea5b85,#322d78);
+    text-decoration: underline;
+    border: 2px solid #fff;
+    box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.4);
+    color: #fff;
+    padding: 12px 16px;
+    font-size: 16px;
+}
+.btn-like:hover, .btn-like:active, .btn-like:focus{
+    filter: brightness(120%);
+}
+.btn-like:hover, .btn-like:active, .btn-like:focus{
+    color: #fff;
+}
+.btn-fast{
+    color: #fff;
+}
+.btn-fast:hover, .btn-fast:active, .btn-fast:focus{
+    color: #fff;
+}
+.btn-radius-none{
+    border-radius: 0;
+}
+.btn-radius-50{
+    border-radius: 50px;
+}
 .btn-upload{
     margin-top: 0;
     font-size: 14px;
-    background-color: #000;
+    background-color: #808080;
     color: #fff;
     border-radius: 40px;
 }
@@ -3618,6 +4037,9 @@ h1.spring-title > span{
 }
 .btn-type:hover, .btn-type:active, .btn-type:focus{
     color:#fff;
+}
+.btn-decoration-none, .btn-decoration-none:hover, .btn-decoration-none:active, .btn-decoration-none:focus, .btn-decoration-none:visited{
+    text-decoration: none;
 }
 @media (max-width: 1220px) {
     #header.fixed {
@@ -3750,8 +4172,16 @@ h1.spring-title > span{
         height: 200px;
     }
 }
-@media (max-width: 1200px) {
-
+@media (max-width: 1199px) {
+    .profile-photo-slider .slides{
+        max-height: 180px;
+    }
+    .profile-photo-slider .flex-control-nav.flex-control-thumbs li{
+        height: 35px !important;
+    }
+    .spring-search-member .photo-item{
+        width: 20%;
+    }
 }
 @media (max-width: 1024px) {
     .register-box .form-group.row div + div{
@@ -3809,6 +4239,15 @@ h1.spring-title > span{
     .events-galleries-slider{
         margin: 0px 40px 40px 40px;
     }
+    .spring-history-flower.f01{
+        right: -300px;
+    }
+    .spring-history-flower.f03{
+        left: -130px;
+    }    
+    .spring-history-flower.f05{
+        right: -270px;
+    }
     .index-event .owl-carousel a .photo{
         height: 220px;
     }
@@ -3854,6 +4293,9 @@ h1.spring-title > span{
     }
     .witness-photo-slider .flex-control-nav li{
         margin:0px 2px 4px 2px;
+    }
+    .witness-photo-slider .slides>li{
+        height: 400px;
     }
     .enterprise-bg{
         background-image: url(../images/enterprise_bg_m.png);
@@ -3923,6 +4365,7 @@ h1.spring-title > span{
         font-size: 15px;
         line-height: 1.7;
         color: #000;
+        padding: 0px 15px;
     }
     .pair-kv-text p span{
         color: #0071bc;
@@ -3937,7 +4380,6 @@ h1.spring-title > span{
         width: auto;
         font-size: 18px;
         padding: 10px 5px;
-        background-color: #999;
         margin: 0 auto;
     }
     .pair-kv.type1 .pair-kv-text h3{
@@ -3966,10 +4408,7 @@ h1.spring-title > span{
     .aboutus-main-title{
         width: 70%;
         padding: 15px 30px;
-    }
-    .aboutus-main-box{
-        padding: 30px;
-    }
+    }    
     .about-register .col-md-1, .about-register .col-md-2, .about-register .col-md-3{
         padding-left: 15px;
         padding-right: 15px;
@@ -3996,7 +4435,7 @@ h1.spring-title > span{
         padding-top: 15px;
         float: none;
     }
-    .sevice-form .col-md-4, .sevice-form .col-md-6{
+    .sevice-form .col-md-4, .sevice-form .col-md-6, .service-form .col-md-4, .service-form .col-md-6{
         margin-bottom: 10px;
     }
     .spring-page .nav-tabs{
@@ -4087,6 +4526,32 @@ h1.spring-title > span{
     .coach-text{
         font-size: 17px;
     }
+    .profile-photo-slider .slides{
+        max-height: 600px;
+    }
+    .profile-photo-slider .flex-control-nav.flex-control-thumbs li{
+        height: 100px !important;
+    }
+    .profile-first-list{
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+    .profile-first-list dt, .profile-first-list dd{
+        font-size: 13px;
+    }
+    .fast-register-block .margin-bottom-xs-15{
+        margin-bottom: 15px;
+    }
+    .profile-photos{
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+@media (max-width: 980px) {
+    .spring-search-member .photo-item{
+        width: 25%;
+    }
 }
 @media (max-width: 896px) {
     .events-ongo .events-ongo-item{
@@ -4106,15 +4571,20 @@ h1.spring-title > span{
     }
 }
 @media (max-width: 768px) {
-
+    .spring-search-member .photo-item{
+        width: 33.3333%;
+    }
 }
 @media (max-width: 630px) {    
     .photo-item{
-        padding: 0 3px;
+        padding: 0 5px;
     }
-    .photo-item .photo{
+    .photo-item .photo, .profile-member .photo-item .photo{
         height: 100px;
-    }    
+    }
+    .photo-item a{
+        margin-bottom: 10px;
+    } 
     .index-promo-slide{
         width: 100%;
     }
@@ -4507,6 +4977,9 @@ h1.spring-title > span{
         margin-right: -15px;
         margin-left: -15px;
     }
+    .witness-photo-slider .slides>li{
+        height: 200px;
+    }
     .enterprise-bg .events-detail{
         background-color: #fff;
         margin: 0 15px 40px 15px;
@@ -4538,6 +5011,46 @@ h1.spring-title > span{
     }
     .coach-slider .owl-carousel .owl-wrapper-outer{
         padding-bottom: 0;
+    }
+    .spring-service-balloon{
+        display: none;
+    }
+    .profile-page{
+        padding: 0px 15px;
+    }
+    .profile-photo-slider .slides{
+        max-height: 260px;
+    }
+    .profile-photo-slider .flex-control-nav.flex-control-thumbs li{
+        height: 50px !important;
+    }
+    .profile-basic-list dt, .profile-basic-list dd{
+        font-size: 15px;
+        margin-bottom: 8px;
+    }
+    .profile-basic-list dt{ 
+        width: 44px;
+    }
+    .profile-basic-list dd{
+        width: calc(100% - 44px);
+    }
+    .aboutus-main-box{
+        padding: 30px;
+    }
+    .spring-search{
+        padding: 0px 15px;
+    }
+    .spring-search .form-group div:first-child {
+        margin-bottom: 15px;
+    }
+    .spring-search-text{
+        text-align: center;
+    }
+    .spring-search-fail .spring-search-text{
+        min-height: 150px;
+    }
+    .search-submit{
+        padding: 0;
     }
     .footer{
         font-size: 12px;

@@ -459,20 +459,20 @@ function _indexRegisterToggle(){
 };
 
 /** 06. 計算圖片長寬比**/
-function _imgAspectRatio(percent){
+function _imgAspectRatio(percent){  
   var $imgRatio = $(".img-ratio");
   if( $imgRatio.length > 0){
-    $(window).resize(function(){
-      setTimeout(function(){
-        $imgRatio.each(function(){
-            var ratio = $(this).attr("data-ratio");    
-            var w = $(this).width();      
-            var h = w * ( ratio || percent );           
-            $(this).height(h);
-        })
-      },300)
-    }).resize();    
-  }
+    window.addEventListener("load", function(event) {
+      $(window).resize(function(){        
+          $imgRatio.each(function(){
+              var ratio = $(this).attr("data-ratio");    
+              var w = $(this).width();      
+              var h = w * ( ratio || percent );           
+              $(this).height(h);
+          })        
+      }).resize();    
+    })
+  }  
 }
 
 /** 07. 跳出訂閱電子報 **/

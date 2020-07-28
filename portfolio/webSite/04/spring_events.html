@@ -78,15 +78,16 @@
                     <p>快來看看<br>一定要加入春天會館的七大理由</p>
                 </div>
                 <div class="spring-history">                    
-                    <div class="spring-history-box">
-                        
+                    <div class="spring-history-box">                        
                         <img class="spring-history-title" src="assets/images/spring-history.png" alt="春天大事紀">
-                        <!-- 2019年 -->
-                        <div class="spring-history-tag">2018-2019</div>
-                        <div class="spring-section" id="s2019">
+
+                        <!-- 20200706修改 --> 
+                        <!-- 2020年 -->
+                        <div class="spring-history-tag">2018-2020</div>
+                        <div class="spring-section" id="s2020">
                             <div class="spring-section-text">
                                 <div class="spring-section-text-year">
-                                    <span>2019</span>
+                                    <span>2020</span>
                                 </div>
                                 <div class="spring-section-block col-md-3">
                                     <div class="spring-section-block-box" data-year="2018">
@@ -124,6 +125,18 @@
                                         <h3>2019</h3>
                                         <ul>
                                             <li>
+                                                <h5>12/07 委辦活動</h5>
+                                                <h4>遇見幸福~愛情郵然而生</h4>
+                                            </li>
+                                            <li>
+                                                <h5>10/26 公司委辦活動</h5>
+                                                <h4>科技極品型男＊閃亮旋轉LOVE派對</h4>
+                                            </li>
+                                            <li>
+                                                <h5>09/07 月老廟委辦活動</h5>
+                                                <h4>樂見真愛，成就幸福(樂成宮)</h4>
+                                            </li>
+                                            <li>
                                                 <h5>06/18 大事紀</h5>
                                                 <h4>新竹會館擴大服務搬遷</h4>
                                             </li>
@@ -140,9 +153,35 @@
                                         </ul>
                                     </div>
                                 </div>
+                                <div class="spring-section-block col-md-3">
+                                    <div class="spring-section-block-box" data-year="2020">
+                                        <h3>2020</h3>
+                                        <ul>
+                                            <li>
+                                                <h5>06/17 教育訓練</h5>
+                                                <h4>年度提升服務品質研討會</h4>
+                                                <p>特邀「勵活文化事業有限公司」-蔡湘玲老師</p>
+                                            </li>
+                                            <li>
+                                                <h5>05/24 特別企劃</h5>
+                                                <h4>花現幸福遇見LOVE島 (北三區合辦聯誼交友活動</h4>
+                                            </li>
+                                            <li>
+                                                <h5>03/14 白色情人節 </h5>
+                                                <h4>平溪鐵路浪漫之旅 (北三區合辦聯誼交友活動)</h4>
+                                            </li>
+                                            <li>
+                                                <h5>02/09 西洋情人節</h5>
+                                                <h4>戀戀內灣美食尋愛 (北三區合辦聯誼交友活動)</h4>
+                                            </li>   
+                                        </ul>
+                                    </div>
+                                </div>
 
                             </div>
                         </div>
+                        <!-- /20200706修改 --> 
+
                         <!-- 2017年 -->
                         <div class="spring-history-tag">2009-2017</div>
                         <div class="spring-section" id="s2017">
@@ -569,7 +608,9 @@
                 </div>
 
                 <section class="spring-history-btn">
-                    <div class="container">
+                    <!-- 20200706修改 -->
+                    <div class="row">
+                    <!-- /20200706修改 -->
                         <div class="col-md-6 col-md-offset-3">
                             <a class="btn btn-black" href="index.html">返回首頁<i class="fa fa-play"></i></a>
                         </div>                        
@@ -779,6 +820,7 @@
         }(document, 'script', 'facebook-jssdk'));
     </script> -->
 
+    <!-- 20200717修改 -->
     <script>
         // 春天大事紀手機功能按鈕toggle
         (function(){
@@ -803,8 +845,10 @@
                 else{
                     $('.spring-section').attr("style","");
                 }
-            });
+            }).resize();
         })();        
     </script>
+    <!-- /20200717修改 -->
+    
 </body>
 </html>
