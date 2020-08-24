@@ -69,8 +69,13 @@
 						<h3 class="text-pink margin-bottom-40">留言記錄</h3>
 					</div>
 					<!-- COMMENTS -->
-					<div id="comments" class="comments margin-top-0">
-
+					<div id="comments" class="comments">
+						<!-- 20200420修改 -->
+						<div class="comments-more">
+							<a class="btn btn-more" href="#">檢視之前留言..</a>
+						</div>
+						<!-- /20200420修改 -->
+						
 						<!-- comment item -->
 						<div class="comment-item">
 							<!-- user-avatar -->
@@ -155,7 +160,7 @@
 								我，森山美栗，堅決反對！！！
 							</div>
 							<div class="clearfix"></div>
-						</div>						
+						</div>							
 
 						<!-- Form -->
 						<form action="#" method="post">
@@ -347,7 +352,7 @@
 										<i class="fa fa-check"></i>
 										<span>留言</span>
 									</button>
-
+									<div class="sticker-area-counter">留言次數 <span class="counter-num">2</span>/<span class="counter-times">5</span></div>
 								</div>
 							</div>
 
@@ -389,16 +394,39 @@
 		</div><!-- /PRELOADER -->
 
 
+		<!-- 20200324新增專人服務跳窗 -->
+		<div class="modal fade modal-counter" id="modal">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<!-- form -->
+					<form action="">
+						<div class="modal-header">						
+							<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+							<h3 class="modal-title">喜歡我們的留言功能嗎？</h3>			
+						</div>
+						<div class="modal-body">
+							<p class="txt">提醒您，今天的留言次數剩下<span class="modal-counter-num">2</span>次哦！<br/>
+							還想傳遞更多的心意讓對方知道嗎？</p>
+							<button id="modal-counter-service" class="btn btn-main btn-3d btn-lg">我需要專人服務</button>
+							<p class="txt2">點選專人服務，讓戀愛顧問和你一起為愛情努力</p>
+						</div>
+						<div class="modal-footer">
+							<button class="nomore" data-dismiss="modal">最近不再顯示</button>
+						</div>
+					</form>
+
+				</div>
+			</div>
+		</div>
+		<!-- /20200324新增專人服務跳窗 -->
+
 		<!-- JAVASCRIPT FILES -->
 		<script type="text/javascript">var plugin_path = 'assets/plugins/';</script>
 		<script type="text/javascript" src="assets/plugins/jquery/jquery-2.2.3.min.js"></script>
-
 		<script type="text/javascript" src="assets/js/scripts.js"></script>
 		
-		<!-- REVOLUTION SLIDER -->
-		<script type="text/javascript" src="assets/plugins/slider.revolution/js/jquery.themepunch.tools.min.js"></script>
-		<script type="text/javascript" src="assets/plugins/slider.revolution/js/jquery.themepunch.revolution.min.js"></script>
-		<script type="text/javascript" src="assets/js/view/demo.revolution_slider.js"></script>
+		<!-- 20200324跳出視窗新增功能 -->
+		<script type="text/javascript" src="assets/js/pop-up-message.js"></script>
 
 	</body>
 </html>

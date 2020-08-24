@@ -80,6 +80,11 @@
 									<div class="match-percent">
 										99.9%
 									</div>
+									<!-- 20200715新增單身認證 -->
+									<span class="single-prove" data-toggle="tooltip" data-placement="bottom" title="認證標籤代表經真人審核確認單身身分">
+										<img src="assets/images/single-prove.png" alt="約會專家_單身認證">
+									</span>
+									<!-- /20200715新增單身認證 -->
 								</div>
 								<div class="margin-top-10">
 									<div class="profile-thumbnail col-md-4 col-xs-4 nopadding" style="border-right: 2px solid #fff">
@@ -115,9 +120,18 @@
 								<div class="clearfix"></div>
 							</div>
 							<button type="button" class="btn btn-main btn-lg btn-block btn-3d" data-toggle="modal" data-target="#myModal">我想認識她/他</button>
+							<!-- 20200318新增檢舉功能 -->
+							<button type="button" class="btn btn-gray btn-lg btn-block btn-3d" data-toggle="modal" data-target="#report">檢舉</button>
+							<!-- 20200318新增檢舉功能 -->
 						</div>
 
 						<div class="col-md-8">
+							<!-- 20200318新增自我介紹 -->
+							<div class="profile-introduce col-md-12">
+								<h5>自我介紹</h5>
+								：）你好~做個自我介紹~我是典型的射手座，學歷為大學，興趣是籃球和羽球。加入這個平台希望能遇見不錯的人可以一起分享生活，如果聊得來也希望可以有更進一步的發展^_^
+							</div>
+							<!-- /20200318新增自我介紹 -->
 
 							<div class="col-md-6 col-xs-6">
 								<ul class="list-unstyled line-height-25 ">
@@ -139,20 +153,20 @@
 							<div class="row margin-bottom-10">
 								<div class="col-md-6 col-xs-12">
 									<div class="col-xs-3 text-center">
-										<img src="assets/images/habiticon01.png" style="width: 95%"><br>
-										<span class="size-11">抽菸</span>
+										<!-- <img src="assets/images/habiticon01.png" style="width: 95%"><br>
+										<span class="size-11">抽菸</span> -->
 									</div>
 									<div class="col-xs-3 text-center">
-										<img src="assets/images/habiticon-no02.png" style="width: 95%"><br>
-										<span class="size-11">不飲酒</span>
+										<!-- <img src="assets/images/habiticon-no02.png" style="width: 95%"><br>
+										<span class="size-11">不飲酒</span> -->
 									</div>
 									<div class="col-xs-3 text-center">
-										<img src="assets/images/habiticon-no03.png" style="width: 95%"><br>
-										<span class="size-11">無子女</span>
+										<!-- <img src="assets/images/habiticon-no03.png" style="width: 95%"><br>
+										<span class="size-11">無子女</span> -->
 									</div>
 									<div class="col-xs-3 text-center">
-										<img src="assets/images/habiticon04.png" style="width: 95%"><br>
-										<span class="size-11">喜歡寵物</span>
+										<!-- <img src="assets/images/habiticon04.png" style="width: 95%"><br>
+										<span class="size-11">喜歡寵物</span> -->
 									</div>
 								</div>
 							</div>
@@ -258,7 +272,7 @@
 											</div>
 										</div>
 
-										<div class="toggle">
+										<!-- <div class="toggle">
 											<label>自我介紹</label>
 											<div class="toggle-content" style="padding-left: 5px; padding-right: 5px">
 												<div class="panel panel-default">
@@ -272,7 +286,7 @@
 													</div>
 												</div>										
 											</div>
-										</div>
+										</div> -->
 
 									</div>
 								</div>
@@ -325,6 +339,69 @@
 			</div>
 		</div>
 
+		<!-- 20200318檢舉跳出視窗 -->
+		<div id="report" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="blockade" aria-hidden="true">
+			<!-- 20200410修改 -->
+			<div class="modal-dialog modal-dialog-small">
+			<!-- /20200410修改 -->
+				<div class="modal-content">
+
+					<!-- Modal Header -->
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="myModalLabel">檢舉的原因是？</h4>
+					</div>
+					<form action="">
+						<!-- Modal Body -->
+						<div class="modal-body">
+
+							<div class="form-group">
+								<label class="radio">
+									<input type="radio" name="radio-btn" value="1" checked="checked">
+									<i></i> 對我有騷擾／露骨／色情的言論
+								</label>
+							</div>
+							<div class="form-group">
+								<label class="radio">
+									<input type="radio" name="radio-btn" value="1" checked="checked">
+									<i></i> 對我有粗鄙／暴力／不當的言論
+								</label>
+							</div>
+							<div class="form-group">
+								<label class="radio">
+									<input type="radio" name="radio-btn" value="1" checked="checked">
+									<i></i> 涉及商業／廣告／行銷行為
+								</label>
+							</div>
+							<div class="form-group">
+								<label class="radio">
+									<input type="radio" name="radio-btn" value="1" checked="checked">
+									<i></i> 這名會員盜用圖片/個資
+								</label>
+							</div>
+							<div class="form-group modal-form-others">
+								<div class="modal-form-others-radio">
+									<label class="radio">
+										<input type="radio" name="radio-btn" value="1" checked="checked">
+										<i></i> 其他									
+									</label>
+								</div>
+								<div class="modal-form-others-text">
+									<input class="form-control" type="text">
+								</div>
+							</div>
+						</div>
+
+						<!-- Modal Footer -->
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default width-100" data-dismiss="modal">暫時不要</button>
+							<button type="button" class="btn btn-main width-100">提交</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!-- /20200318檢舉跳出視窗 -->
 
 		<!-- SCROLL TO TOP -->
 		<a href="#" id="toTop"></a>

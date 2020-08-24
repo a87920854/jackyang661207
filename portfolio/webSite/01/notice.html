@@ -132,12 +132,15 @@
 				<div class="container">
 					<div class="row">
 						<ul class="nav nav-tabs nav-top-border">
-							<li class="active"><a href="#notice" data-toggle="tab">服務通知</a></li>
+							<li><a href="#notice" data-toggle="tab">服務通知</a></li>
 							<li><a href="#calendar-tab" data-toggle="tab">約會行程</a></li>
+							<!-- 20200812 新增 -->
+							<li class="active"><a href="#date-tab" data-toggle="tab">約會總覽</a></li>
+							<!-- /20200812 新增 -->
 						</ul>
 						<!--服務通知內容-->
 						<div class="tab-content">
-							<div class="tab-pane fade in active" id="notice">
+							<div class="tab-pane fade in" id="notice">
 								<div class="col-md-6 col-sm-6 col-md-offset-3 col-sm-offset-3 nopadding">
 									<div class="box-light">
 										<div class="box-inner">
@@ -291,29 +294,320 @@
 
 								</div>
 							</div>
+
+							<!-- 20200812約會總覽內容 -->
+							<div class="tab-pane fade in active" id="date-tab">
+
+								<div class="date-boxlist">
+									<ul class="nav nav-tabs nav-top-border">
+										<li class="active"><a href="#date-1" data-toggle="tab">約會明細表</a></li>
+										<li><a href="#date-2" data-toggle="tab">活動明細表</a></li>
+										<li><a href="#date-3" data-toggle="tab">諮詢明細表</a></li>	
+									</ul>
+									
+									<div class="tab-content">
+										<!-- 約會明細表 -->
+										<div class="tab-pane fade in active" id="date-1">
+											<div class="table-responsive">
+												<table class="table date-table">
+													<thead>
+														<tr>
+															<th>
+																<i class="fa fa-clock-o"></i><br/>
+																約會時間
+															</th>
+															<th>
+																<i class="fa fa-heart"></i><br/>
+																約會類型
+															</th>
+															<th>
+																<i class="fa fa-user"></i><br/>
+																約會對象
+															</th>
+															<th>
+																<i class="fa fa-thumbs-up"></i><br/>
+																對方的評價
+															</th>
+															<th>
+																<i class="fa fa-thumbs-o-up"></i><br/>
+																你給的評價
+															</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>2020/07/22</td>
+															<td>會館排約</td>
+															<td>林先生</td>
+															<td><a href="#">立即查看</a></td>
+															<td><a href="#">立即查看</a></td>
+														</tr>
+														<tr>
+															<td>2020/07/21</td>
+															<td>Line排約</td>
+															<td>林先生</td>
+															<td><a href="#">等候評價</a></td>
+															<td><a href="#">前往評價</a></td>
+														</tr>
+														<tr>
+															<td>2020/07/22</td>
+															<td>會館排約</td>
+															<td>林先生</td>
+															<td><a href="#">立即查看</a></td>
+															<td><a href="#">立即查看</a></td>
+														</tr>
+														<tr>
+															<td>2020/07/21</td>
+															<td>Line排約</td>
+															<td>林先生</td>
+															<td><a href="#">等候評價</a></td>
+															<td><a href="#">前往評價</a></td>
+														</tr>
+														<tr>
+															<td>2020/07/22</td>
+															<td>會館排約</td>
+															<td>林先生</td>
+															<td><a href="#">立即查看</a></td>
+															<td><a href="#">立即查看</a></td>
+														</tr>
+														<tr>
+															<td>2020/07/21</td>
+															<td>Line排約</td>
+															<td>林先生</td>
+															<td><a href="#">等候評價</a></td>
+															<td><a href="#">前往評價</a></td>
+														</tr>
+														<tr>
+															<td>2020/07/22</td>
+															<td>會館排約</td>
+															<td>林先生</td>
+															<td><a href="#">立即查看</a></td>
+															<td><a href="#">立即查看</a></td>
+														</tr>
+														<tr>
+															<td>2020/07/21</td>
+															<td>Line排約</td>
+															<td>林先生</td>
+															<td><a href="#">等候評價</a></td>
+															<td><a href="#">前往評價</a></td>
+														</tr>
+														<tr>
+															<td>2020/07/22</td>
+															<td>會館排約</td>
+															<td>林先生</td>
+															<td><a href="#">立即查看</a></td>
+															<td><a href="#">立即查看</a></td>
+														</tr>
+														<tr>
+															<td>2020/07/21</td>
+															<td>Line排約</td>
+															<td>林先生</td>
+															<td><a href="#">等候評價</a></td>
+															<td><a href="#">前往評價</a></td>
+														</tr>											
+													</tbody>
+												</table>
+												<div class="date-pagination">
+													<ul class="pagination">
+														<li><a href="#">&laquo;</a></li>
+														<li class="active"><a href="#">1</a></li>
+														<li><a href="#">2</a></li>
+														<li><a href="#">3</a></li>
+														<li><a href="#">4</a></li>
+														<li><a href="#">5</a></li>
+														<li><a href="#">&raquo;</a></li>
+													</ul>
+												</div>
+												
+											</div>
+										</div>
+										<div class="tab-pane fade" id="date-2">
+											<!-- 活動明細表 -->
+											<div class="table-responsive">
+												<table class="table date-table">
+													<thead>
+														<tr>
+															<th>
+																<i class="fa fa-clock-o"></i><br/>
+																活動時間
+															</th>
+															<th>
+																<i class="fa fa-heart"></i><br/>
+																活動名稱
+															</th>
+															<th>
+																<i class="fa fa-thumbs-o-up"></i><br/>
+																你給的評價
+															</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>2020/07/22</td>
+															<td>(台中)與馬兒來一場浪漫的約會</td>
+															<td><a href="#">立即查看</a></td>
+														</tr>
+														<tr>
+															<td>2020/07/21</td>
+															<td>菜鳥也happy之好好玩英文趴</td>
+															<td><a href="#">前往評價</a></td>
+														</tr>
+														
+																			
+													</tbody>
+												</table>
+												<div class="date-pagination">
+													<ul class="pagination">
+														<li><a href="#">&laquo;</a></li>
+														<li class="active"><a href="#">1</a></li>
+														<li><a href="#">2</a></li>
+														<li><a href="#">3</a></li>
+														<li><a href="#">4</a></li>
+														<li><a href="#">5</a></li>
+														<li><a href="#">&raquo;</a></li>
+													</ul>
+												</div>
+												
+											</div>
+										</div>
+										<div class="tab-pane fade" id="date-3">
+											<!-- 諮詢明細表 -->
+											<div class="table-responsive">
+												<table class="table date-table">
+													<thead>
+														<tr>
+															<th>
+																<i class="fa fa-clock-o"></i><br/>
+																諮詢時間
+															</th>
+															<th>
+																<i class="fa fa-heart"></i><br/>
+																諮詢類型
+															</th>
+															<th>
+																<i class="fa fa-mortar-board"></i><br/>
+																諮詢講師
+															</th>
+															<th>
+																<i class="fa fa-thumbs-o-up"></i><br/>
+																你給的評價
+															</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>2020/07/22</td>
+															<td>一對一諮詢</td>
+															<td>瑪那熊</td>
+															<td><a href="#">立即查看</a></td>
+														</tr>
+														<tr>
+															<td>2020/07/21</td>
+															<td>新會員先修</td>
+															<td>威威</td>
+															<td><a href="#">前往評價</a></td>
+														</tr>
+														
+																			
+													</tbody>
+												</table>
+												<div class="date-pagination">
+													<ul class="pagination">
+														<li><a href="#">&laquo;</a></li>
+														<li class="active"><a href="#">1</a></li>
+														<li><a href="#">2</a></li>
+														<li><a href="#">3</a></li>
+														<li><a href="#">4</a></li>
+														<li><a href="#">5</a></li>
+														<li><a href="#">&raquo;</a></li>
+													</ul>
+												</div>
+												
+											</div>
+										</div>									
+									</div>
+								</div>
+								
+							</div>
+							<!-- /20200812約會總覽內容 -->
+							
 						</div>
 					</div>
 				</div>
 			</section>
 			
 
-			<!-- FOOTER -->
-			<footer id="footer">
-				<div class="copyright">
-					<div class="container text-center">
-						copyright @ SingleParty約會專家 版權所有、文字與圖片均不得以任何形式轉載
+			<!-- 20190514_new_FOOTER -->
+			<footer class="new-footer">
+				<div class="container">
+					<h5 class="title">跨平台約會聯合服務會館</h5>
+					<ul class="brnad-logo">
+						<li><a href="#"><img src="assets/images/logo-singleparty.png" alt="交友品牌_約會專家single party"></a></li>
+						<li><a href="https://www.springclub.com.tw/" target="_blank"><img src="assets/images/logo-springclub.png" alt="交友品牌_春天會館"></a></li>
+						<li><a href="https://www.funtour.com.tw/" target="_blank"><img src="assets/images/logo-funtour.png" alt="交友品牌_好好玩旅行社"></a></li>
+						<li><a href="https://www.datemenow.com.tw/" target="_blank"><img src="assets/images/logo-datemenow.png" alt="交友品牌_跟我約會吧"></a></li>
+					</ul>
+					<div class="infomation">
+						<div class="contactUS">
+							會館開放時間　週一~週六  13:30~ 21:00 週日 11:00~ 17:30<br>
+							台北會館 (02)2381-1348 台北市重慶南路一段49號8F<br>
+							八德會館  0800-302333 台北市八德路二段358號6F-1<br>	
+							桃園會館 (03)347-5825 桃園市復興路205號18F-3						
+						</div>
+						<div class="contactUS">
+							新竹會館 (03)535-6676 新竹市北區北大路307號14樓之1<br>
+							台中會館 (04)2326-5300 台中市台灣大道2段307號11F-1<br>
+							台南會館 (06)250-6900 台南市成功路515號8F<br>
+							高雄會館 (07)216-1988 高雄市中山二路507號5F
+						</div>
+						<div class="socail-media">
+							<ul>
+								
+								<!-- <li>
+									<a href="https://line.me/R/ti/p/%40301oclhe" target="_blank" class="social-icon social-icon-sm social-icon-round social-line" data-toggle="tooltip" data-placement="top" title="Line">
+										<i class="icon-line"><img src="assets/images/line-logo.svg" alt="line logo"></i>
+										<i class="icon-line"><img src="assets/images/line-logo.svg" alt="line logo"></i>
+									</a>
+								</li> -->
+								
+								<li>
+									<a href="https://www.facebook.com/%E7%B4%84%E6%9C%83%E5%B0%88%E5%AE%B6Single-Party-1702184089840480/" target="_blank" class="social-icon social-icon-sm social-icon-round social-facebook" data-toggle="tooltip" data-placement="top" title="Facebook">
+										<i class="icon-facebook"></i>
+										<i class="icon-facebook"></i>
+									</a>
+								</li>
+								<li>
+									<a href="https://www.instagram.com/singlepartyhigh/" target="_blank" class="social-icon social-icon-sm social-icon-round social-instagram" data-toggle="tooltip" data-placement="top" title="instagram">
+										<i class="fa fa-instagram"></i>
+										<i class="fa fa-instagram"></i>
+									</a>
+								</li>
+								<li>
+									<a href="https://www.youtube.com/channel/UCvNiE9iw31K4eNaot5IwVSA" target="_blank" class="social-icon social-icon-sm social-icon-round social-youtube" data-toggle="tooltip" data-placement="top" title="youtube">
+										<i class="icon-youtube-play"></i>
+										<i class="icon-youtube-play"></i>
+									</a>
+								</li>
+								<li>
+									<a href="https://www.singleparty.com.tw/contact.asp" target="_self" class="social-icon social-icon-sm social-icon-round social-email3" data-toggle="tooltip" data-placement="top" title="email">
+										<i class="icon-email3"></i>
+										<i class="icon-email3"></i>
+									</a>
+								</li>
+							</ul>
+							<p class="copyright"><small>SingleParty.com.tw © 版權所有</small></p>
+						</div>
 					</div>
-
 				</div>
 			</footer>
-			<!-- /FOOTER -->
+			<!-- /20190514_new_FOOTER -->
 
 		</div>
 		<!-- /wrapper -->
 
 
 		<!--完善以下資料開始約會吧-->
-		<div id="shopLoadModal" class="modal fade" data-autoload="true" data-autoload-delay="500">
+		<div id="shopLoadModal" class="modal fade" data-autoload="false" data-autoload-delay="500">
 			<div class="modal-dialog">
 				<div class="modal-content">
 

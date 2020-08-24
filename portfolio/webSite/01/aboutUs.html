@@ -42,203 +42,51 @@
 
 			<div id="header" class="sticky clearfix">
 
+				<!-- TOP NAV -->
 				<header id="topNav">
-					<div class="container">					
+					<div class="container">
+						
             
 						<!-- Mobile Menu Button -->
 						<button class="pull-left btn btn-mobile text-pink" data-toggle="collapse" data-target=".nav-main-collapse">
 							<i class="fa fa-bars"></i>
-						</button>				    
-				    
-						<!-- Logo -->
-						<a class="logo2" href="myprofile.asp">
-							<img src="assets/images/experts-logo.png" alt="交友品牌_約會專家single party" />
-							<!--新增手機版LOGO20180611-->
-							<img src="assets/images/20180515/experts-wlogo.png" alt="交友品牌_約會專家single party" />
-							<!--/新增手機版LOGO20180611-->
-						</a>
+						</button>
+				    	
+				    	<!-- BUTTONS -->
+						<ul class="pull-right nav nav-pills nav-second-main">
+							<li class="users">
+								
+								<a class="text-pink" href="login.asp" style="display:inline-block;">登入</a>&nbsp;<span class="text-pink">/</span>&nbsp;<a class="text-pink" href="signup.asp" style="display:inline-block;">註冊</a>
+								</a>
+								
+							</li>						
+						</ul>
+						<!-- /BUTTONS -->
 
+						<!-- Logo -->
+						<a class="logo2" href="index.asp">
+							<!--20190410增加ALT屬性文字-->
+							<img src="assets/images/experts-logo.png" alt="交友品牌_約會專家single party" />							
+							<img src="assets/images/20180515/experts-wlogo.png" alt="交友品牌_約會專家single party" />
+							<!--/20190410增加ALT屬性文字-->
+
+						</a>
 
 						<div class="navbar-collapse nav-main-collapse collapse">
 							<nav class="nav-main">
 								<ul id="topMain" class="nav nav-pills nav-main">
-									<li class="dropdown">
-										<a class="dropdown-toggle" href="#">
-											會員專區
-										</a>
-										<ul class="dropdown-menu">
-											<li>
-												<a href="myprofile.asp">
-													個人狀態
-												</a>											
-											</li>
-											<li>
-												<a href="mypage.asp">
-													個人頁面
-												</a>											
-											</li>
-											<li>
-												<a href="preferences.asp">
-													偏好設定
-												</a>											
-											</li>
-									    <li>
-										    <a href="member_rights.asp">
-											    會員權益與升級
-										    </a>										
-									    </li>
-										</ul>
-									</li>
-									
-									<li class="dropdown">
-										<a class="dropdown-toggle" href="#">
+									<li>
+										<a href="member_list.asp">
 											交友大廳
 										</a>
-										<ul class="dropdown-menu">
-											<li>
-												<a href="member_list.asp">
-													新進會員
-												</a>											
-											</li>
-											<li>
-												<a href="member_list.asp?t=2">
-													人氣會員
-												</a>											
-											</li>											
-											<li>
-												<a href="member_supay.asp">
-													速配名單
-												</a>											
-											</li>											
-											<li>
-												<a href="match_search.asp">
-													速配搜尋
-												</a>											
-											</li>
-											<li>
-												<a href="member_block.asp">
-													隱藏名單
-												</a>											
-											</li>
-										</ul>
 									</li>
-									
-									<li class="dropdown">
-										<a class="dropdown-toggle" href="#">
-											互動紀錄
-										</a>
-										<ul class="dropdown-menu">
-											<li>
-												<a href="who_seen.asp">
-													誰來看我
-												</a>											
-											</li>
-											<li>
-												<a href="to_seen.asp">
-													我看過誰
-												</a>											
-											</li>
-											<li>
-												<a href="who_gift.asp">
-													誰來送禮
-												</a>											
-											</li>
-											<li>
-												<a href="to_gift.asp">
-													送禮給誰
-												</a>											
-											</li>
-											<li>
-												<a href="message.asp">
-													留言記錄
-												</a>											
-											</li>
-										</ul>
-									</li>
-									
-									<li class="dropdown">
-										<a class="dropdown-toggle" href="#">
-											心動關係
-										</a>
-										<ul class="dropdown-menu">
-											<li>
-												<a href="love.asp">
-													互相喜歡
-												</a>											
-											</li>
-											<li>
-												<a href="ilike.asp">
-													我喜歡
-												</a>											
-											</li>
-											<li>
-												<a href="likeyou.asp">
-													喜歡我
-												</a>											
-											</li>
-										</ul>
-									</li>
-									
-									<li class="dropdown">
-										<a class="dropdown-toggle" href="#">
-											約會記錄
-										</a>
-										<ul class="dropdown-menu">
-											<li>
-												<a href="invitation.asp">
-													邀約中
-												</a>											
-											</li>
-											<li>
-												<a href="inviteme.asp">
-													邀請我
-												</a>											
-											</li>
-											<li>
-												<a href="wait.asp">
-													待約會
-												</a>											
-											</li>
-											<li>
-												<a href="finish.asp">
-													已完成
-												</a>											
-											</li>
-										</ul>
-									</li>
-									
-									
-									<li class="dropdown">
-										<a class="dropdown-toggle" href="#">
-											服務紀錄
-										</a>
-										<ul class="dropdown-menu">
-											<li>
-												<a href="notice.asp">
-													服務通知
-												</a>
-											</li>	
-											<li>
-												<a href="notice.asp?tab=2">
-													約會行程
-												</a>											
-											</li>																			
-										</ul>
-									</li>
-									
-									<li class="dropdown">
-										<a class="dropdown-toggle" href="#">
+									<li>
+										<a href="event.asp">
 											主題約會
 										</a>
-										<ul class="dropdown-menu">
-											<li>
-												<a href="event.asp">
-													熱門主題約會
-												</a>											
-											</li>																			
-										</ul>
 									</li>
-									
+
+									<!-- 20200616刪除 
 									<li class="dropdown">
 										<a class="dropdown-toggle" href="#">
 											戀愛學院
@@ -253,62 +101,146 @@
 												<a href="lovesalon.asp">
 													戀愛專欄													
 												</a>											
-											</li>		
-											<li class="dropdown">
-												<a class="dropdown-toggle" href="#">
+											</li>	
+											<li>
+												<a href="ptest_question.asp ">
 													戀愛測驗													
-												</a>
-												<ul class="dropdown-menu">
-													<li><a href="https://www.singleparty.com.tw/171030/">九型人格</a></li>
-													<li><a href="https://www.singleparty.com.tw/ptest_question.asp">愛的五種語言</a></li>
-													<li><a href="https://www.singleparty.com.tw/190620/">愛情實驗室</a></li>
-												</ul>												
-											</li>																								
+												</a>											
+											</li>																										
 										</ul>
 									</li>
-									<!-- 20190903新增關於我們 -->
-									<li>
-										<a href="aboutUs.asp">
-											關於我們
-										</a>	
-									</li>
-
-									<!--
-									<li class="">
-										<a class="" href="coupon_index.asp">
-											加值服務
-										</a>										
-									</li>
-									-->
+									 -->
 									
-									<!--
+									<!-- 20200616新增 -->
 									<li class="dropdown">
 										<a class="dropdown-toggle" href="#">
-											經典印象
+											戀愛企劃
 										</a>
 										<ul class="dropdown-menu">
 											<li>
-												<a href="help.asp">
-													操作說明
-												</a>											
+												<a class="dropdown-toggle" href="#">
+													戀愛專家團隊													
+												</a>
+												<ul class="dropdown-menu">
+													<li>
+														<a href="https://www.singleparty.com.tw/lovesalon.asp">
+															兩性專欄													
+														</a>
+													</li>
+													<li>
+														<a href="https://www.singleparty.com.tw/200101/consult.asp">
+															一對一情感諮詢													
+														</a>
+													</li>
+													<li>
+														<a href="https://www.singleparty.com.tw/loveclass_teacher.asp">
+															戀愛達人													
+														</a>
+													</li>
+												</ul>											
 											</li>
 											<li>
-										     <a href="contact.asp">
-											    聯繫客服
-										     </a>										
-									     </li>
+												<a class="dropdown-toggle" href="#">
+													愛情測驗&模擬約會													
+												</a>
+												<ul class="dropdown-menu">
+													<li>
+														<a href="https://www.singleparty.com.tw/ptest_question.asp">
+															愛的五種語言													
+														</a>
+													</li>
+													<li>
+														<a href="https://www.singleparty.com.tw/171030/">
+															九型人格													
+														</a>
+													</li>
+													<li>
+														<a href="https://www.singleparty.com.tw/191025/">
+															我的戀愛能力有多強													
+														</a>
+													</li>
+													<li>
+														<a href="https://www.singleparty.com.tw/190620">
+															愛情實驗室													
+														</a>
+													</li>
+												</ul>										
+											</li>	
+											<li>
+												<a class="dropdown-toggle" href="#">
+													愛情攻略&兩性課程
+												</a>
+												<ul class="dropdown-menu">
+													<li>
+														<a href="https://www.singleparty.com.tw/180301/">
+															邱比特幫幫我													
+														</a>
+													</li>
+													<li>
+														<a href="https://www.singleparty.com.tw/200101/class.asp">
+															單身必修愛情課													
+														</a>
+													</li>
+												</ul>											
+											</li>
+											<li>
+												<a class="dropdown-toggle" href="#">
+													一對一約會
+												</a>
+												<ul class="dropdown-menu">
+													<li>
+														<a href="https://www.singleparty.com.tw/200610/">
+															訂製你的專屬約會													
+														</a>
+													</li>
+												</ul>
+											</li>
+											<li>
+												<a class="dropdown-toggle" href="#">
+													多人聯誼活動
+												</a>
+												<ul class="dropdown-menu">
+													<li>
+														<a href="https://www.singleparty.com.tw/181110/">
+															嘿!一起出去玩													
+														</a>
+													</li>
+												</ul>
+											</li>
+											<li>
+												<a class="dropdown-toggle" href="#">
+													企業交友專區
+												</a>
+												<ul class="dropdown-menu">
+													<li>
+														<a href="https://www.singleparty.com.tw/190410/">
+															千大企業專區													
+														</a>
+													</li>
+												</ul>
+											</li>
+											<li>
+												<a class="dropdown-toggle" href="#">
+													我就宅
+												</a>
+												<ul class="dropdown-menu">
+													<li>
+														<a href="https://www.singleparty.com.tw/200210/">
+															不出門也能認識對的人													
+														</a>
+													</li>
+												</ul>
+											</li>																							
 										</ul>
 									</li>
-									-->						
-									
-									
-									<li>
-										<a href="login.asp?st=out">
-											登出
+									<!-- /20200616新增 -->
+
+									<li class="">
+										<a class="" href="aboutus.asp">
+											關於我們
 										</a>										
 									</li>
-												
-
+								</ul>
 							</nav>
 						</div>
             
@@ -317,7 +249,7 @@
 				<!-- /Top Nav -->
 			</div>
 
-			<!-- 20190618 修改side-panel -->
+			<!-- 20200616 刪除side-panel 
 			<div class="side-slide">
 				<div class="side-slide-container">
 					<ul class="side-panel">
@@ -367,113 +299,151 @@
 				<a class="s-prev-btn"><i class="fa fa-chevron-left"></i></a>
 				<a class="s-next-btn"><i class="fa fa-chevron-right"></i></a>				
 			</div>
-			<!-- /20190618 修改side-panel -->
+			-->
 			
 			<!-- 20190903置入google fonts -->
 			<link href="https://fonts.googleapis.com/css?family=Noto+Serif+TC&display=swap" rel="stylesheet">
 			<!-- /20190903置入google fonts -->
-			<!-- 20190903關於我們主視覺 -->
+
+			<!-- 20200616關於我們 -->
 			<section class="aboutUs-kv">
-				<img src="assets/images/aboutUs/aboutUs_kv.jpg" class="kv">
-				<img src="assets/images/aboutUs/aboutUs_kv_m.jpg" class="kv_m">
-				<img src="assets/images/aboutUs/ribbon.png" class="aboutUs-ribbon">
-				<div class="aboutUs-nav">
-					<ul>
-						<li><a href="#about" class="scrollTo">關於約會專家<i class="fa fa-angle-right"></i></a></li>
-						<li><a href="#safe" class="scrollTo">安全源自於堅持<i class="fa fa-angle-right"></i></a></li>
-						<li><a href="#wait" class="scrollTo">好對象值得等待<i class="fa fa-angle-right"></i></a></li>
+				<div class="container">
+					<img class="kv_m" src="assets/images/aboutUs/aboutUs_kv_m.jpg" alt="為希望找到『結婚對象』而誕生的『交友平台』">			
+					<h1 class="sr-only">為希望找到『結婚對象』而誕生的『交友平台』</h1>
+					<h2 class="sr-only">是我們與一般交友服務最大的不同</h2>	
+				</div>				
+			</section>	
+
+			<div class="aboutUs-nav">
+				<ul>
+					<li><a href="#about" class="scrollTo">關於約會專家<i class="fa fa-angle-right"></i></a></li>
+					<li><a href="#safe" class="scrollTo">安全源自於堅持<i class="fa fa-angle-right"></i></a></li>
+					<li><a href="#wait" class="scrollTo">好對象值得等待<i class="fa fa-angle-right"></i></a></li>
+				</ul>
+			</div>
+
+			<section class="aboutUS_us" id="about">
+				<div class="container">
+					<div class="aboutUs_stitle">
+						<img class="aboutUs_stitle" src="assets/images/aboutUs/abou_ttitle01.png" alt="About Us">
+					</div>
+					<h3>目標明確 不浪費時間</h3>
+					<p>我們將自己定位為一個婚戀平台，提供交友服務，<br>
+						在約會專家上註冊並正式入會的會員，<br>
+						95%以上都是以結婚為前提在尋找另一伴。</p>
+					<h3>跨平台模式 提升配對成功率</h3>
+					<p>約會專家獨有的跨平台約會模式，結合多間優質的婚戀平台，<br>
+						創造出極大的交友資源，<br>
+						為你提供更多成功配對的機會。</p>
+					<img class="p1" src="assets/images/aboutUs/aboutUs_p1.jpg" alt="目標明確 不浪費時間">
+					<img class="p2" src="assets/images/aboutUs/aboutUs_p2.jpg" alt="跨平台模式 提升配對成功率">
+				</div>
+				
+			</section>
+			
+			<section class="aboutUS_safe" id="safe">
+				<div class="container">
+
+					<img src="assets/images/aboutUs/ribbon_s.png" class="aboutUs-ribbon">
+					<div class="aboutUS_safe_box">
+						<div class="aboutUs_stitle">
+							<img src="assets/images/aboutUs/abou_ttitle02.png" alt="About Safe">
+						</div>
+						<h2 class="aboutUs_btitle"><i>打造<span>『</span>安全安心<span>』</span>的交友圈</i></h2>
+						<h5 class="aboutUs_sstitle">資料的必要性與真實性 是我們不變的堅持</h5>
+						<div class="about-row">
+							<div class="col-sm-6 about-img">
+								<img src="assets/images/aboutUs/aboutUs_pic01.png" alt="個人照片">
+							</div>
+							<div class="col-sm-6 about-txt">
+								<img src="assets/images/aboutUs/aboutUs_pic01_t.png" alt="個人照片">
+								<p>上傳1~4張清晰個人照片，除了可以為自己增加被看到的機會外，也是確認會員資格的第一道門檻哦！少了照片就無法使用後續的服務了～</p>
+							</div>
+						</div>
+						<div class="about-row">						
+							
+							<div class="col-sm-6 about-img">
+								<img src="assets/images/aboutUs/aboutUs_pic02.png" alt="身分證件">
+							</div>s
+							<div class="col-sm-6 about-txt">
+								<img src="assets/images/aboutUs/aboutUs_pic02_t.png" alt="身分證件">
+								<p>為了確認「是否為本人」以及「單身」的身分，請務必上傳身分證正反面照片。身分證只供確認資料用，絕對不會外流，您不必擔心。</p>
+							</div>
+						</div>
+						<div class="aboutUs_att">						
+							<div class="att"><i class="fa fa-warning text-warning"></i>兩樣資料都未上傳的話<span>只能使用20%</span>的功能哦!</div>
+							<img src="assets/images/aboutUs/about_girl01.png" alt="">
+						</div>
+					</div>	
+
+				</div>							
+			</section>
+			
+			<section class="aboutUs_wait" id="wait">
+				<div class="container">
+
+					<img src="assets/images/aboutUs/ribbon_s.png" class="aboutUs-ribbon">
+					<div class="aboutUs_stitle">
+						<img src="assets/images/aboutUs/abou_ttitle03.png" alt="About Safe">
+					</div>
+					<h2 class="aboutUs_btitle"><i><span>『</span>1~7天<span>』</span>的審查工作天</i></h2>
+					<h5 class="aboutUs_sstitle">系統＋人工雙重審查　請耐心等待</h5>
+					<div class="wait_box">
+						<h3>等待審核的期間，您可以．．．．</h3>
+						<div class="wait_box_box">
+							<img src="assets/images/aboutUs/rose.png" alt="" class="rose1">
+							<img src="assets/images/aboutUs/rose.png" alt="" class="rose2">
+							<img src="assets/images/aboutUs/about_girl02.png" alt="" class="girl">
+							<div class="photo"><img src="assets/images/aboutUs/wait01.jpg" alt=""></div>
+							<div class="txt">
+								<h4>讓大師教你約會技巧</h4>
+								<a href="https://www.singleparty.com.tw/180301/?cc=officialwebsite_homepage_banner190308">看影片GO<i class="fa fa-angle-right"></i></a>
+							</div>
+						</div>
+						<div class="wait_box_box">
+							<img src="assets/images/aboutUs/rose.png" alt="" class="rose3">
+							<div class="photo"><img src="assets/images/aboutUs/wait02.jpg" alt=""></div>
+							<div class="txt">
+								<h4>精選文章看一遍</h4>
+								<a href="https://www.singleparty.com.tw/lovesalon.asp">看文章GO<i class="fa fa-angle-right"></i></a>
+							</div>
+						</div>
+						<div class="wait_box_box">
+								<img src="assets/images/aboutUs/rose.png" alt="" class="rose4">
+							<div class="photo"><img src="assets/images/aboutUs/wait03.jpg" alt=""></div>
+							<div class="txt">
+								<h4>體驗模擬約會</h4>
+								<a href="https://www.singleparty.com.tw/190620/">體驗GO<i class="fa fa-angle-right"></i></a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				
+			</section>
+			<!-- /20200616關於我們 -->
+			
+			<!-- APP 20200616 -->
+			<section class="index-full-app">
+				<div class="container">
+					<ul class="index-full-app-list">
+						<li class="">
+							<img class="app-icon" src="assets/images/app-icon-d.png" alt="約會專家APP">
+						</li>
+						<li class="">
+							<h3 class="app-tilte">跨平台交友約會 馬上加入</h3>
+						</li>
+						<li class="">
+							<a class="app-adroid" href="https://goo.gl/6XLKhM" target="_blank"><img src="assets/images/google-play.png" alt="約會專家APP_adroid"></a>
+						</li>
+						<li class="">
+							<a class="app-ios" href="https://goo.gl/UBWqMA" target="_blank"><img src="assets/images/app-store.png" alt="約會專家APP_IOS"></a>
+						</li>
 					</ul>
 				</div>
 			</section>
-			<!-- 20190903關於我們 -->
-			<section class="aboutUS_us" id="about">
-				<div class="aboutUs_stitle">
-					<img class="aboutUs_stitle" src="assets/images/aboutUs/abou_ttitle01.png" alt="About Us">
-				</div>
-				<h3>目標明確 不浪費時間</h3>
-				<p>我們將自己定位為一個婚戀平台，提供交友服務，<br>
-					在約會專家上註冊並正式入會的會員，<br>
-					95%以上都是以結婚為前提在尋找另一伴。</p>
-				<h3>跨平台模式 提升配對成功率</h3>
-				<p>約會專家獨有的跨平台約會模式，結合多間優質的婚戀平台，<br>
-					創造出極大的交友資源，<br>
-					為你提供更多成功配對的機會。</p>
-				<img class="p1" src="assets/images/aboutUs/aboutUs_p1.jpg" alt="目標明確 不浪費時間">
-				<img class="p2" src="assets/images/aboutUs/aboutUs_p2.jpg" alt="跨平台模式 提升配對成功率">
-			</section>
-			<!-- 20190903打造『安全安心』的交友圈 -->
-			<section class="aboutUS_safe" id="safe">
-				<img src="assets/images/aboutUs/ribbon_s.png" class="aboutUs-ribbon">
-				<div class="aboutUS_safe_box">
-					<div class="aboutUs_stitle">
-						<img src="assets/images/aboutUs/abou_ttitle02.png" alt="About Safe">
-					</div>
-					<h2 class="aboutUs_btitle"><i>打造<span>『</span>安全安心<span>』</span>的交友圈</i></h2>
-					<h5 class="aboutUs_sstitle">資料的必要性與真實性 是我們不變的堅持</h5>
-					<div class="about-row">
-						<div class="col-sm-6 about-img">
-							<img src="assets/images/aboutUs/aboutUs_pic01.png" alt="個人照片">
-						</div>
-						<div class="col-sm-6 about-txt">
-							<img src="assets/images/aboutUs/aboutUs_pic01_t.png" alt="個人照片">
-							<p>上傳1~4張清晰個人照片，除了可以為自己增加被看到的機會外，也是確認會員資格的第一道門檻哦！少了照片就無法使用後續的服務了～</p>
-						</div>
-					</div>
-					<div class="about-row">						
-						
-						<div class="col-sm-6 about-img">
-							<img src="assets/images/aboutUs/aboutUs_pic02.png" alt="身分證件">
-						</div>s
-						<div class="col-sm-6 about-txt">
-							<img src="assets/images/aboutUs/aboutUs_pic02_t.png" alt="身分證件">
-							<p>為了確認「是否為本人」以及「單身」的身分，請務必上傳身分證正反面照片。身分證只供確認資料用，絕對不會外流，您不必擔心。</p>
-						</div>
-					</div>
-					<div class="aboutUs_att">						
-						<div class="att"><i class="fa fa-warning text-warning"></i>兩樣資料都未上傳的話<span>只能使用20%</span>的功能哦!</div>
-						<img src="assets/images/aboutUs/about_girl01.png" alt="">
-					</div>
-				</div>				
-			</section>
-			<!-- 20190903『1～7天』的審查工作天 -->
-			<section class="aboutUs_wait" id="wait">
-				<img src="assets/images/aboutUs/ribbon_s.png" class="aboutUs-ribbon">
-				<div class="aboutUs_stitle">
-					<img src="assets/images/aboutUs/abou_ttitle03.png" alt="About Safe">
-				</div>
-				<h2 class="aboutUs_btitle"><i><span>『</span>1~7天<span>』</span>的審查工作天</i></h2>
-				<h5 class="aboutUs_sstitle">系統＋人工雙重審查　請耐心等待</h5>
-				<div class="wait_box">
-					<h3>等待審核的期間，您可以．．．．</h3>
-					<div class="wait_box_box">
-						<img src="assets/images/aboutUs/rose.png" alt="" class="rose1">
-						<img src="assets/images/aboutUs/rose.png" alt="" class="rose2">
-						<img src="assets/images/aboutUs/about_girl02.png" alt="" class="girl">
-						<div class="photo"><img src="assets/images/aboutUs/wait01.jpg" alt=""></div>
-						<div class="txt">
-							<h4>讓大師教你約會技巧</h4>
-							<a href="https://www.singleparty.com.tw/180301/?cc=officialwebsite_homepage_banner190308">看影片GO<i class="fa fa-angle-right"></i></a>
-						</div>
-					</div>
-					<div class="wait_box_box">
-						<img src="assets/images/aboutUs/rose.png" alt="" class="rose3">
-						<div class="photo"><img src="assets/images/aboutUs/wait02.jpg" alt=""></div>
-						<div class="txt">
-							<h4>精選文章看一遍</h4>
-							<a href="https://www.singleparty.com.tw/lovesalon.asp">看文章GO<i class="fa fa-angle-right"></i></a>
-						</div>
-					</div>
-					<div class="wait_box_box">
-							<img src="assets/images/aboutUs/rose.png" alt="" class="rose4">
-						<div class="photo"><img src="assets/images/aboutUs/wait03.jpg" alt=""></div>
-						<div class="txt">
-							<h4>體驗模擬約會</h4>
-							<a href="https://www.singleparty.com.tw/190620/">體驗GO<i class="fa fa-angle-right"></i></a>
-						</div>
-					</div>
-				</div>
-			</section>
-          
+			<!-- /APP 20200616 -->
+
 			<!-- 20190514_new_FOOTER -->
 			<footer class="new-footer">
 				<div class="container">

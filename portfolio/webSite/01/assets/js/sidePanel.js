@@ -6,10 +6,11 @@
     function sDropDown(){        
         sdToggle.on("mouseenter",function(){
             var $this = $(this);
+            var w = $(window).width();
             var sh = $this.next("ul").height();
             if($this.next("ul").length>0){
                 $this.next("ul").toggle();
-                if($this.parent("li").next().length>0){
+                if($this.parent("li").next().length>0 && w > 1024){
                     $this.parent("li").next().css("margin-top",sh);
                 }
             }
@@ -26,7 +27,8 @@
         sdMenu.on("mouseenter",function(){
             var $this = $(this);
             var sh = $this.height();
-            if($this.length>0){
+            var w = $(window).width();
+            if($this.length>0 && w > 1024){
                 $this.toggle();
                 $this.parent("li").next().css("margin-top",sh); 
             }      
@@ -39,7 +41,7 @@
             }
         });
     }
-    function ssDropDown(){
+    function ssDropDown(){       
         sdToggle.on("mouseenter",function(){
             var $this = $(this);
             if($this.next("ul").length>0){      
@@ -123,6 +125,7 @@
             sPrevBtn.css("display","none");
         }
     });
+
     if(w < 630){
         allWidth = singleWidth * sPanelLi.length;  
         sPanelLi.width(singleWidth);
