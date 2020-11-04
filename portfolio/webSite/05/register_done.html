@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Language" content="zh-tw">
+    <meta name="description" content="DateMeNow跟我約會吧">
+    <meta name="keywords" content="datemenow,來電,交友,跟我約會吧,單身,約會,結婚,想結婚就從約會開始,聯誼,活動,相親約會,一對一,公主,約會許願池,完全戀愛企劃,戀愛,極速配對,不來電免費,擺脫單身,配對,時尚尊榮,高效約會">
+    <link rel="icon" type="image/ico" href="assets/images/favicon.ico">
+    <title>DateMeNow跟我約會吧</title>
+    <!-- bootstrap core css -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <!-- plugin css -->
+    <link href="assets/css/plugin.min.css" rel="stylesheet">
+    <!-- layout css -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <!-- sweetalert -->
+    <link href="assets/plugins/sweetalert2/sweetalert2.css" rel="stylesheet">
+
+</head>
+<body class="enable-animation">
+    <div id="wrapper">
+        <header id="header" class="sticky dmn-header">
+            <nav class="navbar">
+                <div class="container-fluid">
+                    <div class="navbar-header header-dmn">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="header-dmn-sideicon dmn-call" href="#">
+                            <i class="fa fa-phone"></i>
+                            <span>客服<br>0800-302333</span>
+                        </a>
+                        <h1 class="dmn-brand-logo"><a class="navbar-brand" href="index.html"><img class="header-dmn-logo" src="assets/images/dmn-logo.png" title="DateMeNow跟我約會吧" alt="DateMeNow跟我約會吧-讓美好的你遇見美好的她"></a></h1>
+                        <a class="header-dmn-sideicon dmn-login" href="login.html">
+                            <i class="fa fa-sign-in"></i>
+                            <span>登入<br>註冊</span>
+                        </a>
+                    </div>                                  
+                </div>  
+                <div id="navbar" class="navbar-collapse collapse header-dmn-navbar">
+                    <div class="container-fluid">
+                        <ul class="nav navbar-nav">
+                            <li class="nav-logo"><a class="dmn-logo" href="index.html"><img class="header-dmn-logo" src="assets/images/dmn-logo.png" title="DateMeNow跟我約會吧" alt="DateMeNow跟我約會吧"></a></li>
+                            <li><a href="campaign_index.html">聯誼活動</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">交友企劃 <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="https://www.datemenow.com.tw/200510/?cc=dmn_officialwebsite_homepage_Banner0713">大家都在穩定交往的秘訣?</a></li>
+                                    <li><a href="https://www.datemenow.com.tw/180610/">戀愛分析量表</a></li>
+                                    <li><a href="https://www.datemenow.com.tw/event180310.asp">上班族不能不約會</a></li>
+                                </ul>
+                            </li>           
+                            <li><a href="search.html">單身會員</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">交往結婚 <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="happiness.html">幸福故事</a></li>
+					                <li><a href="lovestory.html">談情說愛</a></li>	
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">關於我們 <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="dmn.html">關於我們</a></li>
+					                <li><a href="news.html">媒體報導</a></li>	
+                                </ul>
+                            </li>  
+                            <li><a href="MarriageHall.html">服務據點</a></li>
+                            <li class=""><a href="send.html">補上傳證件</a></li>                 
+                        </ul> 
+                    </div>                   
+                    
+                    <ul class="dmn-side-panel">
+                        <li><a href="https://www.facebook.com/datemenow.tw/" target="_blank" class="fb" data-toggle="tooltip" data-placement="left" title="facebook"><i class="fa fa-facebook"></i></a></li>            
+                        <li><a href="#" data-toggle="modal" data-target="#eventFormDownLoad" target="_blank" class="line"><span data-toggle="tooltip" data-placement="left" title="訂閱電子報" ><i class="fa fa-envelope"></i></span></a></li>
+                        <li><a href="service.html" class="phone-icon" data-toggle="tooltip" data-placement="left" title="客服中心"><i class="fa fa-headphones"></i></a></li>
+                        <li><a href="assets/images/dmn.pdf" target="_blank" class="download-form" data-toggle="tooltip" data-placement="left" title="簡介下載"><i class="glyphicon glyphicon-download-alt"></i></a></li>
+                    </ul>   
+                </div>     
+                 
+            </nav>        
+        </header>
+
+        <!-- 麵包屑 -->
+        <section class="dmn-breadcrumb">
+            <div class="container">
+                <ol class="breadcrumb">
+                    <li><a href="index.html">首頁</a></li>
+                    <li><a href="register_step1.html">註冊</a></li>                
+                    <li class="active">DONE</li>
+                </ol>
+            </div>
+        </section>        
+        <!-- /麵包屑 -->
+
+        <!-- 註冊-step11 -->
+        <section class="page-register-section flower-bg3">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-10 col-md-offset-1">
+                        
+                        <div class="page-register-blcok">
+                            <!-- step box -->
+                            <div class="page-register-step">
+                                <ul class="page-step">
+                                    <li>1</li>
+                                    <li>2</li>
+                                    <li>3</li>
+                                    <li>4</li>
+                                    <li>5</li>
+                                    <li>6</li>
+                                    <li>7</li>
+                                    <li>8</li>
+                                    <li>9</li>
+                                    <li>10</li>
+                                    <li class="active">11</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="dmn-box">
+                                <div class="page-register-title">
+                                    <h1 class="title">恭喜您完成註冊！</h1>
+                                    <h2 class="subtitle">我們會有專屬您的服務人員與您聯絡！</h2>                                                                                  
+                                </div>
+                                <div class="page-register-account">
+                                    您目前的會員級別為：資料認證會員(待認證)
+                                </div>                                      
+                                <div class="page-register-form">                                      
+                                    <div class="member-table table-responsive">
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th></th>
+                                                    <th><i class="fa fa-star"></i> 網站會員 <i class="fa fa-star"></i></th>
+                                                    <th><i class="fa fa-star"></i> 資料認證 <i class="fa fa-star"></i></th>
+                                                    <th><i class="fa fa-star"></i> 真人認證 <i class="fa fa-star"></i></th>
+                                                    <th><i class="fa fa-star"></i> 催燦會員 <i class="fa fa-star"></i></th>
+                                                </tr>                                        
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>註冊</td>
+                                                    <td>線上註冊</td>
+                                                    <td>線上註冊</td>
+                                                    <td>線上註冊</td>
+                                                    <td>線上註冊</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>單身驗證</td>
+                                                    <td><i class="fa fa-times"></i></td>
+                                                    <td>線上驗證</td>
+                                                    <td>專人驗證</td>
+                                                    <td>專人驗證</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>資料效期</td>
+                                                    <td>待認證</td>
+                                                    <td>2個月</td>
+                                                    <td>3個月</td>
+                                                    <td>視服務期間而定</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>網路送禮</td>
+                                                    <td><i class="fa fa-times"></i></td>
+                                                    <td>可送禮</td>
+                                                    <td>可送禮可回禮</td>
+                                                    <td>可送禮可回禮</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>面對面約會</td>
+                                                    <td><i class="fa fa-times"></i></td>
+                                                    <td>被動約會2次</td>
+                                                    <td>主動約會1次+被動約會3次</td>
+                                                    <td>主動約會+被動約會</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>聯誼派對</td>
+                                                    <td><i class="fa fa-times"></i></td>
+                                                    <td><i class="fa fa-times"></i></td>
+                                                    <td><i class="fa fa-times"></i></td>
+                                                    <td>可參加</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>戶外活動</td>
+                                                    <td><i class="fa fa-times"></i></td>
+                                                    <td><i class="fa fa-times"></i></td>
+                                                    <td><i class="fa fa-times"></i></td>
+                                                    <td>可參加</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>備註</td>
+                                                    <td>待認證後即可被動排約現場排約需出示單身證件</td>
+                                                    <td>現場排約需出示單身證件</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                            </tbody>                                    
+                                        </table>                                
+                                    </div>                              
+                                    
+                                        
+                                    
+                                    <p class="text-small">※會員權益與需知，請詳閱<a href="rules.html" target="_blank">「服務條款」</a></p>
+                                    
+                                    <div class="form-group register-submit">
+                                        <button type="button" class="btn btn-sub1 btn-block" onclick="javascript:location.href='index.html'">回首頁<i class="fa fa-caret-right"></i></button>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                    </div>       
+
+                </div>
+            </div>
+        </section>
+        <!-- /註冊-step11 -->
+
+        <!-- footer -->
+        <footer class="footer">
+            <div class="container">
+                
+                <div class="footer-dmn-title">
+                    <a href="index.html">
+                        <img class="footer-dmn-logo" src="assets/images/dmn-logo.png" title="DateMeNow跟我約會吧" alt="DateMeNow跟我約會吧-讓美好的你遇見美好的她">
+                    </a>
+                </div>
+                <div class="footer-dmn-info row">
+                    <div class="col-md-4">
+                        <dl class="dmn-info-list">
+                            <dt>公司資訊</dt>
+                            <dd>
+                                <ul class="dmn-info-ul">
+                                    <li>
+                                        <a href="rules.html" target="_blank">使用條款</a>
+                                    </li>
+                                    <li>
+                                        <a href="joininfo.html" target="_blank">個資聲明</a>
+                                    </li>
+                                    <li>
+                                        <a href="copyright.html" target="_blank">隠私政策</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.104.com.tw/company/1a2x6biwvg?jobsource=checkc" target="_blank">企業徵才</a>
+                                    </li>
+                                </ul>
+                            </dd>
+                            <dd>台北市松山區八德路二段358號6樓之1</dd>
+                            <dd>營業時間 13:30~21:00(週一~六)、</dd>
+                            <dd>10:00~18:00(週日)</dd>
+                        </dl>
+                    </div>
+                    <div class="col-md-4">
+                        <dl class="dmn-info-list">
+                            <dt>聯絡我們</dt>
+                            <dd>想了解我們?</dd>
+                            <dd>您可撥打我們的客服專線</dd>
+                            <dd><span class="text-aid1">0800-302333</span> 或 <a href="service.html">客服中心</a></dd>
+                        </dl>
+                    </div>
+                    <div class="col-md-4">
+                        
+                        <dl class="dmn-info-list">
+                            <dt>Facebook</dt>
+                            <dd>
+                                <!--FB開始-->
+                                <div class="fb">
+                                    <div class="fb-like-box" data-href="http://www.facebook.com/datemenow.tw" data-width="332" data-height="250" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div>
+                                </div>
+                                 <!--FB結束-->
+                            </dd>
+                        </dl>                        
+                       
+                    </div>
+                </div> 
+            </div>
+        </footer>
+        <div class="footer-dmn-bottom">
+            <div class="container">            
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul class="dmn-social-icon">
+                            <li><a data-toggle="tooltip" data-placement="top" title="facebook" class="socail-icon" href="https://www.facebook.com/datemenow.tw" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                            <li><a data-toggle="tooltip" data-placement="top" title="line" class="socail-icon" href="https://line.me/ti/p/%40euh9076t" target="_blank"><img src="assets/images/line-icon.svg" alt="line"></a></li>
+                            <li><a data-toggle="tooltip" data-placement="top" title="blogger" class="socail-icon" href="http://lovedatemenow.blogspot.tw" target="_blank"><img src="assets/images/blogger-icon.svg" alt="blogger"></a></a></li>
+                            <li><a data-toggle="tooltip" data-placement="top" title="instagram" class="socail-icon" href="https://www.instagram.com/datemenow.tw" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                            <li><a data-toggle="tooltip" data-placement="top" title="youtube" class="socail-icon" href="https://www.youtube.com/channel/UCFqh3SC-yMSnE2yaGqUc0IQ" target="_blank"><i class="fa fa-youtube-play"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <p class="footer-dmn-copyrights">版權所有 跟我約會吧 Copyright ®2016 DATEMENOW.com.tw All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>            
+        </div>  
+        <!-- /footer -->
+        
+    </div>
+
+    <!-- SCROLL TO TOP -->
+    <a href="#" id="toTop"></a>
+
+    <!-- Modal 活動表下載 -->
+    <div id="eventFormDownLoad" class="modal fade" role="dialog">
+        <div class="modal-dialog">    
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">訂閱電子報</h4>
+                </div>
+                <div class="modal-body">
+                    <h5 class="title"><i class="fa fa-envelope-o"></i> 搶先獲得最新交友消息及聯誼資訊</h5>
+                    <form action="">                       
+                        <div class="form-group row">
+                            <div class="col-xs-9">
+                                <input type="text" class="form-control form-control-lg" name="" id="" placeholder="輸入e-mail訂閱電子報" required>
+                            </div>
+                            <div class="col-xs-3">
+                                <button class="btn btn-main btn-block">訂閱</button>
+                            </div>                                   
+                        </div>                                
+                    </form> 
+                </div>
+                <!-- Modal Footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">關閉視窗</button>
+                </div>
+            </div>    
+        </div>
+    </div>
+    <!-- /Modal 活動表下載 -->
+
+    <!-- jquery -->
+    <script src="assets/plugins/jquery/jquery-2.2.4.min.js"></script>
+    <!-- scripts -->
+    <script type="text/javascript" src="assets/js/scripts.js"></script>
+    <!-- sweetalert -->
+    <script type="text/javascript" src="assets/plugins/sweetalert2/sweetalert2.min.js"></script>
+    <!-- facebook 
+    <script>
+        (function(d, s, id) { 
+        　var js, fjs = d.getElementsByTagName(s)[0];
+        　if (d.getElementById(id)) return;
+        　js = d.createElement(s); js.id = id;
+        　js.src = "//connect.facebook.net/zh_TW/all.js#xfbml=1";
+        　fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>-->
+</body>
+</html>

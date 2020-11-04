@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Language" content="zh-tw">
+    <meta name="description" content="DateMeNow跟我約會吧">
+    <meta name="keywords" content="datemenow,來電,交友,跟我約會吧,單身,約會,結婚,想結婚就從約會開始,聯誼,活動,相親約會,一對一,公主,約會許願池,完全戀愛企劃,戀愛,極速配對,不來電免費,擺脫單身,配對,時尚尊榮,高效約會">
+    <link rel="icon" type="image/ico" href="assets/images/favicon.ico">
+    <title>DateMeNow跟我約會吧</title>
+    <!-- bootstrap core css -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <!-- plugin css -->
+    <link href="assets/css/plugin.min.css" rel="stylesheet">
+    <!-- layout css -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <!-- sweetalert -->
+    <link href="assets/plugins/sweetalert2/sweetalert2.css" rel="stylesheet">
+
+</head>
+<body class="enable-animation">
+    <div id="wrapper">
+        <header id="header" class="sticky dmn-header">
+            <nav class="navbar">
+                <div class="container-fluid">
+                    <div class="navbar-header header-dmn">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="header-dmn-sideicon dmn-call" href="#">
+                            <i class="fa fa-phone"></i>
+                            <span>客服<br>0800-302333</span>
+                        </a>
+                        <div class="dmn-brand-logo"><a class="navbar-brand" href="index.html"><img class="header-dmn-logo" src="assets/images/dmn-logo.png" title="DateMeNow跟我約會吧" alt="DateMeNow跟我約會吧-讓美好的你遇見美好的她"></a></div>
+                        <a class="header-dmn-sideicon dmn-login" href="login.html">
+                            <i class="fa fa-sign-in"></i>
+                            <span>登入<br>註冊</span>
+                        </a>
+                    </div>                                  
+                </div>  
+                <div id="navbar" class="navbar-collapse collapse header-dmn-navbar">
+                    <div class="container-fluid">
+                        <ul class="nav navbar-nav">
+                            <li class="nav-logo"><a class="dmn-logo" href="index.html"><img class="header-dmn-logo" src="assets/images/dmn-logo.png" title="DateMeNow跟我約會吧" alt="DateMeNow跟我約會吧"></a></li>
+                            <li><a href="campaign_index.html"><img class="h-menu" src="assets/images/header_menu_event.png" alt="聯誼活動"></a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><img class="h-menu" src="assets/images/header_menu_project.png" alt="交友企劃"> <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="https://www.datemenow.com.tw/200510/?cc=dmn_officialwebsite_homepage_Banner0713">大家都在穩定交往的秘訣?</a></li>
+                                    <li><a href="https://www.datemenow.com.tw/180610/">戀愛分析量表</a></li>
+                                    <li><a href="https://www.datemenow.com.tw/event180310.asp">上班族不能不約會</a></li>
+                                </ul>
+                            </li>           
+                            <li><a href="search.html"><img class="h-menu" src="assets/images/header_menu_member.png" alt="單身會員"></a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><img class="h-menu" src="assets/images/header_menu_marry.png" alt="交往結婚"> <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="happiness.html">幸福故事</a></li>
+					                <li><a href="lovestory.html">談情說愛</a></li>	
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><img class="h-menu" src="assets/images/header_menu_about.png" alt="關於我們"> <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="dmn.html">關於我們</a></li>
+					                <li><a href="news.html">媒體報導</a></li>	
+                                </ul>
+                            </li>  
+                            <li><a href="MarriageHall.html"><img class="h-menu" src="assets/images/header_menu_location.png" alt="服務據點"></a></li>
+                            <li class=""><a href="send.html"><img class="h-menu" src="assets/images/header_menu_send.png" alt="補上傳證件"></a></li>                 
+                        </ul> 
+                    </div>                   
+                    
+                    <ul class="dmn-side-panel">
+                        <li><a href="https://www.facebook.com/datemenow.tw/" target="_blank" class="fb" data-toggle="tooltip" data-placement="left" title="facebook"><i class="fa fa-facebook"></i></a></li>            
+                        <li><a href="#" data-toggle="modal" data-target="#eventFormDownLoad" target="_blank" class="line"><span data-toggle="tooltip" data-placement="left" title="訂閱電子報" ><i class="fa fa-envelope"></i></span></a></li>
+                        <li><a href="service.html" class="phone-icon" data-toggle="tooltip" data-placement="left" title="客服中心"><i class="fa fa-headphones"></i></a></li>
+                        <li><a href="assets/images/dmn.pdf" target="_blank" class="download-form" data-toggle="tooltip" data-placement="left" title="簡介下載"><i class="glyphicon glyphicon-download-alt"></i></a></li>
+                    </ul>   
+                </div>     
+                 
+            </nav>        
+        </header>     
+
+        <!-- 麵包屑 -->
+        <section class="dmn-breadcrumb">
+            <div class="container">
+                <ol class="breadcrumb">
+                    <li><a href="index.html">首頁</a></li>                
+                    <li class="active">服務據點</li>
+                </ol>
+            </div>
+        </section>        
+        <!-- /麵包屑 -->
+
+        <!-- 服務據點 -->
+        <section class="page-location-kv">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-offset-1 col-md-10">
+                        <div class="dmn-kv-text wow fadeInUp" data-wow-delay="0.2s">
+                            <h1 class="dmn-en-title-kv text-white">
+                                Introduction
+                                <span>服務據點</span>
+                            </h1>
+                            <p>
+                                座落在人文薈萃的八德路上<br>
+                                專位單身的您打造的尊榮婚戀會館<br>
+                                經典品未設計裝潢，環境明亮舒適，絲毫沒有壓迫感<br>
+                                融入戀愛概念元素，在愛情的氛圍中自然而然的相遇
+                            </p>
+                        </div>
+                        
+                    </div>
+                </div>    
+            </div>
+        </section>
+        <!-- /服務據點 -->
+
+        <!-- 尊榮迎賓 接待訪客區 -->
+        <section class="page-location-section color-bg1">
+            <div class="container-lg">                
+
+                <div class="page-location-section-slider">
+                    <div class="flexslider" data-controlNav="thumbnails" data-slideshowSpeed="7000">
+                        <ul class="slides">                        
+                            <!-- Slide 1 -->
+                            <li data-thumb="assets/images/hall/reception01.jpg">
+                                <a href="#">
+                                    <img src="assets/images/hall/reception01.jpg" alt="尊榮迎賓，接待訪客區">                                    
+                                </a>
+                            </li>
+                            <!-- Slide 2 -->
+                            <li data-thumb="assets/images/hall/reception02.jpg">
+                                <a href="#">
+                                    <img src="assets/images/hall/reception02.jpg" alt="尊榮迎賓，接待訪客區">                                    
+                                </a>
+                            </li>
+                            <!-- Slide 3 -->
+                            <li data-thumb="assets/images/hall/reception03.jpg">
+                                <a href="#">
+                                    <img src="assets/images/hall/reception03.jpg" alt="尊榮迎賓，接待訪客區">                                    
+                                </a>
+                            </li>
+                            <!-- Slide 4 -->
+                            <li data-thumb="assets/images/hall/reception04.jpg">
+                                <a href="#">
+                                    <img src="assets/images/hall/reception04.jpg" alt="尊榮迎賓，接待訪客區">                                    
+                                </a>
+                            </li>
+                            <!-- Slide 5 -->
+                            <li data-thumb="assets/images/hall/reception05.jpg">
+                                <a href="#">
+                                    <img src="assets/images/hall/reception05.jpg" alt="尊榮迎賓，接待訪客區">                                    
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>  
+                
+                <div class="page-location-section-title">
+                    <div class="cube-box wow fadeInUp" data-wow-delay="0.2s">
+                        <h2 class="cube-title">
+                            <span class="en">Reception</span>
+                            <span class="ch">尊榮迎賓 接待訪客區</span>
+                        </h2>  
+                    </div>
+                    <p class="text-black text-font-serif">華麗又低調奢華大廳，完全預約制訪客服務<br>
+                        給專屬尊榮的您。</p>                 
+                </div>
+
+            </div>
+        </section>
+        <!-- /尊榮迎賓 接待訪客區 -->
+
+        <!-- 奢華愛戀 vip排約室 -->
+        <section class="page-location-section color-bg2">
+            <div class="container-lg">                
+
+                <div class="page-location-section-slider">
+                    <div class="flexslider" data-controlNav="thumbnails" data-slideshowSpeed="7000">
+                        <ul class="slides">                        
+                            <!-- Slide 1 -->
+                            <li data-thumb="assets/images/hall/vip01.jpg">
+                                <a href="#">
+                                    <img src="assets/images/hall/vip01.jpg" alt="尊榮迎賓，接待訪客區">                                    
+                                </a>
+                            </li>
+                            <!-- Slide 1 -->
+                            <li data-thumb="assets/images/hall/vip01.jpg">
+                                <a href="#">
+                                    <img src="assets/images/hall/vip01.jpg" alt="尊榮迎賓，接待訪客區">                                    
+                                </a>
+                            </li>
+                            <!-- Slide 1 -->
+                            <li data-thumb="assets/images/hall/vip01.jpg">
+                                <a href="#">
+                                    <img src="assets/images/hall/vip01.jpg" alt="尊榮迎賓，接待訪客區">                                    
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>  
+                
+                <div class="page-location-section-title">
+                    <div class="cube-box green wow fadeInUp" data-wow-delay="0.2s">
+                        <h2 class="cube-title">
+                            <span class="en">VIP</span>
+                            <span class="ch">奢華愛戀 vip排約室</span>
+                        </h2>  
+                    </div>
+                    <p class="text-black text-font-serif">絕對的私人空間，專屬的服務、<br>
+                        專屬的餐飲，讓您的愛情迅速加溫。</p>                 
+                </div>
+
+            </div>
+        </section>
+        <!-- /奢華愛戀 vip排約室 -->
+
+        <!-- 邂逅愛情 浪漫排約室 -->
+        <section class="page-location-section color-bg1">
+            <div class="container-lg">                
+
+                <div class="page-location-section-slider">
+                    <div class="flexslider" data-controlNav="thumbnails" data-slideshowSpeed="7000">
+                        <ul class="slides">                        
+                            <!-- Slide 1 -->
+                            <li data-thumb="assets/images/hall/dattingRoom01.jpg">
+                                <a href="#">
+                                    <img src="assets/images/hall/dattingRoom01.jpg" alt="尊榮迎賓，接待訪客區">                                    
+                                </a>
+                            </li>
+                            <!-- Slide 2 -->
+                            <li data-thumb="assets/images/hall/dattingRoom02.jpg">
+                                <a href="#">
+                                    <img src="assets/images/hall/dattingRoom02.jpg" alt="尊榮迎賓，接待訪客區">                                    
+                                </a>
+                            </li>
+                            <!-- Slide 3 -->
+                            <li data-thumb="assets/images/hall/dattingRoom03.jpg">
+                                <a href="#">
+                                    <img src="assets/images/hall/dattingRoom03.jpg" alt="尊榮迎賓，接待訪客區">                                    
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>  
+                
+                <div class="page-location-section-title">
+                    <div class="cube-box wow fadeInUp" data-wow-delay="0.2s">
+                        <h2 class="cube-title">
+                            <span class="en">Datting<br>Room</span>
+                            <span class="ch">邂逅愛情 浪漫排約室</span>
+                        </h2>  
+                    </div>
+                    <p class="text-black text-font-serif">時尚設計多樣風格空間<br>
+                        讓您輕鬆自在的邂逅愛情</p>                 
+                </div>
+
+            </div>
+        </section>
+        <!-- /邂逅愛情 浪漫排約室 -->
+
+        <!-- 會員專屬 個人造形 -->
+        <section class="page-location-section color-bg2">
+            <div class="container-lg">                
+
+                <div class="page-location-section-slider">
+                    <div class="flexslider" data-controlNav="thumbnails" data-slideshowSpeed="7000">
+                        <ul class="slides">                        
+                            <!-- Slide 1 -->
+                            <li data-thumb="assets/images/hall/modeling01.jpg">
+                                <a href="#">
+                                    <img src="assets/images/hall/modeling01.jpg" alt="尊榮迎賓，接待訪客區">                                    
+                                </a>
+                            </li>
+                            <!-- Slide 2 -->
+                            <li data-thumb="assets/images/hall/modeling02.jpg">
+                                <a href="#">
+                                    <img src="assets/images/hall/modeling02.jpg" alt="尊榮迎賓，接待訪客區">                                    
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>    
+                
+                <div class="page-location-section-title">
+                    <div class="cube-box green wow fadeInUp" data-wow-delay="0.2s">
+                        <h2 class="cube-title">
+                            <span class="en">Modeling</span>
+                            <span class="ch">會員專屬 個人造形</span>
+                        </h2>  
+                    </div>
+                    <p class="text-black text-font-serif">適溫馨的個人造型室，提供約會前的您<br>
+                        形象管理，讓約會更加分。</p>                 
+                </div>
+
+            </div>
+        </section>
+        <!-- /會員專屬 個人造形 -->
+
+        <!-- 交通資訊 -->
+        <section class="page-location-access main-bg">
+            <div class="container-lg">
+                <h2 class="en-title text-white wow fadeInUp" data-wow-delay="0.2s">
+                    <span class="en">Access</span>
+                    <span class="ch">交通資訊</span>
+                </h2>
+                <div class="text">
+                    <dl>
+                        <dt>【地址】</dt>
+                        <dd>台北市松山區八德路二段358號6樓之1<br>
+                            (八德科技大樓，一樓為板信銀行)</dd>
+                    </dl>
+                    <dl>
+                        <dt>【搭乘捷運】</dt>
+                        <dd>松山線：南京復興捷運站5號出口<br>
+                            步行復興北路(往微風廣場)至八德路左轉直走<br>
+                            板南線：忠孝復興捷運站5號出口<br>
+                            步行復興南路(往微風廣場)至八德路右轉直走</dd>
+                    </dl>
+                    <dl>
+                        <dt>【搭乘公車】</dt>
+                        <dd>台安醫院站下車(總督戲院)<br>
+                            迴轉步行一分鐘至中崙消防分隊，過馬路到對面板信銀行<br>
+                            52、202、203、205、257、1061、1062、1191、1800、2021<br>
+                            台安醫院下車(迴轉步行至板信銀行)<br>
+                            41、52、202、203、205、257、276、521、1061、1062、1191、2021</dd>
+                    </dl>
+                    <dl>
+                        <dt>【停車資訊】</dt>
+                        <dd>台灣聯通(復興與八德路口)地下室<br>
+                            微風百貨室外廣場(市民大道轉入八德路二段366巷)<br>
+                            台安醫院停車場(敦化南路口)</dd>
+                    </dl>
+                </div>
+                <div class="map">
+                    <img src="assets/images/map.png" alt="DateMeNow跟我約會吧_地圖">
+                </div>
+            </div>
+        </section>
+        <!-- 交通資訊 -->
+
+        <!-- footer -->
+        <footer class="footer">
+            <div class="container">
+                
+                <div class="footer-dmn-title">
+                    <a href="index.html">
+                        <img class="footer-dmn-logo" src="assets/images/dmn-logo.png" title="DateMeNow跟我約會吧" alt="DateMeNow跟我約會吧-讓美好的你遇見美好的她">
+                    </a>
+                </div>
+                <div class="footer-dmn-info row">
+                    <div class="col-md-4">
+                        <dl class="dmn-info-list">
+                            <dt>公司資訊</dt>
+                            <dd>
+                                <ul class="dmn-info-ul">
+                                    <li>
+                                        <a href="rules.html" target="_blank">使用條款</a>
+                                    </li>
+                                    <li>
+                                        <a href="joininfo.html" target="_blank">個資聲明</a>
+                                    </li>
+                                    <li>
+                                        <a href="copyright.html" target="_blank">隠私政策</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.104.com.tw/company/1a2x6biwvg?jobsource=checkc" target="_blank">企業徵才</a>
+                                    </li>
+                                </ul>
+                            </dd>
+                            <dd>台北市松山區八德路二段358號6樓之1</dd>
+                            <dd>營業時間 13:30~21:00(週一~六)、</dd>
+                            <dd>10:00~18:00(週日)</dd>
+                        </dl>
+                    </div>
+                    <div class="col-md-4">
+                        <dl class="dmn-info-list">
+                            <dt>聯絡我們</dt>
+                            <dd>想了解我們?</dd>
+                            <dd>您可撥打我們的客服專線</dd>
+                            <dd><span class="text-aid1">0800-302333</span> 或 <a href="service.html">客服中心</a></dd>
+                        </dl>
+                    </div>
+                    <div class="col-md-4">
+                        
+                        <dl class="dmn-info-list">
+                            <dt>Facebook</dt>
+                            <dd>
+                                <!--FB開始-->
+                                <div class="fb">
+                                    <div class="fb-like-box" data-href="http://www.facebook.com/datemenow.tw" data-width="332" data-height="250" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div>
+                                </div>
+                                 <!--FB結束-->
+                            </dd>
+                        </dl>                        
+                       
+                    </div>
+                </div> 
+            </div>
+        </footer>
+        <div class="footer-dmn-bottom">
+            <div class="container">            
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul class="dmn-social-icon">
+                            <li><a data-toggle="tooltip" data-placement="top" title="facebook" class="socail-icon" href="https://www.facebook.com/datemenow.tw" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                            <li><a data-toggle="tooltip" data-placement="top" title="line" class="socail-icon" href="https://line.me/ti/p/%40euh9076t" target="_blank"><img src="assets/images/line-icon.svg" alt="line"></a></li>
+                            <li><a data-toggle="tooltip" data-placement="top" title="blogger" class="socail-icon" href="http://lovedatemenow.blogspot.tw" target="_blank"><img src="assets/images/blogger-icon.svg" alt="blogger"></a></a></li>
+                            <li><a data-toggle="tooltip" data-placement="top" title="instagram" class="socail-icon" href="https://www.instagram.com/datemenow.tw" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                            <li><a data-toggle="tooltip" data-placement="top" title="youtube" class="socail-icon" href="https://www.youtube.com/channel/UCFqh3SC-yMSnE2yaGqUc0IQ" target="_blank"><i class="fa fa-youtube-play"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <p class="footer-dmn-copyrights">版權所有 跟我約會吧 Copyright ®2016 DATEMENOW.com.tw All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>            
+        </div>  
+        <!-- /footer -->
+        
+    </div>
+
+    <!-- SCROLL TO TOP -->
+    <a href="#" id="toTop"></a>
+
+    <!-- Modal 活動表下載 -->
+    <div id="eventFormDownLoad" class="modal fade" role="dialog">
+        <div class="modal-dialog">    
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">訂閱電子報</h4>
+                </div>
+                <div class="modal-body">
+                    <h5 class="title"><i class="fa fa-envelope-o"></i> 搶先獲得最新交友消息及聯誼資訊</h5>
+                    <form action="">                       
+                        <div class="form-group row">
+                            <div class="col-xs-9">
+                                <input type="text" class="form-control form-control-lg" name="" id="" placeholder="輸入e-mail訂閱電子報" required>
+                            </div>
+                            <div class="col-xs-3">
+                                <button class="btn btn-main btn-block">訂閱</button>
+                            </div>                                   
+                        </div>                                
+                    </form> 
+                </div>
+                <!-- Modal Footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">關閉視窗</button>
+                </div>
+            </div>    
+        </div>
+    </div>
+    <!-- /Modal 活動表下載 -->
+
+    <!-- jquery -->
+    <script src="assets/plugins/jquery/jquery-2.2.4.min.js"></script>
+    <!-- scripts -->
+    <script type="text/javascript" src="assets/js/scripts.js"></script>
+    <!-- sweetalert -->
+    <script type="text/javascript" src="assets/plugins/sweetalert2/sweetalert2.min.js"></script>
+    <!-- facebook 
+    <script>
+        (function(d, s, id) { 
+        　var js, fjs = d.getElementsByTagName(s)[0];
+        　if (d.getElementById(id)) return;
+        　js = d.createElement(s); js.id = id;
+        　js.src = "//connect.facebook.net/zh_TW/all.js#xfbml=1";
+        　fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>-->
+</body>
+</html>

@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Language" content="zh-tw">
+    <meta name="description" content="DateMeNow跟我約會吧">
+    <meta name="keywords" content="datemenow,來電,交友,跟我約會吧,單身,約會,結婚,想結婚就從約會開始,聯誼,活動,相親約會,一對一,公主,約會許願池,完全戀愛企劃,戀愛,極速配對,不來電免費,擺脫單身,配對,時尚尊榮,高效約會">
+    <link rel="icon" type="image/ico" href="assets/images/favicon.ico">
+    <title>DateMeNow跟我約會吧</title>
+    <!-- bootstrap core css -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <!-- plugin css -->
+    <link href="assets/css/plugin.min.css" rel="stylesheet">
+    <!-- layout css -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <!-- sweetalert -->
+    <link href="assets/plugins/sweetalert2/sweetalert2.css" rel="stylesheet">
+
+</head>
+<body class="enable-animation">
+    <div id="wrapper">
+        <header id="header" class="sticky dmn-header">
+            <nav class="navbar">
+                <div class="container-fluid">
+                    <div class="navbar-header header-dmn">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="header-dmn-sideicon dmn-call" href="#">
+                            <i class="fa fa-phone"></i>
+                            <span>客服<br>0800-302333</span>
+                        </a>
+                        <h1 class="dmn-brand-logo"><a class="navbar-brand" href="index.html"><img class="header-dmn-logo" src="assets/images/dmn-logo.png" title="DateMeNow跟我約會吧" alt="DateMeNow跟我約會吧-讓美好的你遇見美好的她"></a></h1>
+                        <a class="header-dmn-sideicon dmn-login" href="login.html">
+                            <i class="fa fa-sign-in"></i>
+                            <span>登入<br>註冊</span>
+                        </a>
+                    </div>                                  
+                </div>  
+                <div id="navbar" class="navbar-collapse collapse header-dmn-navbar">
+                    <div class="container-fluid">
+                        <ul class="nav navbar-nav">
+                            <li class="nav-logo"><a class="dmn-logo" href="index.html"><img class="header-dmn-logo" src="assets/images/dmn-logo.png" title="DateMeNow跟我約會吧" alt="DateMeNow跟我約會吧"></a></li>
+                            <li><a href="campaign_index.html">聯誼活動</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">交友企劃 <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="https://www.datemenow.com.tw/200510/?cc=dmn_officialwebsite_homepage_Banner0713">大家都在穩定交往的秘訣?</a></li>
+                                    <li><a href="https://www.datemenow.com.tw/180610/">戀愛分析量表</a></li>
+                                    <li><a href="https://www.datemenow.com.tw/event180310.asp">上班族不能不約會</a></li>
+                                </ul>
+                            </li>           
+                            <li><a href="search.html">單身會員</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">交往結婚 <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="happiness.html">幸福故事</a></li>
+					                <li><a href="lovestory.html">談情說愛</a></li>	
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">關於我們 <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="dmn.html">關於我們</a></li>
+					                <li><a href="news.html">媒體報導</a></li>	
+                                </ul>
+                            </li>  
+                            <li><a href="MarriageHall.html">服務據點</a></li>
+                            <li class=""><a href="send.html">補上傳證件</a></li>                 
+                        </ul> 
+                    </div>                   
+                    
+                    <ul class="dmn-side-panel">
+                        <li><a href="https://www.facebook.com/datemenow.tw/" target="_blank" class="fb" data-toggle="tooltip" data-placement="left" title="facebook"><i class="fa fa-facebook"></i></a></li>            
+                        <li><a href="#" data-toggle="modal" data-target="#eventFormDownLoad" target="_blank" class="line"><span data-toggle="tooltip" data-placement="left" title="訂閱電子報" ><i class="fa fa-envelope"></i></span></a></li>
+                        <li><a href="service.html" class="phone-icon" data-toggle="tooltip" data-placement="left" title="客服中心"><i class="fa fa-headphones"></i></a></li>
+                        <li><a href="assets/images/dmn.pdf" target="_blank" class="download-form" data-toggle="tooltip" data-placement="left" title="簡介下載"><i class="glyphicon glyphicon-download-alt"></i></a></li>
+                    </ul>   
+                </div>     
+                 
+            </nav>        
+        </header>
+
+        <!-- 麵包屑 -->
+        <section class="dmn-breadcrumb">
+            <div class="container">
+                <ol class="breadcrumb">
+                    <li><a href="index.html">首頁</a></li>
+                    <li><a href="register_step1.html">註冊</a></li>                
+                    <li class="active">STEP2</li>
+                </ol>
+            </div>
+        </section>        
+        <!-- /麵包屑 -->
+
+        <!-- 註冊-step2 -->
+        <section class="page-register-section flower-bg3">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-10 col-md-offset-1">
+                        
+                        <div class="page-register-blcok">
+                            <!-- step box -->
+                            <div class="page-register-step">
+                                <ul class="page-step">
+                                    <li>1</li>
+                                    <li class="active">2</li>
+                                    <li>3</li>
+                                    <li>4</li>
+                                    <li>5</li>
+                                    <li>6</li>
+                                    <li>7</li>
+                                    <li>8</li>
+                                    <li>9</li>
+                                    <li>10</li>
+                                    <li>11</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="dmn-box">
+                                <div class="page-register-title">
+                                    <h1 class="title">介紹一下您自己</h1>
+                                    <h2 class="subtitle">讓我們挑選最適合您的對象</h2>                                    
+                                </div>
+                                <div class="page-register-account">
+                                    帳號：45678999@gmail.com
+                                </div>
+                                <div class="page-register-form">
+                                    <form action="">
+                                        <div class="form-group">
+                                            <label class="" for="name">暱稱</label>
+                                            <input type="text" id="name" class="form-control form-underline" placeholder="暱稱 *">                                   
+                                        </div>
+        
+                                        <div class="form-group row">
+                                            <div class="col-md-6">
+                                                <label class="" for="password">請輸入密碼</label>
+                                                <input type="password" id="password" class="form-control form-underline" placeholder="請輸入密碼">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label class="" for="password2">請再次輸入密碼</label>
+                                                <input type="password" id="password2" class="form-control form-underline" placeholder="請再次輸入密碼">
+                                            </div>
+                                        </div>
+        
+                                        <div class="form-group row">
+                                            <div class="col-md-4">
+                                                <label class="" for="year">出生年</label>
+                                                <select id="year" class="form-control form-underline">
+                                                    <option value="" disabled selected>出生年</option>
+                                                    <option value="">1977</option>
+                                                    <option value="">1978</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <label class="" for="month">月份</label>
+                                                <select id="month" class="form-control form-underline">
+                                                    <option value="" disabled selected>出生月</option>
+                                                    <option value="">1</option>
+                                                    <option value="">2</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <label class="" for="day">日期</label>
+                                                <select id="day" class="form-control form-underline">
+                                                    <option value="" disabled selected>出生日</option>
+                                                    <option value="">1</option>
+                                                    <option value="">2</option>
+                                                </select>
+                                            </div>
+                                        </div>
+        
+                                        <div class="form-group row">
+                                            <div class="col-md-4">
+                                                <label class="" for="bloodtype">血型</label>
+                                                <select id="bloodtype" class="form-control form-underline">
+                                                    <option value="" disabled selected>血型</option>
+                                                    <option value="">A</option>
+                                                    <option value="">B</option>
+                                                    <option value="">O</option>
+                                                    <option value="">AB</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <label class="" for="sex">性別</label>
+                                                <select id="sex" class="form-control form-underline">
+                                                    <option value="" disabled selected>性別</option>
+                                                    <option value="">男性</option>
+                                                    <option value="">女性</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <label class="" for="height">身高</label>
+                                                <select id="height" class="form-control form-underline">
+                                                    <option value="" disabled selected>身高</option>
+                                                    <option value="">140cm</option>
+                                                    <option value="">145cm</option>
+                                                </select>
+                                            </div>
+                                        </div>
+        
+                                        <div class="form-group row">
+                                            <div class="col-md-6">
+                                                <label class="" for="relationship">外型</label>
+                                                <select id="relationship" class="form-control form-underline">
+                                                    <option value="" disabled selected>外型</option>
+                                                    <option value="">苗條</option>                                        
+                                                </select>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label class="" for="education">最高學歷</label>
+                                                <select id="education" class="form-control form-underline">
+                                                    <option value="" disabled selected>最高學歷</option>
+                                                    <option value="">小學</option>
+                                                    <option value="">高中</option>
+                                                </select>
+                                            </div>
+                                        </div>
+        
+                                        <div class="form-group row">
+                                            <div class="col-md-6">
+                                                <label class="" for="">行業別</label>
+                                                <select id="" class="form-control form-underline">
+                                                    <option value="" disabled selected>行業別</option>
+                                                    <option value="">公務/國家機關</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label class="" for="company">公司名稱</label>
+                                                <input type="text" id="company" class="form-control form-underline" placeholder="公司名稱">
+                                            </div>
+                                        </div>
+        
+                                        <div class="form-group row">
+                                            <div class="col-md-6">
+                                                <label class="" for="11">職稱</label>
+                                                <input type="text" id="11" class="form-control form-underline" placeholder="職稱">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label class="" for="">年收入</label>
+                                                <select id="n" class="form-control form-underline">
+                                                    <option value="" disabled selected>年收入</option>
+                                                    <option value="">50萬以下</option>
+                                                </select>
+                                            </div>
+                                        </div>
+        
+                                        <div class="form-group row">
+                                            <div class="col-md-6">
+                                                <label class="" for="">推薦會館</label>
+                                                <select id="n" class="form-control form-underline">
+                                                    <option value="" disabled selected>推薦會館</option>
+                                                    <option value="">台北會館</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label class="" for="">推薦秘書</label>
+                                                <select id="n" class="form-control form-underline">
+                                                    <option value="" disabled selected>推薦秘書</option>
+                                                    <option value="">陳小美</option>
+                                                </select>
+                                            </div>
+                                        </div>                         
+        
+                                        <div class="form-group register-submit">                                            
+                                            <button type="button" class="btn btn-sub1 btn-block" onclick="javascript:location.href='register_step3.html'">確認無誤，下一步<i class="fa fa-caret-right"></i></button>
+                                            <p class="confirm">點擊表示同意<a target="_blank" href="joininfo.html">個資聲明</a>與<a target="_blank" href="copyright.html">隠私政策</a></p>   
+                                        </div>
+                                    </form>
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                    </div>       
+
+                </div>
+            </div>
+        </section>
+        <!-- /註冊-step2 -->
+
+        <!-- footer -->
+        <footer class="footer">
+            <div class="container">
+                
+                <div class="footer-dmn-title">
+                    <a href="index.html">
+                        <img class="footer-dmn-logo" src="assets/images/dmn-logo.png" title="DateMeNow跟我約會吧" alt="DateMeNow跟我約會吧-讓美好的你遇見美好的她">
+                    </a>
+                </div>
+                <div class="footer-dmn-info row">
+                    <div class="col-md-4">
+                        <dl class="dmn-info-list">
+                            <dt>公司資訊</dt>
+                            <dd>
+                                <ul class="dmn-info-ul">
+                                    <li>
+                                        <a href="rules.html" target="_blank">使用條款</a>
+                                    </li>
+                                    <li>
+                                        <a href="joininfo.html" target="_blank">個資聲明</a>
+                                    </li>
+                                    <li>
+                                        <a href="copyright.html" target="_blank">隠私政策</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.104.com.tw/company/1a2x6biwvg?jobsource=checkc" target="_blank">企業徵才</a>
+                                    </li>
+                                </ul>
+                            </dd>
+                            <dd>台北市松山區八德路二段358號6樓之1</dd>
+                            <dd>營業時間 13:30~21:00(週一~六)、</dd>
+                            <dd>10:00~18:00(週日)</dd>
+                        </dl>
+                    </div>
+                    <div class="col-md-4">
+                        <dl class="dmn-info-list">
+                            <dt>聯絡我們</dt>
+                            <dd>想了解我們?</dd>
+                            <dd>您可撥打我們的客服專線</dd>
+                            <dd><span class="text-aid1">0800-302333</span> 或 <a href="service.html">客服中心</a></dd>
+                        </dl>
+                    </div>
+                    <div class="col-md-4">
+                        
+                        <dl class="dmn-info-list">
+                            <dt>Facebook</dt>
+                            <dd>
+                                <!--FB開始-->
+                                <div class="fb">
+                                    <div class="fb-like-box" data-href="http://www.facebook.com/datemenow.tw" data-width="332" data-height="250" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div>
+                                </div>
+                                 <!--FB結束-->
+                            </dd>
+                        </dl>                        
+                       
+                    </div>
+                </div> 
+            </div>
+        </footer>
+        <div class="footer-dmn-bottom">
+            <div class="container">            
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul class="dmn-social-icon">
+                            <li><a data-toggle="tooltip" data-placement="top" title="facebook" class="socail-icon" href="https://www.facebook.com/datemenow.tw" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                            <li><a data-toggle="tooltip" data-placement="top" title="line" class="socail-icon" href="https://line.me/ti/p/%40euh9076t" target="_blank"><img src="assets/images/line-icon.svg" alt="line"></a></li>
+                            <li><a data-toggle="tooltip" data-placement="top" title="blogger" class="socail-icon" href="http://lovedatemenow.blogspot.tw" target="_blank"><img src="assets/images/blogger-icon.svg" alt="blogger"></a></a></li>
+                            <li><a data-toggle="tooltip" data-placement="top" title="instagram" class="socail-icon" href="https://www.instagram.com/datemenow.tw" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                            <li><a data-toggle="tooltip" data-placement="top" title="youtube" class="socail-icon" href="https://www.youtube.com/channel/UCFqh3SC-yMSnE2yaGqUc0IQ" target="_blank"><i class="fa fa-youtube-play"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <p class="footer-dmn-copyrights">版權所有 跟我約會吧 Copyright ®2016 DATEMENOW.com.tw All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>            
+        </div>  
+        <!-- /footer -->
+        
+    </div>
+
+    <!-- SCROLL TO TOP -->
+    <a href="#" id="toTop"></a>
+
+    <!-- Modal 活動表下載 -->
+    <div id="eventFormDownLoad" class="modal fade" role="dialog">
+        <div class="modal-dialog">    
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">訂閱電子報</h4>
+                </div>
+                <div class="modal-body">
+                    <h5 class="title"><i class="fa fa-envelope-o"></i> 搶先獲得最新交友消息及聯誼資訊</h5>
+                    <form action="">                       
+                        <div class="form-group row">
+                            <div class="col-xs-9">
+                                <input type="text" class="form-control form-control-lg" name="" id="" placeholder="輸入e-mail訂閱電子報" required>
+                            </div>
+                            <div class="col-xs-3">
+                                <button class="btn btn-main btn-block">訂閱</button>
+                            </div>                                   
+                        </div>                                
+                    </form> 
+                </div>
+                <!-- Modal Footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">關閉視窗</button>
+                </div>
+            </div>    
+        </div>
+    </div>
+    <!-- /Modal 活動表下載 -->
+
+    <!-- jquery -->
+    <script src="assets/plugins/jquery/jquery-2.2.4.min.js"></script>
+    <!-- scripts -->
+    <script type="text/javascript" src="assets/js/scripts.js"></script>
+    <!-- sweetalert -->
+    <script type="text/javascript" src="assets/plugins/sweetalert2/sweetalert2.min.js"></script>
+    <!-- facebook 
+    <script>
+        (function(d, s, id) { 
+        　var js, fjs = d.getElementsByTagName(s)[0];
+        　if (d.getElementById(id)) return;
+        　js = d.createElement(s); js.id = id;
+        　js.src = "//connect.facebook.net/zh_TW/all.js#xfbml=1";
+        　fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>-->
+</body>
+</html>

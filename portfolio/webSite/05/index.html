@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Language" content="zh-tw">
+    <meta name="description" content="DateMeNow跟我約會吧">
+    <meta name="keywords" content="datemenow,來電,交友,跟我約會吧,單身,約會,結婚,想結婚就從約會開始,聯誼,活動,相親約會,一對一,公主,約會許願池,完全戀愛企劃,戀愛,極速配對,不來電免費,擺脫單身,配對,時尚尊榮,高效約會">
+    <link rel="icon" type="image/ico" href="assets/images/favicon.ico">
+    <title>DateMeNow跟我約會吧</title>
+    <!-- bootstrap core css -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <!-- plugin css -->
+    <link href="assets/css/plugin.min.css" rel="stylesheet">
+    <!-- layout css -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <!-- sweetalert -->
+    <link href="assets/plugins/sweetalert2/sweetalert2.css" rel="stylesheet">
+    <!-- REVOLUTION SLIDER -->
+    <link href="assets/plugins/slider.revolution/css/extralayers.css" rel="stylesheet" type="text/css" />
+    <link href="assets/plugins/slider.revolution/css/settings.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body class="enable-animation">
+    <div id="wrapper">
+        <header id="header" class="sticky dmn-header">
+            <nav class="navbar">
+                <div class="container-fluid">
+                    <div class="navbar-header header-dmn">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="header-dmn-sideicon dmn-call" href="#">
+                            <i class="fa fa-phone"></i>
+                            <span>客服<br>0800-302333</span>
+                        </a>
+                        <h1 class="dmn-brand-logo"><a class="navbar-brand" href="index.html"><img class="header-dmn-logo" src="assets/images/dmn-logo.png" title="DateMeNow跟我約會吧" alt="DateMeNow跟我約會吧-讓美好的你遇見美好的她"></a></h1>
+                        <a class="header-dmn-sideicon dmn-login" href="login.html">
+                            <i class="fa fa-sign-in"></i>
+                            <span>登入<br>註冊</span>
+                        </a>
+                    </div>                                  
+                </div>  
+                <div id="navbar" class="navbar-collapse collapse header-dmn-navbar">
+                    <div class="container-fluid">
+                        <ul class="nav navbar-nav">
+                            <li class="nav-logo"><a class="dmn-logo" href="index.html"><img class="header-dmn-logo" src="assets/images/dmn-logo.png" title="DateMeNow跟我約會吧" alt="DateMeNow跟我約會吧"></a></li>
+                            <li><a href="campaign_index.html">聯誼活動</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">交友企劃 <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="https://www.datemenow.com.tw/200510/?cc=dmn_officialwebsite_homepage_Banner0713">大家都在穩定交往的秘訣?</a></li>
+                                    <li><a href="https://www.datemenow.com.tw/180610/">戀愛分析量表</a></li>
+                                    <li><a href="https://www.datemenow.com.tw/event180310.asp">上班族不能不約會</a></li>
+                                </ul>
+                            </li>           
+                            <li><a href="search.html">單身會員</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">交往結婚 <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="happiness.html">幸福故事</a></li>
+					                <li><a href="lovestory.html">談情說愛</a></li>	
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">關於我們 <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="dmn.html">關於我們</a></li>
+					                <li><a href="news.html">媒體報導</a></li>	
+                                </ul>
+                            </li>  
+                            <li><a href="MarriageHall.html">服務據點</a></li>
+                            <li class=""><a href="send.html">補上傳證件</a></li>                 
+                        </ul> 
+                    </div>                   
+                    
+                    <ul class="dmn-side-panel">
+                        <li><a href="https://www.facebook.com/datemenow.tw/" target="_blank" class="fb" data-toggle="tooltip" data-placement="left" title="facebook"><i class="fa fa-facebook"></i></a></li>            
+                        <li><a href="#" data-toggle="modal" data-target="#eventFormDownLoad" target="_blank" class="line"><span data-toggle="tooltip" data-placement="left" title="訂閱電子報" ><i class="fa fa-envelope"></i></span></a></li>
+                        <li><a href="service.html" class="phone-icon" data-toggle="tooltip" data-placement="left" title="客服中心"><i class="fa fa-headphones"></i></a></li>
+                        <li><a href="assets/images/dmn.pdf" target="_blank" class="download-form" data-toggle="tooltip" data-placement="left" title="簡介下載"><i class="glyphicon glyphicon-download-alt"></i></a></li>
+                    </ul>   
+                </div>     
+                 
+            </nav>        
+        </header>
+
+        <!-- 主視覺 -->
+        <section id="slider" class="slider fullwidthbanner-container index-dmn-slider">
+            <div class="fullwidthbanner" data-height="820" data-navigationStyle="">
+                <ul class="hide">
+                    <!-- SLIDE  -->
+                    <li data-transition="fade" data-slotamount="1" data-masterspeed="1000" data-saveperformance="off"  data-title="Slide">
+                        <img src="assets/images/1x1.png" data-lazyload="assets/images/index-slider01.jpg" alt="" data-bgposition="center center" data-kenburns="on" data-duration="10000" data-bgfit="100" data-bgfitend="110" />
+                    </li>
+                    <!-- SLIDE  -->
+                    <li data-transition="fade" data-slotamount="1" data-masterspeed="1000" data-saveperformance="off"  data-title="Slide">
+                        <img src="assets/images/1x1.png" data-lazyload="assets/images/index-slider02.jpg" alt="" data-bgposition="center center" data-kenburns="on" data-duration="10000" data-bgfit="100" data-bgfitend="110" />
+                    </li>
+                    <!-- SLIDE  -->
+                    <li data-transition="fade" data-slotamount="1" data-masterspeed="1000" data-saveperformance="off"  data-title="Slide">
+                        <img src="assets/images/1x1.png" data-lazyload="assets/images/index-slider03.jpg" alt="" data-bgposition="center center" data-kenburns="on" data-duration="10000" data-bgfit="100" data-bgfitend="110" />
+                    </li>
+                </ul>
+                <div class="tp-bannertimer"></div>                
+            </div>
+            <div class="dmn-index-register wow fadeInUp" data-wow-delay="0.2s">
+                <div class="register-box">
+                    <h2 class="dmn-title-type1 text-white">終結單身生活<br>立即交友配對</h2>
+                    <form action="/toform" method="post" class="toggle">
+                        <div class="form-group row">
+                            <div class="col-xs-12">
+                                <label class="sr-only">真實姓名</label>
+                                <input type="text" class="form-control" placeholder="真實姓名" name="name" id="name" required>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-xs-12">
+                                <label class="sr-only">E-mail</label>
+                                <input type="email" class="form-control" name="email" id="email" placeholder="E-mail" required>                                    
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-xs-6">
+                                <label class="sr-only">居住區域</label>
+                                <select class="form-control" name="area" id="area" required>
+                                    <option value="">居住區域</option>
+                                    <option value="基隆市">基隆市</option><option value="台北市">台北市</option><option value="新北市">新北市</option><option value="宜蘭縣">宜蘭縣</option><option value="桃園市">桃園市</option><option value="新竹縣">新竹縣</option><option value="新竹市">新竹市</option><option value="苗栗縣">苗栗縣</option><option value="苗栗市">苗栗市</option><option value="台中市">台中市</option><option value="彰化縣">彰化縣</option><option value="彰化市">彰化市</option><option value="南投縣">南投縣</option><option value="嘉義縣">嘉義縣</option><option value="嘉義市">嘉義市</option><option value="雲林縣">雲林縣</option><option value="台南市">台南市</option><option value="高雄市">高雄市</option><option value="屏東縣">屏東縣</option><option value="花蓮縣">花蓮縣</option><option value="台東縣">台東縣</option><option value="澎湖縣">澎湖縣</option><option value="金門縣">金門縣</option><option value="馬祖">馬祖</option><option value="綠島">綠島</option><option value="蘭嶼">蘭嶼</option><option value="其他">其他</option>                                    </select>
+                            </div>
+                            <div class="col-xs-6">
+                                <label class="sr-only">手機號碼</label>
+                                <input type="tel" name="phone" id="phone" pattern="^[09]{2}[0-9]{8}$" minlength="10" maxlength="10" title="請輸入 09 開頭的十位數手機號碼" placeholder="手機號碼" class="form-control" required>                
+                            </div>                            
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-xs-6">
+                                <label class="sr-only">學歷</label>
+                                <select class="form-control" name="" id="" required>
+                                    <option value="">最高學歷</option>
+                                </select>
+                            </div>
+                            <div class="col-xs-6">
+                                <label class="sr-only">身高</label>
+                                <select class="form-control" name="area" id="area" required>
+                                    <option value="">身高</option>
+                                </select>
+                            </div>                            
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-xs-4">
+                                <label class="sr-only">出生年</label>
+                                <select class="form-control" name="age" id="age" required>
+                                    <option value="">出生年</option>
+                                    <option value="2000">西元 2000 年</option><option value="1999">西元 1999 年</option><option value="1998">西元 1998 年</option><option value="1997">西元 1997 年</option><option value="1996">西元 1996 年</option><option value="1995">西元 1995 年</option><option value="1994">西元 1994 年</option><option value="1993">西元 1993 年</option><option value="1992">西元 1992 年</option><option value="1991">西元 1991 年</option><option value="1990">西元 1990 年</option><option value="1989">西元 1989 年</option><option value="1988">西元 1988 年</option><option value="1987">西元 1987 年</option><option value="1986">西元 1986 年</option><option value="1985">西元 1985 年</option><option value="1984">西元 1984 年</option><option value="1983">西元 1983 年</option><option value="1982">西元 1982 年</option><option value="1981">西元 1981 年</option><option value="1980">西元 1980 年</option><option value="1979">西元 1979 年</option><option value="1978">西元 1978 年</option><option value="1977">西元 1977 年</option><option value="1976">西元 1976 年</option><option value="1975">西元 1975 年</option><option value="1974">西元 1974 年</option><option value="1973">西元 1973 年</option><option value="1972">西元 1972 年</option><option value="1971">西元 1971 年</option><option value="1970">西元 1970 年</option><option value="1969">西元 1969 年</option><option value="1968">西元 1968 年</option><option value="1967">西元 1967 年</option><option value="1966">西元 1966 年</option><option value="1965">西元 1965 年</option><option value="1964">西元 1964 年</option><option value="1963">西元 1963 年</option><option value="1962">西元 1962 年</option><option value="1961">西元 1961 年</option><option value="1960">西元 1960 年</option><option value="1959">西元 1959 年</option><option value="1958">西元 1958 年</option><option value="1957">西元 1957 年</option><option value="1956">西元 1956 年</option><option value="1955">西元 1955 年</option><option value="1954">西元 1954 年</option><option value="1953">西元 1953 年</option><option value="1952">西元 1952 年</option><option value="1951">西元 1951 年</option><option value="1950">西元 1950 年</option>                                    </select>
+                            </div>
+                            <div class="col-xs-4">
+                                <label class="sr-only">出生月</label>
+                                <select class="form-control" name="" id="" required>
+                                    <option value="">月</option>
+                                </select>
+                            </div>
+                            <div class="col-xs-4">
+                                <label class="sr-only">出生日</label>
+                                <select class="form-control" name="" id="" required>
+                                    <option value="">日</option>
+                                </select>
+                            </div>                              
+                        </div>                            
+                       
+                        <div class="form-group row">
+                            <div class="col-xs-6">
+                                <label class="sr-only">驗証碼</label>
+                                <input type="text" class="form-control" name="psn" id="psn" placeholder="驗証碼" required>
+                            </div>
+                            <div class="col-xs-6 code">
+                                <a href="#p" onclick="reload_psn_class()"><img class="psn_img" src="/psn"></a>
+                            </div>                          
+                        </div>
+                        <div class="form-group row margin-top-20">
+                            <div class="col-xs-6">
+                                <button type="submit" name="sex" value="2" class="btn btn-block btn-sub1">我是男生<i class="fa fa-play"></i></button>
+                            </div>
+                            <div class="col-xs-6 code">
+                                <button type="submit" name="sex" value="1" class="btn btn-block btn-main">我是女生<i class="fa fa-play"></i></button>
+                            </div>                          
+                        </div>
+                        <p class="confirm">點擊表示同意<a target="_blank" href="joininfo.html">個資聲明</a>與<a target="_blank" href="copyright.html">隠私政策</a></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- /主視覺 -->
+        
+        <!-- DMN特點 -->
+        <section class="index-dmn-special main-bg padding-top-40 padding-bottom-40">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3 col-xs-6">
+                        <div class="index-dmn-special-item">
+                            <img class="" src="assets/images/features/couple.svg" alt="優質單身男女">
+                            <h3 class="dmn-special-title">優質單身男女</h3>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <div class="index-dmn-special-item">
+                            <img class="" src="assets/images/features/sofa.svg" alt="時尚約會環境">
+                            <h3 class="dmn-special-title">時尚約會環境</h3>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <div class="index-dmn-special-item">
+                            <img class="" src="assets/images/features/wedding-couple.svg" alt="豐富配對經驗">
+                            <h3 class="dmn-special-title">豐富配對經驗</h3>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <div class="index-dmn-special-item">
+                            <img class="" src="assets/images/features/confetti.svg" alt="精彩主題聯誼">
+                            <h3 class="dmn-special-title">精彩主題聯誼</h3>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+        </section>
+        <!-- /DMN特點 -->
+
+        <!-- 會員牆 -->
+        <section class="index-dmn-member">
+            <div class="container">
+                <h3 class="dmn-title-type2 wow fadeInDown" data-wow-delay="0.1s">
+                    推薦優質單身會員
+                    <span>Member</span>
+                </h3>
+                <div class="slider-member-block">
+                    <div class="owl-carousel featured" data-plugin-options='{"singleItem": false, "items": "5", "stopOnHover":false, "autoPlay":4000, "autoHeight": false, "navigation": true, "pagination": false, "itemsMobile":[479,2], "itemsTablet":[768,3]}'>
+                        
+                        <div class="photo-item">
+                            <a href="profile.asp?m=1471278">
+                                <div class="photo">
+                                    <img src="https://www.singleparty.com.tw/photo/2018618144339_1471278_857.jpg">                                
+                                </div>
+                                <div class="name">桃園市 李阿淳</div>
+                            </a>						
+                        
+                            <a href="profile.asp?m=1537031">
+                                <div class="photo">
+                                    <img src="https://www.singleparty.com.tw/photo/20201199240_1537031_55096.jpg">                                
+                                </div>
+                                <div class="name">桃園市 王毬毬</div>
+                            </a>						
+                        </div>
+
+                        <div class="photo-item">
+                            <a href="profile.asp?m=1471278">
+                                <div class="photo">
+                                    <img src="https://www.singleparty.com.tw/photo/2018618144339_1471278_857.jpg">                                
+                                </div>
+                                <div class="name">桃園市 李阿淳</div>
+                            </a>						
+                        
+                            <a href="profile.asp?m=1537031">
+                                <div class="photo">
+                                    <img src="https://www.singleparty.com.tw/photo/20201199240_1537031_55096.jpg">                                
+                                </div>
+                                <div class="name">桃園市 王毬毬</div>
+                            </a>						
+                        </div>
+
+                        <div class="photo-item">
+                            <a href="profile.asp?m=1471278">
+                                <div class="photo">
+                                    <img src="https://www.singleparty.com.tw/photo/2018618144339_1471278_857.jpg">                                
+                                </div>
+                                <div class="name">桃園市 李阿淳</div>
+                            </a>						
+                        
+                            <a href="profile.asp?m=1537031">
+                                <div class="photo">
+                                    <img src="https://www.singleparty.com.tw/photo/20201199240_1537031_55096.jpg">                                
+                                </div>
+                                <div class="name">桃園市 王毬毬</div>
+                            </a>						
+                        </div>
+
+                        <div class="photo-item">
+                            <a href="profile.asp?m=1471278">
+                                <div class="photo">
+                                    <img src="https://www.singleparty.com.tw/photo/2018618144339_1471278_857.jpg">                                
+                                </div>
+                                <div class="name">桃園市 李阿淳</div>
+                            </a>						
+                        
+                            <a href="profile.asp?m=1537031">
+                                <div class="photo">
+                                    <img src="https://www.singleparty.com.tw/photo/20201199240_1537031_55096.jpg">                                
+                                </div>
+                                <div class="name">桃園市 王毬毬</div>
+                            </a>						
+                        </div>
+
+                        <div class="photo-item">
+                            <a href="profile.asp?m=1471278">
+                                <div class="photo">
+                                    <img src="https://www.singleparty.com.tw/photo/2018618144339_1471278_857.jpg">                                
+                                </div>
+                                <div class="name">桃園市 李阿淳</div>
+                            </a>						
+                        
+                            <a href="profile.asp?m=1537031">
+                                <div class="photo">
+                                    <img src="https://www.singleparty.com.tw/photo/20201199240_1537031_55096.jpg">                                
+                                </div>
+                                <div class="name">桃園市 王毬毬</div>
+                            </a>						
+                        </div>
+
+                        <div class="photo-item">
+                            <a href="profile.asp?m=1471278">
+                                <div class="photo">
+                                    <img src="https://www.singleparty.com.tw/photo/2018618144339_1471278_857.jpg">                                
+                                </div>
+                                <div class="name">桃園市 李阿淳</div>
+                            </a>						
+                        
+                            <a href="profile.asp?m=1537031">
+                                <div class="photo">
+                                    <img src="https://www.singleparty.com.tw/photo/20201199240_1537031_55096.jpg">                                
+                                </div>
+                                <div class="name">桃園市 王毬毬</div>
+                            </a>						
+                        </div>
+
+                        <div class="photo-item">
+                            <a href="profile.asp?m=1471278">
+                                <div class="photo">
+                                    <img src="https://www.singleparty.com.tw/photo/2018618144339_1471278_857.jpg">                                
+                                </div>
+                                <div class="name">桃園市 李阿淳</div>
+                            </a>						
+                        
+                            <a href="profile.asp?m=1537031">
+                                <div class="photo">
+                                    <img src="https://www.singleparty.com.tw/photo/20201199240_1537031_55096.jpg">                                
+                                </div>
+                                <div class="name">桃園市 王毬毬</div>
+                            </a>						
+                        </div>
+
+                        <div class="photo-item">
+                            <a href="profile.asp?m=1471278">
+                                <div class="photo">
+                                    <img src="https://www.singleparty.com.tw/photo/2018618144339_1471278_857.jpg">                                
+                                </div>
+                                <div class="name">桃園市 李阿淳</div>
+                            </a>						
+                        
+                            <a href="profile.asp?m=1537031">
+                                <div class="photo">
+                                    <img src="https://www.singleparty.com.tw/photo/20201199240_1537031_55096.jpg">                                
+                                </div>
+                                <div class="name">桃園市 王毬毬</div>
+                            </a>						
+                        </div>
+
+                    </div>
+                    <div class="col-md-4 col-md-offset-4">
+                        <a href="#" class="btn btn-block btn-main">看更多理想對象</a>
+                    </div>                    
+                </div>
+            </div>
+        </section>
+        <!-- /會員牆 -->
+
+        <!-- 會員幸福故事分享 -->
+        <section class="index-dmn-happiness">
+            <div class="container">
+                <div class="flexslider" data-slideshowSpeed="10000">
+                    <ul class="slides">
+                    
+                        <!-- item -->
+                        <li class="happiness-slider-item">
+                            <div class="happiness-img">
+                                <div class="happiness-photo">
+                                    <img src="https://www.springclub.com.tw/upload_image/2019112614472_springweb_fun3_121.jpg" alt="會員幸福故事分享">
+                                </div>                            
+                            </div>
+                            <div class="happiness-text">
+                                <div class="happiness-text-title">
+                                    <h3 class="dmn-title-type3">
+                                        會員幸福故事分享
+                                        <span>Happiness</span>
+                                    </h3>
+                                </div>
+                                <div class="happiness-text-p">
+                                    想當初佳蓁來參加時一直哭哭啼啼難過著前男友劈腿，秘書姐姐讓他清醒的了解，不好的不適合的就讓他過去，準備迎接美好的新戀情。 在這一段時間裡佳蓁慢慢看、慢慢學習也得到了很多經驗，一年後遇到了俊偉，秘書姐姐請她一定要好好把握，已把自己培養出愛人能力的她，一拍即合立馬交往，在2019年教師節的這天，即將進入禮堂開始幸福的人生。
+                                </div>
+                                <div class="happiness-text-btn">
+                                    <a href="#" class="btn btn-main btn-lg">看更多</a>
+                                </div>
+                            </div>                            
+                        </li>
+
+                        <!-- item -->
+                        <li class="happiness-slider-item">
+                            <div class="happiness-img">
+                                <div class="happiness-photo">
+                                    <img src="https://www.springclub.com.tw/upload_image/2019112614472_springweb_fun3_121.jpg" alt="會員幸福故事分享">
+                                </div>                            
+                            </div>
+                            <div class="happiness-text">
+                                <div class="happiness-text-title">
+                                    <h3 class="dmn-title-type3">
+                                        會員幸福故事分享
+                                        <span>Happiness</span>
+                                    </h3>
+                                </div>
+                                <div class="happiness-text-p">
+                                    想當初佳蓁來參加時一直哭哭啼啼難過著前男友劈腿，秘書姐姐讓他清醒的了解，不好的不適合的就讓他過去，準備迎接美好的新戀情。 在這一段時間裡佳蓁慢慢看、慢慢學習也得到了很多經驗，一年後遇到了俊偉，秘書姐姐請她一定要好好把握，已把自己培養出愛人能力的她，一拍即合立馬交往，在2019年教師節的這天，即將進入禮堂開始幸福的人生。
+                                </div>
+                                <div class="happiness-text-btn">
+                                    <a href="#" class="btn btn-main btn-lg">看更多</a>
+                                </div>
+                            </div>                            
+                        </li>
+
+                        
+                        
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- /會員幸福故事分享 -->
+
+        <!-- 精選聯誼活動 -->
+        <section class="">
+            <div class="container">
+                <h3 class="dmn-title-type2 wow fadeInDown" data-wow-delay="0.1s">
+                    精選聯誼活動
+                    <span>Events</span>
+                </h3>
+
+                <div class="slider-events-block">
+                    <div class="owl-carousel featured" data-plugin-options='{"singleItem": false, "items": "3", "stopOnHover":false, "autoPlay":4000, "autoHeight": false, "navigation": true, "pagination": false, "itemsMobile":[479,1], "itemsTablet":[768,2]}'>
+                        
+                        <!-- item -->
+                        <div class="slider-events-item">
+                            <div class="slider-events-photo">
+                                <a href="#"><img src="https://www.springclub.com.tw/upload_image/2020929163339_action_300.jpg" alt=""></a>
+                            </div>
+                            <div class="slider-events-title">
+                                愛地球環保手工皂DIY愛地球環保手工皂DIY
+                            </div>
+                            <ul class="slider-events-list">
+                                <li>揪約會</li>
+                                <li>2020-09-25 19:00</li>
+                                <li>春天會館</li>
+                            </ul>
+                            <div class="slider-events-text">                              
+                                當手工皂達人石彥豪老師，兩眼炯炯有神地和你談起手工皂時讓你覺得這位型男真是有的有自己獨特的手工皂信仰！「要環保、要好用
+                            </div>
+                            <div class="slider-events-btn">
+                                <a href="#" class="btn btn-sub2 btn-lg">看更多</a>
+                            </div>
+                        </div>
+                        
+                        <!-- item -->
+                        <div class="slider-events-item">
+                            <div class="slider-events-photo">
+                                <a href="#"><img src="https://www.springclub.com.tw/upload_image/2020929163237_action_595.jpg" alt=""></a>
+                            </div>
+                            <div class="slider-events-title">
+                                愛地球環保手工皂DIY愛地球環保手工皂DIY
+                            </div>
+                            <ul class="slider-events-list">
+                                <li>揪約會</li>
+                                <li>2020-09-25 19:00</li>
+                                <li>春天會館</li>
+                            </ul>
+                            <div class="slider-events-text">                              
+                                當手工皂達人石彥豪老師，兩眼炯炯有神地和你談起手工皂時讓你覺得這位型男真是有的有自己獨特的手工皂信仰！「要環保、要好用
+                            </div>
+                            <div class="slider-events-btn">
+                                <a href="#" class="btn btn-sub2 btn-lg">看更多</a>
+                            </div>
+                        </div>
+
+                        <!-- item -->
+                        <div class="slider-events-item">
+                            <div class="slider-events-photo">
+                                <a href="#"><img src="https://www.springclub.com.tw/upload_image/2020925184037_action_814.jpg" alt=""></a>
+                            </div>
+                            <div class="slider-events-title">
+                                愛地球環保手工皂DIY愛地球環保手工皂DIY
+                            </div>
+                            <ul class="slider-events-list">
+                                <li>揪約會</li>
+                                <li>2020-09-25 19:00</li>
+                                <li>春天會館</li>
+                            </ul>
+                            <div class="slider-events-text">                              
+                                當手工皂達人石彥豪老師，兩眼炯炯有神地和你談起手工皂時讓你覺得這位型男真是有的有自己獨特的手工皂信仰！「要環保、要好用
+                            </div>
+                            <div class="slider-events-btn">
+                                <a href="#" class="btn btn-sub2 btn-lg">看更多</a>
+                            </div>
+                        </div>
+
+                        <!-- item -->
+                        <div class="slider-events-item">
+                            <div class="slider-events-photo">
+                                <a href="#"><img src="https://www.springclub.com.tw/upload_image/2020929163339_action_300.jpg" alt=""></a>
+                            </div>
+                            <div class="slider-events-title">
+                                愛地球環保手工皂DIY愛地球環保手工皂DIY
+                            </div>
+                            <ul class="slider-events-list">
+                                <li>揪約會</li>
+                                <li>2020-09-25 19:00</li>
+                                <li>春天會館</li>
+                            </ul>
+                            <div class="slider-events-text">                              
+                                當手工皂達人石彥豪老師，兩眼炯炯有神地和你談起手工皂時讓你覺得這位型男真是有的有自己獨特的手工皂信仰！「要環保、要好用
+                            </div>
+                            <div class="slider-events-btn">
+                                <a href="#" class="btn btn-sub2 btn-lg">看更多</a>
+                            </div>
+                        </div>
+
+                        <!-- item -->
+                        <div class="slider-events-item">
+                            <div class="slider-events-photo">
+                                <a href="#"><img src="https://www.springclub.com.tw/upload_image/2020929163237_action_595.jpg" alt=""></a>
+                            </div>
+                            <div class="slider-events-title">
+                                愛地球環保手工皂DIY愛地球環保手工皂DIY
+                            </div>
+                            <ul class="slider-events-list">
+                                <li>揪約會</li>
+                                <li>2020-09-25 19:00</li>
+                                <li>春天會館</li>
+                            </ul>
+                            <div class="slider-events-text">                              
+                                當手工皂達人石彥豪老師，兩眼炯炯有神地和你談起手工皂時讓你覺得這位型男真是有的有自己獨特的手工皂信仰！「要環保、要好用
+                            </div>
+                            <div class="slider-events-btn">
+                                <a href="#" class="btn btn-sub2 btn-lg">看更多</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- /精選聯誼活動 -->
+
+        <!-- DateMeNow特色 -->
+        <section class="index-dmn-features sub-bg1">
+            <div class="container">
+                <h3 class="dmn-title-type2 wow fadeInDown" data-wow-delay="0.1s">
+                    DateMeNow 特色
+                    <span>Features</span>
+                </h3>
+                <div class="features-list-block">
+                    <ul class="features-list">
+                        <li>
+                            <div class="features-icon">
+                                <img src="assets/images/features/trophy.svg" alt="黃金陣容">
+                            </div>
+                            <div class="features-small-title">黃金陣容</div>                       
+                            <div class="features-txt">專業婚戀顧問團隊<br>尋愛路上有我幫妳</div>
+                        </li>
+                        <li>
+                            <div class="features-icon">
+                                <img src="assets/images/features/authentication.svg" alt="安全把關">
+                            </div>
+                            <div class="features-small-title">安全把關</div>                       
+                            <div class="features-txt">重視會員單身身份<br>嚴格篩選安全無疑</div>
+                        </li>
+                        <li>
+                            <div class="features-icon">
+                                <img src="assets/images/features/couple.svg" alt="優質男女">
+                            </div>
+                            <div class="features-small-title">優質男女</div>                       
+                            <div class="features-txt">眾多優質單身男女<br>輕鬆自在擴大交友</div>
+                        </li>
+                        <li>
+                            <div class="features-icon">
+                                <img src="assets/images/features/lecture.svg" alt="個人魅力">
+                            </div>
+                            <div class="features-small-title">個人魅力</div>                       
+                            <div class="features-txt">專業師資單獨授課<br>培養個人自信魅力</div>
+                        </li>
+                        <li>
+                            <div class="features-icon">
+                                <img src="assets/images/features/reproduction.svg" alt="配對系統">
+                            </div>
+                            <div class="features-small-title">配對系統</div>                       
+                            <div class="features-txt">獨家設計配對系統<br>快速找尋適合對象</div>
+                        </li>
+                        <li>
+                            <div class="features-icon">
+                                <img src="assets/images/features/confetti.svg" alt="多元活動">
+                            </div>
+                            <div class="features-small-title">多元活動</div>                       
+                            <div class="features-txt">豐富有趣聯誼活動<br>歡樂互動中發現愛</div>
+                        </li>
+                        <li>
+                            <div class="features-icon">
+                                <img src="assets/images/features/worldwide.svg" alt="百大企業">
+                            </div>
+                            <div class="features-small-title">百大企業</div>                       
+                            <div class="features-txt">企業團體公家機關<br>多家指名聯誼合作</div>
+                        </li>
+                        <li>
+                            <div class="features-icon">
+                                <img src="assets/images/features/sofa.svg" alt="時尚環境">
+                            </div>
+                            <div class="features-small-title">時尚環境</div>                       
+                            <div class="features-txt">時尚設計多樣風格<br>讓妳浪漫邂逅愛情</div>
+                        </li>
+                        <li>
+                            <div class="features-icon">
+                                <img src="assets/images/features/wedding-couple.svg" alt="幸福故事">
+                            </div>
+                            <div class="features-small-title">幸福故事</div>                       
+                            <div class="features-txt">在這裡我們結婚啦<br>幸福就是如此簡單</div>
+                        </li>                                            
+                    </ul>                    
+                </div>
+               
+            </div>
+        </section>
+        <!-- /DateMeNow特色 -->
+
+        <!-- 企業聯誼合作 -->
+        <section class="index-dmn-cooperation">
+            <div class="container">
+                <h3 class="dmn-title-type4 wow fadeInDown" data-wow-delay="0.1s">
+                    企業聯誼合作
+                </h3>
+                <div class="slider-cooperation-block">
+                    <div class="owl-carousel owl-carousel-init" data-plugin-options='{"singleItem": false, "items": "5", "stopOnHover":false, "autoPlay":4000, "autoHeight": false, "navigation": false, "pagination": true, "itemsMobile":[479,1], "itemsTablet":[768,3]}'>
+                        <div class="slider-cooperation-item">
+                            <div class="slider-cooperation-icon">
+                                <img src="assets/images/logo/logo_01.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="slider-cooperation-item">
+                            <div class="slider-cooperation-icon">
+                                <img src="assets/images/logo/logo_02.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="slider-cooperation-item">
+                            <div class="slider-cooperation-icon">
+                                <img src="assets/images/logo/logo_03.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="slider-cooperation-item">
+                            <div class="slider-cooperation-icon">
+                                <img src="assets/images/logo/logo_04.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="slider-cooperation-item">
+                            <div class="slider-cooperation-icon">
+                                <img src="assets/images/logo/logo_05.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="slider-cooperation-item">
+                            <div class="slider-cooperation-icon">
+                                <img src="assets/images/logo/logo_06.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="slider-cooperation-item">
+                            <div class="slider-cooperation-icon">
+                                <img src="assets/images/logo/logo_07.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="slider-cooperation-item">
+                            <div class="slider-cooperation-icon">
+                                <img src="assets/images/logo/logo_08.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="slider-cooperation-item">
+                            <div class="slider-cooperation-icon">
+                                <img src="assets/images/logo/logo_09.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="slider-cooperation-item">
+                            <div class="slider-cooperation-icon">
+                                <img src="assets/images/logo/logo_10.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="slider-cooperation-item">
+                            <div class="slider-cooperation-icon">
+                                <img src="assets/images/logo/logo_11.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="slider-cooperation-item">
+                            <div class="slider-cooperation-icon">
+                                <img src="assets/images/logo/logo_12.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="slider-cooperation-item">
+                            <div class="slider-cooperation-icon">
+                                <img src="assets/images/logo/logo_13.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="slider-cooperation-item">
+                            <div class="slider-cooperation-icon">
+                                <img src="assets/images/logo/logo_14.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="slider-cooperation-item">
+                            <div class="slider-cooperation-icon">
+                                <img src="assets/images/logo/logo_15.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="slider-cooperation-item">
+                            <div class="slider-cooperation-icon">
+                                <img src="assets/images/logo/logo_16.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="slider-cooperation-item">
+                            <div class="slider-cooperation-icon">
+                                <img src="assets/images/logo/logo_17.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="slider-cooperation-item">
+                            <div class="slider-cooperation-icon">
+                                <img src="assets/images/logo/logo_18.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="slider-cooperation-item">
+                            <div class="slider-cooperation-icon">
+                                <img src="assets/images/logo/logo_19.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="slider-cooperation-item">
+                            <div class="slider-cooperation-icon">
+                                <img src="assets/images/logo/logo_20.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /企業聯誼合作 -->
+
+        <!-- 關於DateMeNow婚戀會館 -->
+        <section class="index-dmn-about main-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-1">
+                        <div class="dmn-about-side1">
+                            <div class="dmn-title-type5">關於DateMeNow婚戀會館</div>
+                            <p>台北市松山區八德路二段358號6樓之1</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="dmn-about-side2">
+                            <a class="btn btn-border-white btn-block" href="">看更多</a>
+                        </div>                    
+                    </div>
+                </div>                
+            </div>
+        </section>
+        <!-- /關於DateMeNow婚戀會館 -->
+
+        <!-- 底下註冊 -->
+        <section class="index-dmn-bottom-register flower-bg1">
+            <div class="container">
+                <h3 class="dmn-title-type2 wow fadeInDown" data-wow-delay="0.1s">
+                    終結單身生活，立即交友配對
+                </h3>         
+                <div class="dmn-bottom-register register-box">                    
+                    <form action="/toform" method="post" class="toggle">
+                        <div class="form-group row">
+                            <div class="col-xs-12">
+                                <label class="sr-only">真實姓名</label>
+                                <input type="text" class="form-control" placeholder="真實姓名" name="name" id="name" required>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-xs-12">
+                                <label class="sr-only">E-mail</label>
+                                <input type="email" class="form-control" name="email" id="email" placeholder="E-mail" required>                                    
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-xs-6">
+                                <label class="sr-only">居住區域</label>
+                                <select class="form-control" name="area" id="area" required>
+                                    <option value="">居住區域</option>
+                                    <option value="基隆市">基隆市</option><option value="台北市">台北市</option><option value="新北市">新北市</option><option value="宜蘭縣">宜蘭縣</option><option value="桃園市">桃園市</option><option value="新竹縣">新竹縣</option><option value="新竹市">新竹市</option><option value="苗栗縣">苗栗縣</option><option value="苗栗市">苗栗市</option><option value="台中市">台中市</option><option value="彰化縣">彰化縣</option><option value="彰化市">彰化市</option><option value="南投縣">南投縣</option><option value="嘉義縣">嘉義縣</option><option value="嘉義市">嘉義市</option><option value="雲林縣">雲林縣</option><option value="台南市">台南市</option><option value="高雄市">高雄市</option><option value="屏東縣">屏東縣</option><option value="花蓮縣">花蓮縣</option><option value="台東縣">台東縣</option><option value="澎湖縣">澎湖縣</option><option value="金門縣">金門縣</option><option value="馬祖">馬祖</option><option value="綠島">綠島</option><option value="蘭嶼">蘭嶼</option><option value="其他">其他</option>                                    </select>
+                            </div>
+                            <div class="col-xs-6">
+                                <label class="sr-only">手機號碼</label>
+                                <input type="tel" name="phone" id="phone" pattern="^[09]{2}[0-9]{8}$" minlength="10" maxlength="10" title="請輸入 09 開頭的十位數手機號碼" placeholder="手機號碼" class="form-control" required>                
+                            </div>                            
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-xs-6">
+                                <label class="sr-only">學歷</label>
+                                <select class="form-control" name="" id="" required>
+                                    <option value="">最高學歷</option>
+                                </select>
+                            </div>
+                            <div class="col-xs-6">
+                                <label class="sr-only">身高</label>
+                                <select class="form-control" name="area" id="area" required>
+                                    <option value="">身高</option>
+                                </select>
+                            </div>                            
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-xs-4">
+                                <label class="sr-only">出生年</label>
+                                <select class="form-control" name="age" id="age" required>
+                                    <option value="">出生年</option>
+                                    <option value="2000">西元 2000 年</option><option value="1999">西元 1999 年</option><option value="1998">西元 1998 年</option><option value="1997">西元 1997 年</option><option value="1996">西元 1996 年</option><option value="1995">西元 1995 年</option><option value="1994">西元 1994 年</option><option value="1993">西元 1993 年</option><option value="1992">西元 1992 年</option><option value="1991">西元 1991 年</option><option value="1990">西元 1990 年</option><option value="1989">西元 1989 年</option><option value="1988">西元 1988 年</option><option value="1987">西元 1987 年</option><option value="1986">西元 1986 年</option><option value="1985">西元 1985 年</option><option value="1984">西元 1984 年</option><option value="1983">西元 1983 年</option><option value="1982">西元 1982 年</option><option value="1981">西元 1981 年</option><option value="1980">西元 1980 年</option><option value="1979">西元 1979 年</option><option value="1978">西元 1978 年</option><option value="1977">西元 1977 年</option><option value="1976">西元 1976 年</option><option value="1975">西元 1975 年</option><option value="1974">西元 1974 年</option><option value="1973">西元 1973 年</option><option value="1972">西元 1972 年</option><option value="1971">西元 1971 年</option><option value="1970">西元 1970 年</option><option value="1969">西元 1969 年</option><option value="1968">西元 1968 年</option><option value="1967">西元 1967 年</option><option value="1966">西元 1966 年</option><option value="1965">西元 1965 年</option><option value="1964">西元 1964 年</option><option value="1963">西元 1963 年</option><option value="1962">西元 1962 年</option><option value="1961">西元 1961 年</option><option value="1960">西元 1960 年</option><option value="1959">西元 1959 年</option><option value="1958">西元 1958 年</option><option value="1957">西元 1957 年</option><option value="1956">西元 1956 年</option><option value="1955">西元 1955 年</option><option value="1954">西元 1954 年</option><option value="1953">西元 1953 年</option><option value="1952">西元 1952 年</option><option value="1951">西元 1951 年</option><option value="1950">西元 1950 年</option>                                    </select>
+                            </div>
+                            <div class="col-xs-4">
+                                <label class="sr-only">出生月</label>
+                                <select class="form-control" name="" id="" required>
+                                    <option value="">月</option>
+                                </select>
+                            </div>
+                            <div class="col-xs-4">
+                                <label class="sr-only">出生日</label>
+                                <select class="form-control" name="" id="" required>
+                                    <option value="">日</option>
+                                </select>
+                            </div>                              
+                        </div>                            
+                       
+                        <div class="form-group row">
+                            <div class="col-xs-6">
+                                <label class="sr-only">驗証碼</label>
+                                <input type="text" class="form-control" name="psn" id="psn" placeholder="驗証碼" required>
+                            </div>
+                            <div class="col-xs-6 code">
+                                <a href="#p" onclick="reload_psn_class()"><img class="psn_img" src="/psn"></a>
+                            </div>                          
+                        </div>
+                        <div class="form-group row margin-top-20">
+                              <input type="hidden" name="st" value="index">
+                            <div class="col-xs-6">
+                                <button type="submit" name="sex" value="2" class="btn btn-block btn-sub1">我是男生<i class="fa fa-play"></i></button>
+                            </div>
+                            <div class="col-xs-6 code">
+                                <button type="submit" name="sex" value="1" class="btn btn-block btn-main">我是女生<i class="fa fa-play"></i></button>
+                            </div>                          
+                        </div>
+                        <p class="confirm">點擊表示同意<a href="/joininfo" target="_blank">個資聲明</a>與<a href="/copyright" target="_blank">隠私政策</a></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- 底下註冊 -->
+
+        <!-- 底下訂閱電子報 -->
+        <section class="index-dmn-about main-bg padding-top-70 padding-bottom-70">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5 col-md-offset-1">
+                        <div class="dmn-about-side1">
+                            <div class="dmn-title-type5">想結婚就從約會開始</div>
+                            <p>搶先獲得最新交友訊息</p>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="dmn-about-side2">
+                            <form action="">
+                                <div class="form-group row">
+                                    <div class="col-xs-8">
+                                        <input type="text" class="form-control form-transparent" name="" id="" placeholder="輸入e-mail訂閱電子報" required>
+                                    </div>
+                                    <div class="col-xs-4">
+                                        <button class="btn btn-border-white btn-block">訂閱</button>
+                                    </div>                                   
+                                </div>                                
+                            </form>                        
+                        </div>                    
+                    </div>
+                </div>                
+            </div>
+        </section>
+        <!-- /底下訂閱電子報 -->
+
+
+        <!-- footer -->
+        <footer class="footer">
+            <div class="container">
+                
+                <div class="footer-dmn-title">
+                    <a href="index.html">
+                        <img class="footer-dmn-logo" src="assets/images/dmn-logo.png" title="DateMeNow跟我約會吧" alt="DateMeNow跟我約會吧-讓美好的你遇見美好的她">
+                    </a>
+                </div>
+                <div class="footer-dmn-info row">
+                    <div class="col-md-4">
+                        <dl class="dmn-info-list">
+                            <dt>公司資訊</dt>
+                            <dd>
+                                <ul class="dmn-info-ul">
+                                    <li>
+                                        <a href="rules.html" target="_blank">使用條款</a>
+                                    </li>
+                                    <li>
+                                        <a href="joininfo.html" target="_blank">個資聲明</a>
+                                    </li>
+                                    <li>
+                                        <a href="copyright.html" target="_blank">隠私政策</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.104.com.tw/company/1a2x6biwvg?jobsource=checkc" target="_blank">企業徵才</a>
+                                    </li>
+                                </ul>
+                            </dd>
+                            <dd>台北市松山區八德路二段358號6樓之1</dd>
+                            <dd>營業時間 13:30~21:00(週一~六)、</dd>
+                            <dd>10:00~18:00(週日)</dd>
+                        </dl>
+                    </div>
+                    <div class="col-md-4">
+                        <dl class="dmn-info-list">
+                            <dt>聯絡我們</dt>
+                            <dd>想了解我們?</dd>
+                            <dd>您可撥打我們的客服專線</dd>
+                            <dd><span class="text-aid1">0800-302333</span> 或 <a href="service.html">客服中心</a></dd>
+                        </dl>
+                    </div>
+                    <div class="col-md-4">
+                        
+                        <dl class="dmn-info-list">
+                            <dt>Facebook</dt>
+                            <dd>
+                                <!--FB開始-->
+                                <div class="fb">
+                                    <div class="fb-like-box" data-href="http://www.facebook.com/datemenow.tw" data-width="332" data-height="250" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div>
+                                </div>
+                                 <!--FB結束-->
+                            </dd>
+                        </dl>                        
+                       
+                    </div>
+                </div> 
+            </div>
+        </footer>
+        <div class="footer-dmn-bottom">
+            <div class="container">            
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul class="dmn-social-icon">
+                            <li><a data-toggle="tooltip" data-placement="top" title="facebook" class="socail-icon" href="https://www.facebook.com/datemenow.tw" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                            <li><a data-toggle="tooltip" data-placement="top" title="line" class="socail-icon" href="https://line.me/ti/p/%40euh9076t" target="_blank"><img src="assets/images/line-icon.svg" alt="line"></a></li>
+                            <li><a data-toggle="tooltip" data-placement="top" title="blogger" class="socail-icon" href="http://lovedatemenow.blogspot.tw" target="_blank"><img src="assets/images/blogger-icon.svg" alt="blogger"></a></a></li>
+                            <li><a data-toggle="tooltip" data-placement="top" title="instagram" class="socail-icon" href="https://www.instagram.com/datemenow.tw" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                            <li><a data-toggle="tooltip" data-placement="top" title="youtube" class="socail-icon" href="https://www.youtube.com/channel/UCFqh3SC-yMSnE2yaGqUc0IQ" target="_blank"><i class="fa fa-youtube-play"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <p class="footer-dmn-copyrights">版權所有 跟我約會吧 Copyright ®2016 DATEMENOW.com.tw All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>            
+        </div>  
+        <!-- /footer -->
+        
+    </div>
+
+    <!-- SCROLL TO TOP -->
+    <a href="#" id="toTop"></a>
+
+    <!-- Modal 活動表下載 -->
+    <div id="eventFormDownLoad" class="modal fade" role="dialog">
+        <div class="modal-dialog">    
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">訂閱電子報</h4>
+                </div>
+                <div class="modal-body">
+                    <h5 class="title"><i class="fa fa-envelope-o"></i> 搶先獲得最新交友消息及聯誼資訊</h5>
+                    <form action="">                       
+                        <div class="form-group row">
+                            <div class="col-xs-9">
+                                <input type="text" class="form-control form-control-lg" name="" id="" placeholder="輸入e-mail訂閱電子報" required>
+                            </div>
+                            <div class="col-xs-3">
+                                <button class="btn btn-main btn-block">訂閱</button>
+                            </div>                                   
+                        </div>                                
+                    </form> 
+                </div>
+                <!-- Modal Footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">關閉視窗</button>
+                </div>
+            </div>    
+        </div>
+    </div>
+    <!-- /Modal 活動表下載 -->
+
+    <!-- jquery -->
+    <script src="assets/plugins/jquery/jquery-2.2.4.min.js"></script>
+    <!-- REVOLUTION SLIDER -->
+    <script type="text/javascript" src="assets/plugins/slider.revolution/js/jquery.themepunch.tools.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/slider.revolution/js/jquery.themepunch.revolution.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/slider.revolution/js/demo.revolution_slider.js"></script>
+    <!-- scripts -->
+    <script type="text/javascript" src="assets/js/scripts.js"></script>
+    <!-- sweetalert -->
+    <script type="text/javascript" src="assets/plugins/sweetalert2/sweetalert2.min.js"></script>
+    <!-- facebook 
+    <script>
+        (function(d, s, id) { 
+        　var js, fjs = d.getElementsByTagName(s)[0];
+        　if (d.getElementById(id)) return;
+        　js = d.createElement(s); js.id = id;
+        　js.src = "//connect.facebook.net/zh_TW/all.js#xfbml=1";
+        　fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>-->
+</body>
+</html>

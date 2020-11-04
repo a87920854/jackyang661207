@@ -1,0 +1,74 @@
+$normal-font: 'Times New Roman',微軟正黑體,Microsoft JhengHei UI,Microsoft JhengHei,Helvetica Neue,Helvetica,Arial,sans-serif;
+$title-font: 'Times New Roman', 'Noto Serif TC', Times, serif;
+$en-font:'Arapey', Times, serif;
+$text-color: #928b84;
+$title-color: #424443;
+$main-color: #c5394f;
+$aid-color1:#a3ad71;
+$aid-color2:#cbb9a6;
+$aid-color3:#f2f1f0;
+$letter-space-1: 1px;
+$letter-space-2: 2px;
+$letter-space-3: 3px;
+$normal-size: 16px;
+$en-size-1:16px;
+$title-size-1:37px;
+$title-size-2:40px;
+$small-title-1:24px;
+$small-title-2:20px;
+$small-title-3:16px;
+$line-height-1:1.2;
+$line-height-2:1;
+$margin-bottom-1: 35px;
+$margin-bottom-2: 55px;
+$btn-padding-1: 15px 15px;
+$btn-minwidth: 200px;
+
+@mixin title-1(){
+    color: $title-color;
+    font-size: $title-size-1;
+    line-height: $line-height-1;
+    margin-bottom: $margin-bottom-1;
+    letter-spacing: $letter-space-1;
+    text-align: center;
+}
+@mixin title-2(){
+    color: $title-color;
+    font-size: $title-size-2;
+    line-height: $line-height-2;
+    margin-bottom: $margin-bottom-2;
+    letter-spacing: $letter-space-2;
+    text-align: center;
+}
+@mixin title-3(){
+    color: $title-color;
+    font-size: $title-size-2;
+    line-height: $line-height-2;
+    margin-bottom: $margin-bottom-2;
+    letter-spacing: $letter-space-2;
+    text-align: left;
+}
+@mixin divider-1(){
+    display: block;
+    content:"";
+    width: 260px;
+    height: 26px;
+    margin: 20px auto 0px auto;
+    background-image: url(../images/divider_white.png);
+}
+@mixin divider-2(){
+    display: block;
+    content:'';
+    width: 208px;
+    height: 21px;
+    margin: 20px auto 0px auto;
+    background-image: url(../images/divider_title.png);
+}
+@mixin divider-3(){
+    display: block;
+    content:'';
+    width: 108px;
+    height: 21px;
+    margin: 20px auto 0px 0px;
+    background-image: url(../images/divider_title_half.png);
+}
