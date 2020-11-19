@@ -49,16 +49,16 @@ function _topNav() {
   function _toTop() {
     _scrollTop = jQuery(document).scrollTop();
     
-    if(_scrollTop > 100) {
-
+    if(_scrollTop > 100) {      
       if(jQuery("#toTop").is(":hidden")) {
         jQuery("#toTop").show();
+        jQuery(".dmn-side-panel").addClass("scroll");
       }
 
-    } else {
-
+    } else {      
       if(jQuery("#toTop").is(":visible")) {
         jQuery("#toTop").hide();
+        jQuery(".dmn-side-panel").removeClass("scroll");
       }
 
     }
