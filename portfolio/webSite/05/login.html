@@ -41,7 +41,7 @@
                             <i class="fa fa-phone"></i>
                             <span>客服<br>0800-302333</span>
                         </a>
-                        <div class="dmn-brand-logo"><a class="navbar-brand" href="index.html"><img class="header-dmn-logo" src="assets/images/dmn-logo.png" title="DateMeNow跟我約會吧" alt="DateMeNow跟我約會吧-讓美好的你遇見美好的她"></a></div>
+                        <h1 class="dmn-brand-logo"><a class="navbar-brand" href="index.html"><img class="header-dmn-logo" src="assets/images/dmn-logo.png" title="DateMeNow跟我約會吧" alt="DateMeNow跟我約會吧-讓美好的你遇見美好的她"></a></h1>
                         <a class="header-dmn-sideicon dmn-login" href="login.html">
                             <i class="fa fa-sign-in"></i>
                             <span>登入<br>註冊</span>
@@ -96,200 +96,122 @@
         <section class="dmn-breadcrumb">
             <div class="container">
                 <ol class="breadcrumb">
-                    <li><a href="index.html">首頁</a></li>
-                    <li><a href="login.html">註冊</a></li>                
-                    <li class="active">STEP1</li>
+                    <li><a href="index.html">首頁</a></li>                
+                    <li class="active">註冊/登入</li>
                 </ol>
             </div>
         </section>        
         <!-- /麵包屑 -->
 
-        <!-- 註冊-step1 -->
-        <section class="page-register-section flower-bg3">
+        <!-- 註冊-登入主視覺 -->
+        <section class="page-register-kv bg-attachment-fixed">
+            <div class="container">
+                <h1 class="dmn-title-type1 text-white no-pseudo">
+                    註冊/登入
+                    <span>register / login</span>
+                </h1>
+            </div>
+        </section>
+        <!-- /註冊-登入主視覺 -->
+
+        <!-- 註冊-登入 -->
+        <section class="page-register-section">
             <div class="container">
                 <div class="row">
 
-                    <div class="col-md-10 col-md-offset-1">
-                        
-                        <div class="page-register-blcok">
-                            <!-- step box -->
-                            <div class="page-register-step">
-                                <ul class="page-step">
-                                    <li class="active">1</li>
-                                    <li>2</li>
-                                    <li>3</li>
-                                    <li>4</li>
-                                    <li>5</li>
-                                    <li>6</li>
-                                    <li>7</li>
-                                    <li>8</li>
-                                    <li>9</li>
-                                    <li>10</li>
-                                    <li>11</li>
-                                </ul>
-                            </div>
-                            
-                            <div class="dmn-box">
-                                <div class="page-register-title">
-                                    <h1 class="title">介紹一下您自己</h1>
-                                    <h2 class="subtitle">讓我們挑選最適合您的對象</h2>                                    
+                    <div class="col-md-10 col-sm-10 col-md-offset-1 col-sm-offset-1">
+
+                        <!-- tab panel -->
+                        <div class="page-regTab">
+
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a href="#login" data-toggle="tab">會員登入</a></li>
+                                <li><a href="#register" data-toggle="tab">快速註冊</a></li>
+                            </ul>
+                            <div class="tab-content">
+        
+                                <!-- 登入 -->
+                                <div class="tab-pane fade in active" id="login">
+                                    <div class="dmn-box dmn-box-gray dmn-box-reg">
+                                        <h2 class="dmn-title-type2">
+                                            登入
+                                        </h2>
+                                        <form action="">
+                                            <div class="form-group">
+                                                <label class="sr-only" for="account">帳號</label>
+                                                <input type="text" class="form-control" id="account" placeholder="請輸入帳號">
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="sr-only" for="password">密碼</label>
+                                                <input type="password" class="form-control" id="password" placeholder="請輸入密碼">
+                                            </div>
+                                            <p class="text-small"><a href="https://www.singleparty.com.tw/help.asp?t=%E7%99%BB%E5%85%A5%E5%95%8F%E9%A1%8C&o=%E6%9F%A5%E8%A9%A2%E5%AF%86%E7%A2%BC" target="_blank">忘記帳號/密碼</a></p>
+                                            <div class="form-group dmn-login">
+                                                <button class="btn btn-block btn-main" type="submit">登入</button>
+                                            </div>
+                                            
+                                        </form>
+                                    </div>
                                 </div>
-                                <div class="page-register-account">
-                                    帳號：45678999@gmail.com
+                                <!-- /登入 -->
+
+                                <!-- 快速註冊 -->
+                                <div class="tab-pane fade" id="register">
+                                    <div class="dmn-box dmn-box-gray dmn-box-reg">
+                                        <h2 class="dmn-title-type2">
+                                            快速註冊
+                                        </h2>
+                                        <form action="">
+                                            <div class="form-group">
+                                                <label class="sr-only" for="account">姓名</label>
+                                                <input type="text" class="form-control" id="account" placeholder="請輸入姓名">
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="sr-only" for="email">信箱</label>
+                                                <input type="email" class="form-control" id="email" placeholder="請輸入信箱">
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="sr-only" for="phone">手機</label>
+                                                <input type="text" class="form-control" id="phone" placeholder="請輸入手機">
+                                            </div>
+                                            <div class="form-group row">
+                                                <div class="col-xs-6">
+                                                    <label class="sr-only" for="">驗證碼</label>
+                                                    <input type="text" class="form-control" id="" placeholder="請輸入驗證碼">
+                                                </div>
+                                                <div class="col-xs-6 code">
+                                                    <a href="#p" onclick="reload_psn_class()"><img class="psn_img" src="/psn"></a>
+                                                </div>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label class="text-small">
+                                                    <input type="checkbox"> 註冊完成後，工作人員收到資料後會主動與您聯繫，確認後續相關事宜。
+                                                </label>
+                                            </div>
+                                            <p class="margin-bottom-30 text-small">*資料填寫完整正確，有助於您快速找到對象</p>
+                                            <div class="form-group row">
+                                                <div class="col-xs-6">
+                                                    <button class="btn btn-block btn-sub1" type="submit">我是男生</button>
+                                                </div>
+                                                <div class="col-xs-6">
+                                                    <button class="btn btn-block btn-sub1" type="submit">我是女生</button>
+                                                </div>
+                                            </div>                                        
+                                        </form>
+                                    </div>
                                 </div>
-                                <div class="page-register-form">
-                                    <form action="">
-                                        <div class="form-group">
-                                            <label class="" for="name">暱稱</label>
-                                            <input type="text" id="name" class="form-control form-underline" placeholder="暱稱 *">                                   
-                                        </div>
-        
-                                        <div class="form-group row">
-                                            <div class="col-md-6">
-                                                <label class="" for="password">請輸入密碼</label>
-                                                <input type="password" id="password" class="form-control form-underline" placeholder="請輸入密碼">
-                                            </div>
-                                            <div class="col-md-6">
-                                                <label class="" for="password2">請再次輸入密碼</label>
-                                                <input type="password" id="password2" class="form-control form-underline" placeholder="請再次輸入密碼">
-                                            </div>
-                                        </div>
-        
-                                        <div class="form-group row">
-                                            <div class="col-md-4">
-                                                <label class="" for="year">出生年</label>
-                                                <select id="year" class="form-control form-underline">
-                                                    <option value="" disabled selected>出生年</option>
-                                                    <option value="">1977</option>
-                                                    <option value="">1978</option>
-                                                </select>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <label class="" for="month">月份</label>
-                                                <select id="month" class="form-control form-underline">
-                                                    <option value="" disabled selected>出生月</option>
-                                                    <option value="">1</option>
-                                                    <option value="">2</option>
-                                                </select>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <label class="" for="day">日期</label>
-                                                <select id="day" class="form-control form-underline">
-                                                    <option value="" disabled selected>出生日</option>
-                                                    <option value="">1</option>
-                                                    <option value="">2</option>
-                                                </select>
-                                            </div>
-                                        </div>
-        
-                                        <div class="form-group row">
-                                            <div class="col-md-4">
-                                                <label class="" for="bloodtype">血型</label>
-                                                <select id="bloodtype" class="form-control form-underline">
-                                                    <option value="" disabled selected>血型</option>
-                                                    <option value="">A</option>
-                                                    <option value="">B</option>
-                                                    <option value="">O</option>
-                                                    <option value="">AB</option>
-                                                </select>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <label class="" for="sex">性別</label>
-                                                <select id="sex" class="form-control form-underline">
-                                                    <option value="" disabled selected>性別</option>
-                                                    <option value="">男性</option>
-                                                    <option value="">女性</option>
-                                                </select>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <label class="" for="height">身高</label>
-                                                <select id="height" class="form-control form-underline">
-                                                    <option value="" disabled selected>身高</option>
-                                                    <option value="">140cm</option>
-                                                    <option value="">145cm</option>
-                                                </select>
-                                            </div>
-                                        </div>
-        
-                                        <div class="form-group row">
-                                            <div class="col-md-6">
-                                                <label class="" for="relationship">外型</label>
-                                                <select id="relationship" class="form-control form-underline">
-                                                    <option value="" disabled selected>外型</option>
-                                                    <option value="">苗條</option>                                        
-                                                </select>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <label class="" for="education">最高學歷</label>
-                                                <select id="education" class="form-control form-underline">
-                                                    <option value="" disabled selected>最高學歷</option>
-                                                    <option value="">小學</option>
-                                                    <option value="">高中</option>
-                                                </select>
-                                            </div>
-                                        </div>
-        
-                                        <div class="form-group row">
-                                            <div class="col-md-6">
-                                                <label class="" for="">行業別</label>
-                                                <select id="" class="form-control form-underline">
-                                                    <option value="" disabled selected>行業別</option>
-                                                    <option value="">公務/國家機關</option>
-                                                </select>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <label class="" for="company">公司名稱</label>
-                                                <input type="text" id="company" class="form-control form-underline" placeholder="公司名稱">
-                                            </div>
-                                        </div>
-        
-                                        <div class="form-group row">
-                                            <div class="col-md-6">
-                                                <label class="" for="11">職稱</label>
-                                                <input type="text" id="11" class="form-control form-underline" placeholder="職稱">
-                                            </div>
-                                            <div class="col-md-6">
-                                                <label class="" for="">年收入</label>
-                                                <select id="n" class="form-control form-underline">
-                                                    <option value="" disabled selected>年收入</option>
-                                                    <option value="">50萬以下</option>
-                                                </select>
-                                            </div>
-                                        </div>
-        
-                                        <div class="form-group row">
-                                            <div class="col-md-6">
-                                                <label class="" for="">推薦會館</label>
-                                                <select id="n" class="form-control form-underline">
-                                                    <option value="" disabled selected>推薦會館</option>
-                                                    <option value="">台北會館</option>
-                                                </select>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <label class="" for="">推薦秘書</label>
-                                                <select id="n" class="form-control form-underline">
-                                                    <option value="" disabled selected>推薦秘書</option>
-                                                    <option value="">陳小美</option>
-                                                </select>
-                                            </div>
-                                        </div>                         
-        
-                                        <div class="form-group register-submit">                                            
-                                            <button type="button" class="btn btn-sub1 btn-block" onclick="javascript:location.href='register_step2.html'">確認無誤，下一步<i class="fa fa-angle-right"></i></button>
-                                            <p class="confirm">點擊表示同意<a target="_blank" href="joininfo.html">個資聲明</a>與<a target="_blank" href="copyright.html">隠私政策</a></p>   
-                                        </div>
-                                    </form>
-                                </div>
+                                <!-- /快速註冊 -->
                                 
-                            </div>
+                            </div> 
+
                         </div>
-
-                    </div>       
-
+                        <!-- /tab panel -->
+                    </div>
+                               
                 </div>
             </div>
         </section>
-        <!-- /註冊-step1 -->
+        <!-- /註冊-登入 -->
 
         <!-- footer -->
         <footer class="footer">

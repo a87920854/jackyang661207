@@ -5,10 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta http-equiv="Content-Language" content="zh-tw">
-    <meta name="description" content="DateMeNow跟我約會吧">
-    <meta name="keywords" content="datemenow,來電,交友,跟我約會吧,單身,約會,結婚,想結婚就從約會開始,聯誼,活動,相親約會,一對一,公主,約會許願池,完全戀愛企劃,戀愛,極速配對,不來電免費,擺脫單身,配對,時尚尊榮,高效約會">
+    <meta name="description" content="DateMeNow跟我約會吧優質交友聯誼網站，提供專業的戀愛顧問服務、嚴格篩選會員條件、豐富多元的聯誼活動，讓美好的你遇見美好的他，交友安心又放心。">
+    <meta name="keywords" content="datemenow,交友,單身,約會,結婚,聯誼,戀愛,時尚尊榮,高效約會">
     <link rel="icon" type="image/ico" href="assets/images/favicon.ico">
-    <title>DateMeNow跟我約會吧</title>
+    <title>註冊頁|DateMeNow跟我約會吧優質交友聯誼網站</title>
+    <!-- og tag -->
+    <meta property="og:title" content="註冊頁|DateMeNow跟我約會吧優質交友聯誼網站"/>
+    <meta property="og:description" content="DateMeNow跟我約會吧優質交友聯誼網站，提供專業的戀愛顧問服務、嚴格篩選會員條件、豐富多元的聯誼活動，讓美好的你遇見美好的他，交友安心又放心。"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:site_name" content="DateMeNow跟我約會吧"/>
+    <meta property="og:url" content="https://www.datemenow.com.tw"/>
+    <meta property="og:image" content="https://www.datemenow.com.tw/assets/images/og/og_index.jpg"/>
     <!-- bootstrap core css -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
     <!-- plugin css -->
@@ -34,7 +41,7 @@
                             <i class="fa fa-phone"></i>
                             <span>客服<br>0800-302333</span>
                         </a>
-                        <h1 class="dmn-brand-logo"><a class="navbar-brand" href="index.html"><img class="header-dmn-logo" src="assets/images/dmn-logo.png" title="DateMeNow跟我約會吧" alt="DateMeNow跟我約會吧-讓美好的你遇見美好的她"></a></h1>
+                        <div class="dmn-brand-logo"><a class="navbar-brand" href="index.html"><img class="header-dmn-logo" src="assets/images/dmn-logo.png" title="DateMeNow跟我約會吧" alt="DateMeNow跟我約會吧-讓美好的你遇見美好的她"></a></div>
                         <a class="header-dmn-sideicon dmn-login" href="login.html">
                             <i class="fa fa-sign-in"></i>
                             <span>登入<br>註冊</span>
@@ -90,7 +97,7 @@
             <div class="container">
                 <ol class="breadcrumb">
                     <li><a href="index.html">首頁</a></li>
-                    <li><a href="register_step1.html">註冊</a></li>                
+                    <li><a href="login.html">註冊</a></li>                
                     <li class="active">STEP6</li>
                 </ol>
             </div>
@@ -98,7 +105,7 @@
         <!-- /麵包屑 -->
 
         <!-- 註冊-step6 -->
-        <section class="page-register-section flower-bg6">
+        <section class="page-register-section flower-bg5">
             <div class="container">
                 <div class="row">
 
@@ -124,61 +131,49 @@
                             
                             <div class="dmn-box">
                                 <div class="page-register-title">
-                                    <h1 class="title">第一次見面，想要彼此留下好印象？</h1>                                                        
-                                </div>                                                   
-                                <div class="page-register-form">                                    
+                                    <h1 class="title">上傳個人照<br>熱門度立即提昇54%</h1>
+                                    <h2 class="subtitle">跟你說，被注意到的次數是其他用戶的7倍唷!</h2>                                                        
+                                </div>
+                                                                      
+                                <div class="page-register-form">
+                                    <div class="dmn-divider"></div>    
+                                    <div class="page-register-txt">
+                                        <h3>選擇要上傳的照片</h3>
+                                        <p>為了展現您真誠交友的心，照片請使用能夠清楚辨識臉部五官的本人照片。<br>請您花點心思，上傳一張清晰又能展現自我特色的照片吧！</p>
+                                    </div>                                  
+                                    
                                     <form action="">
-
-                                        <div class="form-group row">
-                                            <div class="col-md-6">
-                                                <label class="" for="">希望約會地點</label>
-                                                <select id="" class="form-control form-underline">
-                                                    <option value="" disabled selected>希望約會地點</option>
-                                                    <option value=""></option>
-                                                </select>
+                                        <div class="register-file-upload">                                    
+                                            <label for="file" class="file">
+                                                <input class="custom-file-upload" type="file" id="file"/>
+                                            </label>
+                                            <div class="upload">
+                                                <button class="btn btn-sub2 btn-lg" type="button">稍後上傳</button>
+                                                <button class="btn btn-sub1 btn-lg" type="button">確定上傳</button>
+                                            </div>  
+                                        </div>                                     
+                                    
+                                        <div class="page-register-check">
+                                            <div class="check">
+                                                <i class="glyphicon glyphicon-ok"></i>
+                                                <h4>OK的照片</h4>
+                                                <p>五官清晰+光線充足<br>半身以上區域+面帶微笑<br>直式照片格式最佳</p>
                                             </div>
-                                            <div class="col-md-6">
-                                                <label class="" for="title">用餐接受價位</label>
-                                                <select id="" class="form-control form-underline">
-                                                    <option value="" disabled selected>用餐接受價位</option>
-                                                    <option value=""></option>
-                                                </select>
-                                            </div>                                   
-                                        </div>
-        
-                                        <div class="form-group row">
-                                            <div class="col-md-6">
-                                                <label class="" for="">約會時盡量不要</label>
-                                                <select id="" class="form-control form-underline">
-                                                    <option value="" disabled selected>約會時盡量不要</option>
-                                                    <option value=""></option>
-                                                </select>
+                                            <div class="check">
+                                                <i class="glyphicon glyphicon-remove"></i>
+                                                <h4>不OK的照片</h4>
+                                                <p>看不清楚你的樣貌<br>逆光、背影、人太小<br>風景照、多人入鏡</p>
                                             </div>
-                                            <div class="col-md-6">
-                                                <label class="" for="title">話題地雷</label>
-                                                <select id="" class="form-control form-underline">
-                                                    <option value="" disabled selected>話題地雷</option>
-                                                    <option value=""></option>
-                                                </select>
-                                            </div>                                   
                                         </div>
-        
-                                        <div class="form-group row">
-                                            <div class="col-md-6">
-                                                <label class="" for="">希望聯絡方式</label>
-                                                <select id="" class="form-control form-underline">
-                                                    <option value=""></option>
-                                                </select>
-                                            </div>                                  
-                                        </div>
-        
-                                        <div class="form-group">
-                                            <h4 class="title">自我介紹<span>*說句話吧~約100字以內!</span></h4>
-                                            <textarea class="form-control" name="" id="" rows="10"></textarea>
-                                        </div>
-        
-                                        <div class="form-group register-submit">
-                                            <button type="button" class="btn btn-sub1 btn-block" onclick="javascript:location.href='register_step7.html'">確認無誤，下一步<i class="fa fa-caret-right"></i></button>                                    
+                                        <h5>*注意事項：</h5>
+                                        <ol class="text-small">
+                                            <li>所有相片都要經過審核，審核時間需至少三個工作天。</li>
+                                            <li>春天會館保留審核及刊登的權利，違反者經查證屬實。我們會移除您的照片，並請您重新上傳。</li>
+                                            <li>公開相片不能包括任何裸露照、不雅照、風景照、非本人照。</li>
+                                            <li>請不要在照片上顯示任何相關聯絡資訊，以保護您的隱私安全。</li>
+                                        </ol>
+                                        <div class="form-group register-submit">                                            
+                                            <button type="button" class="btn btn-sub1 btn-block" onclick="javascript:location.href='register_step7.html'">確認無誤，下一步<i class="fa fa-angle-right"></i></button>
                                         </div>
                                     </form>
                                 </div>

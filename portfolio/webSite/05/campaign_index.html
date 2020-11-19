@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Language" content="zh-tw">
+    <meta name="description" content="由30年婚戀經驗品牌經營之優質婚戀交友品牌，提供多元的未婚聯誼活動，主題派對聯誼、手作體驗聯誼活動、戶外輕旅行聯誼活動、企業未婚聯誼活動等。在最輕鬆的場合聯誼，認識新朋友，告別單身，就從DateMeNow跟我約會吧開始。快來跟我約會吧！">
+    <meta name="keywords" content="聯誼, 未婚聯誼, 聯誼活動, 主題派對, 輕旅行, 企業聯誼">
+    <link rel="icon" type="image/ico" href="assets/images/favicon.ico">
+    <title>DateMeNow跟我約會吧 – 聯誼活動列表</title>
+    <!-- og tag -->
+    <meta property="og:title" content="DateMeNow跟我約會吧 – 聯誼活動列表"/>
+    <meta property="og:description" content="由30年婚戀經驗品牌經營之優質婚戀交友品牌。，提供多元的未婚聯誼活動，主題派對聯誼、手作體驗聯誼活動、戶外輕旅行聯誼活動、企業未婚聯誼活動等。在最輕鬆的場合聯誼，認識新朋友，告別單身，就從DateMeNow跟我約會吧開始。快來跟我約會吧！"/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:site_name" content="DateMeNow跟我約會吧"/>
+    <meta property="og:url" content="https://www.datemenow.com.tw"/>
+    <meta property="og:image" content="https://www.datemenow.com.tw/assets/images/og/og_index.jpg"/>
+    <!-- bootstrap core css -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <!-- plugin css -->
+    <link href="assets/css/plugin.min.css" rel="stylesheet">
+    <!-- layout css -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <!-- sweetalert -->
+    <link href="assets/plugins/sweetalert2/sweetalert2.css" rel="stylesheet">
+
+</head>
+<body class="enable-animation">
+    <div id="wrapper">
+        <header id="header" class="sticky dmn-header">
+            <nav class="navbar">
+                <div class="container-fluid">
+                    <div class="navbar-header header-dmn">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="header-dmn-sideicon dmn-call" href="#">
+                            <i class="fa fa-phone"></i>
+                            <span>客服<br>0800-302333</span>
+                        </a>
+                        <div class="dmn-brand-logo"><a class="navbar-brand" href="index.html"><img class="header-dmn-logo" src="assets/images/dmn-logo.png" title="DateMeNow跟我約會吧" alt="DateMeNow跟我約會吧-讓美好的你遇見美好的她"></a></div>
+                        <a class="header-dmn-sideicon dmn-login" href="login.html">
+                            <i class="fa fa-sign-in"></i>
+                            <span>登入<br>註冊</span>
+                        </a>
+                    </div>                                  
+                </div>  
+                <div id="navbar" class="navbar-collapse collapse header-dmn-navbar">
+                    <div class="container-fluid">
+                        <ul class="nav navbar-nav">
+                            <li class="nav-logo"><a class="dmn-logo" href="index.html"><img class="header-dmn-logo" src="assets/images/dmn-logo.png" title="DateMeNow跟我約會吧" alt="DateMeNow跟我約會吧"></a></li>
+                            <li><a href="campaign_index.html">聯誼活動</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">交友企劃 <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="https://www.datemenow.com.tw/200510/?cc=dmn_officialwebsite_homepage_Banner0713">大家都在穩定交往的秘訣?</a></li>
+                                    <li><a href="https://www.datemenow.com.tw/180610/">戀愛分析量表</a></li>
+                                    <li><a href="https://www.datemenow.com.tw/event180310.asp">上班族不能不約會</a></li>
+                                </ul>
+                            </li>           
+                            <li><a href="search.html">單身會員</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">交往結婚 <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="happiness.html">幸福故事</a></li>
+					                <li><a href="lovestory.html">談情說愛</a></li>	
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">關於我們 <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="dmn.html">關於我們</a></li>
+					                <li><a href="news.html">媒體報導</a></li>	
+                                </ul>
+                            </li>  
+                            <li><a href="MarriageHall.html">服務據點</a></li>
+                            <li class=""><a href="send.html">補上傳證件</a></li>                 
+                        </ul> 
+                    </div>                   
+                    
+                    <ul class="dmn-side-panel">
+                        <li><a href="https://www.facebook.com/datemenow.tw/" target="_blank" class="fb" data-toggle="tooltip" data-placement="left" title="facebook"><i class="fa fa-facebook"></i></a></li>            
+                        <li><a href="#" data-toggle="modal" data-target="#eventFormDownLoad" target="_blank" class="line"><span data-toggle="tooltip" data-placement="left" title="訂閱電子報" ><i class="fa fa-envelope"></i></span></a></li>
+                        <li><a href="service.html" class="phone-icon" data-toggle="tooltip" data-placement="left" title="客服中心"><i class="fa fa-headphones"></i></a></li>
+                        <li><a href="assets/images/dmn.pdf" target="_blank" class="download-form" data-toggle="tooltip" data-placement="left" title="簡介下載"><i class="glyphicon glyphicon-download-alt"></i></a></li>
+                    </ul>   
+                </div>     
+                 
+            </nav>        
+        </header>
+
+        <!-- 麵包屑 -->
+        <section class="dmn-breadcrumb">
+            <div class="container">
+                <ol class="breadcrumb">
+                    <li><a href="index.html">首頁</a></li>              
+                    <li class="active">聯誼活動</li>
+                </ol>
+            </div>
+        </section>        
+        <!-- /麵包屑 -->
+
+        <!-- 聯誼活動-->        
+        <section class="page-campaign-kv flower-bg-exbig">
+            <div class="container">
+
+                 <!-- slider -->
+                 <div class="page-campaign-slider">
+                    <h1 class="page-title-under">聯誼活動</h1>
+
+                    <!-- pc slider -->
+                    <div class="owl-carousel owl-carousel-init rwd-pc" data-plugin-options='{"items": "1", "stopOnHover":false, "autoPlay":4000, "autoHeight": false, "navigation": false, "pagination": true}'>
+                        <div class="">
+                            <a href="#">
+                                <img class="img-responsive" src="https://www.singleparty.com.tw/assets/images/event/event_banner_pc_202010211153521.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="">
+                            <a href="#">
+                                <img class="img-responsive" src="https://www.singleparty.com.tw/assets/images/event/event_banner_pc_2020102111521723.jpg" alt="">
+                            </a>
+                        </div>                            
+                    </div>
+                    <!-- /pc slider -->
+
+                    <!-- mobile slider -->
+                    <div class="owl-carousel owl-carousel-init rwd-mobile" data-plugin-options='{"items": "1", "stopOnHover":false, "autoPlay":4000, "autoHeight": false, "navigation": false, "pagination": true}'>
+                        <div class="">
+                            <a href="#">
+                                <img class="img-responsive" src="https://www.singleparty.com.tw/assets/images/event/event_banner_mobile_2020102111531392.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="">
+                            <a href="#">
+                                <img class="img-responsive" src="https://www.singleparty.com.tw/assets/images/event/event_banner_mobile_2020102111522753.jpg" alt="">
+                            </a>
+                        </div>                            
+                    </div>
+                    <!-- /mobile slider -->
+                    
+                </div>  
+                 <!-- /silder -->
+
+                <!-- 搜尋 -->
+               <div class="list-search-block">
+                    <form action="">
+                        <div class="row">                              
+                            <div class="col-md-4 col-xs-12">
+                                <select class="form-control">
+                                    <option value="">依日期排列</option>
+                                    <option value="">依地區排列</option>
+                                    <option value="">依活動分類排列</option>
+                                </select>
+                                <button class="btn btn-sub1">搜尋</button>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="list-search-text"><span>45</span> 件中 1~15 件</div>
+                            </div>                     
+                        </div>                                
+                    </form> 
+                </div>
+                <!-- /搜尋 -->
+
+                <!-- 列表 -->
+                <div class="page-campaign-list">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="list-item"> 
+                                <a class="list-item-link" href="campaign_page.html">                           
+                                    <div class="dmn-label label-type1">                                
+                                        <span>心約會</span>
+                                    </div>
+                                    <div class="list-item-inner">
+                                        <div class="list-item-photo-wrap">
+                                            <div class="list-item-photo">                                
+                                                <img src="https://www.springclub.com.tw/upload_image/202092816164_action_440.jpg" alt=""> 
+                                            </div> 
+                                            <div class="list-item-area">台北市</div>
+                                            <div class="list-item-views"><i class="fa fa-eye"></i> 50人看過</div>
+                                        </div>                     
+                                        <div class="list-item-text">                                        
+                                            <h2 class="list-item-title">療癒手作，可愛苔球自己做療癒手作，可愛苔球自己做療癒手作，可愛苔球自己做</h2>                                        
+                                            <ul class="list-item-info">
+                                                <li class="date">2020/9/19 14:00</li>
+                                                <li class="num">12人，最低成團人數12人</li>
+                                                <li class="cutoff">9/12 14:00截止報名</li>
+                                            </ul>
+                                        </div>                                
+                                    </div>
+                                </a>                          
+                            </div>
+                        </div>
+    
+                        <div class="col-md-4">
+                            <div class="list-item"> 
+                                <a class="list-item-link" href="campaign_page.html">                           
+                                    <div class="dmn-label label-type2">                                
+                                        <span>趣約會</span>
+                                    </div>
+                                    <div class="list-item-inner">
+                                        <div class="list-item-photo-wrap">
+                                            <div class="list-item-photo">                                
+                                                <img src="https://www.springclub.com.tw/upload_image/2020929175838_action_386.jpg" alt=""> 
+                                            </div> 
+                                            <div class="list-item-area">台北市</div>
+                                            <div class="list-item-views"><i class="fa fa-eye"></i> 50人看過</div>
+                                        </div>                     
+                                        <div class="list-item-text">                                        
+                                            <h2 class="list-item-title">療癒手作，可愛苔球自己做</h2>                                        
+                                            <ul class="list-item-info">
+                                                <li class="date">2020/9/19 14:00</li>
+                                                <li class="num">12人，最低成團人數12人</li>
+                                                <li class="cutoff">9/12 14:00截止報名</li>
+                                            </ul>
+                                        </div>                                
+                                    </div>
+                                </a>                          
+                            </div>
+                        </div>
+    
+                        <div class="col-md-4">
+                            <div class="list-item"> 
+                                <a class="list-item-link" href="campaign_page.html">                           
+                                    <div class="dmn-label label-type3">                                
+                                        <span>揪約會</span>
+                                    </div>
+                                    <div class="list-item-inner">
+                                        <div class="list-item-photo-wrap">
+                                            <div class="list-item-photo">                                
+                                                <img src="https://www.springclub.com.tw/upload_image/2020924171019_action_676.jpg" alt=""> 
+                                            </div> 
+                                            <div class="list-item-area">台北市</div>
+                                            <div class="list-item-views"><i class="fa fa-eye"></i> 50人看過</div>
+                                        </div>                     
+                                        <div class="list-item-text">                                        
+                                            <h2 class="list-item-title">療癒手作，可愛苔球自己做</h2>                                        
+                                            <ul class="list-item-info">
+                                                <li class="date">2020/9/19 14:00</li>
+                                                <li class="num">12人，最低成團人數12人</li>
+                                                <li class="cutoff">9/12 14:00截止報名</li>
+                                            </ul>
+                                        </div>                                
+                                    </div>
+                                </a>                          
+                            </div>
+                        </div>
+    
+                        <div class="col-md-4">
+                            <div class="list-item"> 
+                                <a class="list-item-link" href="campaign_page.html">                           
+                                    <div class="dmn-label label-type4">                                
+                                        <span>響約會</span>
+                                    </div>
+                                    <div class="list-item-inner">
+                                        <div class="list-item-photo-wrap">
+                                            <div class="list-item-photo">                                
+                                                <img src="https://www.springclub.com.tw/upload_image/202092816164_action_440.jpg" alt=""> 
+                                            </div> 
+                                            <div class="list-item-area">台北市</div>
+                                            <div class="list-item-views"><i class="fa fa-eye"></i> 50人看過</div>
+                                        </div>                     
+                                        <div class="list-item-text">                                        
+                                            <h2 class="list-item-title">療癒手作，可愛苔球自己做</h2>                                        
+                                            <ul class="list-item-info">
+                                                <li class="date">2020/9/19 14:00</li>
+                                                <li class="num">12人，最低成團人數12人</li>
+                                                <li class="cutoff">9/12 14:00截止報名</li>
+                                            </ul>
+                                        </div>                                
+                                    </div>
+                                </a>                          
+                            </div>
+                        </div>
+    
+                        <div class="col-md-4">
+                            <div class="list-item"> 
+                                <a class="list-item-link" href="campaign_page.html">                           
+                                    <div class="dmn-label label-type1">                                
+                                        <span>心約會</span>
+                                    </div>
+                                    <div class="list-item-inner">
+                                        <div class="list-item-photo-wrap">
+                                            <div class="list-item-photo">                                
+                                                <img src="https://www.springclub.com.tw/upload_image/2020929175838_action_386.jpg" alt=""> 
+                                            </div> 
+                                            <div class="list-item-area">台北市</div>
+                                            <div class="list-item-views"><i class="fa fa-eye"></i> 50人看過</div>
+                                        </div>                     
+                                        <div class="list-item-text">                                        
+                                            <h2 class="list-item-title">療癒手作，可愛苔球自己做</h2>                                        
+                                            <ul class="list-item-info">
+                                                <li class="date">2020/9/19 14:00</li>
+                                                <li class="num">12人，最低成團人數12人</li>
+                                                <li class="cutoff">9/12 14:00截止報名</li>
+                                            </ul>
+                                        </div>                                
+                                    </div>
+                                </a>                          
+                            </div>
+                        </div>
+    
+                        <div class="col-md-4">
+                            <div class="list-item"> 
+                                <a class="list-item-link" href="campaign_page.html">                           
+                                    <div class="dmn-label label-type1">                                
+                                        <span>心約會</span>
+                                    </div>
+                                    <div class="list-item-inner">
+                                        <div class="list-item-photo-wrap">
+                                            <div class="list-item-photo">                                
+                                                <img src="https://www.springclub.com.tw/upload_image/2020924171019_action_676.jpg" alt=""> 
+                                            </div> 
+                                            <div class="list-item-area">台北市</div>
+                                            <div class="list-item-views"><i class="fa fa-eye"></i> 50人看過</div>
+                                        </div>                     
+                                        <div class="list-item-text">                                        
+                                            <h2 class="list-item-title">療癒手作，可愛苔球自己做</h2>                                        
+                                            <ul class="list-item-info">
+                                                <li class="date">2020/9/19 14:00</li>
+                                                <li class="num">12人，最低成團人數12人</li>
+                                                <li class="cutoff">9/12 14:00截止報名</li>
+                                            </ul>
+                                        </div>                                
+                                    </div>
+                                </a>                          
+                            </div>
+                        </div>
+    
+                        <div class="col-md-4">
+                            <div class="list-item"> 
+                                <a class="list-item-link" href="campaign_page.html">                           
+                                    <div class="dmn-label label-type1">                                
+                                        <span>心約會</span>
+                                    </div>
+                                    <div class="list-item-inner">
+                                        <div class="list-item-photo-wrap">
+                                            <div class="list-item-photo">                                
+                                                <img src="https://www.springclub.com.tw/upload_image/202092816164_action_440.jpg" alt=""> 
+                                            </div> 
+                                            <div class="list-item-area">台北市</div>
+                                            <div class="list-item-views"><i class="fa fa-eye"></i> 50人看過</div>
+                                        </div>                     
+                                        <div class="list-item-text">                                        
+                                            <h2 class="list-item-title">療癒手作，可愛苔球自己做</h2>                                        
+                                            <ul class="list-item-info">
+                                                <li class="date">2020/9/19 14:00</li>
+                                                <li class="num">12人，最低成團人數12人</li>
+                                                <li class="cutoff">9/12 14:00截止報名</li>
+                                            </ul>
+                                        </div>                                
+                                    </div>
+                                </a>                          
+                            </div>
+                        </div>
+    
+                        <div class="col-md-4">
+                            <div class="list-item"> 
+                                <a class="list-item-link" href="campaign_page.html">                           
+                                    <div class="dmn-label label-type1">                                
+                                        <span>心約會</span>
+                                    </div>
+                                    <div class="list-item-inner">
+                                        <div class="list-item-photo-wrap">
+                                            <div class="list-item-photo">                                
+                                                <img src="https://www.springclub.com.tw/upload_image/2020929175838_action_386.jpg" alt=""> 
+                                            </div> 
+                                            <div class="list-item-area">台北市</div>
+                                            <div class="list-item-views"><i class="fa fa-eye"></i> 50人看過</div>
+                                        </div>                     
+                                        <div class="list-item-text">                                        
+                                            <h2 class="list-item-title">療癒手作，可愛苔球自己做</h2>                                        
+                                            <ul class="list-item-info">
+                                                <li class="date">2020/9/19 14:00</li>
+                                                <li class="num">12人，最低成團人數12人</li>
+                                                <li class="cutoff">9/12 14:00截止報名</li>
+                                            </ul>
+                                        </div>                                
+                                    </div>
+                                </a>                          
+                            </div>
+                        </div>
+    
+                        <div class="col-md-4">
+                            <div class="list-item"> 
+                                <a class="list-item-link" href="campaign_page.html">                           
+                                    <div class="dmn-label label-type1">                                
+                                        <span>心約會</span>
+                                    </div>
+                                    <div class="list-item-inner">
+                                        <div class="list-item-photo-wrap">
+                                            <div class="list-item-photo">                                
+                                                <img src="https://www.springclub.com.tw/upload_image/2020924171019_action_676.jpg" alt=""> 
+                                            </div> 
+                                            <div class="list-item-area">台北市</div>
+                                            <div class="list-item-views"><i class="fa fa-eye"></i> 50人看過</div>
+                                        </div>                     
+                                        <div class="list-item-text">                                        
+                                            <h2 class="list-item-title">療癒手作，可愛苔球自己做</h2>                                        
+                                            <ul class="list-item-info">
+                                                <li class="date">2020/9/19 14:00</li>
+                                                <li class="num">12人，最低成團人數12人</li>
+                                                <li class="cutoff">9/12 14:00截止報名</li>
+                                            </ul>
+                                        </div>                                
+                                    </div>
+                                </a>                          
+                            </div>
+                        </div>
+    
+                       
+                    </div>
+                </div>
+
+                <!-- 頁碼 -->
+                <nav class="text-center">
+                    <ul class="pagination pagination-lg">
+                        <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
+                        <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>      
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li>
+                            <a href="#" aria-label="Next">
+                              <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>              
+                    </ul>
+                </nav>
+                <!-- /頁碼 -->
+                <!-- /列表 -->
+
+            </div>
+        </section>
+        <!-- /聯誼活動 -->
+
+        <!-- 活動花絮照片 -->
+        <section class="dmn-more main-bg">
+            <div class="container">
+                <h3 class="dmn-title-type4">活動花絮照片</h3>
+                <div class="dmn-event-photos-slider">
+                    <div class="owl-carousel owl-carousel-init owl-carousel-white" data-plugin-options='{"singleItem": false, "items": "4", "stopOnHover":false, "autoPlay":4000, "autoHeight": false, "navigation": false, "pagination": true, "itemsMobile":[479,1], "itemsTablet":[768,3]}'>
+                        <div class="event-photos-item">
+                            <a class="lightbox" href="https://www.springclub.com.tw/upload_image/20191019172835_action_1282.jpg" data-plugin-options='{"type":"image"}'>
+                                <div class="event-thumbnail">
+                                    <img src="https://www.springclub.com.tw/upload_image/20191019172835_action_1282.jpg" alt="">
+                                </div>                                
+                            </a>
+                        </div>
+                        <div class="event-photos-item">
+                            <a class="lightbox" href="https://www.springclub.com.tw/upload_image/201995185144_action_17185.jpg" data-plugin-options='{"type":"image"}'>
+                                <div class="event-thumbnail">
+                                    <img src="https://www.springclub.com.tw/upload_image/201995185144_action_17185.jpg" alt="">
+                                </div>                                
+                            </a>
+                        </div>
+                        <div class="event-photos-item">
+                            <a class="lightbox" href="https://www.springclub.com.tw/upload_image/2019729162024_action_4924.jpg" data-plugin-options='{"type":"image"}'>
+                                <div class="event-thumbnail">
+                                    <img src="https://www.springclub.com.tw/upload_image/2019729162024_action_4924.jpg" alt="">
+                                </div>                                
+                            </a>
+                        </div>
+                        <div class="event-photos-item">
+                            <a class="lightbox" href="https://www.springclub.com.tw/upload_image/201953191649_action_4382.jpg" data-plugin-options='{"type":"image"}'>
+                                <div class="event-thumbnail">
+                                    <img src="https://www.springclub.com.tw/upload_image/201953191649_action_4382.jpg" alt="">
+                                </div>                                
+                            </a>
+                        </div>
+                        <div class="event-photos-item">
+                            <a class="lightbox" href="https://www.springclub.com.tw/upload_image/20195319126_action_6972.jpg" data-plugin-options='{"type":"image"}'>
+                                <div class="event-thumbnail">
+                                    <img src="https://www.springclub.com.tw/upload_image/20195319126_action_6972.jpg" alt="">
+                                </div>                                
+                            </a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /活動花絮照片 -->
+
+        <!-- footer -->
+        <footer class="footer">
+            <div class="container">
+                
+                <div class="footer-dmn-title">
+                    <a href="index.html">
+                        <img class="footer-dmn-logo" src="assets/images/dmn-logo.png" title="DateMeNow跟我約會吧" alt="DateMeNow跟我約會吧-讓美好的你遇見美好的她">
+                    </a>
+                </div>
+                <div class="footer-dmn-info row">
+                    <div class="col-md-4">
+                        <dl class="dmn-info-list">
+                            <dt>公司資訊</dt>
+                            <dd>
+                                <ul class="dmn-info-ul">
+                                    <li>
+                                        <a href="rules.html" target="_blank">使用條款</a>
+                                    </li>
+                                    <li>
+                                        <a href="joininfo.html" target="_blank">個資聲明</a>
+                                    </li>
+                                    <li>
+                                        <a href="copyright.html" target="_blank">隠私政策</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.104.com.tw/company/1a2x6biwvg?jobsource=checkc" target="_blank">企業徵才</a>
+                                    </li>
+                                </ul>
+                            </dd>
+                            <dd>台北市松山區八德路二段358號6樓之1</dd>
+                            <dd>營業時間 13:30~21:00(週一~六)、</dd>
+                            <dd>10:00~18:00(週日)</dd>
+                        </dl>
+                    </div>
+                    <div class="col-md-4">
+                        <dl class="dmn-info-list">
+                            <dt>聯絡我們</dt>
+                            <dd>想了解我們?</dd>
+                            <dd>您可撥打我們的客服專線</dd>
+                            <dd><span class="text-aid1">0800-302333</span> 或 <a href="service.html">客服中心</a></dd>
+                        </dl>
+                    </div>
+                    <div class="col-md-4">
+                        
+                        <dl class="dmn-info-list">
+                            <dt>Facebook</dt>
+                            <dd>
+                                <!--FB開始-->
+                                <div class="fb">
+                                    <div class="fb-like-box" data-href="http://www.facebook.com/datemenow.tw" data-width="332" data-height="250" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div>
+                                </div>
+                                 <!--FB結束-->
+                            </dd>
+                        </dl>                        
+                       
+                    </div>
+                </div> 
+            </div>
+        </footer>
+        <div class="footer-dmn-bottom">
+            <div class="container">            
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul class="dmn-social-icon">
+                            <li><a data-toggle="tooltip" data-placement="top" title="facebook" class="socail-icon" href="https://www.facebook.com/datemenow.tw" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                            <li><a data-toggle="tooltip" data-placement="top" title="line" class="socail-icon" href="https://line.me/ti/p/%40euh9076t" target="_blank"><img src="assets/images/line-icon.svg" alt="line"></a></li>
+                            <li><a data-toggle="tooltip" data-placement="top" title="blogger" class="socail-icon" href="http://lovedatemenow.blogspot.tw" target="_blank"><img src="assets/images/blogger-icon.svg" alt="blogger"></a></a></li>
+                            <li><a data-toggle="tooltip" data-placement="top" title="instagram" class="socail-icon" href="https://www.instagram.com/datemenow.tw" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                            <li><a data-toggle="tooltip" data-placement="top" title="youtube" class="socail-icon" href="https://www.youtube.com/channel/UCFqh3SC-yMSnE2yaGqUc0IQ" target="_blank"><i class="fa fa-youtube-play"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <p class="footer-dmn-copyrights">版權所有 跟我約會吧 Copyright ®2016 DATEMENOW.com.tw All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>            
+        </div>  
+        <!-- /footer -->
+        
+    </div>
+
+    <!-- SCROLL TO TOP -->
+    <a href="#" id="toTop"></a>
+
+    <!-- Modal 活動表下載 -->
+    <div id="eventFormDownLoad" class="modal fade" role="dialog">
+        <div class="modal-dialog">    
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">訂閱電子報</h4>
+                </div>
+                <div class="modal-body">
+                    <h5 class="title"><i class="fa fa-envelope-o"></i> 搶先獲得最新交友消息及聯誼資訊</h5>
+                    <form action="">                       
+                        <div class="form-group row">
+                            <div class="col-xs-9">
+                                <input type="text" class="form-control form-control-lg" name="" id="" placeholder="輸入e-mail訂閱電子報" required>
+                            </div>
+                            <div class="col-xs-3">
+                                <button class="btn btn-main btn-block">訂閱</button>
+                            </div>                                   
+                        </div>                                
+                    </form> 
+                </div>
+                <!-- Modal Footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">關閉視窗</button>
+                </div>
+            </div>    
+        </div>
+    </div>
+    <!-- /Modal 活動表下載 -->
+
+    <!-- jquery -->
+    <script src="assets/plugins/jquery/jquery-2.2.4.min.js"></script>
+    <!-- scripts -->
+    <script type="text/javascript" src="assets/js/scripts.js"></script>
+    <!-- sweetalert -->
+    <script type="text/javascript" src="assets/plugins/sweetalert2/sweetalert2.min.js"></script>
+    <!-- facebook 
+    <script>
+        (function(d, s, id) { 
+        　var js, fjs = d.getElementsByTagName(s)[0];
+        　if (d.getElementById(id)) return;
+        　js = d.createElement(s); js.id = id;
+        　js.src = "//connect.facebook.net/zh_TW/all.js#xfbml=1";
+        　fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>-->
+</body>
+</html>
