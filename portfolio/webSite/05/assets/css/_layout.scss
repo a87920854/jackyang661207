@@ -649,6 +649,7 @@
 	background-color: #fff;
 	padding: 10px;
 	border: 2px solid $title-color;
+	text-align: center;
 }
 .cube-box.green{
 	background-color: #666d43;
@@ -727,7 +728,7 @@
 }
 .page-location-section-slider{
 	width: 100%;
-	max-width: 1000px;
+	max-width: 1200px;
 	text-align: center;
 }
 .page-location-section-slider .flex-control-thumbs{
@@ -984,7 +985,7 @@
 	margin-bottom: 30px;
 	transition: transform .3s, box-shadow .3s;
 	&:hover{
-		transform: translateY(-10px);
+		transform: translateY(-5px);
 		box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
 	}
 }
@@ -1069,6 +1070,7 @@
 .list-item-title{
 	font-size: 20px;
 	font-family: $title-font;
+	color: $title-color;
 	line-height: 1.4;
 	margin-bottom: 15px;
 }
@@ -1550,7 +1552,10 @@
 	}
 }
 .page-campaign-list{
-
+	& .list-item-inner{
+		border: 0;
+		padding: 10px;
+	}
 }
 .list-search-text{
 	margin-top: 8px;
@@ -1598,14 +1603,17 @@
 	}
 }
 /* 單身會員 */
-.page-member-kv{} 
+.page-member-kv{
+	padding: 70px 0;
+} 
 .dmn-member{
 	& .dmn-box{
-		margin-bottom: 8px;
+		margin-bottom: 12px;
+		outline: 1px solid rgba(0,0,0,0.03);
 	}
 }
 .dmn-member-search{
-	margin:0 auto 8px auto;
+	margin:0 auto 30px auto;
 }
 .dmn-member-search-box{
 	height: 54px;
@@ -1827,6 +1835,373 @@
 }
 .member-profile-self-txt{
 	line-height: 1.6;
+}
+/* 婚戀顧問團隊 */
+.page-aboutus{
+	background-color: #ddded0;
+	background-image: url(../images/decoration_flower.png),url(../images/bg_aboutus.jpg);
+	background-position: center bottom,center top;
+	background-size: 100% auto,100% auto;
+	background-repeat: no-repeat,no-repeat;
+}
+.aboutus-kv-text .sub-title{
+	text-align: center;
+	color: $text-color;
+	font-family: $title-font;
+	letter-spacing: 1px;
+	line-height: 1.7;
+	font-size: 15px;
+	margin: 0;
+}
+.aboutus-secretary{
+	font-size: 0;
+	margin-top: 70px;
+	text-align: center;
+}
+.aboutus-secretary-item{
+	display: inline-block;
+	width: 33.33333%;
+	font-size: 16px;
+	padding: 0 10px;
+}
+.aboutus-secretary-box{
+	background-color: #fff;
+	padding: 12px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+.aboutus-secretary-photo{
+	position: relative;
+	width: 100%;
+	height: 0;
+	margin-bottom: 30px;
+	padding-top: 90%;
+	overflow: hidden;
+	& img{
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		margin: auto;
+		width: 100%;
+	}
+}
+.aboutus-secretary-text-title{
+	color: $title-color;
+	font-family: $title-font;
+	font-size: 28px;
+	margin-bottom: 0px;
+	letter-spacing: 1px;
+}
+.aboutus-secretary-text-job{
+	font-size: 16px;
+	color: $aid-color1;
+	font-family: $normal-font;
+	letter-spacing: 2px;
+	margin-bottom: 20px;
+}
+.aboutus-secretary-text-words{
+	font-size: 14px;
+	width: 85%;
+	height: 60px;
+	overflow: hidden;
+	margin: auto;
+}
+.aboutus-secretary-text-social{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	& .dmn-social-icon{
+		text-align: center;
+	}
+}
+/* 企業聯誼 */
+.page-business-kv{
+	height: 900px;
+	background-image: url(../images/bg_business.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center top;
+	text-align: center;
+	& .dmn-title-big{
+		line-height: 0.8;
+		&::after{
+			margin: 10px auto 0px auto;
+		}
+	}
+}
+.page-business-title{
+	max-width: 260px;
+	margin: 0 auto 30px auto;
+	text-align: center;
+	& img{
+		width: 100%;
+	}
+}
+.page-business-kv-txt{
+	color: #fff;
+	line-height: 1.6;
+	letter-spacing: 1px;
+	text-align: center;
+	margin: 0;
+}
+.dmn-title-type2 + .dmn-subtitle-type1{
+		margin-top: -30px;
+}
+.dmn-subtitle-type1{
+	& .contact-text{
+		margin-bottom: 0;
+	}
+}
+.page-business-service{
+	text-align: center;
+}
+.page-business-item{
+	padding: 0 20px;
+	text-align: center;
+	color: #fff;
+}
+.page-business-item-photo{
+	margin-bottom: 30px;
+	& img{
+		width: 100%;
+		max-width: 100%;
+	}
+}
+.page-business-item-title{
+	margin-bottom: 15px;
+	font-size: 24px;
+	letter-spacing: 4px;
+	font-family: $title-font;
+}
+.page-business-sec{
+	& .list-item:hover{
+		transform: none;
+		box-shadow: none;
+	}
+	& .list-item-title{
+		letter-spacing: 3px;
+		font-size: 24px;
+	}
+	& .list-item-text{
+		height: 100px;
+	}
+}
+.contact-text{
+	text-align: center;
+	display: inline-block;
+	margin: 20px auto 20px auto;
+	padding: 6px 18px;
+	color: $aid-color1;
+	font-size: 20px;
+	font-family: $title-font;
+	border: 2px solid $aid-color1;
+}
+/* 關於我們 */
+.page-dmn-kv{
+	text-align: center;
+	height: 800px;
+	background-image: url(../images/bg_dmn.jpg);
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	& .dmn-title-big{
+		margin-top: 200px;		
+	}
+}
+.page-dmn-five-img{
+	width: 65%;
+	float: left;
+	text-align: center;
+}
+.page-dmn-five-txt{
+	width:35%;
+	float: left;
+	text-align: center;
+	padding: 0 15px;
+}
+.page-dmn-five-txt-box{	
+	margin-top: 150px;
+	display: block;
+	padding: 80px 20px;
+	border: 2px solid #fff;	
+	& .txt-promo{
+		font-family: $title-font;
+		line-height: 2.2;
+		letter-spacing: 4px;
+		color: #fff;
+		margin: 0;
+		font-size: 16px;
+	}
+}
+.page-dmn-five-img-ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	font-size: 0;
+	& li{
+		padding: 0 10px;
+		display: inline-block;
+		& img{
+			max-width: 298px;
+		}
+	}
+
+}
+.page-dmn-kv-txt{
+	color: #fff;
+	font-family: $normal-font;
+	line-height: 1.6;
+	letter-spacing: 1px;
+	font-size: 16px;
+}
+.slider-dmn-block{
+	& .owl-item{
+		padding: 8px 8px;
+	}
+} 
+.index-dmn-bottom-register2{
+	text-align: center;
+	& .confirm{
+		color: #fff;
+		& a{
+			color: #fff;
+		}
+	}
+}
+.dmn-year{
+	color: $aid-color1;
+	font-size: 32px;
+	font-family: $title-font;
+	position: absolute;
+}
+.dmn-history{
+	position: relative;
+	height: 560px;
+	list-style: none;
+	padding: 0;
+	margin: 80px 0 0 0;
+	color: #fff;
+	&::before{
+		content: '';
+		display: block;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 10px;
+		right: 0;
+		margin: auto;
+		height: 16px;
+		background-image: linear-gradient(to right, $aid-color1 95%, transparent 100%);
+	}
+	& li{
+		position: absolute;
+		display: block;
+		width: 31%;
+		&::after{
+			display: table;
+			content: '';
+			clear: both;
+		}
+	}
+	& li:nth-child(1){
+		left: 0%;
+	}
+	& li:nth-child(2){
+		left: 18%;
+	}
+	& li:nth-child(3){
+		left: 35%;
+	}
+	& li:nth-child(4){
+		left: 53%;
+	}
+	& li:nth-child(5){
+		left: 70%;
+	}
+	& li:nth-child(odd){
+		top: 0;
+		& .dmn-year{
+			top: 290px;
+			left: -15px;
+		}
+	}
+	& li:nth-child(even){
+		bottom: 0;
+		& .dmn-year{
+			bottom: 290px;
+			left: -15px;
+		}
+	}
+	& li:nth-child(even) .dmn-history-photo::after{
+		bottom: 248px;
+	}
+	& li:nth-child(odd) .dmn-history-photo::after{		
+		top: 280px;
+	}
+	& li:nth-child(even) .dmn-history-photo::before{
+		bottom: 120px;
+		left: 15px;
+		transform: rotate(-25deg);
+		transform-origin: left top;
+	}
+	& li:nth-child(odd) .dmn-history-photo::before{		
+		top:120px;
+		left: 15px;
+		transform: rotate(25deg);
+		transform-origin: left bottom;
+	}
+}
+.dmn-history-photo{
+	width: 35%;
+	float: left;
+	& img{
+		max-width: 100%;
+		z-index: 2;
+		position: relative;
+	}
+	&::before{
+		content: '';
+		position: absolute;
+		width: 1px;
+		height: 150px;
+		display: block;
+		background-color: $aid-color1;		
+	}
+	&::after{
+		content: '';
+		position: absolute;
+		transform: translateY(-50%);
+		width: 32px;
+		height: 32px;
+		border-radius: 50%;
+		display: block;
+		border: 6px solid $aid-color1;
+		background-color: #fff;
+	}
+	
+}
+.dmn-history-txt{
+	width: 65%;
+	padding: 0 0 0 5px;
+	margin: 0;
+	float: left;
+	font-size: 14px;
+	& dt{
+		float: left;
+		width: 35px;
+		text-align: right;
+		padding-right: 5px;
+		color: $aid-color1;
+	}
+	& dd{
+		float: left;
+		width: calc(100% - 35px);		
+	}
+}
+/* 跳出視窗form */
+.dmn-apply{
+	padding: 0px 8px;	
 }
 
 /* footer */ 

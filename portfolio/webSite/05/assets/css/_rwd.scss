@@ -1,3 +1,23 @@
+@media (max-width: 1500px) {
+    .page-dmn-five-img, .page-dmn-five-txt{
+        width: 100%;
+        float: none;
+    }
+    .page-dmn-five-img + .page-dmn-five-txt{
+        margin-top: 20px;
+    }
+    .page-dmn-five-img-ul li{
+        margin-bottom: 20px;
+    }
+    .page-dmn-five-txt-box{
+        margin-top: 0;
+        width: 100%;
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 40px 20px;
+    }
+}
 @media (max-width: 1300px) {
     #header .nav-logo{
         display: none;
@@ -5,6 +25,101 @@
     .features-list li + li::after{
         display: none;
     }
+    .dmn-history{        
+        width: 100%;
+        max-width: 900px;
+        height: auto;
+        margin: 80px auto 0 auto; 
+        padding-left: 100px;
+        &::before{      
+            top: 0;
+            bottom: auto;
+            left: 15px;
+            right: auto;
+            margin: auto;
+            width: 12px;
+            height: 100%;
+            background-image: linear-gradient(to bottom, transparent 0%, $aid-color1 3%, $aid-color1 97%, transparent 100%);
+        }
+        & li{
+            position: relative;
+            display: block;
+            width: 100%;           		
+        }
+        & li + li{
+            margin-top: 30px;
+        }
+        & li:nth-child(1){
+            left: auto;
+        }
+        & li:nth-child(2){
+            left: auto;
+        }
+        & li:nth-child(3){
+            left: auto;
+        }
+        & li:nth-child(4){
+            left: auto;
+        }
+        & li:nth-child(5){
+            left: auto;
+        }
+        & li:nth-child(odd){
+            top: auto;
+            & .dmn-year{
+                top: auto;
+                left: auto;
+                position: relative;
+            }
+        }
+        & li:nth-child(even){
+            bottom: auto;
+            & .dmn-year{
+                bottom: auto;
+                left: auto;                
+            }
+        }
+        & li:nth-child(even) .dmn-history-photo::after{
+            bottom: auto;
+        }
+        & li:nth-child(odd) .dmn-history-photo::after{		
+            top: auto;
+        }
+        & li:nth-child(even) .dmn-history-photo::before{
+            bottom: auto;
+            left: auto;
+            transform: rotate(0deg);
+            transform-origin: left top;
+        }
+        & li:nth-child(odd) .dmn-history-photo::before{		
+            top:auto;
+            left: auto;
+            transform: rotate(0deg);
+            transform-origin: left bottom;
+        }
+    }
+    .dmn-year{
+        position: relative;
+        margin-bottom: 5px;
+    }
+    .dmn-history-photo{
+        width: 14%;
+        position: relative;
+        &::before{
+            left: -95px !important;
+            top: 50% !important;
+            width: 120px;
+            height: 1px;
+        }  
+        &::after{
+            left: -95px !important;
+            top: 50% !important;
+        }    
+    }
+    .dmn-history-txt{
+        width: 86%;
+        padding-left: 10px;
+    }    
 }
 @media (max-width: 1200px) {
     .dmn-blog-event-photo{
@@ -68,6 +183,14 @@
     }
     .news-list-photo{
         height: 170px;
+    }
+    .aboutus-kv-text{
+        & .sub-title br{
+            display: none;
+        }
+    }
+    .aboutus-secretary-text-words{
+        height: 80px;
     }
 }
 @media (max-width: 992px) {
@@ -359,6 +482,28 @@
         line-height: 1.2;
         margin-top: 10px;
     }
+    .aboutus-secretary-item{
+        width: 50%;
+    }
+    .dmn-about-side1{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .page-business-item{
+        margin-bottom: 20px;
+    }
+    .page-business-item-word{
+        height: 50px;
+    }
+    .page-business-sec .list-item-text{
+        height: auto;
+    }
+    .restaurant-bg .dmn-subtitle-type1 br{
+        display: none;
+    }
+    .page-member-kv{
+        padding: 40px 0;
+    }
 }
 @media (max-width: 767px) {    
     section{
@@ -413,6 +558,11 @@
     }
     .member-profile-photo{
         margin-bottom: 60px;
+    }
+    .dmn-apply{
+        & .form-group > div + div{
+            margin-top: 15px;
+        }
     }
 }
 @media (max-width: 630px) {
@@ -660,6 +810,64 @@
     .member-photo-slider .flex-control-nav.flex-control-thumbs li{
         height: 90px !important;
     }
+    .aboutus-secretary{
+        margin-top: 30px;
+    }
+    .aboutus-secretary-item{
+        padding: 0;
+        width: 100%;
+    }
+    .page-dmn-kv{
+        height: 650px;
+        background-image: url(../images/bg_dmn_m.jpg);
+    }
+    .page-dmn-kv .dmn-title-big{
+        margin-top: 200px;
+    }
+    .page-dmn-kv-txt{
+        font-size: 14px;
+    }
+    .dmn-history{
+        padding-left: 60px;
+        &::before{
+            width: 10px;
+        }
+    }
+    .dmn-history li + li{
+        margin-top: 50px;
+    }
+    .dmn-year{
+        line-height: 1;    
+    }
+    .dmn-history-photo{
+        width: 100%;
+        margin-bottom: 10px;
+        & img{
+            max-width: 120px;
+        }        
+        &::before{
+            left: -55px !important;
+            top: 50% !important;
+            width: 70px;
+            height: 1px;
+        }  
+        &::after{
+            left: -55px !important;
+            top: 50% !important;
+        }    
+    }
+    .dmn-history-txt{
+        width: 100%;
+        padding-left: 0px;
+    }
+    .dmn-history-txt dt{        
+        text-align: left;       
+    }
+    
+    .page-dmn-five-txt-box .txt-promo br{
+        display: none;
+    }
+
 }
 @media (max-width: 320px) {
     .list-table{
