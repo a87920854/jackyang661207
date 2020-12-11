@@ -5,17 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta http-equiv="Content-Language" content="zh-tw">
-    <meta name="description" content="DateMeNow跟我約會吧提供精準對象配對、優質顧問式服務、多元聯誼活動、愛情諮商幫你找到幸福戀情，一起見證無數對新人的甜蜜宣言在DateMeNow跟我約會吧找到屬於自己的愛情。">
-    <meta name="keywords" content="DateMeNow,約會, 交友, 單身, 幸福, 一對一約會, 聯誼, 相親">
+    <meta name="description" content="如果你現在是單身，我們可以幫你找個伴,一起分享、一起感動、一起開心、一起抱怨、一起奮鬥、一起變老,我們是專業的約會團隊,想要了解你、想要找到你的理想伴侶,讓你變得更有自信、變得更好、變得更完整,讓我們和你一起努力，找到最好的那個他/她。">
+    <meta name="keywords" content="交友,相親,單身,約會,結婚,聯誼,活動,相親約會,一對一,戀愛,配對,高效約會,質感男女,愛情,男朋友,女朋友">
     <link rel="icon" type="image/ico" href="assets/images/favicon.ico">
-    <title>幸福故事|DateMeNow跟我約會吧優質交友聯誼網站</title>
+    <title>關於我們|DateMeNow跟我約會吧優質交友聯誼網站</title>
     <!-- og tag -->
-    <meta property="og:title" content="幸福故事|DateMeNow跟我約會吧優質交友聯誼網站"/>
-    <meta property="og:description" content="DateMeNow跟我約會吧提供精準對象配對、優質顧問式服務、多元聯誼活動、愛情諮商幫你找到幸福戀情，一起見證無數對新人的甜蜜宣言在DateMeNow跟我約會吧找到屬於自己的愛情。"/>
-    <meta property="og:type" content="article"/>
+    <meta property="og:title" content="關於我們|DateMeNow跟我約會吧優質交友聯誼網站"/>
+    <meta property="og:description" content="如果你現在是單身，我們可以幫你找個伴,一起分享、一起感動、一起開心、一起抱怨、一起奮鬥、一起變老,我們是專業的約會團隊,想要了解你、想要找到你的理想伴侶,讓你變得更有自信、變得更好、變得更完整,讓我們和你一起努力，找到最好的那個他/她。"/>
+    <meta property="og:type" content="website"/>
     <meta property="og:site_name" content="DateMeNow跟我約會吧"/>
     <meta property="og:url" content="https://www.datemenow.com.tw"/>
-    <meta property="og:image" content="https://www.datemenow.com.tw/assets/images/og/og_happiness.jpg"/>
+    <meta property="og:image" content="https://www.datemenow.com.tw/assets/images/og/og_index.jpg"/>
     <!-- bootstrap core css -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
     <!-- plugin css -->
@@ -24,6 +24,9 @@
     <link href="assets/css/style.css" rel="stylesheet">
     <!-- sweetalert -->
     <link href="assets/plugins/sweetalert2/sweetalert2.css" rel="stylesheet">
+    <!-- REVOLUTION SLIDER -->
+    <link href="assets/plugins/slider.revolution/css/extralayers.css" rel="stylesheet" type="text/css" />
+    <link href="assets/plugins/slider.revolution/css/settings.css" rel="stylesheet" type="text/css" />
 
 </head>
 <body class="enable-animation">
@@ -41,7 +44,7 @@
                             <i class="fa fa-phone"></i>
                             <span>客服<br>0800-302333</span>
                         </a>
-                        <div class="dmn-brand-logo"><a class="navbar-brand" href="index.html"><img class="header-dmn-logo" src="assets/images/dmn-logo.png" title="DateMeNow跟我約會吧" alt="DateMeNow跟我約會吧-讓美好的你遇見美好的她"></a></div>
+                        <h1 class="dmn-brand-logo"><a class="navbar-brand" href="index.html"><img class="header-dmn-logo" src="assets/images/dmn-logo.png" title="DateMeNow跟我約會吧" alt="DateMeNow跟我約會吧-讓美好的你遇見美好的她"></a></h1>
                         <a class="header-dmn-sideicon dmn-login" href="login.html">
                             <i class="fa fa-sign-in"></i>
                             <span>登入<br>註冊</span>
@@ -98,239 +101,369 @@
         <section class="dmn-breadcrumb">
             <div class="container">
                 <ol class="breadcrumb">
-                    <li><a href="index.html">首頁</a></li>              
-                    <li class="active">幸福故事</li>
+                    <li><a href="index.html">首頁</a></li>
+                    <li class="active">關於我們</li>
                 </ol>
             </div>
         </section>        
         <!-- /麵包屑 -->
 
-        <!-- 幸福故事主視覺 -->
-        <section class="page-happiness-kv bg-attachment-fixed">
-            <div class="container">                
-                <h1 class="dmn-title-big text-white">
-                    <span class="display-block margin-bottom-10">DateMeNow 跟我約會吧-幫你找到幸福戀情</span>
-                    從決定相信我們的這一刻開始…                             
-                </h1>
-                <h2 class="subtitle">DateMeNow 提供您精準對象配對<br>
-                    優質顧問式服務…等相關交友服務<br>
-                    我們如此用心，只為讓您擁有更幸福生活</h2>
+        <!-- 關於我們主視覺 -->
+        <section class="page-dmn-kv">
+            <div class="container">               
+                <h1 class="dmn-title-big text-white wow fadeInDown" data-wow-delay="0.1s">                    
+                    為你打造質感男女約會
+                    <span>新的戀情，從這裡開始</span>                           
+                </h1> 
+                <h2 class="page-dmn-kv-txt">
+                    如果妳現在是單身，我們可以幫妳找個伴<br>
+                    一起分享、一起感動、一起開心<br>
+                    一起抱怨、一起奮鬥、一起變老
+                </h2>
             </div>
         </section>
-        <!-- /幸福故事主視覺 -->
-
-        <!-- 幸福故事 -->
-        <section class="page-happiness-list color-bg3">
-            <div class="container">
-                <div class="row">
-
-                    <div class="col-md-4">
-                        <div class="list-item"> 
-                            <a class="list-item-link" href="happiness_page.html">                           
-                                <div class="dmn-label label-type1">                                
-                                    <span>熱戀中</span>
-                                </div>
-                                <div class="list-item-inner">   
-                                    <div class="list-item-photo">                                
-                                        <img src="https://www.springclub.com.tw/upload_image/2017511134039_springweb_fun3_558.jpg" alt="">                                
-                                    </div>                            
-                                    <div class="list-item-text">
-                                        <h3 class="list-item-title">能跟一個相處的時候即使不說話也很舒服的人結婚！</h3>
-                                        <span class="list-item-subtitle">陳'S / 賴'R</span>
-                                        <p>首先非常感謝Sunny姊，如果沒有當時的一通電話我可能就此錯過了現在身旁的另一半，其實一開始我很排斥１對１排約，認為兩個彼此陌生的人實在很難聊得起來只有尬聊而已</p>
-                                    </div>                                
-                                </div>
-                            </a>                          
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="list-item"> 
-                            <a class="list-item-link" href="happiness_page.html">                           
-                                <div class="dmn-label label-type2">                                
-                                    <span>結婚啦</span>
-                                </div>
-                                <div class="list-item-inner">   
-                                    <div class="list-item-photo">                                
-                                        <img src="https://www.springclub.com.tw/upload_image/2019626172422_springweb_fun3_231.jpg" alt="">                                
-                                    </div>                            
-                                    <div class="list-item-text">
-                                        <h3 class="list-item-title">能跟一個相處的時候即使不說話也很舒服的人結婚！</h3>
-                                        <span class="list-item-subtitle">陳'S / 賴'R</span>
-                                        <p>首先非常感謝Sunny姊，如果沒有當時的一通電話我可能就此錯過了現在身旁的另一半，其實一開始我很排斥１對１排約，認為兩個彼此陌生的人實在很難聊得起來只有尬聊而已</p>
-                                    </div>                                
-                                </div>
-                            </a>                          
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="list-item"> 
-                            <a class="list-item-link" href="happiness_page.html">                           
-                                <div class="dmn-label label-type3">                                
-                                    <span>心得</span>
-                                </div>
-                                <div class="list-item-inner">   
-                                    <div class="list-item-photo">                                
-                                        <img src="https://www.springclub.com.tw/upload_image/2017511134140_springweb_fun3_565.jpg" alt="">                                
-                                    </div>                            
-                                    <div class="list-item-text">
-                                        <h3 class="list-item-title">能跟一個相處的時候即使不</h3>
-                                        <span class="list-item-subtitle">陳'S / 賴'R</span>
-                                        <p>首先非常感謝Sunny姊，如果沒有當時的一通電話我可能就此錯過了現在身旁的另一半，其實一開始我很排斥１對１排約，認為兩個彼此陌生的人實在很難聊得起來只有尬聊而已</p>
-                                    </div>                                
-                                </div>
-                            </a>                          
-                        </div>
-                    </div> 
-
-                    <div class="col-md-4">
-                        <div class="list-item"> 
-                            <a class="list-item-link" href="happiness_page.html">                           
-                                <div class="dmn-label label-type1">                                
-                                    <span>熱戀中</span>
-                                </div>
-                                <div class="list-item-inner">   
-                                    <div class="list-item-photo">                                
-                                        <img src="https://www.springclub.com.tw/upload_image/2017511134039_springweb_fun3_558.jpg" alt="">                                
-                                    </div>                            
-                                    <div class="list-item-text">
-                                        <h3 class="list-item-title">能跟一個相處的時候即使不說話也很舒服的人結婚！</h3>
-                                        <span class="list-item-subtitle">陳'S / 賴'R</span>
-                                        <p>首先非常感謝Sunny姊，如果沒有當時的一通電話我可能就此錯過了現在身旁的另一半，其實一開始我很排斥１對１排約，認為兩個彼此陌生的人實在很難聊得起來只有尬聊而已</p>
-                                    </div>                                
-                                </div>
-                            </a>                          
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="list-item"> 
-                            <a class="list-item-link" href="happiness_page.html">                           
-                                <div class="dmn-label label-type2">                                
-                                    <span>結婚啦</span>
-                                </div>
-                                <div class="list-item-inner">   
-                                    <div class="list-item-photo">                                
-                                        <img src="https://www.springclub.com.tw/upload_image/2019626172422_springweb_fun3_231.jpg" alt="">                                
-                                    </div>                            
-                                    <div class="list-item-text">
-                                        <h3 class="list-item-title">能跟一個相處的時候即使不說話也很舒服的人結婚！</h3>
-                                        <span class="list-item-subtitle">陳'S / 賴'R</span>
-                                        <p>首先非常感謝Sunny姊，如果沒有當時的一通電話我可能就此錯過了現在身旁的另一半，其實一開始我很排斥１對１排約，認為兩個彼此陌生的人實在很難聊得起來只有尬聊而已</p>
-                                    </div>                                
-                                </div>
-                            </a>                          
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="list-item"> 
-                            <a class="list-item-link" href="happiness_page.html">                           
-                                <div class="dmn-label label-type3">                                
-                                    <span>心得</span>
-                                </div>
-                                <div class="list-item-inner">   
-                                    <div class="list-item-photo">                                
-                                        <img src="https://www.springclub.com.tw/upload_image/2017511134140_springweb_fun3_565.jpg" alt="">                                
-                                    </div>                            
-                                    <div class="list-item-text">
-                                        <h3 class="list-item-title">能跟一個相處的時候即使不</h3>
-                                        <span class="list-item-subtitle">陳'S / 賴'R</span>
-                                        <p>首先非常感謝Sunny姊，如果沒有當時的一通電話我可能就此錯過了現在身旁的另一半，其實一開始我很排斥１對１排約，認為兩個彼此陌生的人實在很難聊得起來只有尬聊而已</p>
-                                    </div>                                
-                                </div>
-                            </a>                          
-                        </div>
-                    </div> 
-
-                    <div class="col-md-4">
-                        <div class="list-item"> 
-                            <a class="list-item-link" href="happiness_page.html">                           
-                                <div class="dmn-label label-type1">                                
-                                    <span>熱戀中</span>
-                                </div>
-                                <div class="list-item-inner">   
-                                    <div class="list-item-photo">                                
-                                        <img src="https://www.springclub.com.tw/upload_image/2017511134039_springweb_fun3_558.jpg" alt="">                                
-                                    </div>                            
-                                    <div class="list-item-text">
-                                        <h3 class="list-item-title">能跟一個相處的時候即使不說話也很舒服的人結婚！</h3>
-                                        <span class="list-item-subtitle">陳'S / 賴'R</span>
-                                        <p>首先非常感謝Sunny姊，如果沒有當時的一通電話我可能就此錯過了現在身旁的另一半，其實一開始我很排斥１對１排約，認為兩個彼此陌生的人實在很難聊得起來只有尬聊而已</p>
-                                    </div>                                
-                                </div>
-                            </a>                          
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="list-item"> 
-                            <a class="list-item-link" href="happiness_page.html">                           
-                                <div class="dmn-label label-type2">                                
-                                    <span>結婚啦</span>
-                                </div>
-                                <div class="list-item-inner">   
-                                    <div class="list-item-photo">                                
-                                        <img src="https://www.springclub.com.tw/upload_image/2019626172422_springweb_fun3_231.jpg" alt="">                                
-                                    </div>                            
-                                    <div class="list-item-text">
-                                        <h3 class="list-item-title">能跟一個相處的時候即使不說話也很舒服的人結婚！</h3>
-                                        <span class="list-item-subtitle">陳'S / 賴'R</span>
-                                        <p>首先非常感謝Sunny姊，如果沒有當時的一通電話我可能就此錯過了現在身旁的另一半，其實一開始我很排斥１對１排約，認為兩個彼此陌生的人實在很難聊得起來只有尬聊而已</p>
-                                    </div>                                
-                                </div>
-                            </a>                          
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="list-item"> 
-                            <a class="list-item-link" href="happiness_page.html">                           
-                                <div class="dmn-label label-type3">                                
-                                    <span>心得</span>
-                                </div>
-                                <div class="list-item-inner">   
-                                    <div class="list-item-photo">                                
-                                        <img src="https://www.springclub.com.tw/upload_image/2017511134140_springweb_fun3_565.jpg" alt="">                                
-                                    </div>                            
-                                    <div class="list-item-text">
-                                        <h3 class="list-item-title">能跟一個相處的時候即使不</h3>
-                                        <span class="list-item-subtitle">陳'S / 賴'R</span>
-                                        <p>首先非常感謝Sunny姊，如果沒有當時的一通電話我可能就此錯過了現在身旁的另一半，其實一開始我很排斥１對１排約，認為兩個彼此陌生的人實在很難聊得起來只有尬聊而已</p>
-                                    </div>                                
-                                </div>
-                            </a>                          
-                        </div>
+        <!-- /關於我們主視覺 -->
+        
+        <!-- 關於我們5個妳 -->
+        <section class="page-dmn-five sub-bg2">
+            <div class="container-xxlg">
+                <div class="page-dmn-five-img">
+                    <ul class="page-dmn-five-img-ul">
+                        <li><img src="assets/images/dmn_five01.png" alt="喜歡旅行的妳，想要有人一起看風景"></li>
+                        <li><img src="assets/images/dmn_five02.png" alt="喜歡旅行的妳，想要有人一起看風景"></li>
+                        <li><img src="assets/images/dmn_five03.png" alt="喜歡旅行的妳，想要有人一起看風景"></li>
+                        <li><img src="assets/images/dmn_five04.png" alt="喜歡旅行的妳，想要有人一起看風景"></li>
+                        <li><img src="assets/images/dmn_five05.png" alt="喜歡旅行的妳，想要有人一起看風景"></li>
+                    </ul>
+                </div>
+                <div class="page-dmn-five-txt">
+                    <div class="page-dmn-five-txt-box">
+                        <h3 class="txt-promo">
+                            我們是專業的約會團隊，<br>
+                            想要了解妳、想要找到妳的理想伴侶，<br>
+                            讓妳變得更有自信、變得更好、變得更完整，<br>
+                            讓我們和妳一起努力，找到最好的那個他/她
+                        </h3>
                     </div>
                 </div>
-                <nav class="text-center">
-                    <ul class="pagination pagination-lg">
-                        <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
-                        <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>      
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                        <li><a href="#">4</a></li>
-                        <li><a href="#">5</a></li>
-                        <li>
-                            <a href="#" aria-label="Next">
-                              <span aria-hidden="true">&raquo;</span>
-                            </a>
-                        </li>              
-                    </ul>
-                </nav>
             </div>
         </section>
-        <!-- /幸福故事 -->
+        <!-- /關於我們5個妳 -->
 
-        <!-- 底下註冊 -->
-        <section class="index-dmn-bottom-register flower-bg7">
+        <!-- DateMeNow特色 -->
+        <section class="index-dmn-features sub-bg1">
             <div class="container">
                 <h3 class="dmn-title-type2 wow fadeInDown" data-wow-delay="0.1s">
-                    想要幸福，即刻預約
+                    DateMeNow 特色
+                    <span>Features</span>
+                </h3>
+                <div class="features-list-block">
+                    <ul class="features-list">
+                        <li>
+                            <div class="features-icon">
+                                <img src="assets/images/features/trophy.svg" alt="黃金陣容">
+                            </div>
+                            <div class="features-small-title">黃金陣容</div>                       
+                            <div class="features-txt">專業婚戀顧問團隊<br>尋愛路上有我幫妳</div>
+                        </li>
+                        <li>
+                            <div class="features-icon">
+                                <img src="assets/images/features/authentication.svg" alt="安全把關">
+                            </div>
+                            <div class="features-small-title">安全把關</div>                       
+                            <div class="features-txt">重視會員單身身份<br>嚴格篩選安全無疑</div>
+                        </li>
+                        <li>
+                            <div class="features-icon">
+                                <img src="assets/images/features/couple.svg" alt="優質男女">
+                            </div>
+                            <div class="features-small-title">優質男女</div>                       
+                            <div class="features-txt">眾多優質單身男女<br>輕鬆自在擴大交友</div>
+                        </li>
+                        <li>
+                            <div class="features-icon">
+                                <img src="assets/images/features/lecture.svg" alt="個人魅力">
+                            </div>
+                            <div class="features-small-title">個人魅力</div>                       
+                            <div class="features-txt">專業師資單獨授課<br>培養個人自信魅力</div>
+                        </li>
+                        <li>
+                            <div class="features-icon">
+                                <img src="assets/images/features/reproduction.svg" alt="配對系統">
+                            </div>
+                            <div class="features-small-title">配對系統</div>                       
+                            <div class="features-txt">獨家設計配對系統<br>快速找尋適合對象</div>
+                        </li>
+                        <li>
+                            <div class="features-icon">
+                                <img src="assets/images/features/confetti.svg" alt="多元活動">
+                            </div>
+                            <div class="features-small-title">多元活動</div>                       
+                            <div class="features-txt">豐富有趣聯誼活動<br>歡樂互動中發現愛</div>
+                        </li>
+                        <li>
+                            <div class="features-icon">
+                                <img src="assets/images/features/worldwide.svg" alt="百大企業">
+                            </div>
+                            <div class="features-small-title">百大企業</div>                       
+                            <div class="features-txt">企業團體公家機關<br>多家指名聯誼合作</div>
+                        </li>
+                        <li>
+                            <div class="features-icon">
+                                <img src="assets/images/features/sofa.svg" alt="時尚環境">
+                            </div>
+                            <div class="features-small-title">時尚環境</div>                       
+                            <div class="features-txt">時尚設計多樣風格<br>讓妳浪漫邂逅愛情</div>
+                        </li>
+                        <li>
+                            <div class="features-icon">
+                                <img src="assets/images/features/wedding-couple.svg" alt="幸福故事">
+                            </div>
+                            <div class="features-small-title">幸福故事</div>                       
+                            <div class="features-txt">在這裡我們結婚啦<br>幸福就是如此簡單</div>
+                        </li>                                            
+                    </ul>                    
+                </div>
+               
+            </div>
+        </section>
+        <!-- /DateMeNow特色 -->
+
+        <!-- DateMeNow和妳的緣份，不是偶然 -->
+        <section class="page-dmn-happiness sub-bg2">
+            <div class="container-lg">
+                <h2 class="dmn-title-type1 text-white wow fadeInDown" data-wow-delay="0.1s">
+                    DateMeNow和妳的緣份，不是偶然
+                </h2>
+                <div class="slider-dmn-block">
+                    <div class="owl-carousel owl-carousel-init owl-carousel-white" data-plugin-options='{"singleItem": false, "items": "3", "stopOnHover":false, "autoPlay":4000, "autoHeight": false, "navigation": false, "pagination": true, "itemsMobile":[479,1], "itemsTablet":[768,2], "itemsDesktop":[1199,3]}'>
+                        <div class="list-item"> 
+                            <a class="list-item-link" href="happiness_page.html">                           
+                                <div class="dmn-label label-type1">                                
+                                    <span>熱戀中</span>
+                                </div>
+                                <div class="list-item-inner">   
+                                    <div class="list-item-photo">                                
+                                        <img src="https://www.springclub.com.tw/upload_image/2017511134039_springweb_fun3_558.jpg" alt="">                                
+                                    </div>                            
+                                    <div class="list-item-text">
+                                        <h3 class="list-item-title">能跟一個相處的時候即使不說話也很舒服的人結婚！</h3>
+                                        <span class="list-item-subtitle">陳'S / 賴'R</span>
+                                        <p>首先非常感謝Sunny姊，如果沒有當時的一通電話我可能就此錯過了現在身旁的另一半，其實一開始我很排斥１對１排約，認為兩個彼此陌生的人實在很難聊得起來只有尬聊而已</p>
+                                    </div>                                
+                                </div>
+                            </a>                          
+                        </div>
+
+                        <div class="list-item"> 
+                            <a class="list-item-link" href="happiness_page.html">                           
+                                <div class="dmn-label label-type2">                                
+                                    <span>結婚啦</span>
+                                </div>
+                                <div class="list-item-inner">   
+                                    <div class="list-item-photo">                                
+                                        <img src="https://www.springclub.com.tw/upload_image/2019626172422_springweb_fun3_231.jpg" alt="">                                
+                                    </div>                            
+                                    <div class="list-item-text">
+                                        <h3 class="list-item-title">能跟一個相處的時候即使不說話也很舒服的人結婚！</h3>
+                                        <span class="list-item-subtitle">陳'S / 賴'R</span>
+                                        <p>首先非常感謝Sunny姊，如果沒有當時的一通電話我可能就此錯過了現在身旁的另一半，其實一開始我很排斥１對１排約，認為兩個彼此陌生的人實在很難聊得起來只有尬聊而已</p>
+                                    </div>                                
+                                </div>
+                            </a>                          
+                        </div>
+
+                        <div class="list-item"> 
+                            <a class="list-item-link" href="happiness_page.html">                           
+                                <div class="dmn-label label-type3">                                
+                                    <span>心得</span>
+                                </div>
+                                <div class="list-item-inner">   
+                                    <div class="list-item-photo">                                
+                                        <img src="https://www.springclub.com.tw/upload_image/2017511134140_springweb_fun3_565.jpg" alt="">                                
+                                    </div>                            
+                                    <div class="list-item-text">
+                                        <h3 class="list-item-title">能跟一個相處的時候即使不</h3>
+                                        <span class="list-item-subtitle">陳'S / 賴'R</span>
+                                        <p>首先非常感謝Sunny姊，如果沒有當時的一通電話我可能就此錯過了現在身旁的另一半，其實一開始我很排斥１對１排約，認為兩個彼此陌生的人實在很難聊得起來只有尬聊而已</p>
+                                    </div>                                
+                                </div>
+                            </a>                          
+                        </div>
+
+                        <div class="list-item"> 
+                            <a class="list-item-link" href="happiness_page.html">                           
+                                <div class="dmn-label label-type1">                                
+                                    <span>熱戀中</span>
+                                </div>
+                                <div class="list-item-inner">   
+                                    <div class="list-item-photo">                                
+                                        <img src="https://www.springclub.com.tw/upload_image/2017511134039_springweb_fun3_558.jpg" alt="">                                
+                                    </div>                            
+                                    <div class="list-item-text">
+                                        <h3 class="list-item-title">能跟一個相處的時候即使不說話也很舒服的人結婚！</h3>
+                                        <span class="list-item-subtitle">陳'S / 賴'R</span>
+                                        <p>首先非常感謝Sunny姊，如果沒有當時的一通電話我可能就此錯過了現在身旁的另一半，其實一開始我很排斥１對１排約，認為兩個彼此陌生的人實在很難聊得起來只有尬聊而已</p>
+                                    </div>                                
+                                </div>
+                            </a>                          
+                        </div>
+
+                        <div class="list-item"> 
+                            <a class="list-item-link" href="happiness_page.html">                           
+                                <div class="dmn-label label-type2">                                
+                                    <span>結婚啦</span>
+                                </div>
+                                <div class="list-item-inner">   
+                                    <div class="list-item-photo">                                
+                                        <img src="https://www.springclub.com.tw/upload_image/2019626172422_springweb_fun3_231.jpg" alt="">                                
+                                    </div>                            
+                                    <div class="list-item-text">
+                                        <h3 class="list-item-title">能跟一個相處的時候即使不說話也很舒服的人結婚！</h3>
+                                        <span class="list-item-subtitle">陳'S / 賴'R</span>
+                                        <p>首先非常感謝Sunny姊，如果沒有當時的一通電話我可能就此錯過了現在身旁的另一半，其實一開始我很排斥１對１排約，認為兩個彼此陌生的人實在很難聊得起來只有尬聊而已</p>
+                                    </div>                                
+                                </div>
+                            </a>                          
+                        </div>
+
+                        <div class="list-item"> 
+                            <a class="list-item-link" href="happiness_page.html">                           
+                                <div class="dmn-label label-type3">                                
+                                    <span>心得</span>
+                                </div>
+                                <div class="list-item-inner">   
+                                    <div class="list-item-photo">                                
+                                        <img src="https://www.springclub.com.tw/upload_image/2017511134140_springweb_fun3_565.jpg" alt="">                                
+                                    </div>                            
+                                    <div class="list-item-text">
+                                        <h3 class="list-item-title">能跟一個相處的時候即使不</h3>
+                                        <span class="list-item-subtitle">陳'S / 賴'R</span>
+                                        <p>首先非常感謝Sunny姊，如果沒有當時的一通電話我可能就此錯過了現在身旁的另一半，其實一開始我很排斥１對１排約，認為兩個彼此陌生的人實在很難聊得起來只有尬聊而已</p>
+                                    </div>                                
+                                </div>
+                            </a>                          
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /DateMeNow和妳的緣份，不是偶然 -->
+
+        <!-- DateMeNow的一切 -->
+        <section class="page-dmn-history restaurant-bg2">
+            <div class="container-xlg">
+                <h3 class="dmn-title-type1 text-white wow fadeInDown" data-wow-delay="0.1s">
+                    DateMeNow的一切
+                </h3>
+                <ul class="dmn-history">
+                    <li>
+                        <div class="dmn-year">2012</div>
+                        <div class="dmn-history-photo"><img src="assets/images/history_2012.png" alt="2012"></div>
+                        <dl class="dmn-history-txt">
+                            <dt>11月</dt>
+                            <dd>DateMeNow X文大 戀愛學院系列課程-品酒、料理達人、手做甜點、烏克麗麗…等</dd>
+                            <dt>8月</dt>
+                            <dd>環球影城「許願心鎖牆」活動</dd>
+                            <dt>8月</dt>
+                            <dd>「大A愛情連載劇」活動</dd>
+                            <dt>7月</dt>
+                            <dd>「超跑一日約會」活動</dd>
+                            <dt>7月</dt>
+                            <dd>DateMeNow交友網站正式上線</dd>
+                            <dt>2月</dt>
+                            <dd>DateMeNow粉絲團成立</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <div class="dmn-year">2013</div>
+                        <div class="dmn-history-photo"><img src="assets/images/history_2013.png" alt="2013"></div>
+                        <dl class="dmn-history-txt">
+                            <dt>9月</dt>
+                            <dd>百里挑一中秋特別節目港台專場開播</dd>
+                            <dt>8月</dt>
+                            <dd>百里挑一台灣單身男女百人徵選會</dd>
+                            <dt>7月</dt>
+                            <dd>APP愛情配對「命理功能」上線</dd>
+                            <dt>7月</dt>
+                            <dd>DateMeNow X 東方衛視百里挑一節目-上海5天4夜免費跨海約會記者會</dd>
+                            <dt>4月</dt>
+                            <dd>DateMeNow約會APP上線</dd>
+                            <dt>3月</dt>
+                            <dd>姊妹掏心話節目 X 大學生Lolita饗約會</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <div class="dmn-year">2014</div>
+                        <div class="dmn-history-photo"><img src="assets/images/history_2014.png" alt="2014"></div>
+                        <dl class="dmn-history-txt">
+                            <dt>10月</dt>
+                            <dd>台北第二間五星級時尚婚戀會館開幕-王思平相親活動者會</dd>
+                            <dt>10月</dt>
+                            <dd>「尋真愛 送真鑽」活動</dd>
+                            <dt>9月</dt>
+                            <dd>名模王思平 網路徵婚活動開跑</dd>
+                            <dt>3月</dt>
+                            <dd>台北首間！旗艦婚戀會館開幕</dd>                           
+                        </dl>
+                    </li>
+                    <li>
+                        <div class="dmn-year">2015</div>
+                        <div class="dmn-history-photo"><img src="assets/images/history_2015.png" alt="2015"></div>
+                        <dl class="dmn-history-txt">
+                            <dt>9月</dt>
+                            <dd>形象廣告「幸福的起點」上線</dd>
+                            <dt>8月</dt>
+                            <dd>「歌手GJ蔣卓嘉一日約會」七夕活動</dd>
+                            <dt>3月</dt>
+                            <dd>形象廣告「快來跟我約會吧」上線</dd>                                                  
+                        </dl>
+                    </li>
+                    <li>
+                        <div class="dmn-year">2016</div>
+                        <div class="dmn-history-photo"><img src="assets/images/history_2016.png" alt="2016"></div>
+                        <dl class="dmn-history-txt">
+                            <dt>6月</dt>
+                            <dd>美滿人生企業集團正式加入經營團隊</dd>
+                            <dt>5月</dt>
+                            <dd>全新面貌DateMeNow時尚婚戀會館登場</dd>
+                                                    
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- /DateMeNow的一切 -->
+
+        <!-- 關於DateMeNow婚戀會館 -->
+        <section class="index-dmn-about main-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-1">
+                        <div class="dmn-about-side1">
+                            <div class="dmn-title-type5">關於DateMeNow婚戀會館</div>
+                            <p>台北市松山區八德路二段358號6樓之1</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="dmn-about-side2">
+                            <a class="btn btn-border-white btn-block" href="MarriageHall.html">看更多</a>
+                        </div>                    
+                    </div>
+                </div>                
+            </div>
+        </section>
+        <!-- /關於DateMeNow婚戀會館 -->
+
+        <!-- 底下註冊 -->
+        <section class="index-dmn-bottom-register2 wood-bg2">
+            <div class="container">
+                <h3 class="dmn-title-type1 text-white wow fadeInDown" data-wow-delay="0.1s">
+                    終結單身生活，立即交友配對
                 </h3>         
                 <div class="dmn-bottom-register register-box">                    
-                    <form action="/toform" method="post">
+                    <form action="/toform" method="post" class="toggle">
                         <div class="form-group row">
                             <div class="col-xs-12">
                                 <label class="sr-only">真實姓名</label>
@@ -413,7 +546,7 @@
                 </div>
             </div>
         </section>
-        <!-- /底下註冊 -->
+        <!-- 底下註冊 -->
 
         <!-- footer -->
         <footer class="footer">
@@ -532,6 +665,10 @@
 
     <!-- jquery -->
     <script src="assets/plugins/jquery/jquery-2.2.4.min.js"></script>
+    <!-- REVOLUTION SLIDER -->
+    <script type="text/javascript" src="assets/plugins/slider.revolution/js/jquery.themepunch.tools.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/slider.revolution/js/jquery.themepunch.revolution.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/slider.revolution/js/demo.revolution_slider.js"></script>
     <!-- scripts -->
     <script type="text/javascript" src="assets/js/scripts.js"></script>
     <!-- sweetalert -->
