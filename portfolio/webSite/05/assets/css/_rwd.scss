@@ -17,6 +17,12 @@
         margin-right: auto;
         padding: 40px 20px;
     }
+    .page-option-sec1-txt .dmn-box{
+        padding: 50px 40px 50px 120px;
+    }
+    .page-option-sec1-txt{
+      width: 50%;   
+    }
 }
 @media (max-width: 1300px) {
     #header .nav-logo{
@@ -119,7 +125,10 @@
     .dmn-history-txt{
         width: 86%;
         padding-left: 10px;
-    }    
+    }
+    .page-option-sec1-txt .dmn-box{
+        padding: 50px 40px 50px 90px;
+    }
 }
 @media (max-width: 1200px) {
     .dmn-blog-event-photo{
@@ -133,6 +142,22 @@
             float: none;
             padding: 30px;		
         }
+    }
+    .page-option-sec1-img{
+        bottom: auto;
+        right: auto;        
+    }
+    .page-option-sec1-txt .dmn-box{
+        padding: 50px 40px 50px 40px;
+    }
+    .page-option-sec1-txt{
+        padding-left: 20px;
+        & .dmn-title-type3{
+            margin-bottom: 30px;
+        }
+    }
+    .page-option-sec1-txt-word br{
+        display: none;
     }
 }
 @media (max-width: 1024px) {
@@ -191,6 +216,10 @@
     }
     .aboutus-secretary-text-words{
         height: 80px;
+    }
+    .page-option-register{
+        min-width: 400px;
+        left: 0;
     }
 }
 @media (max-width: 992px) {
@@ -504,6 +533,56 @@
     .page-member-kv{
         padding: 40px 0;
     }
+    .flower-bg-exbig{
+        background-image: none;        
+    }
+    .page-option-kv{
+        height: auto;
+        padding: 0;
+        background-image: none;  
+    }
+    .page-option-kv .container-fluid{
+        padding: 0;
+    }
+    .page-option-kv-img-m{
+        display: block;
+    }
+    .page-option-register{
+        position: relative;
+        min-width: 100%;        
+        height: auto;
+        top: auto;
+        padding: 40px 30px;
+    }
+    .page-option-kv-txt{
+        margin-bottom: 30px;        
+    }
+    .page-option-sec1-img{
+        width: 100%;
+        box-shadow: none;          
+    }
+    .page-option-sec1-txt .dmn-box{
+        padding:40px 30px;
+    }
+    .page-option-sec1-txt .dmn-box-outline-t1::before{
+        display: none;
+    }
+    .page-option-sec1-txt{
+        padding-left: 0px;
+        width: 100%;
+        & .dmn-title-type3{
+            margin-bottom: 30px;
+        }
+    }
+    .dmn-photo-box{
+        margin-bottom: 25px;
+    }
+    .page-option-about{
+        min-height: auto;
+    }
+    .page-option-about-txt{
+        margin-left: 50%;
+    }
 }
 @media (max-width: 767px) {    
     section{
@@ -563,6 +642,16 @@
         & .form-group > div + div{
             margin-top: 15px;
         }
+    }
+    .page-option-about{
+        background-image: url(../images/option_sec3_img01_m.jpg);
+    }
+    .page-option-about-txt{
+        margin-left: 30%;        
+    }
+    .page-option-about-txt-word{
+        letter-spacing: 0;
+        font-size: 14px;
     }
 }
 @media (max-width: 630px) {
@@ -866,6 +955,10 @@
     
     .page-dmn-five-txt-box .txt-promo br{
         display: none;
+    }
+    .page-option-kv-txt{
+        letter-spacing: 0;
+        font-size: 14px;
     }
 
 }

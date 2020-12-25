@@ -2199,6 +2199,100 @@
 		width: calc(100% - 35px);		
 	}
 }
+/* 自選約會 */
+.page-option-kv{
+	height: 860px;
+	background-image: url(../images/bg_option_kv.jpg);
+	background-size: cover;
+	background-position: center center;
+	position: relative;
+}
+.page-option-kv-img-m{
+	display: none;
+	width: 100%;
+}
+.page-option-register{
+	position: absolute;
+	height: 100%;
+	min-width: 500px;
+	padding: 80px 30px 30px 30px;
+	top: 0;
+	left: 30px;
+	background-color: rgba(17,3,5,.8);
+	& .confirm{
+		text-align: center;
+		color: #fff;
+		& a{
+			color: #fff;
+		}
+	}
+	&::before{
+		content: '';
+		height: 100%;
+		width: 1px;
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 10px;
+		background-color: rgba(255,255,255,.3);
+	}
+	&::after{
+		content: '';
+		height: 100%;
+		width: 1px;
+		display: block;
+		position: absolute;
+		top: 0;
+		right: 10px;
+		background-color: rgba(255,255,255,.3);
+	}
+}
+.page-option-kv-txt{
+	text-align: center;
+	margin-bottom: 60px;
+	color: #fff;
+	line-height: 1.7;
+	letter-spacing: 2px;
+}
+.page-option-sec1-img{
+	float: left;
+	position: relative;
+	right: -40px;
+	bottom: 40px;
+	z-index: 5;
+	width: 50%;
+	box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.2);
+	& img{
+		width: 100%;
+	}
+}
+.page-option-sec1-txt{
+	float: left;
+	width: 45%;
+	& .dmn-box{
+		padding: 120px 40px 120px 120px;
+	}
+}
+.page-option-sec1-txt-word{
+	line-height: 1.7;
+}
+.page-option-sec1{
+	padding-bottom: 80px;
+}
+.page-option-about{
+	background-image: url(../images/option_sec3_img01.jpg);
+	background-size: cover;
+	background-position: center center;
+	min-height: 625px;	
+}
+.page-option-about-txt{
+	color: #fff;
+	margin-left: 65%;
+}
+.page-option-about-txt-word{
+	line-height: 2;
+	letter-spacing: 2px;
+}
 /* 跳出視窗form */
 .dmn-apply{
 	padding: 0px 8px;	
