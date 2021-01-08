@@ -776,6 +776,14 @@ hr.hr-lg {
   background-color: #fff;
 }
 
+.btn-underline {
+  text-decoration: underline;
+}
+
+.btn-smallfont {
+  font-size: 14px;
+}
+
 .btn-sub1 {
   background-color: #a3ad71;
   color: #fff;
@@ -997,7 +1005,11 @@ hr.hr-lg {
 }
 
 .dmn-box-reg {
-  height: 620px;
+  height: 650px;
+}
+
+.dmn-box-reg .form-group label {
+  display: none;
 }
 
 .dmn-box-text {
@@ -2219,10 +2231,10 @@ hr.hr-lg {
 }
 
 .slider-events-text {
-  line-height: 1.5;
-  height: 72px;
+  line-height: 1.7;
+  height: 75px;
   overflow: hidden;
-  margin-bottom: 30px;
+  margin: 0px auto 30px auto;
 }
 
 /* DMN 特色 */
@@ -2315,6 +2327,10 @@ hr.hr-lg {
 .dmn-about-side1 {
   text-align: left;
   color: #fff;
+}
+
+.dmn-about-side1 .btn-color-white {
+  padding-left: 5px;
 }
 
 /* 首頁底下註冊 */
@@ -3131,6 +3147,7 @@ hr.hr-lg {
 .lovestory-list-title {
   color: #424443;
   font-size: 26px;
+  line-height: 1.42857143;
   margin-bottom: 20px;
   font-family: "Times New Roman", "Noto Serif TC", Times, serif;
 }
@@ -3262,8 +3279,13 @@ hr.hr-lg {
   line-height: 1.7;
 }
 
-.dmn-blog-text h3 {
+.dmn-blog-text h2 {
   font-size: 20px;
+  margin: 30px 0 20px 0;
+}
+
+.dmn-blog-text h3 {
+  font-size: 18px;
   margin: 30px 0 20px 0;
 }
 
@@ -3499,6 +3521,10 @@ hr.hr-lg {
 
 .event-photos-item {
   padding: 0 5px;
+}
+
+.dmn-event-photos-slider .owl-wrapper-outer {
+  padding-top: 5px;
 }
 
 .event-thumbnail {
@@ -4362,6 +4388,19 @@ hr.hr-lg {
   padding: 0px 8px;
 }
 
+/* 首頁活動輪播banner */
+.index-section-banner {
+  padding: 60px 0px;
+}
+
+.index-section-banner .owl-carousel {
+  margin-bottom: 0;
+}
+
+.index-banner-slider-item img {
+  width: 100%;
+}
+
 /* footer */
 .footer {
   border-top: 1px solid #dfe0e0;
@@ -5095,9 +5134,6 @@ hr.hr-lg {
 }
 
 @media (max-width: 630px) {
-  .dmn-sm-6 {
-    width: 100%;
-  }
   section {
     padding: 60px 0;
   }
@@ -5398,6 +5434,15 @@ hr.hr-lg {
   .page-option-kv-txt {
     letter-spacing: 0;
     font-size: 14px;
+  }
+  .dmn-member .dmn-box {
+    padding: 8px;
+  }
+  .dmn-box-info-title {
+    font-size: 18px;
+  }
+  .dmn-box-info-list li {
+    font-size: 12px;
   }
 }
 
