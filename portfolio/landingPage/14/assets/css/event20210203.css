@@ -1,0 +1,317 @@
+.container-lg{
+    max-width: 1300px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.container-lg::after{
+    content: '';
+    clear: both;
+    display: table;
+}
+.event20210203-wrap{
+    background-image: url(../images/event20210203/main-bg.jpg);
+    background-size: cover;
+    background-position: center top;
+    min-height: 100%;
+    border: 0;
+    padding: 60px 0px;
+    background-attachment: scroll;
+}
+.event20210203-wrap2{
+    background-image: url(../images/event20210203/main-bg2.jpg);
+    background-size: cover;
+    background-position: center center;
+    min-height: 100%;
+    border: 0;
+    padding: 60px 0px;
+    background-attachment: scroll;
+}
+.kv{
+    max-width: 666px;
+    position: relative;
+    margin: 0 20px 0 auto;
+    text-align: center;
+}
+.luckywheel{    
+    height: auto;
+    position: relative;
+    z-index: 1;
+}
+.luckywheel::before{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: 409px;
+    height: 834px;
+    position: absolute;
+    left: -300px;
+    top: 60px;
+    background-image: url(../images/event20210203/couple.png);
+}
+.wheel{
+    max-width: 100%;
+}
+.turntable{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 10.4%;
+    margin: auto;
+    z-index: 1;
+    width: 86%;
+    transition: transform;
+    transition-timing-function: ease-in-out;
+}
+.pointer{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 5.5%;
+    width: 6%;
+    margin: auto;
+    z-index: 2;
+}
+.start{
+    width: 30%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 37.5%;
+    margin: auto;
+    z-index: 3;
+    cursor: pointer;    
+}
+.flash{
+    animation: flash 1.5s infinite;
+}
+@keyframes flash{
+    0%{
+        filter: brightness(100%);
+    }
+    50%{
+        filter: brightness(100%);
+    }
+    51%{
+        filter: brightness(180%);
+    }
+    100%{
+        filter: brightness(180%);
+    }
+}
+.start:hover, .start:active{
+    filter: brightness(130%);
+}
+.board{   
+    padding: 6px;
+    max-width: 440px;
+    background-image: linear-gradient(15deg, #ee9633, #f8ddbf,#e57e2b,#fecba2);
+    text-align: center;
+    margin: 0 auto 0 auto;
+    z-index: 2;
+    position: relative;
+}
+.board::before{
+    content:'';
+    width: 159px;
+    height: 172px;
+    position: absolute;
+    left: -165px;
+    top: -50px;
+    z-index: -1;
+    background-image: url(../images/event20210203/money.png);
+}
+.board::after{
+    content:'';
+    width: 134px;
+    height: 183px;
+    position: absolute;
+    right: -140px;
+    top: -65px;
+    z-index: -1;
+    background-image: url(../images/event20210203/money2.png);
+}
+.board-inner{
+    background-color: #280721;    
+    border: 4px solid #550a49;
+    padding: 20px;
+}
+.board-title{
+    color: #fff;
+    font-size: 24px;
+    font-weight:  bold;
+    margin-bottom: 0;
+}
+.board-note{
+    color: rgba(255,255,255,.5);
+    font-size: 12px;
+    margin-bottom: 0;
+}
+.main-text{
+    padding: 100px 0 0 55px;
+    color: #fff;
+}
+.main-title{
+    margin-bottom: 15px;
+}
+.main-title img{
+    max-width: 100%;
+}
+.sub-title{
+    font-size: 14px;
+    line-height: 1.7em;
+    font-weight: normal;
+    letter-spacing: 1px;
+    color: #fff;
+    margin-bottom: 50px;
+}
+.prize-list{
+    list-style: none;
+    margin: 0 0 60px 0;
+    padding: 0;   
+}
+.prize-list li{
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.9em;
+}
+.prize-notice{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.prize-notice li{
+    color: rgba(255,255,255,0.5);
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 1.4em;  
+}
+.kv-title{
+    max-width: 70%;
+    margin: 0 auto 20px auto;
+}
+.register-box{
+    background-color: #fff;
+    padding: 60px;
+}
+.modal-backdrop{
+    /* backdrop-filter: blur(5px); */
+}
+.modal-backdrop.fade{
+    background-color: rgba(0,0,0,1);
+}
+.modal-backdrop.in{
+    /* opacity: 1; */
+}
+.modal-wheel{
+    position: relative;
+    color: #fff;
+    text-align: center;
+    background-image: url(../images/event20210203/modal-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    min-height: 600px;
+    padding: 80px 15px 30px 15px;
+}
+.modal-wheel .close{
+    position: absolute;
+    right: 20px;
+    top: 20px; 
+    color: #fff;
+    opacity: .6;  
+}
+.modal-wheel .close:hover{
+    opacity: .8;  
+}
+
+.modal-wheel-title{
+    color: #fff;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 1.4em;
+    margin-bottom: 0px;
+}
+.modal-wheel-prize{
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 1.4em;
+    margin-bottom: 40px;
+}
+.win-svg {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 0px;
+    left: -80px;
+    pointer-events: none;
+    z-index: 99;
+}
+.win-svg2 {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 0px;
+    right: -80px;
+    pointer-events: none;
+    z-index: 99;
+}
+.btn-cta{
+	background-color: #c2267d;
+	color: #fff;
+	transition: all .2s;
+}
+.btn-cta > i.fa-angle-right{s
+	position: absolute;
+	right: 5px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.btn-cta:hover,
+.btn-cta:active,
+.btn-cta:focus{
+	color: #fff;
+	filter: brightness(120%);
+}
+@media (max-width: 1024px){
+    .main-title{
+        padding: 0 20px;    }
+    
+    .luckywheel::before{
+        display: none;
+    }
+    .board::before{
+        display: none;
+    }
+    .board::after{
+        display: none;
+    }
+}
+@media (max-width: 992px){
+    .main-text{
+        padding: 0px;
+        color: #fff;
+        text-align: center;
+    }    
+    .kv{
+        padding: 0 15px;
+        margin: 0 auto;
+    }    
+}
+@media (max-width: 768px){
+    .event20210203-wrap{
+        padding: 30px 0;
+    }    
+}
+@media (max-width: 630px){
+    .board{
+        padding: 4px;
+    }
+    .board-inner{
+        padding: 8px;
+        border-width: 2px;
+    }
+    .board-title{
+        font-size: 16px;
+    }
+}
