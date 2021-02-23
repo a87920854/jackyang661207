@@ -2,6 +2,7 @@
     max-width: 1300px;
     padding: 0 15px;
     margin: 0 auto;
+    position: relative;
 }
 .container-lg::after{
     content: '';
@@ -12,19 +13,19 @@
     background-image: url(../images/event20210203/main-bg.jpg);
     background-size: cover;
     background-position: center top;
-    min-height: 100%;
     border: 0;
     padding: 60px 0px;
     background-attachment: scroll;
+    overflow: hidden;
 }
 .event20210203-wrap2{
     background-image: url(../images/event20210203/main-bg2.jpg);
     background-size: cover;
     background-position: center center;
-    min-height: 100%;
     border: 0;
     padding: 60px 0px;
     background-attachment: scroll;
+    overflow: hidden;
 }
 .kv{
     max-width: 666px;
@@ -72,34 +73,65 @@
     z-index: 2;
 }
 .start{
-    width: 30%;
+    width: 34%;
+    font-size: 0;
+    max-width: 221px;
+    max-height: 221px;
+    overflow: hidden;
     position: absolute;
     left: 0;
     right: 0;
-    top: 37.5%;
+    top: 35%;
     margin: auto;
     z-index: 3;
     cursor: pointer;    
 }
+.start img{
+    max-width: 100%;    
+}
+.start img + img{
+    margin-top: -100%;
+}
+.stop{
+    display: none;
+    max-width: 100%;
+    -webkit-animation: flash 1.2s infinite ease;
+    animation: flash 1.2s infinite ease;
+}
+.stop.show{
+    display: block;
+}
+.blank{
+    display: none;
+    max-width: 100%;
+}
+.blank.show{
+    display: block;
+}
 .flash{
-    animation: flash 1.5s infinite;
+    -webkit-animation: flash 1.2s infinite;
+    animation: flash 1.2s infinite;
 }
 @keyframes flash{
     0%{
-        filter: brightness(100%);
+        opacity: 0;
     }
+    40%{
+        opacity: 0;
+    }    
     50%{
-        filter: brightness(100%);
+        opacity: 1;
     }
-    51%{
-        filter: brightness(180%);
+    90%{
+        opacity: 1;
     }
     100%{
-        filter: brightness(180%);
+        opacity: 0;
     }
 }
 .start:hover, .start:active{
-    filter: brightness(130%);
+    -webkit-filter: brightness(120%);
+            filter: brightness(120%);
 }
 .board{   
     padding: 6px;
@@ -190,9 +222,77 @@
     max-width: 70%;
     margin: 0 auto 20px auto;
 }
+.register-img{
+    position: absolute;
+    left: -15%;
+    bottom: -60px;
+}
+.register-txt{
+    position: relative;
+    max-width: 45%;
+    margin-left: auto;
+}
 .register-box{
     background-color: #fff;
     padding: 60px;
+    text-align: center;
+}
+.register-box form{
+    margin-bottom: 0;
+}
+.register-box .form-control{
+    border: 0;
+    background-color: #f0f0f0;
+}
+.register-title{
+    color: #a31f68;
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 1.3em;
+    margin-bottom: 40px;
+}
+.register-subtitle{
+    color: #666;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.register-notice{
+    list-style: none;
+    padding: 0;
+    margin: 0 0 30px 0;
+}
+.confirm{
+    font-size: 12px;
+    color: #666;
+    margin: 0;
+}
+.confirm a{
+    color: #666;
+}
+.thanks-title{
+    color: #c2267d;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 1.3em;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+.thanks-txt{
+    font-size: 16px;
+    line-height: 1.9em;    
+}
+.thanks-bold{
+    font-size: 16px;
+    font-weight: bold;
+}
+.thanks-girl{
+    margin-top:80px;
+    text-align: center;
+}
+.thanks-girl img{
+    max-width: 100%;
 }
 .modal-backdrop{
     /* backdrop-filter: blur(5px); */
@@ -212,6 +312,9 @@
     background-position: center center;
     min-height: 600px;
     padding: 80px 15px 30px 15px;
+}
+.modal-wheel-txt{
+    /* white-space: pre; */
 }
 .modal-wheel .close{
     position: absolute;
@@ -256,12 +359,200 @@
     pointer-events: none;
     z-index: 99;
 }
+.lights{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+}
+.lights.on{
+    display: block;
+}
+.lights.on > .light:nth-child(odd){
+    -webkit-animation: flash .5s infinite;
+            animation: flash .5s infinite;            
+}
+.lights.on > .light:nth-child(even){
+    -webkit-animation: flash .5s infinite;
+            animation: flash .5s infinite;
+            animation-delay: .25s;
+}
+
+.light{
+    display: block;
+    width: 1.1%;
+    height: 1.1%;
+    background-color: #fffcc9;
+    box-shadow: 0px 0px 10px 5px rgba(255,234,0,0.3);
+    border-radius: 50%;
+    position: absolute;
+}
+.light:nth-child(1){
+    top: 8.8%;
+    left: 34.7%;
+}
+.light:nth-child(2){
+    top: 7.5%;
+    left: 41.8%;
+}
+.light:nth-child(3){
+    top: 7.2%;
+    left: 56.7%;
+}
+.light:nth-child(4){
+    top: 8.8%;
+    left: 63.8%;
+}
+.light:nth-child(5){
+    top: 11.3%;
+    left: 70.5%;
+}
+.light:nth-child(6){
+    top: 14.9%;
+    left: 76.6%;
+}
+.light:nth-child(7){
+    top: 19.4%;
+    left: 81.8%;
+}
+.light:nth-child(8){
+    top: 24.5%;
+    left: 86.6%;
+}
+.light:nth-child(9){
+    top: 30.3%;
+    left: 90.8%;
+}
+.light:nth-child(10){
+    top: 36.6%;
+    left: 93.7%;
+}
+.light:nth-child(11){
+    top: 43.6%;
+    left: 95.3%;
+}
+.light:nth-child(12){
+    top: 50.3%;
+    left: 95.8%;
+}
+.light:nth-child(13){
+    top: 57%;
+    left: 95.2%;
+}
+.light:nth-child(14){
+    top: 63.6%;
+    left: 93.7%;
+}
+.light:nth-child(15){
+    top: 69.9%;
+    left: 90.8%;
+}
+.light:nth-child(16){
+    top: 75.7%;
+    left: 86.8%;
+}
+.light:nth-child(17){
+    top: 80.8%;
+    left: 82%;
+}
+.light:nth-child(18){
+    top: 85.2%;
+    left: 76.4%;
+}
+.light:nth-child(19){
+    top: 88.9%;
+    left: 70.4%;
+}
+.light:nth-child(20){
+    top: 91.5%;
+    left: 63.4%;
+}
+.light:nth-child(21){
+    top: 93.1%;
+    left: 56.5%;
+}
+.light:nth-child(22){
+    top: 93.9%;
+    left: 48.8%;
+}
+.light:nth-child(23){
+    top: 93%;
+    left: 42.2%;
+}
+.light:nth-child(24){
+    top: 91.4%;
+    left: 35.2%;
+}
+.light:nth-child(25){
+    top: 88.9%;
+    left: 28.7%;
+}
+.light:nth-child(26){
+    top: 85.4%;
+    left: 22.5%;
+}
+.light:nth-child(27){
+    top: 81%;
+    left: 16.1%;
+}
+.light:nth-child(28){
+    top: 75.6%;
+    left: 11.3%;
+}
+.light:nth-child(29){
+    top: 70.2%;
+    left: 8%;
+}
+.light:nth-child(30){
+    top: 63.9%;
+    left: 5.1%;
+}
+.light:nth-child(31){
+    top: 57%;
+    left: 3.8%;
+}
+.light:nth-child(32){
+    top: 50.2%;
+    left: 3.2%;
+}
+.light:nth-child(33){
+    top: 43.1%;
+    left: 3.1%;
+}
+.light:nth-child(34){
+    top: 36.5%;
+    left: 4.8%;
+}
+.light:nth-child(35){
+    top: 30.5%;
+    left: 8%;
+}
+.light:nth-child(36){
+    top: 24.6%;
+    left: 11.8%;
+}
+.light:nth-child(37){
+    top: 19.5%;
+    left: 16.2%;
+}
+.light:nth-child(38){
+    top: 15%;
+    left: 21.8%;
+}
+.light:nth-child(39){
+    top: 11.5%;
+    left: 28%;
+}
 .btn-cta{
 	background-color: #c2267d;
 	color: #fff;
 	transition: all .2s;
 }
-.btn-cta > i.fa-angle-right{s
+.btn-cta > i.fa-angle-right{
 	position: absolute;
 	right: 5px;
 	top: 50%;
@@ -271,12 +562,13 @@
 .btn-cta:active,
 .btn-cta:focus{
 	color: #fff;
-	filter: brightness(120%);
+	-webkit-filter: brightness(120%);
+	        filter: brightness(120%);
 }
 @media (max-width: 1024px){
     .main-title{
-        padding: 0 20px;    }
-    
+        padding: 0 20px;
+    }    
     .luckywheel::before{
         display: none;
     }
@@ -296,10 +588,25 @@
     .kv{
         padding: 0 15px;
         margin: 0 auto;
-    }    
+    }
+    .register-img{
+        display: block;
+        position: relative;
+        bottom: auto;
+        left: auto;
+        max-width: 60%;
+        margin:  0 auto -30px auto;
+    }
+    .register-txt{
+        position: relative;
+        max-width: 100%;
+        margin-left: auto;
+        padding: 0 20px;
+    }
+       
 }
 @media (max-width: 768px){
-    .event20210203-wrap{
+    .event20210203-wrap, .event20210203-wrap2{
         padding: 30px 0;
     }    
 }
@@ -313,5 +620,23 @@
     }
     .board-title{
         font-size: 16px;
+    }
+    .register-box{
+        padding: 60px 30px;
+    }
+    .thanks-title{
+        margin-top: 20px;
+    }
+    .thanks-girl{
+        margin-top: 60px;
+    }
+    .thanks-girl img{
+        max-width: 50%;
+    }
+    .light{
+        box-shadow: 0px 0px 5px 3px rgba(255,234,0,0.3);
+    }
+    .register-txt{
+        padding: 0;
     }
 }
