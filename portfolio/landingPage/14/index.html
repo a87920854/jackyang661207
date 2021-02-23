@@ -3,8 +3,8 @@
 	<head>
 		<meta charset="utf-8" />
 		<title>【戀愛決勝盤】</title>
-		<meta name="keywords" content="結婚,交友,戀愛,女友,愛情" />
-		<meta name="description" content="一個人，為生活而忙碌，為生計而奔波，卻忘了擁有幸福，才是真正的富有。小資交友專案為打造幸福家庭而生，我們將從數千位和你一樣想交友的單身男女中，挑選出符合專案報名資格的人，透過條件篩選，進而聯繫並安排一對一的見面與約會，讓你用小資的薪情，擁抱愛情。" />
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
 		<meta name="Author" content="www.singleparty.com.tw" />
 
 		<!-- mobile settings -->
@@ -20,12 +20,12 @@
 		<link rel="shortcut icon" href="https://www.singleparty.com.tw/favicon.ico" />
 
 		<!-- og tag -->
-		<meta property="og:title" content="優質天菜公開徵友-約會專家"/>
-		<meta property="og:description" content="女孩們還在抱怨找不到好對象嗎？約會專家為妳挑選出條件優質的迷人紳士們，他們都是經濟獨立的社會高端菁英人士，個人經歷與條件都十分出色，希望透過約會專家平台找到合適的女孩。"/>
+		<meta property="og:title" content=""/>
+		<meta property="og:description" content=""/>
 		<meta property="og:type" content="website"/>
 		<meta property="og:site_name" content="約會專家"/>
 		<meta property="og:url" content="https://www.singleparty.com.tw"/>
-		<meta property="og:image" content="https://www.singleparty.com.tw/assets/images/event20201207/og_event20201207.jpg"/>	
+		<meta property="og:image" content="https://www.singleparty.com.tw/assets/images/event20210203/og_event20210203.jpg"/>	
 	</head>
 
 
@@ -237,8 +237,54 @@
 								<div class="luckywheel">
 									<img class="wheel" src="assets/images/event20210203/wheel.png" alt="戀愛決勝盤">
 									<img class="turntable" src="assets/images/event20210203/turntable.png" alt="轉盤">
-									<img class="pointer" src="assets/images/event20210203/pointer.png" alt="指針">						
-									<img class="start flash" src="assets/images/event20210203/start.png" alt="開始按鈕">
+									<img class="pointer" src="assets/images/event20210203/pointer.png" alt="指針">
+									<div class="start">										
+										<img class="" src="assets/images/event20210203/start.png" alt="開始按鈕">
+										<img class="flash" src="assets/images/event20210203/start2.png" alt="開始按鈕">
+										<img class="blank" src="assets/images/event20210203/blank.png" alt="空白按鈕">
+										<img class="stop" src="assets/images/event20210203/stop.png" alt="停止按鈕">										
+									</div>					
+									<div class="lights">
+										<span class="light"></span>
+										<span class="light"></span>
+										<span class="light"></span>
+										<span class="light"></span>
+										<span class="light"></span>
+										<span class="light"></span>
+										<span class="light"></span>
+										<span class="light"></span>
+										<span class="light"></span>
+										<span class="light"></span>
+										<span class="light"></span>
+										<span class="light"></span>
+										<span class="light"></span>
+										<span class="light"></span>
+										<span class="light"></span>
+										<span class="light"></span>
+										<span class="light"></span>
+										<span class="light"></span>
+										<span class="light"></span>
+										<span class="light"></span>
+										<span class="light"></span>
+										<span class="light"></span>
+										<span class="light"></span>
+										<span class="light"></span>
+										<span class="light"></span>
+										<span class="light"></span>
+										<span class="light"></span>
+										<span class="light"></span>
+										<span class="light"></span>
+										<span class="light"></span>
+										<span class="light"></span>
+										<span class="light"></span>
+										<span class="light"></span>
+										<span class="light"></span>
+										<span class="light"></span>
+										<span class="light"></span>
+										<span class="light"></span>
+										<span class="light"></span>
+										<span class="light"></span>									
+									</div>
 								</div>
 								<div class="board">
 									<div class="board-inner">
@@ -350,13 +396,10 @@
 					<!-- Modal Body -->
 					<div class="modal-wheel">						
 						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-						<h3 class="modal-wheel-title">恭喜！你獲得特等獎啦！</h3>
-						<h4 class="modal-wheel-prize">【贈送一場自選1對1約會】</h4>
-						<p>
-							你真的很幸運！特等獎的機率只有５％而已哦！<br>
-							填寫資料即可領取獎項！愛神來敲門別錯過啦！
-						</p>
-						<button class="btn btn-cta btn-lg">填資料領獎去</button>
+						<h3 class="modal-wheel-title"></h3>
+						<h4 class="modal-wheel-prize"></h4>
+						<p class="modal-wheel-txt"></p>
+						<button class="btn btn-cta btn-lg" onclick="location.href='register.html';">填資料領獎去</button>
 					</div>
 				</div>
 			</div>
@@ -370,55 +413,19 @@
 
 		<!-- lottie動畫庫 -->
 		<script type="text/javascript" src="assets/plugins/lottie.min.js"></script>
-
-		<script>
-			var aa = 3620; //安慰獎
-			var bb = 3692; //頭獎
-			var cc = 3764; //安慰獎
-			var dd = 3836; //貳獎 
-			var ee = 3908; //特等獎 
-			var duration = 4000; //動畫持續時間			
-			var offOn = true; // 是否正在抽獎	
-			var $start = $(".start"); //開始按鈕
-
-			// 設定動畫庫
-			var animItem = bodymovin.loadAnimation({
-				wrapper: document.getElementById('svg'),
-				animType: 'svg',
-				loop: false,
-				autoplay: false,
-				path: 'assets/images/event20210203/animator.json'
-			});
-			var animItem2 = bodymovin.loadAnimation({
-				wrapper: document.getElementById('svg2'),
-				animType: 'svg',
-				loop: false,
-				autoplay: false,
-				path: 'assets/images/event20210203/animator.json'
-			});
-
-			// 幸運輪盤start按鈕
-			$start.click(function(num){
-				if(offOn){
-					offOn = !offOn;
-					$start.removeClass("flash");
-					$('.turntable').css( "transitionDuration", duration + "ms" ); //動畫持續時間
-					$('.turntable').css( "transform", "rotate(" + ee + "deg)"); //得獎種類
-					
-					setTimeout(function(){
-						$('#myModal').modal();
-						setTimeout(function(){
-							animItem.goToAndPlay(0,true);
-							animItem2.goToAndPlay(0,true);
-						}, 500);
-						
-					}, duration + 500);					
-				}											
-			})
-			
-			
-			
+		<!-- 輪盤JS -->
+		<script type="text/javascript" src="assets/js/lucky-wheel.js"></script>
+		<!-- 輪盤JS設定 -->
+		<script type="text/javascript">	 
+			//安慰獎 aa
+			//頭獎 bb
+			//安慰獎 cc
+			//貳獎 dd
+			//特等獎 ee	
+			//活動機率 event 
+			luckyWheel('event');      
 		</script>
+
 
 	</body>
 </html>
