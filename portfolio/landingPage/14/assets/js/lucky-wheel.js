@@ -22,14 +22,14 @@ function luckyWheel(setting){
         animType: 'svg',
         loop: false,
         autoplay: false,        
-        path: '../images/event20210203/animator.json'
+        path: 'assets/images/event20210203/animator.json'
     });
     var animItem2 = bodymovin.loadAnimation({
         wrapper: document.getElementById('svg2'),
         animType: 'svg',
         loop: false,
         autoplay: false,
-        path: '../images/event20210203/animator.json'
+        path: 'assets/images/event20210203/animator.json'
     });  
 
     //隨機
