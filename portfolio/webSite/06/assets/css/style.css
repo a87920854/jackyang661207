@@ -1239,3 +1239,9 @@ span.text-color-sub{
     align-items: center; 
   }
 }
+
+@media (max-width: 576px) {
+  .min-box-type1{
+    padding: 30px 15px;
+  }
+}
