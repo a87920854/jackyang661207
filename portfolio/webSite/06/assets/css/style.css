@@ -1053,6 +1053,7 @@ a, a:hover{
   font-weight: 400;
   font-size: 14px;
   letter-spacing: .75px;
+  text-align: left;
 }
 .mini-box ul i, .mini-box ol i{
   float: left;
