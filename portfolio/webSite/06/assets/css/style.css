@@ -1249,7 +1249,34 @@ span.text-color-sub{
 .offset-lg-1\.5{
   margin-left: 12.5%;
 }
-
+.blog-post-thumb > a > .img::after{
+  transition: background-color .3s;
+  will-change: background-color;
+}
+.blog-post-thumb > a:hover > .img::after{
+  content: '';
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+}
+.blog-post-thumb > a:hover > .img::before{
+  content: "\f002";
+  font: normal normal normal 45px/1 FontAwesome;
+  color: #fff;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  margin: auto;
+  width: 50px;
+  height: 50px;
+}
 
 @media (max-width: 991px) {
   .offset-lg-1\.5{
