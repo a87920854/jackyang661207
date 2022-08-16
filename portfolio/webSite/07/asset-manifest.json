@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/jackyang661207/portfolio/webSite/07/static/css/main.66ad4955.css",
-    "main.js": "/jackyang661207/portfolio/webSite/07/static/js/main.a0a84809.js",
+    "main.js": "/jackyang661207/portfolio/webSite/07/static/js/main.80a8b275.js",
     "static/js/787.ad68a6b5.chunk.js": "/jackyang661207/portfolio/webSite/07/static/js/787.ad68a6b5.chunk.js",
     "static/media/mountain02.png": "/jackyang661207/portfolio/webSite/07/static/media/mountain02.1450acabb40b8f6d82e5.png",
     "static/media/advantage_2.jpg": "/jackyang661207/portfolio/webSite/07/static/media/advantage_2.7e13ae1e04ed2617033f.jpg",
@@ -43,11 +43,11 @@
     "static/media/map-marker.svg": "/jackyang661207/portfolio/webSite/07/static/media/map-marker.666e66516dc25e6f6b26cb0a045a481c.svg",
     "static/media/icon-arrow.svg": "/jackyang661207/portfolio/webSite/07/static/media/icon-arrow.86097b0daf43ae0c8b7ce5b5d1eb7c8e.svg",
     "main.66ad4955.css.map": "/jackyang661207/portfolio/webSite/07/static/css/main.66ad4955.css.map",
-    "main.a0a84809.js.map": "/jackyang661207/portfolio/webSite/07/static/js/main.a0a84809.js.map",
+    "main.80a8b275.js.map": "/jackyang661207/portfolio/webSite/07/static/js/main.80a8b275.js.map",
     "787.ad68a6b5.chunk.js.map": "/jackyang661207/portfolio/webSite/07/static/js/787.ad68a6b5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.66ad4955.css",
-    "static/js/main.a0a84809.js"
+    "static/js/main.80a8b275.js"
   ]
 }
